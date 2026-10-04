@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="8" x2="0" y2="47.6" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6d8f90"/>
+      <stop offset="1" stop-color="#47bbca"/>
+    </linearGradient>
+  </defs>
+  <!-- Matches assets/Logo.png: same gradient, top to bottom. -->
+  <g fill="none" stroke="url(#g)" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 8.3 60.4 55.7H3.6Z"/>
+    <path d="M21.5 26 28.6 27.5V55.7M42.5 26 35.4 27.5V55.7"/>
+  </g>
+</svg>

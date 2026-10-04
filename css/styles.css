@@ -1,0 +1,1271 @@
+/* ==========================================================================
+   Ascent — Nonprofit Website Template
+   A single stylesheet for the whole site. Swap the values in :root to
+   rebrand; everything else is built on those tokens.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Design tokens
+   -------------------------------------------------------------------------- */
+/* Helvetica Neue Condensed Bold, read from the visitor's own system fonts.
+   local() needs both the PostScript name (Chrome, Firefox) and the full name
+   (Safari). No file is shipped: the face is licensed with the OS, not for hosting. */
+@font-face {
+  font-family: "Ascent Condensed Bold";
+  src: local("HelveticaNeue-CondensedBold"), local("Helvetica Neue Condensed Bold");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Helvetica Neue Light, for the site subtitle under the title. */
+@font-face {
+  font-family: "Ascent Light";
+  src: local("HelveticaNeue-Light"), local("Helvetica Neue Light");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Helvetica Neue Thin, for table text and form fields — also read from the
+   visitor's system rather than hosted. */
+@font-face {
+  font-family: "Ascent Thin";
+  src: local("HelveticaNeue-Thin"), local("Helvetica Neue Thin");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Caladea: an open-licence (SIL OFL, see assets/fonts/OFL.txt) face drawn to
+   Cambria's metrics. It stands in for body text only where Cambria itself isn't
+   installed — which is most Macs — and the browser downloads it only then. */
+@font-face {
+  font-family: "Caladea";
+  src: url("../assets/fonts/Caladea-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Caladea";
+  src: url("../assets/fonts/Caladea-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* Brand */
+  --teal-900: #0f2430;
+  --teal-800: #1b3644;
+  --teal-700: #1f4a5a;
+  --teal-600: #226274;
+  --teal-500: #2f8b9e;
+  --teal-300: #7fcbd8;
+  --teal-100: #d5eef2;
+  --teal-50:  #eef8fa;
+
+  --amber-600: #b9631a;
+  --amber-500: #e07b22;
+  --amber-400: #f2953f;
+  --amber-100: #fdeada;
+
+  /* Neutrals */
+  --ink-900: #121a1e;
+  --ink-700: #2c3940;
+  --ink-500: #586a72;
+  --ink-400: #7d8d95;
+  --ink-200: #d7dee1;
+  --ink-100: #eaeef0;
+  --paper:   #ffffff;
+  --shell:   #f6f9fa;
+
+  /* Semantic aliases — these are what components actually use */
+  --bg:            var(--paper);
+  --bg-muted:      var(--shell);
+  --bg-inverse:    var(--teal-900);
+  --surface:       var(--paper);
+  --border:        var(--ink-200);
+  --text:          var(--ink-900);
+  --text-muted:    var(--ink-500);
+  --text-inverse:  #ffffff;
+  --brand:         var(--teal-600);
+  --brand-strong:  var(--teal-800);
+  --brand-soft:    var(--teal-50);
+  --accent:        var(--amber-500);
+  --accent-strong: var(--amber-600);
+  --accent-soft:   var(--amber-100);
+  --focus:         var(--amber-500);
+
+  /* Type scale */
+  /* Regular-weight UI text is Helvetica Neue. Helvetica Neue ships Regular/Medium/
+     Bold and no semi-bold, so anything between 500 and 690 gets faked; keep weights
+     on this face at 400 unless you mean Medium. */
+  --font-heading: "Helvetica Neue", "HelveticaNeue", Helvetica, -apple-system,
+                  BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  /* ALL bold text — headings, buttons, labels, eyebrows, inline <strong> — is
+     Helvetica Neue Condensed Bold. It is a system font, not a webfont: macOS and iOS
+     have it and nothing is downloaded. Elsewhere the stack falls to the nearest
+     installed condensed bold (Arial Narrow on Windows with Office, Roboto Condensed
+     on Android), then to plain Helvetica/Arial Bold. The family has one face, so
+     anything using this token must be weight 700. */
+  --font-bold: "Ascent Condensed Bold", "HelveticaNeue-CondensedBold",
+               "Helvetica Neue Condensed Bold", "Arial Narrow", "Roboto Condensed",
+               sans-serif-condensed, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Body text is Cambria. It ships with Windows and with Office on macOS; where it
+     is missing, Caladea (hosted, same letter widths) takes its place, so line breaks
+     and page length match. Georgia is the last resort if the Caladea file fails. */
+  --font-body: "Cambria", "Caladea", "Georgia", "Iowan Old Style", "Times New Roman", serif;
+  /* Table text (cells and captions) and form fields are Helvetica Neue Thin; table
+     headings, column and row, stay --font-bold. Where Thin isn't installed the lightest
+     available Helvetica Neue, Helvetica or Arial is used. */
+  --font-thin: "Ascent Thin", "HelveticaNeue-Thin", "Helvetica Neue", "HelveticaNeue",
+               Helvetica, Arial, sans-serif;
+  /* The site subtitle is Helvetica Neue Light. */
+  --font-light: "Ascent Light", "HelveticaNeue-Light", "Helvetica Neue", "HelveticaNeue",
+                Helvetica, Arial, sans-serif;
+
+  --step--1: clamp(0.83rem, 0.8rem + 0.15vw, 0.9rem);
+  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.09rem);
+  --step-1:  clamp(1.2rem, 1.12rem + 0.4vw, 1.45rem);
+  --step-2:  clamp(1.45rem, 1.3rem + 0.75vw, 1.95rem);
+  --step-3:  clamp(1.75rem, 1.5rem + 1.25vw, 2.6rem);
+  --step-4:  clamp(2.1rem, 1.65rem + 2.2vw, 3.5rem);
+  --step-5:  clamp(2.5rem, 1.8rem + 3.4vw, 4.5rem);
+
+  /* Space */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+
+  /* Shape + depth */
+  --radius-sm: 6px;
+  --radius:    12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(15, 36, 48, 0.06), 0 1px 3px rgba(15, 36, 48, 0.08);
+  --shadow:    0 4px 6px -2px rgba(15, 36, 48, 0.06), 0 12px 24px -8px rgba(15, 36, 48, 0.14);
+  --shadow-lg: 0 8px 12px -6px rgba(15, 36, 48, 0.08), 0 30px 60px -20px rgba(15, 36, 48, 0.22);
+
+  --container: 1180px;
+  --container-narrow: 760px;
+
+  --ease: cubic-bezier(0.32, 0.72, 0.28, 1);
+}
+
+/* Dark theme — the only theme. These override the light-ramp tokens above. */
+:root {
+  color-scheme: dark;
+  --bg:           #0c1519;
+  --bg-muted:     #111f25;
+  --bg-inverse:   #08161d;
+  --surface:      #14242b;
+  --border:       #273a42;
+  --text:         #e8f2f4;
+  --text-muted:   #9db2b8;
+  --text-inverse: #ffffff;
+  --brand:        var(--teal-300);
+  --brand-strong: var(--teal-100);
+  --brand-soft:   #123039;
+  --accent:       var(--amber-400);
+  --accent-strong:var(--amber-400);
+  --accent-soft:  #3a2612;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow:    0 4px 6px -2px rgba(0, 0, 0, 0.35), 0 12px 24px -8px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 12px -6px rgba(0, 0, 0, 0.4), 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset + base
+   -------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img, svg, video { max-width: 100%; height: auto; display: block; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-bold);
+  font-weight: 700;
+  line-height: 1.14;
+  /* Condensed letterforms are already tight; negative tracking on top of them
+     makes large headings clot. */
+  letter-spacing: 0;
+  margin: 0 0 var(--sp-4);
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--step-5); }
+h2 { font-size: var(--step-3); }
+
+h3 { font-size: var(--step-1); }
+h4 { font-size: var(--step-0); font-family: var(--font-bold); font-weight: 700; }
+
+p { margin: 0 0 var(--sp-4); text-wrap: pretty; }
+
+/* Inline bold switches from the serif body face to the condensed bold, so bold
+   lead-ins read as the same voice as the headings. */
+strong, b, th { font-family: var(--font-bold); font-weight: 700; }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--brand); overflow-wrap: break-word; text-decoration-color: color-mix(in srgb, var(--brand) 35%, transparent); text-underline-offset: 3px; }
+a:hover { text-decoration-color: currentColor; }
+
+ul, ol { margin: 0 0 var(--sp-4); padding-left: 1.25rem; }
+li + li { margin-top: var(--sp-2); }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+::selection { background: var(--accent-soft); color: var(--text); }
+
+.skip-link {
+  position: absolute;
+  left: var(--sp-4);
+  top: -100px;
+  z-index: 200;
+  background: var(--brand-strong);
+  color: #fff;
+  padding: var(--sp-3) var(--sp-5);
+  border-radius: var(--radius);
+  font-family: var(--font-bold);
+  font-weight: 700;
+  transition: top 0.2s var(--ease);
+}
+.skip-link:focus { top: var(--sp-4); }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. Layout helpers
+   -------------------------------------------------------------------------- */
+.container {
+  width: min(100% - 2.5rem, var(--container));
+  margin-inline: auto;
+}
+.container--narrow { width: min(100% - 2.5rem, var(--container-narrow)); }
+
+.section { padding-block: var(--sp-9); }
+.section--tight { padding-block: var(--sp-8); }
+.section--muted { background: var(--bg-muted); }
+.section--brand { background: var(--bg-inverse); color: var(--text-inverse); }
+.section--brand h2, .section--brand h3 { color: #fff; }
+.section--brand p { color: rgba(255, 255, 255, 0.82); }
+
+/* Light-surfaced components keep their own colours when they sit inside an
+   inverse section — otherwise they inherit white text onto a white card. */
+.section--brand .card,
+.section--brand .quote,
+.section--brand .donate-panel,
+.section--brand .notice,
+.section--brand .table-wrap {
+  color: var(--text);
+}
+.section--brand .card h2, .section--brand .card h3, .section--brand .card h4,
+.section--brand .quote h2, .section--brand .quote h3,
+.section--brand .donate-panel h2, .section--brand .donate-panel h3,
+.section--brand .quote blockquote {
+  color: var(--text);
+}
+.section--brand .card p,
+.section--brand .quote p,
+.section--brand .quote figcaption span,
+.section--brand .donate-panel p {
+  color: var(--text-muted);
+}
+.section--brand .quote figcaption strong { color: var(--text); }
+
+.stack > * + * { margin-top: var(--sp-4); }
+.grid { display: grid; gap: var(--sp-5); }
+.grid--2 { grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
+.grid--3 { grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); }
+.grid--4 { grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); }
+/* Four wordy cards that must land two-by-two rather than three-and-one: the min
+   track is wide enough that a 1200px container can only fit two of them. */
+.grid--pair { grid-template-columns: repeat(auto-fit, minmax(min(430px, 100%), 1fr)); }
+/* Six cards that must land three-by-two rather than four-and-two, on the same
+   principle: a 1200px container has no room for a fourth 300px track. */
+.grid--trio { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
+/* Main column + sidebar. Collapses to a single column before the two
+   columns get too narrow to hold a form. */
+.grid--sidebar {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .grid--sidebar { grid-template-columns: minmax(0, 1fr); }
+}
+
+.center { text-align: center; }
+.center-block { margin-inline: auto; }
+.lead { font-size: var(--step-1); color: var(--text-muted); line-height: 1.55; }
+.measure { max-width: 62ch; }
+
+.section-head {
+  max-width: 58ch;
+  margin-bottom: var(--sp-7);
+}
+.section-head.center { margin-inline: auto; }
+
+.eyebrow {
+  display: inline-block;
+  font-size: var(--step--1);
+  font-family: var(--font-bold);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+  margin-bottom: var(--sp-3);
+}
+.section--brand .eyebrow { color: var(--amber-400); }
+
+/* --------------------------------------------------------------------------
+   4. Buttons + tags
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  padding: 0.8em 1.6em;
+  font: inherit;
+  font-family: var(--font-bold);
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: transform 0.18s var(--ease), background-color 0.18s var(--ease),
+              border-color 0.18s var(--ease), box-shadow 0.18s var(--ease), color 0.18s var(--ease);
+  /* Long labels wrap rather than overflowing narrow screens. */
+  max-width: 100%;
+  text-align: center;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.btn--primary { background: var(--accent); color: #1b0f03; box-shadow: var(--shadow-sm); }
+.btn--primary:hover { background: var(--amber-400); box-shadow: var(--shadow); }
+
+.btn--brand { background: var(--teal-600); color: #fff; box-shadow: var(--shadow-sm); }
+.btn--brand:hover { background: var(--teal-500); box-shadow: var(--shadow); }
+
+.btn--outline { border-color: currentColor; color: var(--text); background: transparent; }
+.btn--outline:hover { background: var(--brand-soft); }
+
+.btn--ghost-light { border-color: rgba(255,255,255,0.5); color: #fff; background: transparent; }
+.btn--ghost-light:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+
+.btn--sm { padding: 0.55em 1.1em; font-size: var(--step--1); }
+.btn--lg { padding: 0.95em 2em; font-size: var(--step-1); }
+.btn--block { width: 100%; }
+
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--sp-3); }
+.btn-row.center { justify-content: center; }
+
+.tag {
+  display: inline-block;
+  padding: 0.3em 0.85em;
+  font-size: var(--step--1);
+  font-family: var(--font-bold);
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+.tag--accent { background: var(--accent-soft); color: var(--accent-strong); }
+
+/* --------------------------------------------------------------------------
+   5. Site header
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(1.6) blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.site-header.is-stuck {
+  border-bottom-color: var(--border);
+  box-shadow: 0 4px 20px -12px rgba(15, 36, 48, 0.5);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  min-height: 4.75rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-family: var(--font-bold);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-decoration: none;
+  margin-right: auto;
+}
+.brand__mark {
+  /* The logo is a line drawing on a transparent 4:3 canvas, and the triangle's
+     base runs almost edge to edge — so the box keeps the canvas's own ratio and
+     shows all of it. A square crop cuts the corners off; a radius or shadow draws
+     a visible box around lines that are meant to float. */
+  height: 2.6rem;
+  width: auto;
+  aspect-ratio: 1478 / 1107;
+  flex: none;
+  object-fit: contain;
+}
+/* The organisation name is three words, not one, so the lockup sets it a line
+   height and a max width and lets it wrap beside the mark rather than pushing
+   the nav off the row. The tagline sits on one line under it at its original size;
+   past ~24 characters it wraps, and the lockup needs a second look. */
+/* The site title is the one piece of text in small caps. Helvetica Neue has no true
+   small-caps cut, so the browser draws them from scaled capitals; a touch of tracking
+   keeps them open. */
+.brand__word {
+  display: block;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.02em;
+  font-size: 1.05rem;
+  line-height: 1.12;
+  max-width: 13.5rem;
+}
+.brand__word small {
+  display: block;
+  font-variant-caps: normal;
+  font-family: var(--font-light);
+  font-size: 0.62rem;
+  line-height: 1.35;
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: -2px;
+}
+
+.nav { display: flex; align-items: center; gap: var(--sp-1); }
+.nav__link {
+  display: block;
+  padding: var(--sp-2) var(--sp-3);
+  font-size: 0.95rem;
+  font-family: var(--font-bold);
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s var(--ease), color 0.15s var(--ease);
+}
+.nav__link:hover { background: var(--brand-soft); color: var(--brand-strong); }
+.nav__link[aria-current="page"] {
+  color: var(--brand-strong);
+  background: var(--brand-soft);
+}
+
+.header-actions { display: flex; align-items: center; gap: var(--sp-3); }
+
+.nav-toggle {
+  display: none;
+  /* Flex column, not grid: grid rows would stretch to fill the button and
+     push the bars too far apart for the close-icon transform to meet. */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem; height: 2.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  padding: 0;
+}
+.nav-toggle span {
+  display: block;
+  width: 1.15rem; height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 0.25s var(--ease), opacity 0.2s var(--ease);
+}
+.nav-toggle span + span { margin-top: 4px; }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+@media (max-width: 900px) {
+  .nav-toggle { display: flex; }
+  .nav {
+    position: fixed;
+    inset: 4.75rem 0 auto 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--sp-4) 1.25rem var(--sp-6);
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transform: translateY(-8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s var(--ease), transform 0.2s var(--ease), visibility 0.2s;
+    max-height: calc(100dvh - 4.75rem);
+    overflow-y: auto;
+  }
+  .nav.is-open { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav__link { padding: var(--sp-3) var(--sp-4); font-size: 1.05rem; border-radius: var(--radius); }
+  .header-actions .btn { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   6. Hero
+   -------------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  background: var(--bg-inverse);
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 520px at 78% 18%, rgba(42, 132, 113, 0.55), transparent 65%),
+    radial-gradient(620px 420px at 8% 92%, rgba(224, 123, 34, 0.28), transparent 62%);
+  z-index: -1;
+}
+.hero__ridges {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+.hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: var(--sp-8);
+  align-items: center;
+  padding-block: clamp(3.5rem, 8vw, 7rem);
+}
+.hero__title { color: #fff; margin-bottom: var(--sp-5); }
+.hero__title em {
+  font-style: normal;
+  color: var(--amber-400);
+  position: relative;
+  /* No nowrap: the accent phrase is copy and can be any length. Forcing it
+     onto one line pushes the text column to min-content and collapses the
+     hero image track to zero. */
+}
+.hero__lead { color: rgba(255,255,255,0.85); font-size: var(--step-1); max-width: 46ch; }
+.hero__note {
+  margin-top: var(--sp-5);
+  font-size: var(--step--1);
+  color: rgba(255,255,255,0.62);
+  display: flex; align-items: center; gap: var(--sp-2);
+}
+.hero__note svg { width: 1rem; height: 1rem; flex: none; }
+
+.hero__media {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 3.2;
+  background: linear-gradient(160deg, var(--teal-500), var(--teal-800));
+}
+.hero__media img { width: 100%; height: 100%; object-fit: cover; }
+
+.hero__badge {
+  position: absolute;
+  left: var(--sp-5);
+  bottom: var(--sp-5);
+  right: var(--sp-5);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  box-shadow: var(--shadow);
+}
+.hero__badge strong { font-size: var(--step-2); font-family: var(--font-bold); line-height: 1; color: var(--brand); }
+.hero__badge span { font-size: var(--step--1); color: var(--text-muted); line-height: 1.35; }
+
+@media (max-width: 900px) {
+  .hero__inner { grid-template-columns: 1fr; gap: var(--sp-6); }
+  .hero__media { aspect-ratio: 16 / 11; }
+}
+
+/* --------------------------------------------------------------------------
+   7. Page banner (interior pages)
+   -------------------------------------------------------------------------- */
+.page-hero {
+  position: relative;
+  background: var(--bg-inverse);
+  color: #fff;
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+  overflow: hidden;
+  isolation: isolate;
+}
+.page-hero::before {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(760px 420px at 82% 10%, rgba(42, 132, 113, 0.5), transparent 62%),
+    radial-gradient(520px 340px at 4% 100%, rgba(224, 123, 34, 0.22), transparent 60%);
+}
+.page-hero h1 { color: #fff; margin-bottom: var(--sp-4); }
+.page-hero p { color: rgba(255,255,255,0.82); max-width: 60ch; font-size: var(--step-1); }
+
+.breadcrumb {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2);
+  list-style: none; padding: 0; margin: 0 0 var(--sp-4);
+  font-size: var(--step--1);
+  color: rgba(255,255,255,0.65);
+}
+.breadcrumb li + li { margin-top: 0; }
+.breadcrumb li + li::before { content: "/"; margin-right: var(--sp-2); opacity: 0.5; }
+.breadcrumb a { color: rgba(255,255,255,0.85); }
+
+/* --------------------------------------------------------------------------
+   8. Cards
+   -------------------------------------------------------------------------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease), border-color 0.22s var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+.card--hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: color-mix(in srgb, var(--brand) 40%, var(--border));
+}
+.card__icon {
+  width: 3rem; height: 3rem;
+  display: grid; place-items: center;
+  border-radius: var(--radius);
+  background: var(--brand-soft);
+  color: var(--brand);
+  margin-bottom: var(--sp-4);
+  flex: none;
+}
+.card__icon svg { width: 1.5rem; height: 1.5rem; }
+.card__icon--accent { background: var(--accent-soft); color: var(--accent-strong); }
+.card h3 { margin-bottom: var(--sp-2); }
+.card p { color: var(--text-muted); }
+.card__footer { margin-top: auto; padding-top: var(--sp-4); }
+
+.link-arrow {
+  display: inline-flex; align-items: center; gap: var(--sp-2);
+  font-family: var(--font-bold); font-weight: 700; text-decoration: none;
+  color: var(--brand);
+}
+.link-arrow svg { width: 1rem; height: 1rem; transition: transform 0.18s var(--ease); }
+.link-arrow:hover svg { transform: translateX(4px); }
+
+/* Program card with media */
+.program-card { padding: 0; overflow: hidden; }
+.program-card__media {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(150deg, var(--teal-500), var(--teal-800));
+  position: relative;
+}
+/* Absolutely placed so the image fills the 16:9 frame instead of setting its height:
+   a screenshot's own proportions would otherwise stretch the frame and leave cards in
+   the same row with images of different heights. */
+.program-card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.program-card__media .tag { position: absolute; top: var(--sp-3); left: var(--sp-3); background: var(--surface); color: var(--text); }
+.program-card__body { padding: var(--sp-5); display: flex; flex-direction: column; flex: 1; }
+
+/* Embedded app on the demo page. The app is a dense desktop tool, so it gets the
+   full container width and a fixed 720px height; the frame only adds the card edge
+   and clips the iframe to its rounded corners. */
+.demo-frame {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.demo-frame iframe { display: block; width: 100%; height: 720px; border: 0; }
+.demo-meta {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: var(--sp-3) var(--sp-5);
+  margin-top: var(--sp-4);
+}
+.demo-meta p { margin: 0; max-width: 62ch; font-size: var(--step--1); color: var(--text-muted); }
+
+/* --------------------------------------------------------------------------
+   9. Stats
+   -------------------------------------------------------------------------- */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: var(--sp-5); }
+.stat { text-align: center; padding: var(--sp-4); }
+.stat__value {
+  display: block;
+  font-family: var(--font-bold);
+  font-size: var(--step-4);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--brand);
+  letter-spacing: -0.03em;
+}
+.section--brand .stat__value { color: var(--amber-400); }
+.stat__label { display: block; margin-top: var(--sp-2); color: var(--text-muted); font-size: var(--step--1); font-family: var(--font-bold); font-weight: 700; }
+.section--brand .stat__label { color: rgba(255,255,255,0.72); }
+
+.stats--bordered .stat { border-left: 1px solid var(--border); }
+.stats--bordered .stat:first-child { border-left: 0; }
+@media (max-width: 700px) { .stats--bordered .stat { border-left: 0; } }
+
+/* --------------------------------------------------------------------------
+   10. Split feature blocks
+   -------------------------------------------------------------------------- */
+.split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.split--reverse .split__media { order: 2; }
+@media (max-width: 760px) { .split--reverse .split__media { order: 0; } }
+
+.split__media {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 5 / 4;
+  background: linear-gradient(160deg, var(--teal-300), var(--teal-700));
+  box-shadow: var(--shadow);
+}
+.split__media img { width: 100%; height: 100%; object-fit: cover; }
+
+/* --------------------------------------------------------------------------
+   11. Testimonials
+   -------------------------------------------------------------------------- */
+.quote {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: var(--sp-6);
+  box-shadow: var(--shadow-sm);
+}
+.quote blockquote {
+  margin: 0 0 var(--sp-4);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--step-1);
+  line-height: 1.5;
+}
+.quote figcaption { display: flex; align-items: center; gap: var(--sp-3); }
+.avatar {
+  width: 2.75rem; height: 2.75rem; flex: none;
+  border-radius: var(--radius-pill);
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  display: grid; place-items: center;
+  font-family: var(--font-bold); font-weight: 700; font-size: 0.9rem;
+  overflow: hidden;
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+.quote figcaption strong { display: block; line-height: 1.3; }
+.quote figcaption span { color: var(--text-muted); font-size: var(--step--1); }
+
+/* --------------------------------------------------------------------------
+   12. Timeline
+   -------------------------------------------------------------------------- */
+.timeline { list-style: none; padding: 0; margin: 0; position: relative; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem; top: 0.6rem; bottom: 0.6rem;
+  width: 2px;
+  background: var(--border);
+}
+.timeline li {
+  position: relative;
+  padding-left: var(--sp-6);
+  padding-bottom: var(--sp-6);
+  margin-top: 0;
+}
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.45rem;
+  width: 1.15rem; height: 1.15rem;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 3px solid var(--brand);
+}
+.timeline__year {
+  display: block;
+  font-size: var(--step--1);
+  font-family: var(--font-bold);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+  margin-bottom: var(--sp-1);
+}
+.timeline h3 { margin-bottom: var(--sp-2); font-size: var(--step-0); font-family: var(--font-bold); font-weight: 700; }
+.timeline p { color: var(--text-muted); }
+
+/* --------------------------------------------------------------------------
+   13. Team
+   -------------------------------------------------------------------------- */
+.person { text-align: center; }
+.person__photo {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(150deg, var(--teal-300), var(--teal-600));
+  margin-bottom: var(--sp-4);
+  display: grid; place-items: center;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: var(--step-3);
+}
+.person__photo img { width: 100%; height: 100%; object-fit: cover; }
+.person h3 { font-size: var(--step-0); font-family: var(--font-bold); font-weight: 700; margin-bottom: var(--sp-1); }
+.person p { color: var(--text-muted); font-size: var(--step--1); }
+
+/* --------------------------------------------------------------------------
+   14. Donation module
+   -------------------------------------------------------------------------- */
+.donate-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  box-shadow: var(--shadow);
+}
+
+.toggle-group {
+  display: inline-flex;
+  padding: 4px;
+  background: var(--bg-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  gap: 4px;
+}
+.toggle-group button {
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-family: var(--font-bold);
+  font-weight: 700;
+  color: var(--text-muted);
+  padding: 0.5em 1.4em;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background-color 0.18s var(--ease), color 0.18s var(--ease);
+}
+.toggle-group button[aria-pressed="true"] {
+  background: var(--brand);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+.toggle-group button[aria-pressed="true"] { color: var(--teal-900); }
+
+.amount-grid {
+  display: grid;
+  /* 140px min keeps the four presets as a balanced 2x2 in the donate panel
+     and lets them stretch to a single row on wider layouts. */
+  grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
+  gap: var(--sp-3);
+}
+.amount-option {
+  position: relative;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: var(--sp-4) var(--sp-3);
+  text-align: center;
+  cursor: pointer;
+  font: inherit;
+  font-family: var(--font-heading);
+  color: var(--text);
+  transition: border-color 0.18s var(--ease), background-color 0.18s var(--ease), transform 0.18s var(--ease);
+}
+.amount-option:hover { border-color: var(--brand); transform: translateY(-2px); }
+.amount-option[aria-pressed="true"] {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+  box-shadow: inset 0 0 0 1px var(--brand);
+}
+.amount-option strong { display: block; font-size: var(--step-2); font-family: var(--font-bold); line-height: 1.1; }
+.amount-option span { display: block; font-size: 0.78rem; color: var(--text-muted); margin-top: var(--sp-1); line-height: 1.35; }
+
+.impact-readout {
+  background: var(--brand-soft);
+  border-radius: var(--radius);
+  padding: var(--sp-4);
+  display: flex;
+  gap: var(--sp-3);
+  align-items: flex-start;
+  font-size: var(--step--1);
+  color: var(--brand-strong);
+}
+.impact-readout svg { width: 1.25rem; height: 1.25rem; flex: none; margin-top: 2px; }
+
+/* --------------------------------------------------------------------------
+   15. Forms
+   -------------------------------------------------------------------------- */
+.field { display: block; margin-bottom: var(--sp-4); }
+.field > label,
+.fieldset__legend {
+  display: block;
+  font-family: var(--font-bold);
+  font-size: var(--step--1);
+  font-weight: 700;
+  margin-bottom: var(--sp-2);
+}
+/* Fields are <label class="field"><span>Label</span><input></label>, so the
+   visible label text is the span, not a nested <label>. Typeface only — the
+   size and weight are deliberately left as they were. .checkbox is excluded:
+   its span is a sentence of consent copy, which stays on the body face. */
+.field:not(.checkbox) > span { font-family: var(--font-heading); }
+.field .hint { display: block; font-weight: 400; color: var(--text-muted); margin-top: var(--sp-1); font-size: 0.82rem; }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"],
+input[type="search"], input[type="date"], select, textarea {
+  width: 100%;
+  font: inherit;
+  /* Form fields — typed text, placeholders, dropdowns — are Helvetica Neue Thin. */
+  font-family: var(--font-thin);
+  font-weight: 100;
+  color: var(--text);
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.7em 0.85em;
+  transition: border-color 0.15s var(--ease), box-shadow 0.15s var(--ease);
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 22%, transparent);
+}
+textarea { min-height: 8rem; resize: vertical; }
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235b6a6e' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1.1rem;
+  padding-right: 2.5rem;
+}
+.input-group { display: flex; align-items: stretch; }
+.input-group__prefix {
+  display: grid; place-items: center;
+  padding-inline: 0.9em;
+  border: 1.5px solid var(--border);
+  border-right: 0;
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  background: var(--bg-muted);
+  color: var(--text-muted);
+  font-family: var(--font-bold);
+  font-weight: 700;
+}
+.input-group input { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+
+.checkbox { display: flex; gap: var(--sp-3); align-items: flex-start; font-size: var(--step--1); }
+.checkbox input { margin-top: 0.25rem; width: 1.05rem; height: 1.05rem; accent-color: var(--brand); flex: none; }
+
+fieldset { border: 0; padding: 0; margin: 0 0 var(--sp-5); }
+
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: var(--sp-4); }
+
+.form-note { font-size: 0.82rem; color: var(--text-muted); }
+
+.form-status {
+  display: none;
+  margin-top: var(--sp-4);
+  padding: var(--sp-4);
+  border-radius: var(--radius);
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  font-size: var(--step--1);
+  border: 1px solid color-mix(in srgb, var(--brand) 30%, transparent);
+}
+.form-status.is-visible { display: block; }
+
+/* --------------------------------------------------------------------------
+   16. Accordion (FAQ)
+   -------------------------------------------------------------------------- */
+.accordion { border-top: 1px solid var(--border); }
+.accordion__item { border-bottom: 1px solid var(--border); }
+.accordion__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-4) 0;
+  background: none;
+  border: 0;
+  font: inherit;
+  font-family: var(--font-bold);
+  font-weight: 700;
+  font-size: var(--step-0);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+.accordion__trigger:hover { color: var(--brand); }
+.accordion__trigger svg {
+  width: 1.15rem; height: 1.15rem; flex: none;
+  transition: transform 0.25s var(--ease);
+  color: var(--brand);
+}
+.accordion__trigger[aria-expanded="true"] svg { transform: rotate(45deg); }
+.accordion__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s var(--ease);
+}
+.accordion__panel > div { overflow: hidden; }
+.accordion__panel.is-open { grid-template-rows: 1fr; }
+.accordion__panel p { color: var(--text-muted); padding-bottom: var(--sp-5); }
+
+/* --------------------------------------------------------------------------
+   17. Callout / CTA band
+   -------------------------------------------------------------------------- */
+.cta-band {
+  background: linear-gradient(135deg, var(--teal-700), var(--teal-900) 65%);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-6);
+  box-shadow: var(--shadow-lg);
+}
+.cta-band h2 { color: #fff; margin-bottom: var(--sp-2); }
+.cta-band p { color: rgba(255,255,255,0.8); max-width: 48ch; margin: 0; }
+
+.notice {
+  display: flex;
+  gap: var(--sp-4);
+  align-items: flex-start;
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: var(--radius);
+  padding: var(--sp-4) var(--sp-5);
+  color: var(--text);
+}
+.notice svg { width: 1.35rem; height: 1.35rem; flex: none; color: var(--accent-strong); margin-top: 3px; }
+.notice p { font-size: var(--step--1); }
+
+/* --------------------------------------------------------------------------
+   18. Logo wall
+   -------------------------------------------------------------------------- */
+.logo-wall {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+}
+.logo-wall div {
+  font-family: var(--font-bold);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  opacity: 0.75;
+  display: flex; align-items: center; gap: var(--sp-2);
+  transition: opacity 0.2s var(--ease);
+}
+.logo-wall div:hover { opacity: 1; }
+.logo-wall svg { width: 1.4rem; height: 1.4rem; }
+
+/* --------------------------------------------------------------------------
+   19. Table
+   -------------------------------------------------------------------------- */
+.table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); }
+/* Cells and captions in Helvetica Neue Thin; `th` picks up --font-bold from the
+   base rule, so column and row headings stay condensed bold. Thin strokes lose
+   contrast fast, so table text is set in full text colour, never muted. */
+table { width: 100%; border-collapse: collapse; font-size: var(--step--1); min-width: 480px;
+        font-family: var(--font-thin); font-weight: 100; color: var(--text); }
+caption { text-align: left; padding: var(--sp-4); color: var(--text); font-size: var(--step--1); }
+th, td { padding: var(--sp-3) var(--sp-4); text-align: left; border-bottom: 1px solid var(--border); }
+thead th { background: var(--bg-muted); font-family: var(--font-bold); font-weight: 700; white-space: nowrap; }
+tbody tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Simple bar meter used in the financials table */
+.meter { display: flex; align-items: center; gap: var(--sp-3); min-width: 0; }
+.meter__track { flex: 1; height: 8px; background: var(--bg-muted); border-radius: var(--radius-pill); overflow: hidden; min-width: 3rem; }
+.meter__fill { height: 100%; background: var(--brand); border-radius: var(--radius-pill); }
+.meter__fill--accent { background: var(--accent); }
+.meter__fill--muted { background: var(--ink-400); }
+
+/* --------------------------------------------------------------------------
+   20. Events list
+   -------------------------------------------------------------------------- */
+.event {
+  display: grid;
+  grid-template-columns: 5rem 1fr auto;
+  gap: var(--sp-5);
+  align-items: center;
+  padding: var(--sp-5) 0;
+  border-bottom: 1px solid var(--border);
+}
+.event:last-child { border-bottom: 0; }
+.event__date {
+  text-align: center;
+  background: var(--brand-soft);
+  border-radius: var(--radius);
+  padding: var(--sp-3) var(--sp-2);
+  color: var(--brand-strong);
+}
+.event__date strong { display: block; font-size: var(--step-2); font-family: var(--font-bold); line-height: 1; }
+.event__date span { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-family: var(--font-bold); font-weight: 700; margin-top: 2px; }
+.event h3 { font-size: var(--step-0); font-family: var(--font-bold); font-weight: 700; margin-bottom: var(--sp-1); }
+.event p { color: var(--text-muted); font-size: var(--step--1); margin: 0; }
+@media (max-width: 640px) {
+  .event { grid-template-columns: 4.25rem 1fr; }
+  .event > .btn { grid-column: 1 / -1; justify-self: start; }
+}
+
+/* --------------------------------------------------------------------------
+   21. Footer
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background: var(--bg-inverse);
+  color: rgba(255,255,255,0.75);
+  padding-block: var(--sp-8) var(--sp-6);
+  margin-top: auto;
+}
+.site-footer a { color: rgba(255,255,255,0.78); text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--sp-6);
+}
+@media (max-width: 860px) { .footer-grid { grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr)); } }
+
+.site-footer .brand { color: #fff; margin-bottom: var(--sp-4); }
+.site-footer .brand__word small { color: rgba(255,255,255,0.55); }
+.footer-about p { font-size: var(--step--1); color: rgba(255,255,255,0.7); max-width: 34ch; }
+
+.footer-col h4 {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: var(--sp-4);
+}
+.footer-col ul { list-style: none; padding: 0; margin: 0; font-size: var(--step--1); }
+.footer-col li + li { margin-top: var(--sp-3); }
+
+.social { display: flex; gap: var(--sp-3); margin-top: var(--sp-5); }
+.social a {
+  width: 2.25rem; height: 2.25rem;
+  display: grid; place-items: center;
+  border-radius: var(--radius-pill);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  transition: background-color 0.18s var(--ease), transform 0.18s var(--ease);
+}
+.social a:hover { background: var(--accent); color: #1b0f03; transform: translateY(-2px); }
+.social svg { width: 1.05rem; height: 1.05rem; }
+
+.footer-bottom {
+  margin-top: var(--sp-7);
+  padding-top: var(--sp-5);
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+}
+.footer-bottom ul { display: flex; flex-wrap: wrap; gap: var(--sp-4); list-style: none; padding: 0; margin: 0; }
+.footer-bottom li + li { margin-top: 0; }
+
+/* --------------------------------------------------------------------------
+   22. Motion
+   -------------------------------------------------------------------------- */
+/* Scroll reveal is progressive enhancement: the hidden state only applies
+   when JS is running (html.js), so a JS failure leaves content readable. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+.js .reveal.is-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+  .js .reveal { opacity: 1; transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   23. Print
+   -------------------------------------------------------------------------- */
+@media print {
+  .site-header, .site-footer, .nav-toggle, .cta-band, .btn, .demo-frame { display: none !important; }
+  body { color: #000; background: #fff; }
+  .section { padding-block: 1rem; }
+}
