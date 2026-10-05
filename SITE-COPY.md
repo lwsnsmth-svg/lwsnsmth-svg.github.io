@@ -3,7 +3,20 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 38 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 39 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v39.** Your edits and your note, applied to the site. About: the banner
+> heading drops "the" ("Built for organizations priced out of effective evaluation") and gets
+> the subhead you asked for, "And designed to translate evaluation to outcomes." — the block
+> `ABOUT.HERO.lead`, which had been removed in v12 and now returns under the same ID. Our
+> Model: the banner line under "The Model" is "Everything special about the Ascent model, and
+> how it can deliver real change in the mission-oriented sector.", and the four Impact logic
+> cards lost their bold "Measured" lines; card 4's description now reads "Traces the
+> processes that translate metrics to outcomes and builds cross-cutting improvement strategies
+> that feed into the next cycle." **No ID renumbered.**
+>
+> Left alone: the About search description (`SEO.about`) and the Our Model shortcut on the
+> 404 page (`NOTFOUND.cards`) still use the older wording of the two banners above.
 
 > **What changed in v38.** Your deletions on Our Model, applied to the site. Gone: the
 > three-interventions table in Impact logic (`INVOLVED.IMPACT.table`); the whole Evidence
@@ -838,7 +851,14 @@ heading stands alone — the subhead under it (`ABOUT.HERO.lead`, "Ascent is a n
 program evaluation practice in New York City.") came off. Was "Built for the
 organizations evaluation was priced away from".
 Fits: 1–2 lines.
-> Built for the organizations priced out of effective evaluation
+> Built for organizations priced out of effective evaluation
+
+**ID: `ABOUT.HERO.lead`**
+Context: Subhead under the banner heading. Back in v13 after being off since v12 (it used to be
+"Ascent is a nonprofit program evaluation practice in New York City."). Completes the sentence
+the heading starts: who the work is for, then what it is designed to do.
+Fits: One line.
+> And designed to translate evaluation to outcomes.
 
 ## C2. Why this exists
 
@@ -1195,7 +1215,7 @@ a line that ends in a report.
 **ID: `INVOLVED.HERO.lead`**
 Context: Six words of problem, four of claim. It promises an explanation rather than a
 pitch, which is the right promise for the reader who has just been told the price.
-> Why evaluation costs what it costs, and what we changed.
+> Everything special about the Ascent model, and how it can deliver real change in the mission-oriented sector.
 
 ## E2. The structure
 
@@ -1261,22 +1281,22 @@ Fits: ~130 characters per description; bold line one short sentence.
 > Tag: 01
 > Name: Evaluation
 > Description: Establishes the systems and standards for recursive improvement, and the baseline measurements that change is rated against.
-> Measured: Led by Ascent. Our interventions are measured here.
+> Measured: 
 >
 > Tag: 02
 > Name: Programs
 > Description: Evaluation results inform program changes, and drive improvements in implementation fidelity and measurability.
-> Measured: Led by Ascent, evaluated in its own recursive process.
+> Measured: 
 >
 > Tag: 03
 > Name: Outcomes
 > Description: The program team defines implementation strategies from the recommendations, and reports results, roadblocks and community concerns.
-> Measured: Led by the program team. Uptake is measured here.
+> Measured: 
 >
 > Tag: 04
 > Name: Recursion and integration
-> Description: Builds cross-cutting improvement strategies from the independent results at each step, then feeds them into the next cycle.
-> Measured: Where evaluation is connected to final outcomes.
+> Description: Traces the processes that translate metrics to outcomes and builds cross-cutting improvement strategies that feed into the next cycle.
+> Measured: 
 
 **ID: `INVOLVED.IMPACT.note`**
 Context: Orange box. Recursion and integration is the concept a first-time reader has
