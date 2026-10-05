@@ -3,7 +3,12 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 26 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 27 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v27.** The home hero gained a row of four small thumbnails of the
+> Evaluation Process phase screenshots (`HOME.HERO.phases`, alt text `ALT.home_phases`),
+> placed under the headline and illustration rather than inside the hero image. Each links to
+> its phase section. **No existing ID changed.**
 
 > **What changed in v26.** Programs & Services is now **Evaluation Process**. The page
 > heading (`PROGRAMS.HERO.h1`, which this document had as "The Process" while the site said
@@ -567,7 +572,8 @@ Evaluation Process, Our Model and About.
 
 ## B1. Hero
 
-The dark banner at the top. Text on the left, illustration on the right.
+The dark banner at the top. Text on the left, illustration on the right, and since v27 a
+row of four small tool screenshots underneath.
 
 **ID: `HOME.HERO.h1`**
 Context: The biggest text on the site. It does not say what Ascent sells; the lead
@@ -596,6 +602,22 @@ The number is static text, not a counter.
 Fits: Number plus ~70 characters.
 > 1.5%
 > of program budget for two years of embedded evaluation support
+
+**ID: `HOME.HERO.phases`**
+Context: New in v27. Four small thumbnails of the Evaluation Process phase cards, in a row
+under the hero text and illustration so a visitor sees the real tool early without it
+competing with the hero image. Each links to its phase section on Evaluation Process. They
+reuse the same screenshots as `PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`); the
+labels repeat the card tags and names, so change them together.
+Fits: Name ≤ ~35 characters; the row is four across on desktop, two by two on mobile.
+> Tag 1: Phase 01
+> Name 1: Evaluative Foundation
+> Tag 2: Phase 02
+> Name 2: Data Architecture
+> Tag 3: Phase 03
+> Name 3: Analytics & Inference
+> Tag 4: Phase 04
+> Name 4: Monitoring, Learning & Reporting
 
 ## B2. How evaluation goes further
 
@@ -1451,6 +1473,14 @@ employment program) is not described — it is example data, not a client result
 > Phase 2 detail: Illustration of a structured data collection system
 > Phase 3 detail: Illustration of an analysis with confidence intervals plotted
 > Phase 4 detail: Illustration of an indicator dashboard tracked over time
+
+**ID: `ALT.home_phases`**
+Context: New in v27. The four hero thumbnails on the home page, which are the same
+screenshots as `ALT.programs`, so the wording matches it.
+> Thumbnail 1: Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes
+> Thumbnail 2: Data lineage view tracing each number in the model back to the data series it comes from
+> Thumbnail 3: Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on
+> Thumbnail 4: Scenario dashboard showing every indicator in the model under a chosen funding scenario
 
 **ID: `ALT.demo`**
 Context: New in v16. Not an image: the name a screen reader announces for the embedded
