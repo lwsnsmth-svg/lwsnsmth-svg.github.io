@@ -3,7 +3,23 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 30 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 31 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v31.** Your edits to the doc, applied to the site. Home: the "Why it
+> matters" heading is now "Catalyze a continual improvement process" with a new lead;
+> its first card is "For nonprofit leaders and programs teams"; the stats read 98% of small
+> nonprofits *without* dedicated evaluation staff and 80% of organizations above $5M with
+> them; the brief is headed "Ascent Evaluation, in brief" / "An evaluation process
+> accountable to program outcomes", loses "in New York City" and the consulting sentence, and
+> now says "full and recursive evaluations". About: the story heading is "An
+> outcomes-oriented synthesis." and its first paragraph starts at "When evidence quality…".
+> Demo: the banner sentence gains a second one about the app. Em dashes lost their spaces
+> throughout. **No ID changed.**
+>
+> Worth a look: the first About timeline entry (`ABOUT.TIMELINE.*`) still says "roughly two
+> percent of small nonprofits have dedicated evaluation staff, against twenty percent of
+> organizations above five million dollars". The home stat now says 80% for the larger
+> organizations, so the two disagree.
 
 > **What changed in v30.** The home page's phase cards (`HOME.METHODS.phases`) are 1.5x larger
 > — two across instead of four — so the screenshots are legible. **No ID or wording changed.**
@@ -637,7 +653,7 @@ and how much to trust it (evidence strength). Keep it one sentence.
 Fits: Heading 1–2 lines; lead ~200 characters.
 > Eyebrow: Evaluation that Goes Further
 > Heading: Evaluation that becomes part of how an organization works
-> Lead: Counting tells an organization how many people it served. Evaluation tells it whether the program made the difference, for whom, and why — and how much each answer can be trusted.
+> Lead: Counting tells an organization how many people it served. Evaluation tells it whether the program made the difference, for whom, and why—and how much each answer can be trusted.
 
 **ID: `HOME.METHODS.phases`**
 Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
@@ -680,13 +696,13 @@ it to speak to leaders alone.
 
 **ID: `HOME.WHY.intro`**
 > Eyebrow: Why it matters
-> Heading: Better questions lead to better decisions
-> Lead: Evaluation is not a compliance exercise. For the people running programs and the people paying for them, it is the difference between guessing and knowing.
+> Heading: Catalyze a continual improvement process
+> Lead: Evaluation should not be a compliance exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.
 
 **ID: `HOME.WHY.leaders`**
 Context: Four benefits with bold lead-ins. The third — getting credit for serving the
 hardest cases — is the one most leaders have felt and never had language for.
-> Heading: For nonprofit leaders
+> Heading: For nonprofit leaders and programs teams
 > **Know what to grow, fix or stop.** Evaluation shows which parts of a program do the work, so limited money goes where it counts.
 > **Make a case funders believe.** A defensible estimate of a program's impact is worth more in a proposal than a large number nobody can check.
 > **Get credit for the hardest work.** Programs serving people furthest from success often post modest raw numbers and large real effects. Only a comparison reveals it.
@@ -704,13 +720,13 @@ next section, where Ascent appears.
 > The organizations that need it most can least afford it
 
 **ID: `HOME.STATS.1`**
-> Value: 2 · Suffix: % · Label: Small nonprofits with dedicated evaluation staff
+> Value: 98 · Suffix: % · Label: Small nonprofits without dedicated evaluation staff
 
 **ID: `HOME.STATS.2`**
-> Value: 20 · Suffix: % · Label: Organizations above $5M with the same
+> Value: 80 · Suffix: % · Label: Organizations above $5M with the same
 
 **ID: `HOME.STATS.3`**
-> Value: 16 · Suffix: % · Label: Surveyed organizations spending nothing on evaluation
+> Value: 16 · Suffix: % · Label: Surveyed organizations spend nothing on evaluation
 
 **ID: `HOME.STATS.disclaimer`**
 Context: The source citation. Keep it visible — precision is part of the pitch.
@@ -722,22 +738,22 @@ Illustration left, text right, light grey background. The program summary you as
 kept to one section so the page stays about evaluation.
 
 **ID: `HOME.BRIEF.eyebrow`**
-> Ascent, in brief
+> Ascent Evaluation, in brief
 
 **ID: `HOME.BRIEF.h2`**
 Context: Names the differentiator — duration — rather than the service, because the page
 above has already explained the service.
 Fits: 2 lines.
-> Evaluation that stays long enough to change the program
+> An evaluation process accountable to program outcomes
 
 **ID: `HOME.BRIEF.lead`**
-> Ascent is a nonprofit evaluation practice in New York City, built for small and mid-sized organizations that have never been able to afford this kind of work.
+> Ascent is a nonprofit evaluation practice built for small and mid-sized organizations that are priced out of evaluation services.
 
 **ID: `HOME.BRIEF.body`**
 Context: The program in three facts — two years embedded, the $500,000 ceiling, the 1.5% fee
 — then the consulting alternative in one sentence. The fee also appears in the hero badge;
 change them together. Evaluation Process stopped repeating them in v14.
-> Our program embeds an implementation support professional in the program team for two years, carries the program through a full evaluation, and turns what it finds into changes the organization can actually make. It is for organizations with program budgets at or below $500,000, for a fixed annual fee of 1.5% of program budget. An organization that needs one piece of evaluation work done well can hire us for that instead.
+> Our program embeds an implementation support professional in the program team for two years, carries the program through full and recursive evaluations, and turns what it finds into changes the organization can actually make. It is for organizations with program budgets at or below $500,000, for a fixed annual fee of 1.5% of program budget.
 
 **ID: `HOME.BRIEF.list`**
 Context: The four phases, one line each, replacing the four pipeline cards that used to
@@ -779,20 +795,20 @@ Text on the left, dated timeline on the right.
 
 **ID: `ABOUT.STORY.h2`**
 Fits: 2 lines.
-> Why this exists.
+> An outcomes-oriented synthesis.
 
 **ID: `ABOUT.STORY.para1`**
 Context: The founding argument, stated as arithmetic rather than anecdote. The
 four-hundred-thousand-dollar organisation with a program director doing evaluation at
 night is the reader this whole site is addressed to.
-> An organization with a five-million-dollar budget has an evaluation function. An organization with a four-hundred-thousand-dollar budget has a program director doing it at night. When evidence quality determines funding, capital consolidates toward whoever can afford to prove their outcomes — whether or not they are the organizations doing the most consequential work.
+> When evidence quality determines funding, capital consolidates toward whoever can afford to prove their outcomes—whether or not they are the organizations doing the most consequential work.
 
 **ID: `ABOUT.STORY.para2`**
 Context: The turn — why the answer is a different structure rather than a discount. The
 diagnosis in the first three sentences comes from the Program Description's mission
 section, lightly edited for a web reader ("methodologies" → "methods", "self-implement" →
 "take on alone").
-> Program evaluation is inaccessible and underleveraged. As a service, its practitioners are disparate or overpriced. As a practice, its methods are too niche, its implementation too resource-intensive, and its benefits too obscure for program teams to take on alone. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption — and in the current market, those carry impossible costs for small and mid-sized organizations. Ascent is structured to make that relationship affordable.
+> Program evaluation is inaccessible and underleveraged. As a service, its practitioners are disparate or overpriced. As a practice, its methods are too niche, its implementation too resource-intensive, and its benefits too obscure for program teams to take on alone. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption—and in the current market, those carry impossible costs for small and mid-sized organizations. Ascent is structured to make that relationship affordable.
 
 ## C3. Evidence timeline
 
@@ -1334,7 +1350,7 @@ Context: The tool's own name, as the app titles itself.
 Context: What the tool is, then three things a visitor can do in it. "Behind our evaluation
 pipeline" ties it to the phase cards on Evaluation Process, which show its screenshots.
 Fits: 2–3 lines, ~180 characters.
-> A working demo of the tool behind our evaluation pipeline.
+> A working demo of the app behind our evaluation pipeline. The application **describes** the evaluation process, and the demo depicts data after multiple rounds of recursive evaluation.
 
 ## F2. The demo
 
