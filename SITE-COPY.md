@@ -3,7 +3,17 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 39 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 40 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v40.** Your edits, applied to the site. Home: the two paragraphs under the
+> phase cards (`HOME.METHODS.body`) and the "The research behind it" link
+> (`HOME.METHODS.link`) are gone, so "Evaluation that Goes Further" ends on the four cards.
+> That link had been repointed to the About timeline in v38; with it gone nothing links to
+> `about.html#timeline` any more, though the anchor stays. About: the banner heading reads
+> "Built for organizations priced out of comprehensive evaluation" (was "effective").
+> **No ID renumbered.**
+>
+> Left alone: the About search description (`SEO.about`) still says "effective evaluation".
 
 > **What changed in v39.** Your edits and your note, applied to the site. About: the banner
 > heading drops "the" ("Built for organizations priced out of effective evaluation") and gets
@@ -702,15 +712,10 @@ Fits: Number plus ~70 characters.
 
 ## B2. Evaluation that goes further
 
-A heading, a lead, a row of four phase cards, two paragraphs and a link; the text sits in
-a narrow column and the cards run wider. **Rewritten on
-1 October (v8)** to be much shorter and plainer: it replaces six method cards
-(`HOME.METHODS.card1`–`card6` — causal inference, attribution and contribution, impact
-measurement, statistical analysis, qualitative causal analysis, evidence strength). Those
-six ideas survive as one sentence in the lead. The new body describes the combination of
-evaluation capacity building and implementation science, following the Evidence & Peer
-Context section of the Pitch Doc (August 2026), with the jargon taken out. Citations stay
-on Our Model; the link at the end goes there.
+A heading, a lead and a row of four phase cards. **Rewritten on 1 October (v8)** to replace six
+method cards (`HOME.METHODS.card1`–`card6`); since v40 the two paragraphs that followed the
+cards (`HOME.METHODS.body`) and the "The research behind it" link (`HOME.METHODS.link`) are
+gone too, so the section ends on the cards.
 
 **ID: `HOME.METHODS.intro`**
 Context: The lead is the whole old six-card argument in one sentence: whether it made the
@@ -734,25 +739,6 @@ mobile.
 > Name 2: Data Architecture
 > Name 3: Analytics & Inference
 > Name 4: Monitoring, Learning & Reporting
-
-**ID: `HOME.METHODS.body`**
-Context: Two paragraphs, no technical term left unexplained. The first names evaluation
-capacity building and implementation science and gives the one finding they share — trust
-and sustained, frequent engagement are what make capacity building work (Pitch Doc,
-Organization Summary and Evidence & Peer Context). The second says what Ascent does with
-that, and ends on "testing" rather than a result, because the site claims no track
-record. "Our program" and "for two years" are deliberate: the consulting route *is* sold
-as discrete projects, so this paragraph must not speak for all of Ascent.
-Fits: ~420 characters per paragraph. Going longer undoes the point of the rewrite.
-> The most useful evaluation is the kind an organization's own staff learn to do, until asking those questions is simply part of running the program. That is evaluation capacity building. Implementation science studies how new ways of working take hold, and research in both fields points the same way: support changes an organization when it lasts long enough, comes often enough, and rests on a relationship people trust.
->
-> Most evaluation help is still sold as a short project that ends in a report. Our program puts the two fields together instead: for two years, one person from Ascent works alongside the organization's staff, turns the analysis into decisions it can act on, and stays long enough for the skills to become the organization's own. Nobody has built evaluation support this way on purpose before. That is what we are testing.
-
-**ID: `HOME.METHODS.link`**
-Context: Arrow link under the paragraphs, to
-the research timeline on About (`about.html#timeline`) — it went there in v38, when the
-Evidence section on Our Model came off.
-> The research behind it
 
 ## B3. Why it matters
 
@@ -851,7 +837,7 @@ heading stands alone — the subhead under it (`ABOUT.HERO.lead`, "Ascent is a n
 program evaluation practice in New York City.") came off. Was "Built for the
 organizations evaluation was priced away from".
 Fits: 1–2 lines.
-> Built for organizations priced out of effective evaluation
+> Built for organizations priced out of comprehensive evaluation
 
 **ID: `ABOUT.HERO.lead`**
 Context: Subhead under the banner heading. Back in v13 after being off since v12 (it used to be
