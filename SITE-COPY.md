@@ -3,7 +3,21 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 41 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 42 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v42.** Your edits to the home page, applied to the site. The hero lead is
+> now "Ascent is an evaluation practice designed to lower the cost, improve the quality, and
+> broaden the impact of evaluative services for mission-oriented organizations." The heading
+> of "Evaluation that Goes Further" is "An evaluation process accountable to program
+> outcomes", and the "Ascent Evaluation, in brief" band is headed "Evaluation and capacity
+> building that integrates into your program", with a new lead and a new body ("The process is
+> the program…"). The body no longer mentions the $500,000 ceiling or the 1.5% fee; the hero
+> badge still shows the 1.5%.
+>
+> Applied as written, but worth a look: the band's heading says "your program", which the
+> third-person copy (v23) otherwise avoids, and its lead reads "embed within programs teams
+> and carries the them through" — probably "embed within program teams and carry them
+> through". **No ID changed.**
 
 > **What changed in v41.** "Evaluation that Goes Further" now ends with a tagline, "A single
 > app shows what makes our evaluation process unique", and a "Try the demo" button to the Demo
@@ -698,7 +712,7 @@ under the headline and does the work the headline deliberately doesn't. At 78
 characters it is now the shortest element in the hero, and it is carrying the most.
 Fits: 3–4 lines, ~180 characters — there is room for a second sentence naming who this
 is for, if you want one.
-> Ascent is an evaluation practice designed to serve programs and the communities around them.
+> Ascent is an evaluation practice designed to lower the cost, improve the quality, and broaden the impact of evaluative services for mission-oriented organizations.
 
 **ID: `HOME.HERO.buttons`**
 Context: One orange button, to "How the program runs" on Evaluation Process. The outlined
@@ -728,7 +742,7 @@ difference (causal inference, attribution), for whom (impact), why (qualitative 
 and how much to trust it (evidence strength). Keep it one sentence.
 Fits: Heading 1–2 lines; lead ~200 characters.
 > Eyebrow: Evaluation that Goes Further
-> Heading: Evaluation that becomes part of how an organization works
+> Heading: An evaluation process accountable to program outcomes
 > Lead: Counting tells an organization how many people it served. Evaluation tells it whether the program made the difference, for whom, and why—and how much each answer can be trusted.
 
 **ID: `HOME.METHODS.phases`**
@@ -810,16 +824,16 @@ kept to one section so the page stays about evaluation.
 Context: Names the differentiator — duration — rather than the service, because the page
 above has already explained the service.
 Fits: 2 lines.
-> An evaluation process accountable to program outcomes
+> Evaluation and capacity building that integrates into your program
 
 **ID: `HOME.BRIEF.lead`**
-> Ascent is a nonprofit evaluation practice built for small and mid-sized organizations that are priced out of evaluation services.
+> Our implementation support professionals embed within programs teams and carries the them through full and recursive evaluations, turning evaluation findings into holistic changes the organization can actually make.
 
 **ID: `HOME.BRIEF.body`**
 Context: The program in three facts — two years embedded, the $500,000 ceiling, the 1.5% fee
 — then the consulting alternative in one sentence. The fee also appears in the hero badge;
 change them together. Evaluation Process stopped repeating them in v14.
-> Our program embeds an implementation support professional in the program team for two years, carries the program through full and recursive evaluations, and turns what it finds into changes the organization can actually make. It is for organizations with program budgets at or below $500,000, for a fixed annual fee of 1.5% of program budget.
+> The process is the program. Although analytical reports and communication support may be deliverables within the course of an engagement, participants’ active collaboration in pursuing inquiry, scoping analysis, and employing new methods is central to both the ethics of Ascent’s practice and the achievement of its mission.
 
 **ID: `HOME.BRIEF.list`**
 Context: The four phases, one line each, replacing the four pipeline cards that used to
