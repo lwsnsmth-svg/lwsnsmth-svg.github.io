@@ -3,7 +3,12 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 27 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 28 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v28.** The home hero thumbnails (`HOME.HERO.phases`) are much smaller and
+> pared down to a screenshot with its phase tag, like the Evaluation Process cards without
+> their captions or "Learn more" buttons. The four phase names that labelled them are gone
+> from the block. **No ID changed.**
 
 > **What changed in v27.** The home hero gained a row of four small thumbnails of the
 > Evaluation Process phase screenshots (`HOME.HERO.phases`, alt text `ALT.home_phases`),
@@ -604,20 +609,17 @@ Fits: Number plus ~70 characters.
 > of program budget for two years of embedded evaluation support
 
 **ID: `HOME.HERO.phases`**
-Context: New in v27. Four small thumbnails of the Evaluation Process phase cards, in a row
-under the hero text and illustration so a visitor sees the real tool early without it
-competing with the hero image. Each links to its phase section on Evaluation Process. They
-reuse the same screenshots as `PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`); the
-labels repeat the card tags and names, so change them together.
-Fits: Name ≤ ~35 characters; the row is four across on desktop, two by two on mobile.
+Context: New in v27, slimmed in v28. Four small thumbnails of the Evaluation Process phase
+cards, in a row under the hero text and illustration: just the screenshot and its phase
+tag, with no name, summary or "Learn more" button. They sit below the hero image so a
+visitor sees the real tool early without it competing with it. Each links to its phase
+section on Evaluation Process. They reuse the screenshots of `PROGRAMS.CARDS.*` (alt text in
+`ALT.home_phases`); the tags repeat the card tags.
+Fits: Tag only, "Phase 0N". The row is four across on desktop and two by two on mobile.
 > Tag 1: Phase 01
-> Name 1: Evaluative Foundation
 > Tag 2: Phase 02
-> Name 2: Data Architecture
 > Tag 3: Phase 03
-> Name 3: Analytics & Inference
 > Tag 4: Phase 04
-> Name 4: Monitoring, Learning & Reporting
 
 ## B2. How evaluation goes further
 
