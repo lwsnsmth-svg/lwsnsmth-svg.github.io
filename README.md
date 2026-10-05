@@ -30,7 +30,7 @@ see `SITE-COPY.md`.
     ├── Logo.png        Your logo — line art, used as the header/footer mark
     ├── Logo_simple.png Previous mark (unused since 1 October 2026)
     ├── Logo_full.png   Filled variant of the previous mark (unused)
-    ├── favicon.svg     Browser-tab icon, drawn to match Logo.png
+    ├── favicon.png     Browser-tab icon (apple-touch-icon.png is its home-screen twin)
     ├── phase-*.png     Tool screenshots on the four Programs & Services phase cards
     └── fonts/          Caladea Regular + Italic (Cambria stand-in) and its OFL licence
 ```
