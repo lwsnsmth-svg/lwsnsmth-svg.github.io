@@ -3,7 +3,12 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 24 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 25 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v25.** The four footer social icons are gone from every page
+> (`ALT.social`, the Instagram / LinkedIn / Facebook / YouTube names a screen reader read
+> out, came out with them). None linked anywhere. The footer is now the brand lockup and
+> blurb over the copyright line. **No other ID changed.**
 
 > **What changed in v24.** The footer lost its last link and its two legal links, and
 > shrank. Removed: "Collaborate with us" (`GLOBAL.FOOTER.col2`) and "A.I. statement" /
@@ -1445,13 +1450,6 @@ employment program) is not described — it is example data, not a client result
 Context: New in v16. Not an image: the name a screen reader announces for the embedded
 app on the Demo page, before reading the app itself.
 > Embedded app: Program Mapper demo
-
-**ID: `ALT.social`**
-Context: Read aloud for the four footer social icons.
-> Ascent on Instagram
-> Ascent on LinkedIn
-> Ascent on Facebook
-> Ascent on YouTube
 
 ---
 
