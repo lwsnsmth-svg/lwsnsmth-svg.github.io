@@ -3,7 +3,10 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 29 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 30 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v30.** The home page's phase cards (`HOME.METHODS.phases`) are 1.5x larger
+> — two across instead of four — so the screenshots are legible. **No ID or wording changed.**
 
 > **What changed in v29.** The phase screenshots left the home hero and now live in the
 > "Evaluation that Goes Further" section, between its lead and body: larger, with each
@@ -643,7 +646,7 @@ screenshots with the phase name underneath, and no tag, summary or "Learn more" 
 Each card links to its phase section on Evaluation Process. They reuse the screenshots of
 `PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`); the names repeat the card names, so
 change them together.
-Fits: Name ≤ ~35 characters. Four across on desktop, two by two on tablet, one column on
+Fits: Name ≤ ~35 characters. Two by two on desktop (they were four across until v30), one column on
 mobile.
 > Name 1: Evaluative Foundation
 > Name 2: Data Architecture
