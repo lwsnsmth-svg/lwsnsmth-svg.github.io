@@ -789,10 +789,11 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   align-items: center;
 }
 /* Text column stays in view beside a tall column (About page timeline): top-aligned,
-   then sticks just below the sticky header while the long side scrolls. Only when
+   then sticks in the vertical middle of the viewport (js/main.js sets the exact
+   offset; the CSS value is a fallback) while the long side scrolls. Only when
    the columns sit side by side. */
 .split--sticky { align-items: start; }
-@media (min-width: 761px) { .split--sticky > :first-child { position: sticky; top: 6.5rem; } }
+@media (min-width: 761px) { .split--sticky > :first-child { position: sticky; top: max(6.5rem, calc(50vh - 17rem)); } }
 .split--reverse .split__media { order: 2; }
 @media (max-width: 760px) { .split--reverse .split__media { order: 0; } }
 
