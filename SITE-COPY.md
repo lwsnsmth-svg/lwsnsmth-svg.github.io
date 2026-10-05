@@ -3,7 +3,15 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 36 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 37 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v37.** Your three deletions on Our Model, applied to the site. The
+> structure section's lead (the "two lines that turn out to be connected" paragraph), its
+> body paragraph (`INVOLVED.STACK.body`, "Solving the second relieves the first…") and the
+> subhead above the four cards (`INVOLVED.STACK.subhead`, "How the work is staffed") are
+> gone, so the heading now leads straight into the four cards. The line
+> about efficiency buying time rather than margin went with the body. **No other ID
+> changed.**
 
 > **What changed in v36.** The 2005 entry ("Implementation becomes a field of study",
 > `ABOUT.TIMELINE.6`) is off the About timeline, which now has nine entries. The remaining
@@ -1185,17 +1193,6 @@ Context: The claim in the heading is counter-intuitive and it is the reason the 
 works: the coordination problem and the price problem have one solution.
 > Eyebrow: The structure
 > Heading: Affordability and coordination are the same problem.
-> Lead: The obstacles to accessible evaluation fall along two lines that turn out to be connected. The first is price. The second is coordination—of people, methods, tools, documentation and expertise, all of which get rebuilt from scratch on nearly every engagement in this field.
-
-**ID: `INVOLVED.STACK.body`**
-Context: The last sentence is the one that separates this from a cost-cutting pitch:
-the efficiency buys time, not margin. Don't lose it in an edit for length.
-> Solving the second relieves the first. When methods are reusable, when data infrastructure is shared rather than rented per project, when specialist expertise can be drawn on for the hours it is needed rather than retained full-time, the marginal cost of an engagement falls sharply. Ascent is designed around that arithmetic. What those efficiencies buy is not margin. It is time—the long-horizon, embedded support that the evidence says actually works, at a price the organizations in question can pay.
-
-**ID: `INVOLVED.STACK.subhead`**
-Context: Introduces the four cards below.
-> How the work is staffed
-> Four layers, each doing what it is best positioned to do.
 
 **ID: `INVOLVED.STACK.layer1`**
 Context: Four cards, two by two, in the order the deck's delivery stack runs — outside
