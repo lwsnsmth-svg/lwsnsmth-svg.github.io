@@ -3,7 +3,19 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 37 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 38 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v38.** Your deletions on Our Model, applied to the site. Gone: the
+> three-interventions table in Impact logic (`INVOLVED.IMPACT.table`); the whole Evidence
+> section (`INVOLVED.EVIDENCE.*` — heading and lead, the four cited studies, the synthesis
+> paragraph); and the whole "Who does this work" section (`INVOLVED.NETWORK.*` — the four
+> roles, the plain definitions and the pull quote). The closing band's heading is "See the
+> model in action." Headings renumbered: What the structure produces is §E3 and the closing
+> band §E4. **Also changed, for you to confirm:** the home page's "The research behind it"
+> link pointed at the Evidence section that no longer exists, so it now goes to the
+> timeline on About (`about.html#timeline`). "What the structure produces" also moved from
+> a grey to a plain background so it does not sit flush against the grey Impact logic band
+> above it. **No ID renumbered.**
 
 > **What changed in v37.** Your three deletions on Our Model, applied to the site. The
 > structure section's lead (the "two lines that turn out to be connected" paragraph), its
@@ -724,8 +736,9 @@ Fits: ~420 characters per paragraph. Going longer undoes the point of the rewrit
 > Most evaluation help is still sold as a short project that ends in a report. Our program puts the two fields together instead: for two years, one person from Ascent works alongside the organization's staff, turns the analysis into decisions it can act on, and stays long enough for the skills to become the organization's own. Nobody has built evaluation support this way on purpose before. That is what we are testing.
 
 **ID: `HOME.METHODS.link`**
-Context: Arrow link under the paragraphs, to the cited studies in the Evidence section of
-Our Model (`get-involved.html#evidence`).
+Context: Arrow link under the paragraphs, to
+the research timeline on About (`about.html#timeline`) — it went there in v38, when the
+Evidence section on Our Model came off.
 > The research behind it
 
 ## B3. Why it matters
@@ -1265,16 +1278,6 @@ Fits: ~130 characters per description; bold line one short sentence.
 > Description: Builds cross-cutting improvement strategies from the independent results at each step, then feeds them into the next cycle.
 > Measured: Where evaluation is connected to final outcomes.
 
-**ID: `INVOLVED.IMPACT.table`**
-Context: The three interventions and their measurement vectors, from the brief. Publishing
-what you will be measured by is a stronger commitment than any adjective on the site —
-and it is true on day one. Scrolls sideways on mobile.
-> Caption: The three interventions our program makes, and what each one is measured by.
-> Columns: Intervention · What it does · How it is measured
-> Embedded implementation support · An implementation support professional works inside the program team for the whole engagement, converting analytic outputs into changes calibrated to its resources and learning needs. · Time embedded; meetings and workshops; uptake and sustained change in usage and learning
-> Evaluation pipeline delivery · Phases 1 to 3 of the pipeline, the first time through and on every revisit, passing directly into recursion and integration. · Deliverable timelines and quality; grant applications and funder requests supported; client satisfaction
-> Recursion and integration · The continuing process that turns evaluation into program change, and traces the causal chain from our support to the final program outcomes. · Final program outcomes, read through the chain from support and uptake to practice changes to outcomes
-
 **ID: `INVOLVED.IMPACT.note`**
 Context: Orange box. Recursion and integration is the concept a first-time reader has
 never met, so this explains why it exists before asking anyone to care about its three
@@ -1282,34 +1285,7 @@ mechanisms (causal chain identification, metric integration, evaluation recursio
 in plain words rather than by name). The last sentence is what makes it matter to a funder.
 > **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Recursion and integration is how this program tries to strengthen it: tracing each evaluation cycle through to its effect on downstream outcomes, turning what the implementation supporter learns about the organization into metrics, and running evaluation as a continuing cycle rather than a one-off. Its results also change how we deliver the work, which keeps the practice accountable to outcomes rather than to deliverables.
 
-## E3. What the evidence says
-
-*(Was `INVOLVED.FORM.*` — a second enquiry form. The deck's richer intake form lived on
-Contact until v9, when every way of contacting Ascent came off the site, so there is no
-form anywhere now. This slot carries the evidence base instead.)*
-
-**ID: `INVOLVED.EVIDENCE.intro`**
-Context: The heading concedes that a reader might think this is a style preference, then
-refuses the concession. That move is why the section is persuasive.
-> Eyebrow: Evidence
-> Heading: This is not an aesthetic preference.
-> Lead: Evaluation capacity building—building an organization's own skill in program evaluation, rather than simply performing an evaluation for it—has a twenty-year research literature behind it. Early findings on its effectiveness were mixed. The more recent studies, of more developed practice with longer time horizons and persistent engagement, are markedly more encouraging.
-
-**ID: `INVOLVED.EVIDENCE.list`**
-Context: Four findings with citations. The second one reports a *negative* first-year
-result, which is unusual to volunteer and is precisely what makes the other three
-credible. Do not cut it to tidy the list.
-> A two-year cluster-randomized trial of a capacity-building intervention found dose-dependent gains across four capacity scales among users, with the greatest improvement associated with the most technical assistance hours (Acosta, Chinman et al., 2013).
-> A replication trial found no significant effects on proximal outcomes in year one, but small significant improvement after a second-year quality improvement cycle (Chinman, Acosta et al., 2018).
-> A qualitative study of sustained evaluation practice found that practice persisted years after the intervention, and attributed that persistence to ongoing evaluator contact rather than to the initial training (Wade & Kallemeyn, 2020).
-> Instrument validation work established that organizational leadership, support, resources and learning climate condition whether individual knowledge and motivation ever translate into mainstreamed practice (Taylor-Ritzler et al., 2013).
-
-**ID: `INVOLVED.EVIDENCE.body`**
-Context: The synthesis paragraph. It names three variables and then says the whole
-industry is built to defeat them — which is the argument for Ascent existing.
-> Read together, these findings say something specific: duration, dose and relationship are the operative variables, and the organizational conditions around the individual determine whether anything sticks. Existing service models—fees-for-service, fixed terms, engagements bounded by discrete deliverables—undermine every one of those variables. Ascent's structure is an attempt to build a model that does not.
-
-## E4. What the structure produces
+## E3. What the structure produces
 
 Six cards. *(Was `INVOLVED.ADVOCATE.*`.)*
 
@@ -1346,51 +1322,11 @@ in the field accepts and says it is an artefact of consulting-firm economics rat
 a law. That is the intellectual claim the whole organisation rests on.
 > Ascent aims to be a development partner delivering developmental consulting on a structural program's cost base. That combination is usually treated as a tradeoff. Our position is that the tradeoff is a product of consulting-firm economics rather than a law of the work—and that an optimized analytics layer can subsidize a customized relationship layer.
 
-## E5. Who does this work
-
-Text left, sidebar right. Anchored at `#network` — the home page's third "way in"
-lands here. *(Was `INVOLVED.PARTNER.*`.)*
-
-**ID: `INVOLVED.NETWORK.intro`**
-Context: The second sentence explains the absence of a team page rather than leaving a
-visitor to notice it. The deck is explicit that naming is a decision, not a copy
-problem — so the site names roles until there are people to name.
-> Eyebrow: The network
-> Heading: Who does this work
-> Lead: Four roles carry every engagement. We are naming the roles before we name the people, because the structure is the claim.
-
-**ID: `INVOLVED.NETWORK.commit_list`**
-Context: The three internal roles.
-> Subheading: Inside the organization
-> **Project lead.** Signs off on every phase deliverable before it is released.
-> **Implementation support professional.** The organization's continuous point of contact, responsible for turning findings into changes it can actually make.
-> **In-house analyst.** Design, measurement and analysis work that recurs across engagements.
-
-**ID: `INVOLVED.NETWORK.provide_list`**
-Context: The one role that is not on staff, which is the point of the whole structure.
-> Subheading: Around it
-> **Outside specialist.** Methodologists and domain experts engaged per project, for the hours a project needs them.
-
-**ID: `INVOLVED.NETWORK.glossary`**
-Context: Sidebar card. The deck asks that each technical term be glossed on first use;
-this page uses all three, so the glosses live here rather than in parentheses.
-> Heading: Plain definitions
-> **Evaluation capacity building.** Building an organization's own ability to conduct and use evaluation, rather than performing one for it.
-> **Implementation science.** The study of what makes evidence-based practices actually take hold in real organizations.
-> **Process use.** Learning and change that come from taking part in an evaluation, separate from its findings.
-
-**ID: `INVOLVED.NETWORK.quote`**
-Context: A pull quote from the literature rather than from a person, placed where a
-sceptical reader is asking why the implementation layer deserves the largest headcount.
-> Quote: Technical assistance improves organizational capacity and program fidelity far more reliably than it improves outcomes for the people served. The translation layer is the bottleneck.
-> Name: The implementation science finding
-> Role: The reason the model is shaped this way
-
-## E6. Closing call to action
+## E4. Closing call to action
 
 **ID: `INVOLVED.CTA`**
 Context: A model page has to end by admitting that the model is not the product.
-> Heading: The model only matters if organizations can buy it.
+> Heading: See the model in action.
 > Body: See what the four phases actually produce.
 > Button: Explore the pipeline
 
