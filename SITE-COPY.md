@@ -3,7 +3,19 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 33 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 34 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v34.** The About timeline now covers how implementation science developed
+> and how implementation support became a profession: five new entries
+> (`ABOUT.TIMELINE.6`–`10`) — 2005 a synthesis of the implementation research literature,
+> 2009 the Consolidated Framework for Implementation Research, 2017 the NIRN / Centre for
+> Effective Services project on the role of implementation support, 2018–19 the validation
+> survey and systematic review, and 2020 the Implementation Support Practitioner Profile and
+> Practice Guide, with both PDFs linked. They sit in date order among the five existing
+> entries, which are unchanged. The 2005 entry comes from general knowledge, not from the
+> two PDFs. Also applied: your edit to the Evaluation Process banner lead
+> (`PROGRAMS.HERO.lead`), now "…Our process is recursive, building upon past findings and
+> expanding a model's explanatory leverage." **No existing ID changed.**
 
 > **What changed in v33.** Your two edits to the affordability figures, applied to the site.
 > Both numbers now describe organizations that *lack* dedicated evaluation staff: the home
@@ -822,15 +834,29 @@ section, lightly edited for a web reader ("methodologies" → "methods", "self-i
 
 ## C3. Evidence timeline
 
-Five entries down a vertical line. Each = year, headline, one sentence. This used to be
+Ten entries down a vertical line. Each = year, headline, one sentence. This used to be
 an organisational history; a pre-launch organisation doesn't have one, so it is now the
-chronology of the research the model rests on. Add or remove entries freely — the line
+chronology of the research the model rests on, and since v34 of how implementation
+science and the implementation support profession developed. Add or remove entries freely — the line
 redraws itself.
 
-Context: These five citations are short-form. If you want them to carry full references,
+Context: These citations are short-form. If you want them to carry full references,
 say so and I'll build a references page and link each one — the deck flags that as an
 open item and it is the right call for an organisation whose pitch is methodological
 seriousness.
+
+**ID: `ABOUT.TIMELINE.6`**
+Context: **New in v34** — this and the next entry (and 8–10) bring in how implementation
+science developed and how implementation support became a profession. 2005 is from general
+knowledge of the field, not from the two PDFs; 2009 is cited in them.
+> Year: 2005
+> Headline: Implementation becomes a field of study
+> Detail: A synthesis of the implementation research literature (Fixsen, Naoom, Blase, Friedman & Wallace) gives a young field a shared evidence base to build on.
+
+**ID: `ABOUT.TIMELINE.7`**
+> Year: 2009
+> Headline: A framework for what shapes implementation
+> Detail: The Consolidated Framework for Implementation Research organizes the factors that help or hinder putting evidence into practice (Damschroder et al.).
 
 **ID: `ABOUT.TIMELINE.1`**
 > Year: 2013
@@ -847,16 +873,41 @@ seriousness.
 > Headline: The affordability gap, measured
 > Detail: Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff (Innovation Network).
 
+**ID: `ABOUT.TIMELINE.8`**
+Context: From the Practice Guide's "How we developed this guide": the work began in 2017 as an
+internal R&D project between NIRN (USA) and the Centre for Effective Services (Ireland and
+Northern Ireland).
+> Year: 2017
+> Headline: Implementation support gets its own research
+> Detail: Two intermediary organizations, one in the USA and one in Ireland and Northern Ireland, begin studying the role and competencies of the people who support implementation (NIRN and the Centre for Effective Services).
+
 **ID: `ABOUT.TIMELINE.4`**
 > Year: 2018
 > Headline: Year two is where it lands
 > Detail: A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle (Chinman, Acosta et al.).
+
+**ID: `ABOUT.TIMELINE.9`**
+Context: Same source. The "Implementation Specialist Practice Profile" draft (NIRN and CES,
+2018) was vetted in workshops; the 2018–19 survey covered Europe, the USA, Canada and
+Australia, with a parallel systematic review run by the European Implementation Collaborative.
+> Year: 2018–19
+> Headline: A profession takes shape
+> Detail: An early practice profile is vetted in workshops, then tested in an international survey of implementation support practitioners in Europe, the USA, Canada and Australia, alongside a systematic review of the literature.
 
 **ID: `ABOUT.TIMELINE.5`**
 Context: The finding the whole model is built on. If you cut one entry, don't cut this.
 > Year: 2020
 > Headline: Relationship, not training
 > Detail: Evaluation practice persists years after an intervention, and the persistence tracks ongoing evaluator contact rather than the initial training (Wade & Kallemeyn).
+
+**ID: `ABOUT.TIMELINE.10`**
+Context: Two of the words are links, opening in a new tab: "Implementation Support Practitioner
+Profile" → https://cippro.wpengine.com/wp-content/uploads/2022/10/IS-Practice-Profile-single-page-printing-v10-October-2022.pdf
+and "Practice Guide" → https://cippro.wpengine.com/wp-content/uploads/2022/10/ISP-Practice-Guide-v1-10.27.22.pdf
+The PDFs are dated November and December 2020 (Profile v4.0; Guide), re-hosted in October 2022.
+> Year: 2020
+> Headline: Competencies, written down
+> Detail: The Implementation Support Practitioner Profile and Practice Guide set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change (Metz, Burke, Albers et al.).
 
 ---
 
@@ -873,7 +924,7 @@ Context: The finding the whole model is built on. If you cut one entry, don't cu
 **ID: `PROGRAMS.HERO.lead`**
 Context: "A link in a chain and a standalone engagement" is the commercial proposition
 in nine words — it says you can buy one piece without buying the programme.
-> A four-phase evaluation pipeline. Each phase is a link in a chain and a standalone engagement.
+> A four-phase evaluation pipeline. Our process is recursive, building upon past findings and expanding a model's explanatory leverage.
 
 ## D2. Overview cards
 
