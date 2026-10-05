@@ -3,7 +3,16 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 44 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 45 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v45.** Your edits, applied to the site. Our Model: the orange notice under the
+> structure cards loses its bold lead-in ("Why the implementation layer is the innovation.") and
+> is reworded ("…the holistic appraisal of the organization's and community's needs…", "…with
+> attention to its resources and practice context."); the "Why recursion and integration
+> exists" notice now says it uses qualitative analysis to trace each evaluation and program
+> input through to downstream outcomes, and that results change how "our work is delivered".
+> The page's browser-tab and search title (`SEO.involved`) is just "Our Model". **No ID
+> changed.**
 
 > **What changed in v44.** Your edits, applied to the site. Home: the demo tagline reads "A
 > single app shows the power of our evaluation model." (with its full stop). Our Model: the
@@ -1280,7 +1289,7 @@ Context: Orange box under the cards. The last sentence is a claim about the fiel
 about Ascent, and it is checkable — which is why it can be made this bluntly. The
 second-to-last names the published guidance the role is built on, as the Program
 Description does; if you want it linked, send me the URLs you use for the two documents.
-> **Why the implementation layer is the innovation.** An implementation support professional's expertise is holistic appraisal—of the organization's needs, the community's needs, and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources, its power dynamics and its outcomes. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
+> An implementation support professional's expertise is the holistic appraisal of the organization's and community's needs, and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources and practice context. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
 
 ## E2b. Impact logic
 
@@ -1327,7 +1336,7 @@ Context: Orange box. Recursion and integration is the concept a first-time reade
 never met, so this explains why it exists before asking anyone to care about its three
 mechanisms (causal chain identification, metric integration, evaluation recursion — here
 in plain words rather than by name). The last sentence is what makes it matter to a funder.
-> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Recursion and integration is how this program tries to strengthen it: tracing each evaluation cycle through to its effect on downstream outcomes, turning what the implementation supporter learns about the organization into metrics, and running evaluation as a continuing cycle rather than a one-off. Its results also change how we deliver the work, which keeps the practice accountable to outcomes rather than to deliverables.
+> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Recursion and integration is how this program tries to strengthen it: using qualitative analysis to trace each evaluation and program input through to its effect on downstream outcomes. Its results also change how our work is delivered, keeping the practice accountable to outcomes rather than to deliverables.
 
 ## E3. What the structure produces
 
@@ -1499,7 +1508,7 @@ old banner subhead with the current heading, so it changed with the heading in v
 > Description: A four-phase program evaluation pipeline: evaluative foundation, data architecture, analytics and inference, monitoring and reporting. Enter at any phase.
 
 **ID: `SEO.involved`**
-> Title: Our Model—why evaluation costs what it costs
+> Title: Our Model
 > Description: How Ascent restructures evaluation delivery to make sustained, evidence-based capacity building affordable for organizations priced out of the consulting market.
 
 **ID: `SEO.demo`**
