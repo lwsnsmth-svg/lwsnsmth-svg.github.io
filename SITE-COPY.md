@@ -3,7 +3,15 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 28 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 29 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v29.** The phase screenshots left the home hero and now live in the
+> "Evaluation that Goes Further" section, between its lead and body: larger, with each
+> phase's name underneath and no overlaid "Phase 0N" tag (`HOME.METHODS.phases`; the block was
+> `HOME.HERO.phases` in v27–28, and its tags are gone). The section's eyebrow is now
+> "Evaluation that Goes Further" (was "How evaluation goes further"), and §B2 is renamed to
+> match. The page's stylesheet and script version strings were also bumped, so browsers that
+> cached the old CSS (Safari especially) fetch the new one. **No other ID changed.**
 
 > **What changed in v28.** The home hero thumbnails (`HOME.HERO.phases`) are much smaller and
 > pared down to a screenshot with its phase tag, like the Evaluation Process cards without
@@ -577,8 +585,7 @@ Evaluation Process, Our Model and About.
 
 ## B1. Hero
 
-The dark banner at the top. Text on the left, illustration on the right, and since v27 a
-row of four small tool screenshots underneath.
+The dark banner at the top. Text on the left, illustration on the right.
 
 **ID: `HOME.HERO.h1`**
 Context: The biggest text on the site. It does not say what Ascent sells; the lead
@@ -608,22 +615,10 @@ Fits: Number plus ~70 characters.
 > 1.5%
 > of program budget for two years of embedded evaluation support
 
-**ID: `HOME.HERO.phases`**
-Context: New in v27, slimmed in v28. Four small thumbnails of the Evaluation Process phase
-cards, in a row under the hero text and illustration: just the screenshot and its phase
-tag, with no name, summary or "Learn more" button. They sit below the hero image so a
-visitor sees the real tool early without it competing with it. Each links to its phase
-section on Evaluation Process. They reuse the screenshots of `PROGRAMS.CARDS.*` (alt text in
-`ALT.home_phases`); the tags repeat the card tags.
-Fits: Tag only, "Phase 0N". The row is four across on desktop and two by two on mobile.
-> Tag 1: Phase 01
-> Tag 2: Phase 02
-> Tag 3: Phase 03
-> Tag 4: Phase 04
+## B2. Evaluation that goes further
 
-## B2. How evaluation goes further
-
-A heading, a lead, two paragraphs and a link, in a single narrow column. **Rewritten on
+A heading, a lead, a row of four phase cards, two paragraphs and a link; the text sits in
+a narrow column and the cards run wider. **Rewritten on
 1 October (v8)** to be much shorter and plainer: it replaces six method cards
 (`HOME.METHODS.card1`–`card6` — causal inference, attribution and contribution, impact
 measurement, statistical analysis, qualitative causal analysis, evidence strength). Those
@@ -637,9 +632,23 @@ Context: The lead is the whole old six-card argument in one sentence: whether it
 difference (causal inference, attribution), for whom (impact), why (qualitative analysis),
 and how much to trust it (evidence strength). Keep it one sentence.
 Fits: Heading 1–2 lines; lead ~200 characters.
-> Eyebrow: How evaluation goes further
+> Eyebrow: Evaluation that Goes Further
 > Heading: Evaluation that becomes part of how an organization works
 > Lead: Counting tells an organization how many people it served. Evaluation tells it whether the program made the difference, for whom, and why — and how much each answer can be trusted.
+
+**ID: `HOME.METHODS.phases`**
+Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
+and moved here). Four cards between the lead and the body: the Evaluation Process phase
+screenshots with the phase name underneath, and no tag, summary or "Learn more" button.
+Each card links to its phase section on Evaluation Process. They reuse the screenshots of
+`PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`); the names repeat the card names, so
+change them together.
+Fits: Name ≤ ~35 characters. Four across on desktop, two by two on tablet, one column on
+mobile.
+> Name 1: Evaluative Foundation
+> Name 2: Data Architecture
+> Name 3: Analytics & Inference
+> Name 4: Monitoring, Learning & Reporting
 
 **ID: `HOME.METHODS.body`**
 Context: Two paragraphs, no technical term left unexplained. The first names evaluation

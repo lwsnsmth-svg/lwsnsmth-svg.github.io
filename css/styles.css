@@ -639,38 +639,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   .hero__media { aspect-ratio: 16 / 11; }
 }
 
-/* Phase thumbnails under the hero: a pared-down version of the Evaluation
-   Process cards (screenshot and tag only), kept small and below the hero
-   image rather than part of it. */
-.hero__inner--with-phases { padding-bottom: var(--sp-5); }
-.hero__phases { padding-bottom: clamp(2rem, 4vw, 3rem); }
-.phase-thumbs {
-  list-style: none; padding: 0; margin: 0;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--sp-3);
-  max-width: 34rem;
-}
-.phase-thumb {
-  position: relative;
-  display: block;
-  aspect-ratio: 16 / 10;
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: #fff;
-  box-shadow: var(--shadow);
-  transition: transform 0.18s var(--ease);
-}
-.phase-thumb:hover { transform: translateY(-3px); }
-.phase-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.phase-thumb .tag {
-  position: absolute; top: 0.3rem; left: 0.3rem;
-  padding: 0.15em 0.55em;
-  font-size: 0.62rem;
-  background: var(--surface); color: var(--text);
-}
-@media (max-width: 480px) { .phase-thumbs { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 16rem; } }
-
 /* --------------------------------------------------------------------------
    7. Page banner (interior pages)
    -------------------------------------------------------------------------- */
@@ -756,6 +724,19 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 .program-card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .program-card__media .tag { position: absolute; top: var(--sp-3); left: var(--sp-3); background: var(--surface); color: var(--text); }
 .program-card__body { padding: var(--sp-5); display: flex; flex-direction: column; flex: 1; }
+
+/* Phase cards on the home page ("Evaluation that Goes Further"): the Evaluation
+   Process cards pared down to screenshot and title. Whole card is the link.
+   Must follow .card and .program-card so their padding resets win. */
+.phase-cards {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-block: var(--sp-6) var(--sp-7);
+}
+@media (max-width: 900px) { .phase-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .phase-cards { grid-template-columns: minmax(0, 1fr); } }
+.phase-card { padding: 0; overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+.phase-card h3 { font-size: var(--step-0); margin: 0; padding: var(--sp-3) var(--sp-4) var(--sp-4); }
+
 
 /* Embedded app on the demo page. The app is a dense desktop tool, so it gets the
    full container width and a fixed 720px height; the frame only adds the card edge
