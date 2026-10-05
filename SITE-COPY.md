@@ -3,7 +3,72 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 23 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 33 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v33.** Your two edits to the affordability figures, applied to the site.
+> Both numbers now describe organizations that *lack* dedicated evaluation staff: the home
+> stat label reads "Organizations above $5M lacking the same" (98% of small nonprofits, 80%
+> of those above $5M), and the About timeline entry says 98% of small nonprofits and 80% of
+> organizations with budgets above five million dollars have no dedicated staff. This
+> reverses v32, which had read the 80% as organizations that *have* staff. **No ID
+> changed.**
+
+> **What changed in v32.** The About timeline entry on affordability (`ABOUT.TIMELINE.3`) now
+> uses the same figures as the home stats: 98% of small nonprofits have no dedicated
+> evaluation staff, while 80% of organizations above $5M do. It said 2% and 20% before,
+> which disagreed with v31's home stats (that "worth a look" note is resolved and removed
+> from v31). The home stats were already as you specified. **No ID changed.**
+
+> **What changed in v31.** Your edits to the doc, applied to the site. Home: the "Why it
+> matters" heading is now "Catalyze a continual improvement process" with a new lead;
+> its first card is "For nonprofit leaders and programs teams"; the stats read 98% of small
+> nonprofits *without* dedicated evaluation staff and 80% of organizations above $5M with
+> them; the brief is headed "Ascent Evaluation, in brief" / "An evaluation process
+> accountable to program outcomes", loses "in New York City" and the consulting sentence, and
+> now says "full and recursive evaluations". About: the story heading is "An
+> outcomes-oriented synthesis." and its first paragraph starts at "When evidence quality…".
+> Demo: the banner sentence gains a second one about the app. Em dashes lost their spaces
+> throughout. **No ID changed.**
+
+
+> **What changed in v30.** The home page's phase cards (`HOME.METHODS.phases`) are 1.5x larger
+> — two across instead of four — so the screenshots are legible. **No ID or wording changed.**
+
+> **What changed in v29.** The phase screenshots left the home hero and now live in the
+> "Evaluation that Goes Further" section, between its lead and body: larger, with each
+> phase's name underneath and no overlaid "Phase 0N" tag (`HOME.METHODS.phases`; the block was
+> `HOME.HERO.phases` in v27–28, and its tags are gone). The section's eyebrow is now
+> "Evaluation that Goes Further" (was "How evaluation goes further"), and §B2 is renamed to
+> match. The page's stylesheet and script version strings were also bumped, so browsers that
+> cached the old CSS (Safari especially) fetch the new one. **No other ID changed.**
+
+> **What changed in v28.** The home hero thumbnails (`HOME.HERO.phases`) are much smaller and
+> pared down to a screenshot with its phase tag, like the Evaluation Process cards without
+> their captions or "Learn more" buttons. The four phase names that labelled them are gone
+> from the block. **No ID changed.**
+
+> **What changed in v27.** The home hero gained a row of four small thumbnails of the
+> Evaluation Process phase screenshots (`HOME.HERO.phases`, alt text `ALT.home_phases`),
+> placed under the headline and illustration rather than inside the hero image. Each links to
+> its phase section. **No existing ID changed.**
+
+> **What changed in v26.** Programs & Services is now **Evaluation Process**. The page
+> heading (`PROGRAMS.HERO.h1`, which this document had as "The Process" while the site said
+> "Programs & Services" — now both say the new name), the nav label on every page, the
+> breadcrumb, the 404 shortcut card, and the search title (`SEO.programs`) all follow. The
+> file is still `programs.html` and no ID changed. Older entries below keep the old name.
+
+> **What changed in v25.** The four footer social icons are gone from every page
+> (`ALT.social`, the Instagram / LinkedIn / Facebook / YouTube names a screen reader read
+> out, came out with them). None linked anywhere. The footer is now the brand lockup and
+> blurb over the copyright line. **No other ID changed.**
+
+> **What changed in v24.** The footer lost its last link and its two legal links, and
+> shrank. Removed: "Collaborate with us" (`GLOBAL.FOOTER.col2`) and "A.I. statement" /
+> "Annual report" (`GLOBAL.FOOTER.legal_links`, both of which went nowhere). With the link
+> column gone, §A4 (link columns) went too and the legal line is now §A4. The footer is a
+> single row — brand, blurb and social icons — over a thin copyright line, with tighter
+> padding throughout. **No other ID changed.**
 
 > **What changed in v23.** The copy no longer addresses the reader. Every "you", "your" and
 > "yourselves" in the site text now speaks about the organization, the program team or the
@@ -459,7 +524,7 @@ the doc doesn't document. A Stop hook runs it automatically.
 - [A. Global](#a-global-every-page) — header, footer, appears on all 6 pages
 - [B. Home](#b-home) — `index.html`
 - [C. About](#c-about) — `about.html`
-- [D. Programs & Services](#d-programs--services) — `programs.html`
+- [D. Evaluation Process](#d-evaluation-process) — `programs.html`
 - [E. Our Model](#e-our-model) — `get-involved.html`
 - [F. Demo](#f-demo) — `demo.html`
 - [G. 404](#g-404-page) — `404.html`
@@ -499,44 +564,25 @@ only the visible labels changed, so no links break. "Demo" (v16) goes to `demo.h
 Fits: 1–2 words each. Six items is about the ceiling before it crowds the logo.
 > Home
 > About
-> Programs & Services
+> Evaluation Process
 > Our Model
 > Demo
 
 ## A3. Footer — organisation blurb
 
 **ID: `GLOBAL.FOOTER.blurb`**
-Context: Under the logo in the footer's first column. Note this says "Ascent Research
+Context: Beside the logo in the footer's single row (stacks under it on narrow screens). Note this says "Ascent Research
 Collaborative" while the brand lockup above says "The Ascent Collaborative" — two names
 for one organisation, on every page. Tell me which one is the real one.
 Fits: 2–3 lines, ~180 characters. Makes no claim about legal or tax status (v5).
 > The Ascent Research Collaborative is dedicated to making program evaluation more accessible, sustainable and effective.
 
-## A4. Footer — link columns
-
-**ID: `GLOBAL.FOOTER.col2`**
-Context: The only link column left after your deletions, and it no longer has a
-heading. The footer grid was four columns wide; it is now two — brand block on the
-left, one link on the right ("Donate" came off in v6 with the Fund page, "Contact us" in
-v9 with the Contact page). "Collaborate with us" goes to the Our Model page, not to any
-way of getting in touch. It is a lot of empty space for one link, so say the word if you
-want the pages themselves listed here instead.
-> Collaborate with us
-
-## A5. Footer — legal line
+## A4. Footer — legal line
 
 **ID: `GLOBAL.FOOTER.copyright`**
 Context: Bottom bar. The year updates itself — leave `[year]` as a placeholder. The
 status line after the name came off in v5; the site states no legal or tax status.
 > © [year] The Ascent Collaborative.
-
-**ID: `GLOBAL.FOOTER.legal_links`**
-Context: Bottom-right. **Both currently link nowhere** — the pages don't exist yet.
-Deleting the privacy policy matters less than it did: since v9 no form on the site
-collects personal data. Tell me and I'll stub
-the pages out.
-> A.I. statement
-> Annual report
 
 ---
 
@@ -564,7 +610,7 @@ Removed in the rebuild to make room: the problem split
 (`HOME.PROBLEM.*`), the four pipeline cards (`HOME.PIPELINE.*` — the pipeline now appears
 as four one-line bullets in `HOME.BRIEF.list`), the four "ways in" cards (`HOME.HELP.*`),
 and the row of study citations (`HOME.EVIDENCE.*`). All of that content still lives on
-Programs & Services, Our Model and About.
+Evaluation Process, Our Model and About.
 
 ## B1. Hero
 
@@ -585,7 +631,7 @@ is for, if you want one.
 > Ascent is an evaluation practice designed to serve programs and the communities around them.
 
 **ID: `HOME.HERO.buttons`**
-Context: One orange button, to "How the program runs" on Programs & Services. The outlined
+Context: One orange button, to "How the program runs" on Evaluation Process. The outlined
 "Contact us" beside it came off in v9 with the Contact page.
 Fits: 2–4 words.
 > Our program
@@ -598,9 +644,10 @@ Fits: Number plus ~70 characters.
 > 1.5%
 > of program budget for two years of embedded evaluation support
 
-## B2. How evaluation goes further
+## B2. Evaluation that goes further
 
-A heading, a lead, two paragraphs and a link, in a single narrow column. **Rewritten on
+A heading, a lead, a row of four phase cards, two paragraphs and a link; the text sits in
+a narrow column and the cards run wider. **Rewritten on
 1 October (v8)** to be much shorter and plainer: it replaces six method cards
 (`HOME.METHODS.card1`–`card6` — causal inference, attribution and contribution, impact
 measurement, statistical analysis, qualitative causal analysis, evidence strength). Those
@@ -614,9 +661,23 @@ Context: The lead is the whole old six-card argument in one sentence: whether it
 difference (causal inference, attribution), for whom (impact), why (qualitative analysis),
 and how much to trust it (evidence strength). Keep it one sentence.
 Fits: Heading 1–2 lines; lead ~200 characters.
-> Eyebrow: How evaluation goes further
+> Eyebrow: Evaluation that Goes Further
 > Heading: Evaluation that becomes part of how an organization works
-> Lead: Counting tells an organization how many people it served. Evaluation tells it whether the program made the difference, for whom, and why — and how much each answer can be trusted.
+> Lead: Counting tells an organization how many people it served. Evaluation tells it whether the program made the difference, for whom, and why—and how much each answer can be trusted.
+
+**ID: `HOME.METHODS.phases`**
+Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
+and moved here). Four cards between the lead and the body: the Evaluation Process phase
+screenshots with the phase name underneath, and no tag, summary or "Learn more" button.
+Each card links to its phase section on Evaluation Process. They reuse the screenshots of
+`PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`); the names repeat the card names, so
+change them together.
+Fits: Name ≤ ~35 characters. Two by two on desktop (they were four across until v30), one column on
+mobile.
+> Name 1: Evaluative Foundation
+> Name 2: Data Architecture
+> Name 3: Analytics & Inference
+> Name 4: Monitoring, Learning & Reporting
 
 **ID: `HOME.METHODS.body`**
 Context: Two paragraphs, no technical term left unexplained. The first names evaluation
@@ -645,13 +706,13 @@ it to speak to leaders alone.
 
 **ID: `HOME.WHY.intro`**
 > Eyebrow: Why it matters
-> Heading: Better questions lead to better decisions
-> Lead: Evaluation is not a compliance exercise. For the people running programs and the people paying for them, it is the difference between guessing and knowing.
+> Heading: Catalyze a continual improvement process
+> Lead: Evaluation should not be a compliance exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.
 
 **ID: `HOME.WHY.leaders`**
 Context: Four benefits with bold lead-ins. The third — getting credit for serving the
 hardest cases — is the one most leaders have felt and never had language for.
-> Heading: For nonprofit leaders
+> Heading: For nonprofit leaders and programs teams
 > **Know what to grow, fix or stop.** Evaluation shows which parts of a program do the work, so limited money goes where it counts.
 > **Make a case funders believe.** A defensible estimate of a program's impact is worth more in a proposal than a large number nobody can check.
 > **Get credit for the hardest work.** Programs serving people furthest from success often post modest raw numbers and large real effects. Only a comparison reveals it.
@@ -669,13 +730,13 @@ next section, where Ascent appears.
 > The organizations that need it most can least afford it
 
 **ID: `HOME.STATS.1`**
-> Value: 2 · Suffix: % · Label: Small nonprofits with dedicated evaluation staff
+> Value: 98 · Suffix: % · Label: Small nonprofits without dedicated evaluation staff
 
 **ID: `HOME.STATS.2`**
-> Value: 20 · Suffix: % · Label: Organizations above $5M with the same
+> Value: 80 · Suffix: % · Label: Organizations above $5M lacking the same
 
 **ID: `HOME.STATS.3`**
-> Value: 16 · Suffix: % · Label: Surveyed organizations spending nothing on evaluation
+> Value: 16 · Suffix: % · Label: Surveyed organizations spend nothing on evaluation
 
 **ID: `HOME.STATS.disclaimer`**
 Context: The source citation. Keep it visible — precision is part of the pitch.
@@ -687,26 +748,26 @@ Illustration left, text right, light grey background. The program summary you as
 kept to one section so the page stays about evaluation.
 
 **ID: `HOME.BRIEF.eyebrow`**
-> Ascent, in brief
+> Ascent Evaluation, in brief
 
 **ID: `HOME.BRIEF.h2`**
 Context: Names the differentiator — duration — rather than the service, because the page
 above has already explained the service.
 Fits: 2 lines.
-> Evaluation that stays long enough to change the program
+> An evaluation process accountable to program outcomes
 
 **ID: `HOME.BRIEF.lead`**
-> Ascent is a nonprofit evaluation practice in New York City, built for small and mid-sized organizations that have never been able to afford this kind of work.
+> Ascent is a nonprofit evaluation practice built for small and mid-sized organizations that are priced out of evaluation services.
 
 **ID: `HOME.BRIEF.body`**
 Context: The program in three facts — two years embedded, the $500,000 ceiling, the 1.5% fee
 — then the consulting alternative in one sentence. The fee also appears in the hero badge;
-change them together. Programs & Services stopped repeating them in v14.
-> Our program embeds an implementation support professional in the program team for two years, carries the program through a full evaluation, and turns what it finds into changes the organization can actually make. It is for organizations with program budgets at or below $500,000, for a fixed annual fee of 1.5% of program budget. An organization that needs one piece of evaluation work done well can hire us for that instead.
+change them together. Evaluation Process stopped repeating them in v14.
+> Our program embeds an implementation support professional in the program team for two years, carries the program through full and recursive evaluations, and turns what it finds into changes the organization can actually make. It is for organizations with program budgets at or below $500,000, for a fixed annual fee of 1.5% of program budget.
 
 **ID: `HOME.BRIEF.list`**
 Context: The four phases, one line each, replacing the four pipeline cards that used to
-sit mid-page. Plain names first; the full detail is on Programs & Services.
+sit mid-page. Plain names first; the full detail is on Evaluation Process.
 > **Evaluative foundation.** What the program is meant to do, for whom, and why.
 > **Data architecture.** What to collect, and how to know it is good enough.
 > **Analytics and inference.** What the data show, and how sure we can be.
@@ -744,20 +805,20 @@ Text on the left, dated timeline on the right.
 
 **ID: `ABOUT.STORY.h2`**
 Fits: 2 lines.
-> Why this exists.
+> An outcomes-oriented synthesis.
 
 **ID: `ABOUT.STORY.para1`**
 Context: The founding argument, stated as arithmetic rather than anecdote. The
 four-hundred-thousand-dollar organisation with a program director doing evaluation at
 night is the reader this whole site is addressed to.
-> An organization with a five-million-dollar budget has an evaluation function. An organization with a four-hundred-thousand-dollar budget has a program director doing it at night. When evidence quality determines funding, capital consolidates toward whoever can afford to prove their outcomes — whether or not they are the organizations doing the most consequential work.
+> When evidence quality determines funding, capital consolidates toward whoever can afford to prove their outcomes—whether or not they are the organizations doing the most consequential work.
 
 **ID: `ABOUT.STORY.para2`**
 Context: The turn — why the answer is a different structure rather than a discount. The
 diagnosis in the first three sentences comes from the Program Description's mission
 section, lightly edited for a web reader ("methodologies" → "methods", "self-implement" →
 "take on alone").
-> Program evaluation is inaccessible and underleveraged. As a service, its practitioners are disparate or overpriced. As a practice, its methods are too niche, its implementation too resource-intensive, and its benefits too obscure for program teams to take on alone. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption — and in the current market, those carry impossible costs for small and mid-sized organizations. Ascent is structured to make that relationship affordable.
+> Program evaluation is inaccessible and underleveraged. As a service, its practitioners are disparate or overpriced. As a practice, its methods are too niche, its implementation too resource-intensive, and its benefits too obscure for program teams to take on alone. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption—and in the current market, those carry impossible costs for small and mid-sized organizations. Ascent is structured to make that relationship affordable.
 
 ## C3. Evidence timeline
 
@@ -784,7 +845,7 @@ seriousness.
 **ID: `ABOUT.TIMELINE.3`**
 > Year: 2016
 > Headline: The affordability gap, measured
-> Detail: Roughly two percent of small nonprofits have dedicated evaluation staff, against twenty percent of organizations above five million dollars (Innovation Network).
+> Detail: Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff (Innovation Network).
 
 **ID: `ABOUT.TIMELINE.4`**
 > Year: 2018
@@ -799,15 +860,15 @@ Context: The finding the whole model is built on. If you cut one entry, don't cu
 
 ---
 
-# D. Programs & Services
+# D. Evaluation Process
 
 `programs.html` — the detail page. Someone deciding whether to hire you reads this.
-(File name is still `programs.html`; the visible label is "Programs & Services".)
+(File name is still `programs.html`; the visible label is "Evaluation Process".)
 
 ## D1. Page banner
 
 **ID: `PROGRAMS.HERO.h1`**
-> The Process
+> Evaluation Process
 
 **ID: `PROGRAMS.HERO.lead`**
 Context: "A link in a chain and a standalone engagement" is the commercial proposition
@@ -1114,7 +1175,7 @@ Description does; if you want it linked, send me the URLs you use for the two do
 
 New on 13 September, from the Program Description's impact-stream diagram and its
 interventions table. Four cards, a table, then an orange box. Anchored at `#impact-logic`
-— the program sequence on Programs & Services links here.
+— the program sequence on Evaluation Process links here.
 
 **ID: `INVOLVED.IMPACT.intro`**
 Context: The heading is the brief's positioning claim, shortened. It only works because
@@ -1284,7 +1345,7 @@ Context: A model page has to end by admitting that the model is not the product.
 # F. Demo
 
 `demo.html` — a working demo of Program Mapper, the tool shown on the four phase
-cards on Programs & Services. **New in v16.** The app is not part of this site: it is hosted
+cards on Evaluation Process. **New in v16.** The app is not part of this site: it is hosted
 separately (bespoke-truffle-cf7077.netlify.app) and shown in a frame, so nothing inside the
 frame is covered here — its wording changes in the app. Its sample program is a fictional
 job-readiness program.
@@ -1297,9 +1358,9 @@ Context: The tool's own name, as the app titles itself.
 
 **ID: `DEMO.HERO.lead`**
 Context: What the tool is, then three things a visitor can do in it. "Behind our evaluation
-pipeline" ties it to the phase cards on Programs & Services, which show its screenshots.
+pipeline" ties it to the phase cards on Evaluation Process, which show its screenshots.
 Fits: 2–3 lines, ~180 characters.
-> A working demo of the tool behind our evaluation pipeline.
+> A working demo of the app behind our evaluation pipeline. The application **describes** the evaluation process, and the demo depicts data after multiple rounds of recursive evaluation.
 
 ## F2. The demo
 
@@ -1369,7 +1430,7 @@ Context: One button since v9; "Tell us what broke" went to Contact.
 **ID: `NOTFOUND.cards`**
 Context: Two shortcut cards so the page is useful rather than just apologetic. The
 third, to the Fund page, came off in v6; the grid is two columns now.
-> Heading: Programs & Services — The four-phase evaluation pipeline.
+> Heading: Evaluation Process — The four-phase evaluation pipeline.
 > Heading: Our Model — Why evaluation costs what it costs, and what we changed.
 
 ---
@@ -1408,7 +1469,7 @@ old banner subhead with the current heading, so it changed with the heading in v
 > Description: Ascent is a nonprofit program evaluation practice in New York City, built for the organizations priced out of effective evaluation.
 
 **ID: `SEO.programs`**
-> Title: Programs & Services — the four-phase evaluation pipeline
+> Title: Evaluation Process — the four-phase evaluation pipeline
 > Description: A four-phase program evaluation pipeline: evaluative foundation, data architecture, analytics and inference, monitoring and reporting. Enter at any phase.
 
 **ID: `SEO.involved`**
@@ -1453,17 +1514,18 @@ employment program) is not described — it is example data, not a client result
 > Phase 3 detail: Illustration of an analysis with confidence intervals plotted
 > Phase 4 detail: Illustration of an indicator dashboard tracked over time
 
+**ID: `ALT.home_phases`**
+Context: New in v27. The four hero thumbnails on the home page, which are the same
+screenshots as `ALT.programs`, so the wording matches it.
+> Thumbnail 1: Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes
+> Thumbnail 2: Data lineage view tracing each number in the model back to the data series it comes from
+> Thumbnail 3: Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on
+> Thumbnail 4: Scenario dashboard showing every indicator in the model under a chosen funding scenario
+
 **ID: `ALT.demo`**
 Context: New in v16. Not an image: the name a screen reader announces for the embedded
 app on the Demo page, before reading the app itself.
 > Embedded app: Program Mapper demo
-
-**ID: `ALT.social`**
-Context: Read aloud for the four footer social icons.
-> Ascent on Instagram
-> Ascent on LinkedIn
-> Ascent on Facebook
-> Ascent on YouTube
 
 ---
 
