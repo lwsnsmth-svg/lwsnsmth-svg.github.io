@@ -3,7 +3,14 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 34 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 35 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v35.** Em dashes no longer have spaces around them anywhere in the site
+> copy (33 places on the pages, 29 lines in this document). Also applied: your three
+> headline edits on the About timeline ("Implementation support becomes a field of research",
+> "A profession emerges", "Competencies, described"). In the 404 page's two shortcut-card
+> notes the dash is a separator between a card's title and its text, not part of the copy,
+> so those keep their spaces. **No ID changed.**
 
 > **What changed in v34.** The About timeline now covers how implementation science developed
 > and how implementation support became a profession: five new entries
@@ -878,7 +885,7 @@ Context: From the Practice Guide's "How we developed this guide": the work began
 internal R&D project between NIRN (USA) and the Centre for Effective Services (Ireland and
 Northern Ireland).
 > Year: 2017
-> Headline: Implementation support gets its own research
+> Headline: Implementation support becomes a field of research
 > Detail: Two intermediary organizations, one in the USA and one in Ireland and Northern Ireland, begin studying the role and competencies of the people who support implementation (NIRN and the Centre for Effective Services).
 
 **ID: `ABOUT.TIMELINE.4`**
@@ -891,7 +898,7 @@ Context: Same source. The "Implementation Specialist Practice Profile" draft (NI
 2018) was vetted in workshops; the 2018–19 survey covered Europe, the USA, Canada and
 Australia, with a parallel systematic review run by the European Implementation Collaborative.
 > Year: 2018–19
-> Headline: A profession takes shape
+> Headline: A profession emerges
 > Detail: An early practice profile is vetted in workshops, then tested in an international survey of implementation support practitioners in Europe, the USA, Canada and Australia, alongside a systematic review of the literature.
 
 **ID: `ABOUT.TIMELINE.5`**
@@ -906,7 +913,7 @@ Profile" → https://cippro.wpengine.com/wp-content/uploads/2022/10/IS-Practice-
 and "Practice Guide" → https://cippro.wpengine.com/wp-content/uploads/2022/10/ISP-Practice-Guide-v1-10.27.22.pdf
 The PDFs are dated November and December 2020 (Profile v4.0; Guide), re-hosted in October 2022.
 > Year: 2020
-> Headline: Competencies, written down
+> Headline: Competencies, described
 > Detail: The Implementation Support Practitioner Profile and Practice Guide set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change (Metz, Burke, Albers et al.).
 
 ---
@@ -984,7 +991,7 @@ anything" says participation is a methodological requirement, not a courtesy.
 Context: Two paragraphs. The first says what the implementation support professional does
 and what your staff co-create. The second explains the loop, which the timeline on the
 right can only show as a straight line.
-> The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a habit of recursive improvement inside the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them. Deeper involvement in the technical work — analysis, research design, reporting — is there for teams that want it and have the time.
+> The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a habit of recursive improvement inside the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them. Deeper involvement in the technical work—analysis, research design, reporting—is there for teams that want it and have the time.
 > The sequence runs in one direction until it reaches recursion and integration, and then it loops: findings become program changes, outcomes feed the next round of evaluation, and the cycle repeats as often as the program needs before graduation.
 
 **ID: `PROGRAMS.SEQUENCE.buttons`**
@@ -1047,7 +1054,7 @@ Fits: One line ideally.
 **ID: `PROGRAMS.PHASE1.body`**
 Context: The last sentence comes from the Program Description: Phase 1 is where the culture
 of inquiry starts, which is why the brief treats it as more than paperwork.
-> This phase builds the conceptual infrastructure that makes rigorous evaluation possible. Without it, data collection has no direction and findings have nothing to be interpreted against. It is also where the program team starts to think in evaluative terms — the habit of inquiry everything after it depends on.
+> This phase builds the conceptual infrastructure that makes rigorous evaluation possible. Without it, data collection has no direction and findings have nothing to be interpreted against. It is also where the program team starts to think in evaluative terms—the habit of inquiry everything after it depends on.
 
 **ID: `PROGRAMS.PHASE1.list`**
 Context: Six deliverables, bold lead-in then the detail. The logic model entry's last
@@ -1055,7 +1062,7 @@ clause — built with your staff, so it reflects reality rather than aspiration 
 one practitioners react to; keep it.
 > Subheading: What Phase 1 produces
 > **Stakeholder map.** Everyone with a stake in the program, distinguishing those whose input shapes the evaluation from those whose outcomes are its subject.
-> **Program description and context brief.** What the program does, for whom, at what scale — set against its evidence base, policy landscape, and peer field.
+> **Program description and context brief.** What the program does, for whom, at what scale—set against its evidence base, policy landscape, and peer field.
 > **Logic model.** The program's causal architecture from inputs to long-term outcomes, built with the organization's staff so it reflects implementation reality rather than aspirational design.
 > **Theory of change.** The problem theory, intervention theory, change theory, and equity dimensions, with literature cited for causal claims.
 > **Evaluability assessment.** A structured judgment of whether the program is actually ready to be evaluated at all.
@@ -1079,7 +1086,7 @@ Context: The second sentence is a warning the Program Description gives plainly 
 prospective client deserves to hear early: this phase can change how the organization
 works. The third is the integration point — it tells someone with an existing data system
 that they are not being asked to throw it away.
-> This phase turns evaluative questions into a practical, defensible system for collecting, managing and assuring the quality of evidence. It is the heaviest phase for the program team and for ours, because it can mean changing established practices and systems. An organization that enters here with infrastructure already in place, we begin with a data audit instead — a structured review of its instruments, data quality and system architecture against the indicator framework.
+> This phase turns evaluative questions into a practical, defensible system for collecting, managing and assuring the quality of evidence. It is the heaviest phase for the program team and for ours, because it can mean changing established practices and systems. An organization that enters here with infrastructure already in place, we begin with a data audit instead—a structured review of its instruments, data quality and system architecture against the indicator framework.
 
 **ID: `PROGRAMS.PHASE2.list`**
 > Subheading: What Phase 2 produces
@@ -1087,7 +1094,7 @@ that they are not being asked to throw it away.
 > **Measurement selection report.** For each indicator, the measure chosen, the rationale, the population, and the timing.
 > **Instrument suite.** Designed and adapted instruments, with novel ones pilot tested and reviewed by community representatives before field deployment.
 > **Collection protocol.** Administration, consent and assent, data entry, confidentiality, and how missing data and non-response are handled.
-> **Data management system.** Storage, linkage, backup, security and retention — set up alongside the program team, with the training to run it.
+> **Data management system.** Storage, linkage, backup, security and retention—set up alongside the program team, with the training to run it.
 > **Data quality plan.** Standing completeness, validity, consistency and timeliness checks: who runs them, how often, and what each problem triggers.
 
 ## D6. Phase 3 — detail
@@ -1113,7 +1120,7 @@ Context: "Specified before results are examined" and "required for every
 non-experimental evaluation" are the two clauses a methodologically literate funder will
 look for. Neither is padding.
 > Subheading: What Phase 3 produces
-> **Design and analysis specification.** Counterfactual strategy, unit of analysis, level of inference, subgroup analyses planned in advance, and threats to validity with mitigations — specified before results are examined.
+> **Design and analysis specification.** Counterfactual strategy, unit of analysis, level of inference, subgroup analyses planned in advance, and threats to validity with mitigations—specified before results are examined.
 > **Quantitative findings memo.** Effect sizes with confidence intervals rather than p-values alone, sensitivity analyses, and subgroup findings, with plain-language interpretation alongside the technical specification.
 > **Qualitative findings memo.** Analytic approach, codebook development, triangulation procedures, and key themes with representative evidence.
 > **Contribution and attribution analysis.** What else was operating, whether the pattern of findings fits the theory of change, and what alternative explanations remain. Required for every non-experimental evaluation.
@@ -1143,10 +1150,10 @@ retainer or by guide.
 **ID: `PROGRAMS.PHASE4.list`**
 > Subheading: What Phase 4 produces
 > **Learning agenda.** The questions the organization intends to investigate next, sorted by what routine monitoring can answer, what needs a new evaluation, and what requires external research.
-> **Monitoring and evaluation plan.** Which indicators are tracked, how often, from what sources, against what targets — with procedures for updating them as programs evolve.
-> **Indicator dashboard.** Built on the organization's preferred platform — live, automated or periodic, depending on the data architecture from Phase 2 — with views and access controls tailored to program staff, leadership, board and funders.
+> **Monitoring and evaluation plan.** Which indicators are tracked, how often, from what sources, against what targets—with procedures for updating them as programs evolve.
+> **Indicator dashboard.** Built on the organization's preferred platform—live, automated or periodic, depending on the data architecture from Phase 2—with views and access controls tailored to program staff, leadership, board and funders.
 > **Reporting suite.** Funder reports, board dashboards, operational reports, public impact summaries, and policy briefs translating evidence into implications for design, policy or funding.
-> **Dissemination plan.** How findings reach peers, funders, policymakers and the communities whose members were the subjects of the evaluation — audiences, messages, channels, timing.
+> **Dissemination plan.** How findings reach peers, funders, policymakers and the communities whose members were the subjects of the evaluation—audiences, messages, channels, timing.
 
 **ID: `PROGRAMS.PHASE4.gate`**
 Context: A cycle note, not a quality gate — it sits where Phases 1–3 had their quality
@@ -1179,12 +1186,12 @@ Context: The claim in the heading is counter-intuitive and it is the reason the 
 works: the coordination problem and the price problem have one solution.
 > Eyebrow: The structure
 > Heading: Affordability and coordination are the same problem.
-> Lead: The obstacles to accessible evaluation fall along two lines that turn out to be connected. The first is price. The second is coordination — of people, methods, tools, documentation and expertise, all of which get rebuilt from scratch on nearly every engagement in this field.
+> Lead: The obstacles to accessible evaluation fall along two lines that turn out to be connected. The first is price. The second is coordination—of people, methods, tools, documentation and expertise, all of which get rebuilt from scratch on nearly every engagement in this field.
 
 **ID: `INVOLVED.STACK.body`**
 Context: The last sentence is the one that separates this from a cost-cutting pitch:
 the efficiency buys time, not margin. Don't lose it in an edit for length.
-> Solving the second relieves the first. When methods are reusable, when data infrastructure is shared rather than rented per project, when specialist expertise can be drawn on for the hours it is needed rather than retained full-time, the marginal cost of an engagement falls sharply. Ascent is designed around that arithmetic. What those efficiencies buy is not margin. It is time — the long-horizon, embedded support that the evidence says actually works, at a price the organizations in question can pay.
+> Solving the second relieves the first. When methods are reusable, when data infrastructure is shared rather than rented per project, when specialist expertise can be drawn on for the hours it is needed rather than retained full-time, the marginal cost of an engagement falls sharply. Ascent is designed around that arithmetic. What those efficiencies buy is not margin. It is time—the long-horizon, embedded support that the evidence says actually works, at a price the organizations in question can pay.
 
 **ID: `INVOLVED.STACK.subhead`**
 Context: Introduces the four cards below.
@@ -1220,7 +1227,7 @@ Context: Orange box under the cards. The last sentence is a claim about the fiel
 about Ascent, and it is checkable — which is why it can be made this bluntly. The
 second-to-last names the published guidance the role is built on, as the Program
 Description does; if you want it linked, send me the URLs you use for the two documents.
-> **Why the implementation layer is the innovation.** An implementation support professional's expertise is holistic appraisal — of the organization's needs, the community's needs, and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources, its power dynamics and its outcomes. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
+> **Why the implementation layer is the innovation.** An implementation support professional's expertise is holistic appraisal—of the organization's needs, the community's needs, and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources, its power dynamics and its outcomes. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
 
 ## E2b. Impact logic
 
@@ -1290,7 +1297,7 @@ Context: The heading concedes that a reader might think this is a style preferen
 refuses the concession. That move is why the section is persuasive.
 > Eyebrow: Evidence
 > Heading: This is not an aesthetic preference.
-> Lead: Evaluation capacity building — building an organization's own skill in program evaluation, rather than simply performing an evaluation for it — has a twenty-year research literature behind it. Early findings on its effectiveness were mixed. The more recent studies, of more developed practice with longer time horizons and persistent engagement, are markedly more encouraging.
+> Lead: Evaluation capacity building—building an organization's own skill in program evaluation, rather than simply performing an evaluation for it—has a twenty-year research literature behind it. Early findings on its effectiveness were mixed. The more recent studies, of more developed practice with longer time horizons and persistent engagement, are markedly more encouraging.
 
 **ID: `INVOLVED.EVIDENCE.list`**
 Context: Four findings with citations. The second one reports a *negative* first-year
@@ -1304,7 +1311,7 @@ credible. Do not cut it to tidy the list.
 **ID: `INVOLVED.EVIDENCE.body`**
 Context: The synthesis paragraph. It names three variables and then says the whole
 industry is built to defeat them — which is the argument for Ascent existing.
-> Read together, these findings say something specific: duration, dose and relationship are the operative variables, and the organizational conditions around the individual determine whether anything sticks. Existing service models — fees-for-service, fixed terms, engagements bounded by discrete deliverables — undermine every one of those variables. Ascent's structure is an attempt to build a model that does not.
+> Read together, these findings say something specific: duration, dose and relationship are the operative variables, and the organizational conditions around the individual determine whether anything sticks. Existing service models—fees-for-service, fixed terms, engagements bounded by discrete deliverables—undermine every one of those variables. Ascent's structure is an attempt to build a model that does not.
 
 ## E4. What the structure produces
 
@@ -1335,13 +1342,13 @@ for it. Keep them all roughly this length or the grid goes ragged.
 > Body: A nonprofit that draws revenue from a consultancy practice has no incentive to guard its methods. That makes shared knowledge across the sector possible.
 >
 > Heading: Position
-> Body: In the taxonomy of nonprofit infrastructure organizations Ascent is an intermediary — serving the sector, other nonprofits and local communities, and using that scope to do better work in each.
+> Body: In the taxonomy of nonprofit infrastructure organizations Ascent is an intermediary—serving the sector, other nonprofits and local communities, and using that scope to do better work in each.
 
 **ID: `INVOLVED.BENEFITS.note`**
 Context: Orange box. The strongest sentence on the page: it names the tradeoff everyone
 in the field accepts and says it is an artefact of consulting-firm economics rather than
 a law. That is the intellectual claim the whole organisation rests on.
-> Ascent aims to be a development partner delivering developmental consulting on a structural program's cost base. That combination is usually treated as a tradeoff. Our position is that the tradeoff is a product of consulting-firm economics rather than a law of the work — and that an optimized analytics layer can subsidize a customized relationship layer.
+> Ascent aims to be a development partner delivering developmental consulting on a structural program's cost base. That combination is usually treated as a tradeoff. Our position is that the tradeoff is a product of consulting-firm economics rather than a law of the work—and that an optimized analytics layer can subsidize a customized relationship layer.
 
 ## E5. Who does this work
 
@@ -1446,7 +1453,7 @@ Context: One sentence each, describing what the view shows, in the app's own ter
 labels them Map, Logic, Theory, Policy, Change and Data; the headings use the fuller names
 the app gives them. Keep them roughly this length or the grid goes ragged.
 > Heading: Stakeholder map
-> Body: Who is around the program—funders, staff, partners, the people it serves — and how they are tied to one another.
+> Body: Who is around the program—funders, staff, partners, the people it serves—and how they are tied to one another.
 >
 > Heading: Logic model
 > Body: Inputs through activities and outputs to short-, medium- and long-term outcomes, with each pathway on its own layer and the layers added up into the whole program.
@@ -1509,28 +1516,28 @@ description is the grey summary line beneath it in search results.
 characters.
 
 **ID: `SEO.home`**
-> Title: The Ascent Collaborative — nonprofit program evaluation
-> Description: Program evaluation is more than measurement. Ascent helps nonprofits learn what their programs cause, for whom, and why — at a price they can meet.
+> Title: The Ascent Collaborative—nonprofit program evaluation
+> Description: Program evaluation is more than measurement. Ascent helps nonprofits learn what their programs cause, for whom, and why—at a price they can meet.
 
 **ID: `SEO.about`**
 Context: Rewritten in v10, when both lines described the quality assurance commitments,
 and the title shortened in v11 when Governance came off. The description combines the
 old banner subhead with the current heading, so it changed with the heading in v12.
-> Title: About Ascent — the mission and the evidence
+> Title: About Ascent—the mission and the evidence
 > Description: Ascent is a nonprofit program evaluation practice in New York City, built for the organizations priced out of effective evaluation.
 
 **ID: `SEO.programs`**
-> Title: Evaluation Process — the four-phase evaluation pipeline
+> Title: Evaluation Process—the four-phase evaluation pipeline
 > Description: A four-phase program evaluation pipeline: evaluative foundation, data architecture, analytics and inference, monitoring and reporting. Enter at any phase.
 
 **ID: `SEO.involved`**
-> Title: Our Model — why evaluation costs what it costs
+> Title: Our Model—why evaluation costs what it costs
 > Description: How Ascent restructures evaluation delivery to make sustained, evidence-based capacity building affordable for organizations priced out of the consulting market.
 
 **ID: `SEO.demo`**
 Context: New in v16. The description lists four of the six views in the order the
 page does.
-> Title: Demo — try the Program Mapper
+> Title: Demo—try the Program Mapper
 > Description: Try the Program Mapper: map every facet of a program, measure outcomes and test the effects of different changes.
 
 **ID: `SEO.404`**
