@@ -3,7 +3,13 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 31 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 32 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v32.** The About timeline entry on affordability (`ABOUT.TIMELINE.3`) now
+> uses the same figures as the home stats: 98% of small nonprofits have no dedicated
+> evaluation staff, while 80% of organizations above $5M do. It said 2% and 20% before,
+> which disagreed with v31's home stats (that "worth a look" note is resolved and removed
+> from v31). The home stats were already as you specified. **No ID changed.**
 
 > **What changed in v31.** Your edits to the doc, applied to the site. Home: the "Why it
 > matters" heading is now "Catalyze a continual improvement process" with a new lead;
@@ -15,11 +21,7 @@ you need to judge whether the wording is right.
 > outcomes-oriented synthesis." and its first paragraph starts at "When evidence quality…".
 > Demo: the banner sentence gains a second one about the app. Em dashes lost their spaces
 > throughout. **No ID changed.**
->
-> Worth a look: the first About timeline entry (`ABOUT.TIMELINE.*`) still says "roughly two
-> percent of small nonprofits have dedicated evaluation staff, against twenty percent of
-> organizations above five million dollars". The home stat now says 80% for the larger
-> organizations, so the two disagree.
+
 
 > **What changed in v30.** The home page's phase cards (`HOME.METHODS.phases`) are 1.5x larger
 > — two across instead of four — so the screenshots are legible. **No ID or wording changed.**
@@ -835,7 +837,7 @@ seriousness.
 **ID: `ABOUT.TIMELINE.3`**
 > Year: 2016
 > Headline: The affordability gap, measured
-> Detail: Roughly two percent of small nonprofits have dedicated evaluation staff, against twenty percent of organizations above five million dollars (Innovation Network).
+> Detail: Roughly ninety-eight percent of small nonprofits have no dedicated evaluation staff, while eighty percent of organizations above five million dollars do (Innovation Network).
 
 **ID: `ABOUT.TIMELINE.4`**
 > Year: 2018
