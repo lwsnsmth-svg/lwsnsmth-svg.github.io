@@ -3,7 +3,11 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 35 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 36 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v36.** The 2005 entry ("Implementation becomes a field of study",
+> `ABOUT.TIMELINE.6`) is off the About timeline, which now has nine entries. The remaining
+> IDs keep their numbers. **No other ID changed.**
 
 > **What changed in v35.** Em dashes no longer have spaces around them anywhere in the site
 > copy (33 places on the pages, 29 lines in this document). Also applied: your three
@@ -841,7 +845,7 @@ section, lightly edited for a web reader ("methodologies" → "methods", "self-i
 
 ## C3. Evidence timeline
 
-Ten entries down a vertical line. Each = year, headline, one sentence. This used to be
+Nine entries down a vertical line. Each = year, headline, one sentence. This used to be
 an organisational history; a pre-launch organisation doesn't have one, so it is now the
 chronology of the research the model rests on, and since v34 of how implementation
 science and the implementation support profession developed. Add or remove entries freely — the line
@@ -852,15 +856,10 @@ say so and I'll build a references page and link each one — the deck flags tha
 open item and it is the right call for an organisation whose pitch is methodological
 seriousness.
 
-**ID: `ABOUT.TIMELINE.6`**
-Context: **New in v34** — this and the next entry (and 8–10) bring in how implementation
-science developed and how implementation support became a profession. 2005 is from general
-knowledge of the field, not from the two PDFs; 2009 is cited in them.
-> Year: 2005
-> Headline: Implementation becomes a field of study
-> Detail: A synthesis of the implementation research literature (Fixsen, Naoom, Blase, Friedman & Wallace) gives a young field a shared evidence base to build on.
-
 **ID: `ABOUT.TIMELINE.7`**
+Context: New in v34, with entries 8–10: these bring in how implementation science developed and
+how implementation support became a profession. 2009 is cited in the two PDFs linked from
+entry 10. `ABOUT.TIMELINE.6` (2005) was removed in v36; IDs are not renumbered.
 > Year: 2009
 > Headline: A framework for what shapes implementation
 > Detail: The Consolidated Framework for Implementation Research organizes the factors that help or hinder putting evidence into practice (Damschroder et al.).
