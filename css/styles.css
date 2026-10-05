@@ -1187,35 +1187,26 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .site-footer {
   background: var(--bg-inverse);
   color: rgba(255,255,255,0.75);
-  padding-block: var(--sp-8) var(--sp-6);
+  padding-block: var(--sp-5) var(--sp-4);
   margin-top: auto;
 }
 .site-footer a { color: rgba(255,255,255,0.78); text-decoration: none; }
 .site-footer a:hover { color: #fff; text-decoration: underline; }
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: var(--sp-6);
-}
-@media (max-width: 860px) { .footer-grid { grid-template-columns: repeat(auto-fit, minmax(min(160px, 100%), 1fr)); } }
 
-.site-footer .brand { color: #fff; margin-bottom: var(--sp-4); }
+/* One compact row: brand, blurb, social icons. Stacks on narrow screens. */
+.footer-about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3) var(--sp-6);
+}
+.site-footer .brand { color: #fff; }
 .site-footer .brand__word small { color: rgba(255,255,255,0.55); }
-.footer-about p { font-size: var(--step--1); color: rgba(255,255,255,0.7); max-width: 34ch; }
+.footer-about p { flex: 1 1 22rem; margin: 0; font-size: var(--step--1); color: rgba(255,255,255,0.7); max-width: 60ch; }
 
-.footer-col h4 {
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: var(--sp-4);
-}
-.footer-col ul { list-style: none; padding: 0; margin: 0; font-size: var(--step--1); }
-.footer-col li + li { margin-top: var(--sp-3); }
-
-.social { display: flex; gap: var(--sp-3); margin-top: var(--sp-5); }
+.social { display: flex; gap: var(--sp-2); }
 .social a {
-  width: 2.25rem; height: 2.25rem;
+  width: 2rem; height: 2rem;
   display: grid; place-items: center;
   border-radius: var(--radius-pill);
   background: rgba(255,255,255,0.08);
@@ -1223,22 +1214,16 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   transition: background-color 0.18s var(--ease), transform 0.18s var(--ease);
 }
 .social a:hover { background: var(--accent); color: #1b0f03; transform: translateY(-2px); }
-.social svg { width: 1.05rem; height: 1.05rem; }
+.social svg { width: 1rem; height: 1rem; }
 
 .footer-bottom {
-  margin-top: var(--sp-7);
-  padding-top: var(--sp-5);
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-3);
   border-top: 1px solid rgba(255,255,255,0.12);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--sp-4);
-  justify-content: space-between;
-  align-items: center;
   font-size: 0.82rem;
   color: rgba(255,255,255,0.55);
 }
-.footer-bottom ul { display: flex; flex-wrap: wrap; gap: var(--sp-4); list-style: none; padding: 0; margin: 0; }
-.footer-bottom li + li { margin-top: 0; }
+.footer-bottom p { margin: 0; }
 
 /* --------------------------------------------------------------------------
    22. Motion

@@ -3,7 +3,14 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 23 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 24 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v24.** The footer lost its last link and its two legal links, and
+> shrank. Removed: "Collaborate with us" (`GLOBAL.FOOTER.col2`) and "A.I. statement" /
+> "Annual report" (`GLOBAL.FOOTER.legal_links`, both of which went nowhere). With the link
+> column gone, §A4 (link columns) went too and the legal line is now §A4. The footer is a
+> single row — brand, blurb and social icons — over a thin copyright line, with tighter
+> padding throughout. **No other ID changed.**
 
 > **What changed in v23.** The copy no longer addresses the reader. Every "you", "your" and
 > "yourselves" in the site text now speaks about the organization, the program team or the
@@ -506,37 +513,18 @@ Fits: 1–2 words each. Six items is about the ceiling before it crowds the logo
 ## A3. Footer — organisation blurb
 
 **ID: `GLOBAL.FOOTER.blurb`**
-Context: Under the logo in the footer's first column. Note this says "Ascent Research
+Context: Beside the logo in the footer's single row (stacks under it on narrow screens). Note this says "Ascent Research
 Collaborative" while the brand lockup above says "The Ascent Collaborative" — two names
 for one organisation, on every page. Tell me which one is the real one.
 Fits: 2–3 lines, ~180 characters. Makes no claim about legal or tax status (v5).
 > The Ascent Research Collaborative is dedicated to making program evaluation more accessible, sustainable and effective.
 
-## A4. Footer — link columns
-
-**ID: `GLOBAL.FOOTER.col2`**
-Context: The only link column left after your deletions, and it no longer has a
-heading. The footer grid was four columns wide; it is now two — brand block on the
-left, one link on the right ("Donate" came off in v6 with the Fund page, "Contact us" in
-v9 with the Contact page). "Collaborate with us" goes to the Our Model page, not to any
-way of getting in touch. It is a lot of empty space for one link, so say the word if you
-want the pages themselves listed here instead.
-> Collaborate with us
-
-## A5. Footer — legal line
+## A4. Footer — legal line
 
 **ID: `GLOBAL.FOOTER.copyright`**
 Context: Bottom bar. The year updates itself — leave `[year]` as a placeholder. The
 status line after the name came off in v5; the site states no legal or tax status.
 > © [year] The Ascent Collaborative.
-
-**ID: `GLOBAL.FOOTER.legal_links`**
-Context: Bottom-right. **Both currently link nowhere** — the pages don't exist yet.
-Deleting the privacy policy matters less than it did: since v9 no form on the site
-collects personal data. Tell me and I'll stub
-the pages out.
-> A.I. statement
-> Annual report
 
 ---
 
