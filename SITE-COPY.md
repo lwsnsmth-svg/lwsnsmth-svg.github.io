@@ -3,7 +3,15 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 32 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 33 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v33.** Your two edits to the affordability figures, applied to the site.
+> Both numbers now describe organizations that *lack* dedicated evaluation staff: the home
+> stat label reads "Organizations above $5M lacking the same" (98% of small nonprofits, 80%
+> of those above $5M), and the About timeline entry says 98% of small nonprofits and 80% of
+> organizations with budgets above five million dollars have no dedicated staff. This
+> reverses v32, which had read the 80% as organizations that *have* staff. **No ID
+> changed.**
 
 > **What changed in v32.** The About timeline entry on affordability (`ABOUT.TIMELINE.3`) now
 > uses the same figures as the home stats: 98% of small nonprofits have no dedicated
@@ -725,7 +733,7 @@ next section, where Ascent appears.
 > Value: 98 · Suffix: % · Label: Small nonprofits without dedicated evaluation staff
 
 **ID: `HOME.STATS.2`**
-> Value: 80 · Suffix: % · Label: Organizations above $5M with the same
+> Value: 80 · Suffix: % · Label: Organizations above $5M lacking the same
 
 **ID: `HOME.STATS.3`**
 > Value: 16 · Suffix: % · Label: Surveyed organizations spend nothing on evaluation
@@ -837,7 +845,7 @@ seriousness.
 **ID: `ABOUT.TIMELINE.3`**
 > Year: 2016
 > Headline: The affordability gap, measured
-> Detail: Roughly ninety-eight percent of small nonprofits have no dedicated evaluation staff, while eighty percent of organizations above five million dollars do (Innovation Network).
+> Detail: Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff (Innovation Network).
 
 **ID: `ABOUT.TIMELINE.4`**
 > Year: 2018
