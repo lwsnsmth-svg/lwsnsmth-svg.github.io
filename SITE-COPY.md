@@ -3,7 +3,13 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 25 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 26 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v26.** Programs & Services is now **Evaluation Process**. The page
+> heading (`PROGRAMS.HERO.h1`, which this document had as "The Process" while the site said
+> "Programs & Services" — now both say the new name), the nav label on every page, the
+> breadcrumb, the 404 shortcut card, and the search title (`SEO.programs`) all follow. The
+> file is still `programs.html` and no ID changed. Older entries below keep the old name.
 
 > **What changed in v25.** The four footer social icons are gone from every page
 > (`ALT.social`, the Instagram / LinkedIn / Facebook / YouTube names a screen reader read
@@ -471,7 +477,7 @@ the doc doesn't document. A Stop hook runs it automatically.
 - [A. Global](#a-global-every-page) — header, footer, appears on all 6 pages
 - [B. Home](#b-home) — `index.html`
 - [C. About](#c-about) — `about.html`
-- [D. Programs & Services](#d-programs--services) — `programs.html`
+- [D. Evaluation Process](#d-evaluation-process) — `programs.html`
 - [E. Our Model](#e-our-model) — `get-involved.html`
 - [F. Demo](#f-demo) — `demo.html`
 - [G. 404](#g-404-page) — `404.html`
@@ -511,7 +517,7 @@ only the visible labels changed, so no links break. "Demo" (v16) goes to `demo.h
 Fits: 1–2 words each. Six items is about the ceiling before it crowds the logo.
 > Home
 > About
-> Programs & Services
+> Evaluation Process
 > Our Model
 > Demo
 
@@ -557,7 +563,7 @@ Removed in the rebuild to make room: the problem split
 (`HOME.PROBLEM.*`), the four pipeline cards (`HOME.PIPELINE.*` — the pipeline now appears
 as four one-line bullets in `HOME.BRIEF.list`), the four "ways in" cards (`HOME.HELP.*`),
 and the row of study citations (`HOME.EVIDENCE.*`). All of that content still lives on
-Programs & Services, Our Model and About.
+Evaluation Process, Our Model and About.
 
 ## B1. Hero
 
@@ -578,7 +584,7 @@ is for, if you want one.
 > Ascent is an evaluation practice designed to serve programs and the communities around them.
 
 **ID: `HOME.HERO.buttons`**
-Context: One orange button, to "How the program runs" on Programs & Services. The outlined
+Context: One orange button, to "How the program runs" on Evaluation Process. The outlined
 "Contact us" beside it came off in v9 with the Contact page.
 Fits: 2–4 words.
 > Our program
@@ -694,12 +700,12 @@ Fits: 2 lines.
 **ID: `HOME.BRIEF.body`**
 Context: The program in three facts — two years embedded, the $500,000 ceiling, the 1.5% fee
 — then the consulting alternative in one sentence. The fee also appears in the hero badge;
-change them together. Programs & Services stopped repeating them in v14.
+change them together. Evaluation Process stopped repeating them in v14.
 > Our program embeds an implementation support professional in the program team for two years, carries the program through a full evaluation, and turns what it finds into changes the organization can actually make. It is for organizations with program budgets at or below $500,000, for a fixed annual fee of 1.5% of program budget. An organization that needs one piece of evaluation work done well can hire us for that instead.
 
 **ID: `HOME.BRIEF.list`**
 Context: The four phases, one line each, replacing the four pipeline cards that used to
-sit mid-page. Plain names first; the full detail is on Programs & Services.
+sit mid-page. Plain names first; the full detail is on Evaluation Process.
 > **Evaluative foundation.** What the program is meant to do, for whom, and why.
 > **Data architecture.** What to collect, and how to know it is good enough.
 > **Analytics and inference.** What the data show, and how sure we can be.
@@ -792,15 +798,15 @@ Context: The finding the whole model is built on. If you cut one entry, don't cu
 
 ---
 
-# D. Programs & Services
+# D. Evaluation Process
 
 `programs.html` — the detail page. Someone deciding whether to hire you reads this.
-(File name is still `programs.html`; the visible label is "Programs & Services".)
+(File name is still `programs.html`; the visible label is "Evaluation Process".)
 
 ## D1. Page banner
 
 **ID: `PROGRAMS.HERO.h1`**
-> The Process
+> Evaluation Process
 
 **ID: `PROGRAMS.HERO.lead`**
 Context: "A link in a chain and a standalone engagement" is the commercial proposition
@@ -1107,7 +1113,7 @@ Description does; if you want it linked, send me the URLs you use for the two do
 
 New on 13 September, from the Program Description's impact-stream diagram and its
 interventions table. Four cards, a table, then an orange box. Anchored at `#impact-logic`
-— the program sequence on Programs & Services links here.
+— the program sequence on Evaluation Process links here.
 
 **ID: `INVOLVED.IMPACT.intro`**
 Context: The heading is the brief's positioning claim, shortened. It only works because
@@ -1277,7 +1283,7 @@ Context: A model page has to end by admitting that the model is not the product.
 # F. Demo
 
 `demo.html` — a working demo of Program Mapper, the tool shown on the four phase
-cards on Programs & Services. **New in v16.** The app is not part of this site: it is hosted
+cards on Evaluation Process. **New in v16.** The app is not part of this site: it is hosted
 separately (bespoke-truffle-cf7077.netlify.app) and shown in a frame, so nothing inside the
 frame is covered here — its wording changes in the app. Its sample program is a fictional
 job-readiness program.
@@ -1290,7 +1296,7 @@ Context: The tool's own name, as the app titles itself.
 
 **ID: `DEMO.HERO.lead`**
 Context: What the tool is, then three things a visitor can do in it. "Behind our evaluation
-pipeline" ties it to the phase cards on Programs & Services, which show its screenshots.
+pipeline" ties it to the phase cards on Evaluation Process, which show its screenshots.
 Fits: 2–3 lines, ~180 characters.
 > A working demo of the tool behind our evaluation pipeline.
 
@@ -1362,7 +1368,7 @@ Context: One button since v9; "Tell us what broke" went to Contact.
 **ID: `NOTFOUND.cards`**
 Context: Two shortcut cards so the page is useful rather than just apologetic. The
 third, to the Fund page, came off in v6; the grid is two columns now.
-> Heading: Programs & Services — The four-phase evaluation pipeline.
+> Heading: Evaluation Process — The four-phase evaluation pipeline.
 > Heading: Our Model — Why evaluation costs what it costs, and what we changed.
 
 ---
@@ -1401,7 +1407,7 @@ old banner subhead with the current heading, so it changed with the heading in v
 > Description: Ascent is a nonprofit program evaluation practice in New York City, built for the organizations priced out of effective evaluation.
 
 **ID: `SEO.programs`**
-> Title: Programs & Services — the four-phase evaluation pipeline
+> Title: Evaluation Process — the four-phase evaluation pipeline
 > Description: A four-phase program evaluation pipeline: evaluative foundation, data architecture, analytics and inference, monitoring and reporting. Enter at any phase.
 
 **ID: `SEO.involved`**
