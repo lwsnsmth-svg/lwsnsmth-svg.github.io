@@ -3,7 +3,43 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 39 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 43 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v43.** Your edits, applied to the site. Home: the "Evaluation that Goes
+> Further" lead is now "Static evaluations describe a snapshot of a program. Ascent's
+> recursive process maps the links from program inputs to final outcomes…", and the four
+> phase lines in the "in brief" band are the longer versions you wrote. Evaluation Process:
+> the "Phase 4 is the last phase, not the end" paragraph (`PROGRAMS.PHASE4.gate`) is gone.
+> Our Model: the lead under "What the structure produces" and the line under "See the model
+> in action." are gone. **No ID renumbered.**
+
+> **What changed in v42.** Your edits to the home page, applied to the site. The hero lead is
+> now "Ascent is an evaluation practice designed to lower the cost, improve the quality, and
+> broaden the impact of evaluative services for mission-oriented organizations." The heading
+> of "Evaluation that Goes Further" is "An evaluation process accountable to program
+> outcomes", and the "Ascent Evaluation, in brief" band is headed "Evaluation and capacity
+> building that integrates into your program", with a new lead and a new body ("The process is
+> the program…"). The body no longer mentions the $500,000 ceiling or the 1.5% fee; the hero
+> badge still shows the 1.5%.
+>
+> Applied as written, but worth a look: the band's heading says "your program", which the
+> third-person copy (v23) otherwise avoids, and its lead reads "embed within programs teams
+> and carries the them through" — probably "embed within program teams and carry them
+> through". **No ID changed.**
+
+> **What changed in v41.** "Evaluation that Goes Further" now ends with a tagline, "A single
+> app shows what makes our evaluation process unique", and a "Try the demo" button to the Demo
+> page (`HOME.METHODS.demo`, new). **No existing ID changed.**
+
+> **What changed in v40.** Your edits, applied to the site. Home: the two paragraphs under the
+> phase cards (`HOME.METHODS.body`) and the "The research behind it" link
+> (`HOME.METHODS.link`) are gone, so "Evaluation that Goes Further" ends on the four cards.
+> That link had been repointed to the About timeline in v38; with it gone nothing links to
+> `about.html#timeline` any more, though the anchor stays. About: the banner heading reads
+> "Built for organizations priced out of comprehensive evaluation" (was "effective").
+> **No ID renumbered.**
+>
+> Left alone: the About search description (`SEO.about`) still says "effective evaluation".
 
 > **What changed in v39.** Your edits and your note, applied to the site. About: the banner
 > heading drops "the" ("Built for organizations priced out of effective evaluation") and gets
@@ -684,7 +720,7 @@ under the headline and does the work the headline deliberately doesn't. At 78
 characters it is now the shortest element in the hero, and it is carrying the most.
 Fits: 3–4 lines, ~180 characters — there is room for a second sentence naming who this
 is for, if you want one.
-> Ascent is an evaluation practice designed to serve programs and the communities around them.
+> Ascent is an evaluation practice designed to lower the cost, improve the quality, and broaden the impact of evaluative services for mission-oriented organizations.
 
 **ID: `HOME.HERO.buttons`**
 Context: One orange button, to "How the program runs" on Evaluation Process. The outlined
@@ -702,15 +738,11 @@ Fits: Number plus ~70 characters.
 
 ## B2. Evaluation that goes further
 
-A heading, a lead, a row of four phase cards, two paragraphs and a link; the text sits in
-a narrow column and the cards run wider. **Rewritten on
-1 October (v8)** to be much shorter and plainer: it replaces six method cards
-(`HOME.METHODS.card1`–`card6` — causal inference, attribution and contribution, impact
-measurement, statistical analysis, qualitative causal analysis, evidence strength). Those
-six ideas survive as one sentence in the lead. The new body describes the combination of
-evaluation capacity building and implementation science, following the Evidence & Peer
-Context section of the Pitch Doc (August 2026), with the jargon taken out. Citations stay
-on Our Model; the link at the end goes there.
+A heading, a lead, a row of four phase cards and, since v41, a tagline with a "Try the demo"
+button. **Rewritten on 1 October (v8)** to replace six
+method cards (`HOME.METHODS.card1`–`card6`); since v40 the two paragraphs that followed the
+cards (`HOME.METHODS.body`) and the "The research behind it" link (`HOME.METHODS.link`) are
+gone too, so the section ended on the cards until v41.
 
 **ID: `HOME.METHODS.intro`**
 Context: The lead is the whole old six-card argument in one sentence: whether it made the
@@ -718,8 +750,8 @@ difference (causal inference, attribution), for whom (impact), why (qualitative 
 and how much to trust it (evidence strength). Keep it one sentence.
 Fits: Heading 1–2 lines; lead ~200 characters.
 > Eyebrow: Evaluation that Goes Further
-> Heading: Evaluation that becomes part of how an organization works
-> Lead: Counting tells an organization how many people it served. Evaluation tells it whether the program made the difference, for whom, and why—and how much each answer can be trusted.
+> Heading: An evaluation process accountable to program outcomes
+> Lead: Static evaluations describe a snapshot of a program. Ascent's recursive process maps the links from program inputs to final outcomes, incorporates program and policy context, and builds a dynamic outcomes model.
 
 **ID: `HOME.METHODS.phases`**
 Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
@@ -735,24 +767,13 @@ mobile.
 > Name 3: Analytics & Inference
 > Name 4: Monitoring, Learning & Reporting
 
-**ID: `HOME.METHODS.body`**
-Context: Two paragraphs, no technical term left unexplained. The first names evaluation
-capacity building and implementation science and gives the one finding they share — trust
-and sustained, frequent engagement are what make capacity building work (Pitch Doc,
-Organization Summary and Evidence & Peer Context). The second says what Ascent does with
-that, and ends on "testing" rather than a result, because the site claims no track
-record. "Our program" and "for two years" are deliberate: the consulting route *is* sold
-as discrete projects, so this paragraph must not speak for all of Ascent.
-Fits: ~420 characters per paragraph. Going longer undoes the point of the rewrite.
-> The most useful evaluation is the kind an organization's own staff learn to do, until asking those questions is simply part of running the program. That is evaluation capacity building. Implementation science studies how new ways of working take hold, and research in both fields points the same way: support changes an organization when it lasts long enough, comes often enough, and rests on a relationship people trust.
->
-> Most evaluation help is still sold as a short project that ends in a report. Our program puts the two fields together instead: for two years, one person from Ascent works alongside the organization's staff, turns the analysis into decisions it can act on, and stays long enough for the skills to become the organization's own. Nobody has built evaluation support this way on purpose before. That is what we are testing.
-
-**ID: `HOME.METHODS.link`**
-Context: Arrow link under the paragraphs, to
-the research timeline on About (`about.html#timeline`) — it went there in v38, when the
-Evidence section on Our Model came off.
-> The research behind it
+**ID: `HOME.METHODS.demo`**
+Context: New in v41. Closes the section: one line pointing at the Demo page, and a button to
+it. The phase cards above show screenshots of the tool; this is where a visitor gets to use
+it. The line is a tagline, not a sentence, so it has no full stop.
+Fits: Tagline ≤ ~70 characters; button 2–4 words.
+> Tagline: A single app shows what makes our evaluation process unique
+> Button: Try the demo
 
 ## B3. Why it matters
 
@@ -811,24 +832,24 @@ kept to one section so the page stays about evaluation.
 Context: Names the differentiator — duration — rather than the service, because the page
 above has already explained the service.
 Fits: 2 lines.
-> An evaluation process accountable to program outcomes
+> Evaluation and capacity building that integrates into your program
 
 **ID: `HOME.BRIEF.lead`**
-> Ascent is a nonprofit evaluation practice built for small and mid-sized organizations that are priced out of evaluation services.
+> Our implementation support professionals embed within programs teams and carries the them through full and recursive evaluations, turning evaluation findings into holistic changes the organization can actually make.
 
 **ID: `HOME.BRIEF.body`**
 Context: The program in three facts — two years embedded, the $500,000 ceiling, the 1.5% fee
 — then the consulting alternative in one sentence. The fee also appears in the hero badge;
 change them together. Evaluation Process stopped repeating them in v14.
-> Our program embeds an implementation support professional in the program team for two years, carries the program through full and recursive evaluations, and turns what it finds into changes the organization can actually make. It is for organizations with program budgets at or below $500,000, for a fixed annual fee of 1.5% of program budget.
+> The process is the program. Although analytical reports and communication support may be deliverables within the course of an engagement, participants’ active collaboration in pursuing inquiry, scoping analysis, and employing new methods is central to both the ethics of Ascent’s practice and the achievement of its mission.
 
 **ID: `HOME.BRIEF.list`**
 Context: The four phases, one line each, replacing the four pipeline cards that used to
 sit mid-page. Plain names first; the full detail is on Evaluation Process.
-> **Evaluative foundation.** What the program is meant to do, for whom, and why.
-> **Data architecture.** What to collect, and how to know it is good enough.
-> **Analytics and inference.** What the data show, and how sure we can be.
-> **Monitoring, learning and reporting.** Keeping it working, and telling people.
+> **Evaluative foundation.** What is this program trying to do, for whom, and why we believe it will work.
+> **Data architecture.** What data is needed, from whom, through what means, and how to ensure quality.
+> **Analytics and inference.** What the data tell us, and with what degree of confidence, about how the program works and what of its characteristics are effective.
+> **Monitoring, learning and reporting.** Ensuring the program continues to work while communicating impact to stakeholders and incorporating policy and other contextual factors.
 
 **ID: `HOME.BRIEF.links`**
 Context: A solid button then a text link with an arrow.
@@ -851,7 +872,7 @@ heading stands alone — the subhead under it (`ABOUT.HERO.lead`, "Ascent is a n
 program evaluation practice in New York City.") came off. Was "Built for the
 organizations evaluation was priced away from".
 Fits: 1–2 lines.
-> Built for organizations priced out of effective evaluation
+> Built for organizations priced out of comprehensive evaluation
 
 **ID: `ABOUT.HERO.lead`**
 Context: Subhead under the banner heading. Back in v13 after being off since v12 (it used to be
@@ -1195,12 +1216,6 @@ retainer or by guide.
 > **Reporting suite.** Funder reports, board dashboards, operational reports, public impact summaries, and policy briefs translating evidence into implications for design, policy or funding.
 > **Dissemination plan.** How findings reach peers, funders, policymakers and the communities whose members were the subjects of the evaluation—audiences, messages, channels, timing.
 
-**ID: `PROGRAMS.PHASE4.gate`**
-Context: A cycle note, not a quality gate — it sits where Phases 1–3 had their quality
-gates until v11, which is where its ID comes from. It is what stops the pipeline reading as
-a line that ends in a report.
-> **Phase 4 is the last phase, not the end.** The learning agenda and monitoring data feed back into Phase 1 whenever a program is refined, expanded or replicated, which makes evaluation a cycle rather than a line ending in a report.
-
 ---
 # E. Our Model
 
@@ -1312,7 +1327,6 @@ Six cards. *(Was `INVOLVED.ADVOCATE.*`.)*
 **ID: `INVOLVED.BENEFITS.intro`**
 > Eyebrow: Model benefits
 > Heading: What the structure produces
-> Lead: Six things follow from staffing the work this way rather than the usual way.
 
 **ID: `INVOLVED.BENEFITS.cards`**
 Context: Six cards. The first is a causal chain — consistency, context, trust,
@@ -1347,7 +1361,6 @@ a law. That is the intellectual claim the whole organisation rests on.
 **ID: `INVOLVED.CTA`**
 Context: A model page has to end by admitting that the model is not the product.
 > Heading: See the model in action.
-> Body: See what the four phases actually produce.
 > Button: Explore the pipeline
 
 ---
