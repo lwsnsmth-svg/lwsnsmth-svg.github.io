@@ -3,7 +3,11 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 40 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 41 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v41.** "Evaluation that Goes Further" now ends with a tagline, "A single
+> app shows what makes our evaluation process unique", and a "Try the demo" button to the Demo
+> page (`HOME.METHODS.demo`, new). **No existing ID changed.**
 
 > **What changed in v40.** Your edits, applied to the site. Home: the two paragraphs under the
 > phase cards (`HOME.METHODS.body`) and the "The research behind it" link
@@ -712,10 +716,11 @@ Fits: Number plus ~70 characters.
 
 ## B2. Evaluation that goes further
 
-A heading, a lead and a row of four phase cards. **Rewritten on 1 October (v8)** to replace six
+A heading, a lead, a row of four phase cards and, since v41, a tagline with a "Try the demo"
+button. **Rewritten on 1 October (v8)** to replace six
 method cards (`HOME.METHODS.card1`–`card6`); since v40 the two paragraphs that followed the
 cards (`HOME.METHODS.body`) and the "The research behind it" link (`HOME.METHODS.link`) are
-gone too, so the section ends on the cards.
+gone too, so the section ended on the cards until v41.
 
 **ID: `HOME.METHODS.intro`**
 Context: The lead is the whole old six-card argument in one sentence: whether it made the
@@ -739,6 +744,14 @@ mobile.
 > Name 2: Data Architecture
 > Name 3: Analytics & Inference
 > Name 4: Monitoring, Learning & Reporting
+
+**ID: `HOME.METHODS.demo`**
+Context: New in v41. Closes the section: one line pointing at the Demo page, and a button to
+it. The phase cards above show screenshots of the tool; this is where a visitor gets to use
+it. The line is a tagline, not a sentence, so it has no full stop.
+Fits: Tagline ≤ ~70 characters; button 2–4 words.
+> Tagline: A single app shows what makes our evaluation process unique
+> Button: Try the demo
 
 ## B3. Why it matters
 
