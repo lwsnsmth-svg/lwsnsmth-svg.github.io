@@ -3,7 +3,25 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 43 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 45 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v45.** Your edits, applied to the site. Our Model: the orange notice under the
+> structure cards loses its bold lead-in ("Why the implementation layer is the innovation.") and
+> is reworded ("…the holistic appraisal of the organization's and community's needs…", "…with
+> attention to its resources and practice context."); the "Why recursion and integration
+> exists" notice now says it uses qualitative analysis to trace each evaluation and program
+> input through to downstream outcomes, and that results change how "our work is delivered".
+> The page's browser-tab and search title (`SEO.involved`) is just "Our Model". **No ID
+> changed.**
+
+> **What changed in v44.** Your edits, applied to the site. Home: the demo tagline reads "A
+> single app shows the power of our evaluation model." (with its full stop). Our Model: the
+> four structure cards lost their bold role lines ("Engaged on retainer or contract" and the
+> rest), the fourth card is "Partner Programs" (was "Clients"), "What the structure produces"
+> has no heading under its "Model benefits" eyebrow, and the orange notice below the six cards
+> (`INVOLVED.BENEFITS.note`, "Ascent aims to be a development partner…") is gone. The empty
+> `Commitment:` and `Heading:` fields stay in this document as you left them. **No ID
+> renumbered.**
 
 > **What changed in v43.** Your edits, applied to the site. Home: the "Evaluation that Goes
 > Further" lead is now "Static evaluations describe a snapshot of a program. Ascent's
@@ -772,7 +790,7 @@ Context: New in v41. Closes the section: one line pointing at the Demo page, and
 it. The phase cards above show screenshots of the tool; this is where a visitor gets to use
 it. The line is a tagline, not a sentence, so it has no full stop.
 Fits: Tagline ≤ ~70 characters; button 2–4 words.
-> Tagline: A single app shows what makes our evaluation process unique
+> Tagline: A single app shows the power of our evaluation model.
 > Button: Try the demo
 
 ## B3. Why it matters
@@ -1244,26 +1262,26 @@ works: the coordination problem and the price problem have one solution.
 
 **ID: `INVOLVED.STACK.layer1`**
 Context: Four cards, two by two, in the order the deck's delivery stack runs — outside
-in, ending with you. Each is a heading, a bold role line, then the description.
+in, ending with you. Each is a heading and a description; the bold role line came off in v44.
 > Heading: Outsourced expertise
-> Commitment: Engaged on retainer or contract
+> Commitment: 
 > Description: Specialists with deep methodological or domain knowledge, available when a project needs them and not carried as overhead when it doesn't.
 
 **ID: `INVOLVED.STACK.layer2`**
 > Heading: In-house analytics
-> Commitment: Internal, recurring capacity
+> Commitment: 
 > Description: The work that recurs across nearly every engagement: data analysis, instrument design, program design and measurement.
 
 **ID: `INVOLVED.STACK.layer3`**
 Context: Orange icon — this is the layer the whole model turns on, and the one the
 sector doesn't currently staff.
 > Heading: Implementation support
-> Commitment: The largest full-time function
+> Commitment: 
 > Description: The primary liaison between analysts and the program team. Implementation support professionals translate findings into actionable changes and shepherd them through the organization, so what the evaluation produces actually lands.
 
 **ID: `INVOLVED.STACK.layer4`**
-> Heading: Clients
-> Commitment: Embedded with the team
+> Heading: Partner Programs
+> Commitment: 
 > Description: Implementation staff collaborate on what the organization needs and on how change actually gets made inside it.
 
 **ID: `INVOLVED.STACK.note`**
@@ -1271,7 +1289,7 @@ Context: Orange box under the cards. The last sentence is a claim about the fiel
 about Ascent, and it is checkable — which is why it can be made this bluntly. The
 second-to-last names the published guidance the role is built on, as the Program
 Description does; if you want it linked, send me the URLs you use for the two documents.
-> **Why the implementation layer is the innovation.** An implementation support professional's expertise is holistic appraisal—of the organization's needs, the community's needs, and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources, its power dynamics and its outcomes. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
+> An implementation support professional's expertise is the holistic appraisal of the organization's and community's needs, and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources and practice context. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
 
 ## E2b. Impact logic
 
@@ -1318,7 +1336,7 @@ Context: Orange box. Recursion and integration is the concept a first-time reade
 never met, so this explains why it exists before asking anyone to care about its three
 mechanisms (causal chain identification, metric integration, evaluation recursion — here
 in plain words rather than by name). The last sentence is what makes it matter to a funder.
-> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Recursion and integration is how this program tries to strengthen it: tracing each evaluation cycle through to its effect on downstream outcomes, turning what the implementation supporter learns about the organization into metrics, and running evaluation as a continuing cycle rather than a one-off. Its results also change how we deliver the work, which keeps the practice accountable to outcomes rather than to deliverables.
+> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Recursion and integration is how this program tries to strengthen it: using qualitative analysis to trace each evaluation and program input through to its effect on downstream outcomes. Its results also change how our work is delivered, keeping the practice accountable to outcomes rather than to deliverables.
 
 ## E3. What the structure produces
 
@@ -1326,7 +1344,7 @@ Six cards. *(Was `INVOLVED.ADVOCATE.*`.)*
 
 **ID: `INVOLVED.BENEFITS.intro`**
 > Eyebrow: Model benefits
-> Heading: What the structure produces
+> Heading: 
 
 **ID: `INVOLVED.BENEFITS.cards`**
 Context: Six cards. The first is a causal chain — consistency, context, trust,
@@ -1349,12 +1367,6 @@ for it. Keep them all roughly this length or the grid goes ragged.
 >
 > Heading: Position
 > Body: In the taxonomy of nonprofit infrastructure organizations Ascent is an intermediary—serving the sector, other nonprofits and local communities, and using that scope to do better work in each.
-
-**ID: `INVOLVED.BENEFITS.note`**
-Context: Orange box. The strongest sentence on the page: it names the tradeoff everyone
-in the field accepts and says it is an artefact of consulting-firm economics rather than
-a law. That is the intellectual claim the whole organisation rests on.
-> Ascent aims to be a development partner delivering developmental consulting on a structural program's cost base. That combination is usually treated as a tradeoff. Our position is that the tradeoff is a product of consulting-firm economics rather than a law of the work—and that an optimized analytics layer can subsidize a customized relationship layer.
 
 ## E4. Closing call to action
 
@@ -1496,7 +1508,7 @@ old banner subhead with the current heading, so it changed with the heading in v
 > Description: A four-phase program evaluation pipeline: evaluative foundation, data architecture, analytics and inference, monitoring and reporting. Enter at any phase.
 
 **ID: `SEO.involved`**
-> Title: Our Model—why evaluation costs what it costs
+> Title: Our Model
 > Description: How Ascent restructures evaluation delivery to make sustained, evidence-based capacity building affordable for organizations priced out of the consulting market.
 
 **ID: `SEO.demo`**
