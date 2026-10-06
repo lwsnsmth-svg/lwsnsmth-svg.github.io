@@ -738,7 +738,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 @media (max-width: 700px) { .phase-cards { grid-template-columns: minmax(0, 1fr); max-width: 52rem; } }
 /* Tool-view cards: a click expands the card into a short description. Collapsed
    only when JS is running (html.js), so without it the text is simply shown. */
-.phase-cards--trio { align-items: start; }
+.phase-cards { align-items: start; }
 .tool-card__toggle {
   display: flex; flex-direction: column; width: 100%;
   margin: 0; padding: 0; border: 0; background: none;

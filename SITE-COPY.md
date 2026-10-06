@@ -3,7 +3,14 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 48 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 49 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v49.** All six cards in "Evaluation that Goes Further" now expand on click
+> into a short description, and none of them links anywhere. The three phase cards (Logic
+> Models & Metric Integration, Data Architecture, Analytics & Forward Planning,
+> `HOME.METHODS.phases`) used to link to their sections on Evaluation Process; they gained
+> `Description` lines like the tool-view cards got in v48. I wrote all six descriptions from the
+> screenshots — please correct them. **No ID changed.**
 
 > **What changed in v48.** The three tool-view cards on the home page (`HOME.METHODS.tools`)
 > no longer link to the Demo page. Each now expands on click into a short description of that
@@ -793,15 +800,20 @@ Fits: Heading 1–2 lines; lead ~200 characters.
 
 **ID: `HOME.METHODS.phases`**
 Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
-and moved here). Three cards (four until v47) between the lead and the body: Evaluation Process phase
-screenshots with a home-page name underneath (not the phase names on that page), and no tag, summary or "Learn more" button.
-Each card links to its phase section on Evaluation Process. They reuse the screenshots of
-`PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`); the names repeat the card names, so
-change them together.
-Fits: Name ≤ ~35 characters. Three across on desktop, one column on narrow screens.
+and moved here). Three cards between the lead and the tool-view cards: Evaluation Process
+phase screenshots with a home-page name underneath (not the phase names on that page). Since
+v49 they no longer link to Evaluation Process: like the tool-view cards, a click opens a short
+description and a second click closes it. Without JavaScript the descriptions are shown. They
+reuse the screenshots of `PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`). The descriptions
+are mine, written from the screenshots and the phase sections; correct them freely.
+Fits: Name ≤ ~35 characters; description 1–2 sentences, ~200 characters. Three across on
+desktop, one column on narrow screens.
 > Name 1: Logic Models & Metric Integration
+> Description 1: Map how a program's inputs and activities lead to its outputs and its short-, medium- and long-term outcomes, and tie each part of the model to the metrics that will track it.
 > Name 2: Data Architecture
+> Description 2: Trace every number in the model back to the data series it comes from, so what is collected, from whom and by what means is clear, and the quality of the evidence can be checked.
 > Name 3: Analytics & Forward Planning
+> Description 3: Analyze how a program's results move over time and what drives them, test how sensitive they are to changes in inputs and assumptions, and use that to plan ahead.
 
 **ID: `HOME.METHODS.tools`**
 Context: New in v46; expanding since v48. A second row of three cards under the phase cards,

@@ -16,7 +16,7 @@
 
 <link rel="icon" href="assets/favicon.png?v=2026-10-04" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2026-10-04">
-<link rel="stylesheet" href="css/styles.css?v=2026-10-11">
+<link rel="stylesheet" href="css/styles.css?v=2026-10-12">
 <script src="js/theme-init.js"></script>
 
 <script type="application/ld+json">
@@ -117,24 +117,27 @@
 
     <div class="container">
       <div class="grid grid--4 phase-cards reveal">
-        <a class="card phase-card card--hover" href="programs.html#phase-1">
-          <div class="program-card__media">
-            <img src="assets/phase-1-logic-model.png" alt="Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes" width="1480" height="904" loading="lazy">
-          </div>
-          <h3>Logic Models &amp; Metric Integration</h3>
-        </a>
-        <a class="card phase-card card--hover" href="programs.html#phase-2">
-          <div class="program-card__media">
-            <img src="assets/phase-2-data-lineage.png" alt="Data lineage view tracing each number in the model back to the data series it comes from" width="1556" height="1117" loading="lazy" style="object-position:center top">
-          </div>
-          <h3>Data Architecture</h3>
-        </a>
-        <a class="card phase-card card--hover" href="programs.html#phase-3">
-          <div class="program-card__media">
-            <img src="assets/phase-3-analysis.png" alt="Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on" width="1290" height="935" loading="lazy" style="object-position:center top">
-          </div>
-          <h3>Analytics &amp; Forward Planning</h3>
-        </a>
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="phase-desc-1">
+            <span class="program-card__media"><img src="assets/phase-1-logic-model.png" alt="Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes" width="1480" height="904" loading="lazy"></span>
+            <span class="tool-card__name">Logic Models &amp; Metric Integration<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="phase-desc-1"><div><p>Map how a program's inputs and activities lead to its outputs and its short-, medium- and long-term outcomes, and tie each part of the model to the metrics that will track it.</p></div></div>
+        </article>
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="phase-desc-2">
+            <span class="program-card__media"><img src="assets/phase-2-data-lineage.png" alt="Data lineage view tracing each number in the model back to the data series it comes from" width="1556" height="1117" loading="lazy" style="object-position:center top"></span>
+            <span class="tool-card__name">Data Architecture<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="phase-desc-2"><div><p>Trace every number in the model back to the data series it comes from, so what is collected, from whom and by what means is clear, and the quality of the evidence can be checked.</p></div></div>
+        </article>
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="phase-desc-3">
+            <span class="program-card__media"><img src="assets/phase-3-analysis.png" alt="Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on" width="1290" height="935" loading="lazy" style="object-position:center top"></span>
+            <span class="tool-card__name">Analytics &amp; Forward Planning<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="phase-desc-3"><div><p>Analyze how a program's results move over time and what drives them, test how sensitive they are to changes in inputs and assumptions, and use that to plan ahead.</p></div></div>
+        </article>
       </div>
 
       <div class="grid phase-cards phase-cards--trio reveal">
