@@ -3,7 +3,12 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 47 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 48 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v48.** The three tool-view cards on the home page (`HOME.METHODS.tools`)
+> no longer link to the Demo page. Each now expands on click into a short description of that
+> view (new `Description` lines, which I wrote from the screenshots — please correct them),
+> and closes on a second click. **No ID changed.**
 
 > **What changed in v47.** The home page's phase cards (`HOME.METHODS.phases`): the first is
 > now "Logic Models & Metric Integration" (was "Evaluative Foundation"), the third "Analytics &
@@ -799,14 +804,22 @@ Fits: Name ≤ ~35 characters. Three across on desktop, one column on narrow scr
 > Name 3: Analytics & Forward Planning
 
 **ID: `HOME.METHODS.tools`**
-Context: New in v46. A second row of three cards under the four phase cards, each a screenshot
-of another view in the Program Mapper with its name underneath. They link to the Demo page.
-The screenshots are `assets/tool-*.png`; their alt text is in `ALT.home_tools`. The sample
-data in them (a job-readiness program) is example data, not a client result.
-Fits: Name ≤ ~35 characters. Three across, one column on narrow screens.
+Context: New in v46; expanding since v48. A second row of three cards under the phase cards,
+each a screenshot of another view in the Program Mapper with its name underneath. They no
+longer link anywhere (they went to the Demo page in v46): clicking a card opens a short
+description of that view, and clicking again closes it. Without JavaScript the descriptions
+are simply shown. The screenshots are `assets/tool-*.png`; their alt text is in
+`ALT.home_tools`. The sample data in them (a job-readiness program) is example data, not a
+client result. The descriptions are mine, written from what the screenshots show; correct them
+freely.
+Fits: Name ≤ ~35 characters; description 1–2 sentences, ~200 characters. Three across, one
+column on narrow screens.
 > Name 1: Stakeholder Mapping
+> Description 1: Lay out everyone with a stake in the program, from funders and governance to the delivery team, partners and the people served, and see how they are connected: who funds, governs, refers or delivers to whom.
 > Name 2: Policy and Practice Context
+> Description 2: Keep track of the rules, funding formulas and incentives that shape the program: what is in force today, what is proposed, and which proposed changes to include when projecting what comes next.
 > Name 3: Evidence & Theories of Change
+> Description 3: Build the logic model from inputs to long-term outcomes, attach the evidence and assumptions behind each link, and see at a glance which links are evidenced, mixed, untested or refuted.
 
 **ID: `HOME.METHODS.demo`**
 Context: New in v41. Closes the section: one line pointing at the Demo page, and a button to
