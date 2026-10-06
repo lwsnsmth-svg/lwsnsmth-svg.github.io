@@ -735,6 +735,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   margin: var(--sp-6) auto var(--sp-6);
 }
 @media (max-width: 560px) { .phase-cards { grid-template-columns: minmax(0, 1fr); } }
+/* Second row: three more tool views, full container width. */
+.phase-cards--trio { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; margin-top: 0; }
+/* Three items never sit well in two columns, so go straight to one. */
+@media (max-width: 700px) { .phase-cards--trio { grid-template-columns: minmax(0, 1fr); max-width: 52rem; } }
 .phase-demo .lead { margin: 0 auto var(--sp-5); max-width: 36ch; }
 .phase-card { padding: 0; overflow: hidden; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
 .phase-card h3 { font-size: var(--step-0); margin: 0; padding: var(--sp-3) var(--sp-4) var(--sp-4); }

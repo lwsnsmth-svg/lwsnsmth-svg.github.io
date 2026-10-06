@@ -3,7 +3,14 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 45 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 46 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v46.** Three more cards under the home page's phase cards:
+> **Stakeholder Mapping**, **Policy and Practice Context** and **Evidence & Theories of
+> Change**, each a screenshot of that view of the Program Mapper (`HOME.METHODS.tools`, alt
+> text in `ALT.home_tools`), linking to the Demo page. Also applied: your edit to the lead
+> under "Why it matters" — "Evaluation should not be a static exercise." (was "compliance").
+> **No existing ID changed.**
 
 > **What changed in v45.** Your edits, applied to the site. Our Model: the orange notice under the
 > structure cards loses its bold lead-in ("Why the implementation layer is the innovation.") and
@@ -756,7 +763,8 @@ Fits: Number plus ~70 characters.
 
 ## B2. Evaluation that goes further
 
-A heading, a lead, a row of four phase cards and, since v41, a tagline with a "Try the demo"
+A heading, a lead, a row of four phase cards, since v46 a second row of three tool-view
+cards, and, since v41, a tagline with a "Try the demo"
 button. **Rewritten on 1 October (v8)** to replace six
 method cards (`HOME.METHODS.card1`–`card6`); since v40 the two paragraphs that followed the
 cards (`HOME.METHODS.body`) and the "The research behind it" link (`HOME.METHODS.link`) are
@@ -785,6 +793,16 @@ mobile.
 > Name 3: Analytics & Inference
 > Name 4: Monitoring, Learning & Reporting
 
+**ID: `HOME.METHODS.tools`**
+Context: New in v46. A second row of three cards under the four phase cards, each a screenshot
+of another view in the Program Mapper with its name underneath. They link to the Demo page.
+The screenshots are `assets/tool-*.png`; their alt text is in `ALT.home_tools`. The sample
+data in them (a job-readiness program) is example data, not a client result.
+Fits: Name ≤ ~35 characters. Three across, one column on narrow screens.
+> Name 1: Stakeholder Mapping
+> Name 2: Policy and Practice Context
+> Name 3: Evidence & Theories of Change
+
 **ID: `HOME.METHODS.demo`**
 Context: New in v41. Closes the section: one line pointing at the Demo page, and a button to
 it. The phase cards above show screenshots of the tool; this is where a visitor gets to use
@@ -803,7 +821,7 @@ it to speak to leaders alone.
 **ID: `HOME.WHY.intro`**
 > Eyebrow: Why it matters
 > Heading: Catalyze a continual improvement process
-> Lead: Evaluation should not be a compliance exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.
+> Lead: Evaluation should not be a static exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.
 
 **ID: `HOME.WHY.leaders`**
 Context: Four benefits with bold lead-ins. The third — getting credit for serving the
@@ -1556,6 +1574,12 @@ screenshots as `ALT.programs`, so the wording matches it.
 > Thumbnail 2: Data lineage view tracing each number in the model back to the data series it comes from
 > Thumbnail 3: Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on
 > Thumbnail 4: Scenario dashboard showing every indicator in the model under a chosen funding scenario
+
+**ID: `ALT.home_tools`**
+Context: New in v46. The three tool-view cards under the phase cards on the home page.
+> Card 1: Stakeholder map showing ten stakeholders as shapes, grouped by type, with labelled links such as funds, governs and delivers to
+> Card 2: Policy and practice timeline for three topics, showing the rule in force today beside proposed changes that can be included in a projection
+> Card 3: Logic model from inputs to long-term outcomes with each link colored by strength of evidence, above a library of sources and a list of assumptions
 
 **ID: `ALT.demo`**
 Context: New in v16. Not an image: the name a screen reader announces for the embedded
