@@ -16,7 +16,7 @@
 
 <link rel="icon" href="assets/favicon.png?v=2026-10-04" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2026-10-04">
-<link rel="stylesheet" href="css/styles.css?v=2026-10-07">
+<link rel="stylesheet" href="css/styles.css?v=2026-10-12">
 <script src="js/theme-init.js"></script>
 
 <script type="application/ld+json">
@@ -117,30 +117,51 @@
 
     <div class="container">
       <div class="grid grid--4 phase-cards reveal">
-        <a class="card phase-card card--hover" href="programs.html#phase-1">
-          <div class="program-card__media">
-            <img src="assets/phase-1-logic-model.png" alt="Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes" width="1480" height="904" loading="lazy">
-          </div>
-          <h3>Evaluative Foundation</h3>
-        </a>
-        <a class="card phase-card card--hover" href="programs.html#phase-2">
-          <div class="program-card__media">
-            <img src="assets/phase-2-data-lineage.png" alt="Data lineage view tracing each number in the model back to the data series it comes from" width="1556" height="1117" loading="lazy" style="object-position:center top">
-          </div>
-          <h3>Data Architecture</h3>
-        </a>
-        <a class="card phase-card card--hover" href="programs.html#phase-3">
-          <div class="program-card__media">
-            <img src="assets/phase-3-analysis.png" alt="Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on" width="1290" height="935" loading="lazy" style="object-position:center top">
-          </div>
-          <h3>Analytics &amp; Inference</h3>
-        </a>
-        <a class="card phase-card card--hover" href="programs.html#phase-4">
-          <div class="program-card__media">
-            <img src="assets/phase-4-scenarios.png" alt="Scenario dashboard showing every indicator in the model under a chosen funding scenario" width="1560" height="999" loading="lazy" style="object-position:center top">
-          </div>
-          <h3>Monitoring, Learning &amp; Reporting</h3>
-        </a>
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="phase-desc-1">
+            <span class="program-card__media"><img src="assets/phase-1-logic-model.png" alt="Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes" width="1480" height="904" loading="lazy"></span>
+            <span class="tool-card__name">Logic Models &amp; Metric Integration<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="phase-desc-1"><div><p>Map how a program's inputs and activities lead to its outputs and its short-, medium- and long-term outcomes, and tie each part of the model to the metrics that will track it.</p></div></div>
+        </article>
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="phase-desc-2">
+            <span class="program-card__media"><img src="assets/phase-2-data-lineage.png" alt="Data lineage view tracing each number in the model back to the data series it comes from" width="1556" height="1117" loading="lazy" style="object-position:center top"></span>
+            <span class="tool-card__name">Data Architecture<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="phase-desc-2"><div><p>Trace every number in the model back to the data series it comes from, so what is collected, from whom and by what means is clear, and the quality of the evidence can be checked.</p></div></div>
+        </article>
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="phase-desc-3">
+            <span class="program-card__media"><img src="assets/phase-3-analysis.png" alt="Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on" width="1290" height="935" loading="lazy" style="object-position:center top"></span>
+            <span class="tool-card__name">Analytics &amp; Forward Planning<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="phase-desc-3"><div><p>Analyze how a program's results move over time and what drives them, test how sensitive they are to changes in inputs and assumptions, and use that to plan ahead.</p></div></div>
+        </article>
+      </div>
+
+      <div class="grid phase-cards phase-cards--trio reveal">
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="tool-desc-1">
+            <span class="program-card__media"><img src="assets/tool-stakeholder-mapping.png" alt="Stakeholder map showing ten stakeholders as shapes, grouped by type, with labelled links such as funds, governs and delivers to" width="1444" height="856" loading="lazy" style="object-position:center top"></span>
+            <span class="tool-card__name">Stakeholder Mapping<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="tool-desc-1"><div><p>Lay out everyone with a stake in the program, from funders and governance to the delivery team, partners and the people served, and see how they are connected: who funds, governs, refers or delivers to whom.</p></div></div>
+        </article>
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="tool-desc-2">
+            <span class="program-card__media"><img src="assets/tool-policy-practice-context.png" alt="Policy and practice timeline for three topics, showing the rule in force today beside proposed changes that can be included in a projection" width="1519" height="919" loading="lazy" style="object-position:center top"></span>
+            <span class="tool-card__name">Policy and Practice Context<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="tool-desc-2"><div><p>Keep track of the rules, funding formulas and incentives that shape the program: what is in force today, what is proposed, and which proposed changes to include when projecting what comes next.</p></div></div>
+        </article>
+        <article class="card phase-card tool-card">
+          <button class="tool-card__toggle" type="button" aria-expanded="false" aria-controls="tool-desc-3">
+            <span class="program-card__media"><img src="assets/tool-evidence-theories-of-change.png" alt="Logic model from inputs to long-term outcomes with each link colored by strength of evidence, above a library of sources and a list of assumptions" width="1526" height="916" loading="lazy" style="object-position:center top"></span>
+            <span class="tool-card__name">Evidence &amp; Theories of Change<svg class="tool-card__chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="tool-card__desc" id="tool-desc-3"><div><p>Build the logic model from inputs to long-term outcomes, attach the evidence and assumptions behind each link, and see at a glance which links are evidenced, mixed, untested or refuted.</p></div></div>
+        </article>
       </div>
 
       <div class="phase-demo center reveal">
@@ -156,7 +177,7 @@
       <div class="section-head center reveal">
         <span class="eyebrow">Why it matters</span>
         <h2>Catalyze a continual improvement process</h2>
-        <p class="lead">Evaluation should not be a compliance exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.</p>
+        <p class="lead">Evaluation should not be a static exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.</p>
       </div>
 
       <div class="reveal">
@@ -169,6 +190,9 @@
             <li><strong>Hear from the people served.</strong> Qualitative methods put participants' own accounts of what helped into the evidence.</li>
           </ul>
         </article>
+        <div class="btn-row" style="margin-top:2rem; justify-content:center">
+          <a class="btn btn--primary btn--lg" href="programs.html">See the evaluation process</a>
+        </div>
       </div>
     </div>
   </section>

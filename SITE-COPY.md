@@ -3,7 +3,38 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 45 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 50 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v50.** The "Why it matters" section on the home page ends with a button,
+> "See the evaluation process", linking to Evaluation Process (`HOME.WHY.button`, new). You did
+> not give the label, so it is mine — please change it if you want other wording. **No
+> existing ID changed.**
+
+> **What changed in v49.** All six cards in "Evaluation that Goes Further" now expand on click
+> into a short description, and none of them links anywhere. The three phase cards (Logic
+> Models & Metric Integration, Data Architecture, Analytics & Forward Planning,
+> `HOME.METHODS.phases`) used to link to their sections on Evaluation Process; they gained
+> `Description` lines like the tool-view cards got in v48. I wrote all six descriptions from the
+> screenshots — please correct them. **No ID changed.**
+
+> **What changed in v48.** The three tool-view cards on the home page (`HOME.METHODS.tools`)
+> no longer link to the Demo page. Each now expands on click into a short description of that
+> view (new `Description` lines, which I wrote from the screenshots — please correct them),
+> and closes on a second click. **No ID changed.**
+
+> **What changed in v47.** The home page's phase cards (`HOME.METHODS.phases`): the first is
+> now "Logic Models & Metric Integration" (was "Evaluative Foundation"), the third "Analytics &
+> Forward Planning" (was "Analytics & Inference"), and the "Monitoring, Learning & Reporting"
+> card is gone, so the section has three phase cards and three tool-view cards, in two rows of
+> three. The Evaluation Process page keeps the original phase names. `ALT.home_phases` loses its
+> fourth line. **No ID changed.**
+
+> **What changed in v46.** Three more cards under the home page's phase cards:
+> **Stakeholder Mapping**, **Policy and Practice Context** and **Evidence & Theories of
+> Change**, each a screenshot of that view of the Program Mapper (`HOME.METHODS.tools`, alt
+> text in `ALT.home_tools`), linking to the Demo page. Also applied: your edit to the lead
+> under "Why it matters" — "Evaluation should not be a static exercise." (was "compliance").
+> **No existing ID changed.**
 
 > **What changed in v45.** Your edits, applied to the site. Our Model: the orange notice under the
 > structure cards loses its bold lead-in ("Why the implementation layer is the innovation.") and
@@ -756,7 +787,8 @@ Fits: Number plus ~70 characters.
 
 ## B2. Evaluation that goes further
 
-A heading, a lead, a row of four phase cards and, since v41, a tagline with a "Try the demo"
+A heading, a lead, a row of three phase cards, since v46 a second row of three tool-view
+cards, and, since v41, a tagline with a "Try the demo"
 button. **Rewritten on 1 October (v8)** to replace six
 method cards (`HOME.METHODS.card1`–`card6`); since v40 the two paragraphs that followed the
 cards (`HOME.METHODS.body`) and the "The research behind it" link (`HOME.METHODS.link`) are
@@ -773,17 +805,38 @@ Fits: Heading 1–2 lines; lead ~200 characters.
 
 **ID: `HOME.METHODS.phases`**
 Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
-and moved here). Four cards between the lead and the body: the Evaluation Process phase
-screenshots with the phase name underneath, and no tag, summary or "Learn more" button.
-Each card links to its phase section on Evaluation Process. They reuse the screenshots of
-`PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`); the names repeat the card names, so
-change them together.
-Fits: Name ≤ ~35 characters. Two by two on desktop (they were four across until v30), one column on
-mobile.
-> Name 1: Evaluative Foundation
+and moved here). Three cards between the lead and the tool-view cards: Evaluation Process
+phase screenshots with a home-page name underneath (not the phase names on that page). Since
+v49 they no longer link to Evaluation Process: like the tool-view cards, a click opens a short
+description and a second click closes it. Without JavaScript the descriptions are shown. They
+reuse the screenshots of `PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`). The descriptions
+are mine, written from the screenshots and the phase sections; correct them freely.
+Fits: Name ≤ ~35 characters; description 1–2 sentences, ~200 characters. Three across on
+desktop, one column on narrow screens.
+> Name 1: Logic Models & Metric Integration
+> Description 1: Map how a program's inputs and activities lead to its outputs and its short-, medium- and long-term outcomes, and tie each part of the model to the metrics that will track it.
 > Name 2: Data Architecture
-> Name 3: Analytics & Inference
-> Name 4: Monitoring, Learning & Reporting
+> Description 2: Trace every number in the model back to the data series it comes from, so what is collected, from whom and by what means is clear, and the quality of the evidence can be checked.
+> Name 3: Analytics & Forward Planning
+> Description 3: Analyze how a program's results move over time and what drives them, test how sensitive they are to changes in inputs and assumptions, and use that to plan ahead.
+
+**ID: `HOME.METHODS.tools`**
+Context: New in v46; expanding since v48. A second row of three cards under the phase cards,
+each a screenshot of another view in the Program Mapper with its name underneath. They no
+longer link anywhere (they went to the Demo page in v46): clicking a card opens a short
+description of that view, and clicking again closes it. Without JavaScript the descriptions
+are simply shown. The screenshots are `assets/tool-*.png`; their alt text is in
+`ALT.home_tools`. The sample data in them (a job-readiness program) is example data, not a
+client result. The descriptions are mine, written from what the screenshots show; correct them
+freely.
+Fits: Name ≤ ~35 characters; description 1–2 sentences, ~200 characters. Three across, one
+column on narrow screens.
+> Name 1: Stakeholder Mapping
+> Description 1: Lay out everyone with a stake in the program, from funders and governance to the delivery team, partners and the people served, and see how they are connected: who funds, governs, refers or delivers to whom.
+> Name 2: Policy and Practice Context
+> Description 2: Keep track of the rules, funding formulas and incentives that shape the program: what is in force today, what is proposed, and which proposed changes to include when projecting what comes next.
+> Name 3: Evidence & Theories of Change
+> Description 3: Build the logic model from inputs to long-term outcomes, attach the evidence and assumptions behind each link, and see at a glance which links are evidenced, mixed, untested or refuted.
 
 **ID: `HOME.METHODS.demo`**
 Context: New in v41. Closes the section: one line pointing at the Demo page, and a button to
@@ -803,7 +856,7 @@ it to speak to leaders alone.
 **ID: `HOME.WHY.intro`**
 > Eyebrow: Why it matters
 > Heading: Catalyze a continual improvement process
-> Lead: Evaluation should not be a compliance exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.
+> Lead: Evaluation should not be a static exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.
 
 **ID: `HOME.WHY.leaders`**
 Context: Four benefits with bold lead-ins. The third — getting credit for serving the
@@ -813,6 +866,13 @@ hardest cases — is the one most leaders have felt and never had language for.
 > **Make a case funders believe.** A defensible estimate of a program's impact is worth more in a proposal than a large number nobody can check.
 > **Get credit for the hardest work.** Programs serving people furthest from success often post modest raw numbers and large real effects. Only a comparison reveals it.
 > **Hear from the people served.** Qualitative methods put participants' own accounts of what helped into the evidence.
+
+**ID: `HOME.WHY.button`**
+Context: New in v50. One orange button under the benefits card, to Evaluation Process, so a
+reader who has just been told why evaluation matters can see what the process is. The label
+is mine; change it freely.
+Fits: 2–5 words.
+> See the evaluation process
 
 ## B4. Statistics strip
 
@@ -1550,12 +1610,17 @@ employment program) is not described — it is example data, not a client result
 > Phase 4 detail: Illustration of an indicator dashboard tracked over time
 
 **ID: `ALT.home_phases`**
-Context: New in v27. The four hero thumbnails on the home page, which are the same
-screenshots as `ALT.programs`, so the wording matches it.
+Context: New in v27. The three phase-card screenshots on the home page, which are the same
+screenshots as `ALT.programs` cards 1–3, so the wording matches it.
 > Thumbnail 1: Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes
 > Thumbnail 2: Data lineage view tracing each number in the model back to the data series it comes from
 > Thumbnail 3: Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on
-> Thumbnail 4: Scenario dashboard showing every indicator in the model under a chosen funding scenario
+
+**ID: `ALT.home_tools`**
+Context: New in v46. The three tool-view cards under the phase cards on the home page.
+> Card 1: Stakeholder map showing ten stakeholders as shapes, grouped by type, with labelled links such as funds, governs and delivers to
+> Card 2: Policy and practice timeline for three topics, showing the rule in force today beside proposed changes that can be included in a projection
+> Card 3: Logic model from inputs to long-term outcomes with each link colored by strength of evidence, above a library of sources and a list of assumptions
 
 **ID: `ALT.demo`**
 Context: New in v16. Not an image: the name a screen reader announces for the embedded

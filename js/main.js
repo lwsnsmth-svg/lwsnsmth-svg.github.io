@@ -151,6 +151,15 @@
     if (window.ResizeObserver) new ResizeObserver(place).observe(col);
   });
 
+  /* ---- Tool cards (home): click to expand a short description ----------- */
+  document.querySelectorAll('.tool-card__toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.closest('.tool-card').classList.toggle('is-open', !open);
+    });
+  });
+
   /* ---- Current year in footer ------------------------------------------ */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
