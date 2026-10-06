@@ -3,7 +3,12 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 49 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 50 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v50.** The "Why it matters" section on the home page ends with a button,
+> "See the evaluation process", linking to Evaluation Process (`HOME.WHY.button`, new). You did
+> not give the label, so it is mine — please change it if you want other wording. **No
+> existing ID changed.**
 
 > **What changed in v49.** All six cards in "Evaluation that Goes Further" now expand on click
 > into a short description, and none of them links anywhere. The three phase cards (Logic
@@ -861,6 +866,13 @@ hardest cases — is the one most leaders have felt and never had language for.
 > **Make a case funders believe.** A defensible estimate of a program's impact is worth more in a proposal than a large number nobody can check.
 > **Get credit for the hardest work.** Programs serving people furthest from success often post modest raw numbers and large real effects. Only a comparison reveals it.
 > **Hear from the people served.** Qualitative methods put participants' own accounts of what helped into the evidence.
+
+**ID: `HOME.WHY.button`**
+Context: New in v50. One orange button under the benefits card, to Evaluation Process, so a
+reader who has just been told why evaluation matters can see what the process is. The label
+is mine; change it freely.
+Fits: 2–5 words.
+> See the evaluation process
 
 ## B4. Statistics strip
 
