@@ -3,7 +3,14 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 46 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 47 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v47.** The home page's phase cards (`HOME.METHODS.phases`): the first is
+> now "Logic Models & Metric Integration" (was "Evaluative Foundation"), the third "Analytics &
+> Forward Planning" (was "Analytics & Inference"), and the "Monitoring, Learning & Reporting"
+> card is gone, so the section has three phase cards and three tool-view cards, in two rows of
+> three. The Evaluation Process page keeps the original phase names. `ALT.home_phases` loses its
+> fourth line. **No ID changed.**
 
 > **What changed in v46.** Three more cards under the home page's phase cards:
 > **Stakeholder Mapping**, **Policy and Practice Context** and **Evidence & Theories of
@@ -763,7 +770,7 @@ Fits: Number plus ~70 characters.
 
 ## B2. Evaluation that goes further
 
-A heading, a lead, a row of four phase cards, since v46 a second row of three tool-view
+A heading, a lead, a row of three phase cards, since v46 a second row of three tool-view
 cards, and, since v41, a tagline with a "Try the demo"
 button. **Rewritten on 1 October (v8)** to replace six
 method cards (`HOME.METHODS.card1`–`card6`); since v40 the two paragraphs that followed the
@@ -781,17 +788,15 @@ Fits: Heading 1–2 lines; lead ~200 characters.
 
 **ID: `HOME.METHODS.phases`**
 Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
-and moved here). Four cards between the lead and the body: the Evaluation Process phase
-screenshots with the phase name underneath, and no tag, summary or "Learn more" button.
+and moved here). Three cards (four until v47) between the lead and the body: Evaluation Process phase
+screenshots with a home-page name underneath (not the phase names on that page), and no tag, summary or "Learn more" button.
 Each card links to its phase section on Evaluation Process. They reuse the screenshots of
 `PROGRAMS.CARDS.*` (alt text in `ALT.home_phases`); the names repeat the card names, so
 change them together.
-Fits: Name ≤ ~35 characters. Two by two on desktop (they were four across until v30), one column on
-mobile.
-> Name 1: Evaluative Foundation
+Fits: Name ≤ ~35 characters. Three across on desktop, one column on narrow screens.
+> Name 1: Logic Models & Metric Integration
 > Name 2: Data Architecture
-> Name 3: Analytics & Inference
-> Name 4: Monitoring, Learning & Reporting
+> Name 3: Analytics & Forward Planning
 
 **ID: `HOME.METHODS.tools`**
 Context: New in v46. A second row of three cards under the four phase cards, each a screenshot
@@ -1568,12 +1573,11 @@ employment program) is not described — it is example data, not a client result
 > Phase 4 detail: Illustration of an indicator dashboard tracked over time
 
 **ID: `ALT.home_phases`**
-Context: New in v27. The four hero thumbnails on the home page, which are the same
-screenshots as `ALT.programs`, so the wording matches it.
+Context: New in v27. The three phase-card screenshots on the home page, which are the same
+screenshots as `ALT.programs` cards 1–3, so the wording matches it.
 > Thumbnail 1: Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes
 > Thumbnail 2: Data lineage view tracing each number in the model back to the data series it comes from
 > Thumbnail 3: Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on
-> Thumbnail 4: Scenario dashboard showing every indicator in the model under a chosen funding scenario
 
 **ID: `ALT.home_tools`**
 Context: New in v46. The three tool-view cards under the phase cards on the home page.
