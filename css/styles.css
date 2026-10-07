@@ -658,6 +658,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
     radial-gradient(520px 340px at 4% 100%, rgba(224, 123, 34, 0.22), transparent 60%);
 }
 .page-hero h1 { color: #fff; margin-bottom: var(--sp-4); }
+.page-hero h1:last-child { margin-bottom: 0; }   /* banner with no lead (editor_demo) */
 .page-hero p { color: rgba(255,255,255,0.82); max-width: 60ch; font-size: var(--step-1); }
 
 .breadcrumb {

@@ -3,7 +3,30 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 54 · **Updated:** 7 October 2026 · **Covers:** 7 pages
+**Version:** 55 · **Updated:** 7 October 2026 · **Covers:** 7 pages
+
+> **What changed in v55.** Your edits from the editor, applied to the site, with the three that
+> had been waiting since v53. Home: the Stakeholder Mapping and Policy and Practice Context card
+> descriptions; the "Why it matters" card is now for "nonprofit leaders, programs teams and
+> evaluators", with three new points (Map and monitor efficacy, Build and document a
+> knowledge-base, Track exogenous effects) and a longer "Hear from the people served"; the
+> "in brief" heading ends "…into program teams", and its lead begins "An implementation support
+> professional embeds…" with **full and recursive** in bold. About: the 2018–19 timeline entry
+> "A profession emerges" (`ABOUT.TIMELINE.9`) is gone, so the timeline has eight entries.
+> Evaluation Process: steps 04–08 of the program sequence; the Phase 1 body now ends "…the
+> evaluation would lack clarity."; Phase 2 is one sentence and Phase 3 two (the heaviest-phase
+> warning and both "an organization that enters here…" sentences are gone); Phase 4 is shorter.
+> Our Model: the structure heading is "Finding affordability in better coordination.", plus the
+> Partner Programs card, a comma in the orange notice, the impact-logic lead and the "Why
+> recursion and integration exists" notice. Demo: the views lead loses its second sentence.
+> Editor demo: the line under the heading (`EDITOR.HERO.lead`) is gone, so the banner is the
+> heading alone. I also brought the Context notes on those blocks up to date where they
+> described the old wording. **No ID renumbered.**
+>
+> Two typos fixed at your request: the Demo banner `DEMO.HERO.lead` now reads "…the demo
+> depicts the data penetration of multiple rounds…" (was "depicts data the data penetration"),
+> and the Partner Programs card says "Implementation staff listen… and shepherd" (was
+> "shepherds").
 
 > **What changed in v54.** The demo app's address is now `ascentmapper.netlify.app`. The Demo
 > page and the unlisted editor demo (§K) frame it and link to it there, and the note under
@@ -865,14 +888,14 @@ longer link anywhere (they went to the Demo page in v46): clicking a card opens 
 description of that view, and clicking again closes it. Without JavaScript the descriptions
 are simply shown. The screenshots are `assets/tool-*.png`; their alt text is in
 `ALT.home_tools`. The sample data in them (a job-readiness program) is example data, not a
-client result. The descriptions are mine, written from what the screenshots show; correct them
-freely.
+client result. The descriptions began as mine, written from what the screenshots show; you
+rewrote the first two in v55. Correct them freely.
 Fits: Name ≤ ~35 characters; description 1–2 sentences, ~200 characters. Three across, one
 column on narrow screens.
 > Name 1: Stakeholder Mapping
-> Description 1: Lay out everyone with a stake in the program, from funders and governance to the delivery team, partners and the people served, and see how they are connected: who funds, governs, refers or delivers to whom.
+> Description 1: Lay out everyone with a stake in the program, from funders and governance to the delivery team, partners and the people served, and see how they are connected.
 > Name 2: Policy and Practice Context
-> Description 2: Keep track of the rules, funding formulas and incentives that shape the program: what is in force today, what is proposed, and which proposed changes to include when projecting what comes next.
+> Description 2: Keep track of the rules, regulations, funding formulas and incentives that shape the program: what is in force today, what is proposed, and how changes affect the program's projections.
 > Name 3: Evidence & Theories of Change
 > Description 3: Build the logic model from inputs to long-term outcomes, attach the evidence and assumptions behind each link, and see at a glance which links are evidenced, mixed, untested or refuted.
 
@@ -886,10 +909,8 @@ Fits: Tagline ≤ ~70 characters; button 2–4 words.
 
 ## B3. Why it matters
 
-One card, for nonprofit leaders, in a narrowed column. There were two, one per audience;
-the funders card (`HOME.WHY.funders`) came off in v7. The lead below still names both
-groups ("the people running programs and the people paying for them") — say if you want
-it to speak to leaders alone.
+One card, for nonprofit leaders, programs teams and evaluators, in a narrowed column. There
+were two, one per audience; the funders card (`HOME.WHY.funders`) came off in v7.
 
 **ID: `HOME.WHY.intro`**
 > Eyebrow: Why it matters
@@ -897,13 +918,14 @@ it to speak to leaders alone.
 > Lead: Evaluation should not be a static exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.
 
 **ID: `HOME.WHY.leaders`**
-Context: Four benefits with bold lead-ins. The third — getting credit for serving the
-hardest cases — is the one most leaders have felt and never had language for.
-> Heading: For nonprofit leaders and programs teams
-> **Know what to grow, fix or stop.** Evaluation shows which parts of a program do the work, so limited money goes where it counts.
-> **Make a case funders believe.** A defensible estimate of a program's impact is worth more in a proposal than a large number nobody can check.
-> **Get credit for the hardest work.** Programs serving people furthest from success often post modest raw numbers and large real effects. Only a comparison reveals it.
-> **Hear from the people served.** Qualitative methods put participants' own accounts of what helped into the evidence.
+Context: Four benefits with bold lead-ins, rewritten in v55 around what the process and the
+tool do: track what works, build an evidence base, watch the policy context, and hear from
+participants.
+> Heading: For nonprofit leaders, programs teams and evaluators
+> **Map and monitor efficacy.** Evaluation shows which parts of a program are most effective, so limited resources can go where they count the most.
+> **Build and document a knowledge-base.** Map evidence to internal assumptions about a program's theory of change. Approach programs with clarity and integrate them into global fields of research.
+> **Track exogenous effects.** Monitor policy and other contextual developments and project their impacts on program functions.
+> **Hear from the people served.** Qualitative methods put participants' own accounts of what helped into the evidence, tracing the path from program inputs to the effects reported by participants.
 
 **ID: `HOME.WHY.button`**
 Context: New in v50. One orange button under the benefits card, to Evaluation Process, so a
@@ -945,18 +967,17 @@ kept to one section so the page stays about evaluation.
 > Ascent Evaluation, in brief
 
 **ID: `HOME.BRIEF.h2`**
-Context: Names the differentiator — duration — rather than the service, because the page
-above has already explained the service.
+Context: Names the differentiator — the work integrates into the program team — rather than
+the service, because the page above has already explained the service.
 Fits: 2 lines.
-> Evaluation and capacity building that integrates into your program
+> Evaluation and capacity building that integrates into program teams
 
 **ID: `HOME.BRIEF.lead`**
-> Our implementation support professionals embed within programs teams and carries the them through full and recursive evaluations, turning evaluation findings into holistic changes the organization can actually make.
+> An implementation support professional embeds within programs teams and carries them through **full and recursive** evaluations, turning evaluation findings into holistic changes the organization can actually make.
 
 **ID: `HOME.BRIEF.body`**
-Context: The program in three facts — two years embedded, the $500,000 ceiling, the 1.5% fee
-— then the consulting alternative in one sentence. The fee also appears in the hero badge;
-change them together. Evaluation Process stopped repeating them in v14.
+Context: Since v42 a statement of principle rather than the program in facts: the two years,
+the $500,000 ceiling and the 1.5% fee are no longer here (the fee is still in the hero badge).
 > The process is the program. Although analytical reports and communication support may be deliverables within the course of an engagement, participants’ active collaboration in pursuing inquiry, scoping analysis, and employing new methods is central to both the ethics of Ascent’s practice and the achievement of its mission.
 
 **ID: `HOME.BRIEF.list`**
@@ -1023,7 +1044,7 @@ section, lightly edited for a web reader ("methodologies" → "methods", "self-i
 
 ## C3. Evidence timeline
 
-Nine entries down a vertical line. Each = year, headline, one sentence. This used to be
+Eight entries down a vertical line. Each = year, headline, one sentence. This used to be
 an organisational history; a pre-launch organisation doesn't have one, so it is now the
 chronology of the research the model rests on, and since v34 of how implementation
 science and the implementation support profession developed. Add or remove entries freely — the line
@@ -1035,7 +1056,7 @@ open item and it is the right call for an organisation whose pitch is methodolog
 seriousness.
 
 **ID: `ABOUT.TIMELINE.7`**
-Context: New in v34, with entries 8–10: these bring in how implementation science developed and
+Context: New in v34, with entries 8–10 (9 came off in v55): these bring in how implementation science developed and
 how implementation support became a profession. 2009 is cited in the two PDFs linked from
 entry 10. `ABOUT.TIMELINE.6` (2005) was removed in v36; IDs are not renumbered.
 > Year: 2009
@@ -1069,14 +1090,6 @@ Northern Ireland).
 > Year: 2018
 > Headline: Repetition and duration drive results
 > Detail: A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle (Chinman, Acosta et al.).
-
-**ID: `ABOUT.TIMELINE.9`**
-Context: Same source. The "Implementation Specialist Practice Profile" draft (NIRN and CES,
-2018) was vetted in workshops; the 2018–19 survey covered Europe, the USA, Canada and
-Australia, with a parallel systematic review run by the European Implementation Collaborative.
-> Year: 2018–19
-> Headline: A profession emerges
-> Detail: An early practice profile is vetted in workshops, then tested in an international survey of implementation support practitioners in Europe, the USA, Canada and Australia, alongside a systematic review of the literature.
 
 **ID: `ABOUT.TIMELINE.5`**
 Context: The finding the whole model is built on. If you cut one entry, don't cut this.
@@ -1189,23 +1202,23 @@ Fits: ~130 characters per sentence, or the timeline runs taller than the text be
 >
 > Step: Step 04
 > Name: Evaluation
-> Detail: Phases 1 to 3 of the pipeline, co-created with the organization's staff. Phase 2 is the heaviest lift on both sides.
+> Detail: Phases 1 to 3 of the pipeline, co-created with the organization's staff.
 >
 > Step: Step 05
 > Name: Communication
-> Detail: What the evaluation found, turned into material for the community, the board and the funders.
+> Detail: What the evaluation found, turned into material for the community, the board and funders.
 >
 > Step: Step 06
 > Name: Recursion and integration
-> Detail: Findings become program changes, outcomes feed the next evaluation cycle, and the loop runs as often as it needs to.
+> Detail: Findings become program changes, outcomes feed the next evaluation cycle, and the loop cycles.
 >
 > Step: Step 07
 > Name: Graduation
-> Detail: After two years, embedded support draws back under a written handoff plan agreed with the program team.
+> Detail: After approximately two years, embedded support draws back under a written handoff plan agreed with the program team.
 >
 > Step: Step 08
 > Name: Onward support
-> Detail: Continue on a discounted monitoring retainer or take a written implementation guide.
+> Detail: Continue on a discounted monitoring retainer or take a written implementation guide. Our internal research, analysis and networks remain available.
 
 ## D4. Phase 1 — detail
 
@@ -1224,9 +1237,9 @@ Fits: One line ideally.
 > What is this program trying to do, for whom, and why do we believe it will work?
 
 **ID: `PROGRAMS.PHASE1.body`**
-Context: The last sentence comes from the Program Description: Phase 1 is where the culture
-of inquiry starts, which is why the brief treats it as more than paperwork.
-> This phase builds the conceptual infrastructure that makes rigorous evaluation possible. Without it, data collection has no direction and findings have nothing to be interpreted against.
+Context: Two sentences: what the phase builds, then what an evaluation without it would
+lack.
+> This phase builds the conceptual infrastructure that makes rigorous evaluation possible. Without it, data collection has no direction and the evaluation would lack clarity.
 
 **ID: `PROGRAMS.PHASE1.list`**
 Context: Six deliverables, bold lead-in then the detail. The logic model entry's last
@@ -1254,11 +1267,10 @@ Illustration right, text left (mirrored). *(Was `PROGRAMS.COMMONS.*`.)*
 > What data do we need, from whom, and how do we ensure its quality?
 
 **ID: `PROGRAMS.PHASE2.body`**
-Context: The second sentence is a warning the Program Description gives plainly and a
-prospective client deserves to hear early: this phase can change how the organization
-works. The third is the integration point — it tells someone with an existing data system
-that they are not being asked to throw it away.
-> This phase turns evaluative questions into a practical, defensible system for collecting, managing and assuring the quality of evidence. It is the heaviest phase for the program team and for ours, because it can mean changing established practices and systems. An organization that enters here with infrastructure already in place, we begin with a data audit instead—a structured review of its instruments, data quality and system architecture against the indicator framework.
+Context: One sentence since v55. The warning that this is the heaviest phase, and the note
+that an organization with infrastructure in place starts with a data audit, came off; step 03
+of the program sequence ("Audit") still makes the second point.
+> This phase turns evaluative questions into a practical, defensible system for collecting, managing and assuring the quality of evidence.
 
 **ID: `PROGRAMS.PHASE2.list`**
 > Subheading: Phase 2 outputs
@@ -1283,9 +1295,10 @@ that they are not being asked to throw it away.
 > What do the data tell us, with what confidence, about whether and how the program works?
 
 **ID: `PROGRAMS.PHASE3.body`**
-Context: The middle sentence reflects the brief's delivery model — analysis offsite,
-findings returned through the embedded supporter — and turns it into a reason to care.
-> This phase turns collected data into defensible evidence. The final analysis runs offsite; the findings come back to the program team through the implementation support professional rather than as a report in an inbox. An organization that enters here with data already collected gets a suitability review first and a feasibility memo specifying which of its questions the existing data can actually answer.
+Context: The second sentence reflects the brief's delivery model — analysis offsite,
+findings returned through the embedded supporter — and turns it into a reason to care. The
+third, on organizations that arrive with data already collected, came off in v55.
+> This phase turns collected data into defensible evidence. The final analysis runs offsite; the findings come back to the program team through the implementation support professional rather than as a report in an inbox.
 
 **ID: `PROGRAMS.PHASE3.list`**
 Context: "Specified before results are examined" and "required for every
@@ -1317,7 +1330,7 @@ workstreams.
 Context: The last sentence is a correction from the Program Description: for program
 participants, Phase 4 is not part of the two-year core. It starts at graduation, by
 retainer or by guide.
-> This phase converts findings into systems that sustain organizational learning and external accountability over time. It treats evaluation not as an event but as an embedded practice, and it is deliberately built with few internal dependencies, so monitoring and reporting work can move quickly. In our program, Phase 4 begins at graduation: continue with us on a discounted retainer, or take a written implementation guide and run it independently.
+> This phase builds systems that sustain organizational learning and external accountability over time. Phase 4 begins at graduation: continue with us on a discounted retainer, or take a written implementation guide and run it independently.
 
 **ID: `PROGRAMS.PHASE4.list`**
 > Subheading: Phase 4 outputs
@@ -1348,10 +1361,10 @@ pitch, which is the right promise for the reader who has just been told the pric
 *(Was `INVOLVED.ROLES.*` — six collaboration roles.)*
 
 **ID: `INVOLVED.STACK.intro`**
-Context: The claim in the heading is counter-intuitive and it is the reason the model
-works: the coordination problem and the price problem have one solution.
+Context: The heading's claim is the reason the model works: better coordination is what
+makes the service affordable.
 > Eyebrow: The structure
-> Heading: Affordability and coordination are the same problem.
+> Heading: Finding affordability in better coordination.
 
 **ID: `INVOLVED.STACK.layer1`**
 Context: Four cards, two by two, in the order the deck's delivery stack runs — outside
@@ -1375,14 +1388,14 @@ sector doesn't currently staff.
 **ID: `INVOLVED.STACK.layer4`**
 > Heading: Partner Programs
 > Commitment: 
-> Description: Implementation staff collaborate on what the organization needs and on how change actually gets made inside it.
+> Description: Implementation staff listen to an organization's needs and shepherd feasible change within it. Here, the relationship is as important as the evaluation.
 
 **ID: `INVOLVED.STACK.note`**
 Context: Orange box under the cards. The last sentence is a claim about the field, not
 about Ascent, and it is checkable — which is why it can be made this bluntly. The
 second-to-last names the published guidance the role is built on, as the Program
 Description does; if you want it linked, send me the URLs you use for the two documents.
-> An implementation support professional's expertise is the holistic appraisal of the organization's and community's needs, and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources and practice context. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
+> An implementation support professional's expertise is the holistic appraisal of the organization's and community's needs and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources and practice context. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
 
 ## E2b. Impact logic
 
@@ -1396,7 +1409,7 @@ the lead immediately says *how* the program differs from each: deeper than consu
 more participatory than capacity building.
 > Eyebrow: Impact logic
 > Heading: More than evaluation consulting. Beyond capacity building.
-> Lead: The program reaches deeper into an organization than evaluation consulting does, and it is far more participatory, on both sides, than typical capacity-building models. Each step below directly affects the one after it.
+> Lead: The program reaches deeper into an organization than traditional evaluation consulting, and it is far more participatory, on both sides, than typical capacity-building models. While building capacity, our model is designed to incorporate outcomes sensitivity through the following impact cascade:
 
 **ID: `INVOLVED.IMPACT.stream`**
 Context: Four cards in the order of the brief's impact stream. Each = number tag, name,
@@ -1428,8 +1441,9 @@ Fits: ~130 characters per description; bold line one short sentence.
 Context: Orange box. Recursion and integration is the concept a first-time reader has
 never met, so this explains why it exists before asking anyone to care about its three
 mechanisms (causal chain identification, metric integration, evaluation recursion — here
-in plain words rather than by name). The last sentence is what makes it matter to a funder.
-> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Recursion and integration is how this program tries to strengthen it: using qualitative analysis to trace each evaluation and program input through to its effect on downstream outcomes. Its results also change how our work is delivered, keeping the practice accountable to outcomes rather than to deliverables.
+in plain words rather than by name). The second sentence says why existing models lose the
+connection to outcomes; the last is what makes it matter to a funder.
+> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Existing models, due to their reliance on time-determined fees and/or discrete deliverables, essentially absolve themselves of accountability for their clients' outcomes by dissolving their connection to the work on the ground. Recursion and integration explicitly does the opposite: qualitative analysis traces each evaluation and program input through to its effect on downstream outcomes. This keeps our practice accountable to outcomes rather than to deliverables.
 
 ## E3. Closing call to action
 
@@ -1458,7 +1472,7 @@ Context: The tool's own name, as the app titles itself.
 Context: What the tool is, then three things a visitor can do in it. "Behind our evaluation
 pipeline" ties it to the phase cards on Evaluation Process, which show its screenshots.
 Fits: 2–3 lines, ~180 characters.
-> A working demo of the app behind our evaluation pipeline. The application **describes** the evaluation process, and the demo depicts data after multiple rounds of recursive evaluation.
+> A working demo of the app behind our evaluation pipeline. The application **describes** the evaluation process, and the demo depicts the data penetration of multiple rounds of recursive evaluation.
 
 ## F2. The demo
 
@@ -1486,7 +1500,7 @@ not steps.
 **ID: `DEMO.VIEWS.intro`**
 > Eyebrow: Using the app
 > Heading: Six views of one program
-> Lead: Move between them from the rail down the left side of the demo. Each one looks at the same program from a different angle.
+> Lead: Move between them from the rail down the left side of the demo.
 
 **ID: `DEMO.VIEWS.cards`**
 Context: One sentence each, describing what the view shows, in the app's own terms. The rail
@@ -1659,13 +1673,6 @@ shows the view-only app.
 Context: The Demo page's heading with "editor" added, so the two can be told apart in a tab
 or a screenshot.
 > Program Mapper editor
-
-**ID: `EDITOR.HERO.lead`**
-Context: Says what differs from the Demo page and that nothing is kept — the app's own
-"Demo" badge says the same. Anyone who adds something will otherwise expect it to be there
-when they come back.
-Fits: 1–2 lines.
-> The demo with editing switched on. Nothing you change here is kept—reload to start over.
 
 ## K2. The editor
 
