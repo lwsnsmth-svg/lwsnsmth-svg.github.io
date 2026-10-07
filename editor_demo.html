@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Program Mapper editor demo</title>
+<!-- Unlisted. Reached only by typing /editor_demo: nothing links here, there is no
+     sitemap to list it in, and the robots tag keeps it out of search results. Leave
+     it out of robots.txt too — a Disallow line would publish the address. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1b3644">
+
+<link rel="icon" href="assets/favicon.png?v=2026-10-04" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2026-10-04">
+<link rel="stylesheet" href="css/styles.css?v=2026-10-13">
+<script src="js/theme-init.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/Logo.png?v=2026-10-04" alt="" width="1478" height="1107" aria-hidden="true">
+      <span class="brand__word">The Ascent Collaborative<small>For Research &amp; Evaluation</small></span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link" href="programs.html">Evaluation Process</a>
+      <a class="nav__link" href="get-involved.html">Our Model</a>
+      <a class="nav__link" href="demo.html">Demo</a>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Program Mapper editor</h1>
+      <p>The demo with editing switched on. Nothing you change here is kept—reload to start over.</p>
+    </div>
+  </section>
+
+  <!-- ---------------- The editor demo ---------------- -->
+  <!-- Same app, same host as the Demo page, but the editor build: it is a separate
+       bundle served from /editor/, so the view-only demo at the root of that host
+       is untouched and still ships no editing code. Nothing inside the frame is
+       site copy. Change it in the app, not here. -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="demo-frame">
+        <iframe src="https://bespoke-truffle-cf7077.netlify.app/editor/" title="Program Mapper editor demo" loading="lazy"></iframe>
+      </div>
+      <div class="demo-meta">
+        <p>The program and figures in the demo are fictional. The application works best on a large screen.</p>
+        <a class="link-arrow" href="https://bespoke-truffle-cf7077.netlify.app/editor/" target="_blank" rel="noopener">
+          Open the editor in a new tab
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/Logo.png?v=2026-10-04" alt="" width="1478" height="1107" aria-hidden="true">
+          <span class="brand__word">The Ascent Collaborative<small>For Research &amp; Evaluation</small></span>
+        </a>
+        <p>The Ascent Collaborative is dedicated to making program evaluation more accessible, sustainable and effective.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> The Ascent Collaborative.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=2026-10-04"></script>
+</body>
+</html>
