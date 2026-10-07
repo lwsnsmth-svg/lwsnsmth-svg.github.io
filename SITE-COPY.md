@@ -3,7 +3,19 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 51 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 52 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v52.** Our Model: the whole "Model benefits" section ("What the structure
+> produces" — `INVOLVED.BENEFITS.*`, the six cards) is gone, so the page runs structure,
+> impact logic, closing band; the closing band is now §E3. Also applied, from edits you had
+> already made to this document and not yet sent to the site: the footer blurb on every page
+> now says "The Ascent Collaborative is dedicated…" (was "Ascent Research Collaborative",
+> which settles the two-names note on `GLOBAL.FOOTER.blurb`); on Evaluation Process the
+> "What Phase N produces" subheads read "Phase N outputs", the Phase 1 lead loses its last
+> sentence, the Phase 2 question ends "…how do we ensure its quality?", the program
+> description bullet reads "…for whom, and at what scale…", the indicator dashboard bullet
+> ends after "Phase 2", and the graduation step no longer mentions the network and literature
+> briefs. **No ID renumbered.**
 
 > **What changed in v51.** Evaluation Process: the "How we measure it" button under the program
 > sequence is gone (`PROGRAMS.SEQUENCE.buttons` removed; nothing on the site links to the
@@ -719,11 +731,10 @@ Fits: 1–2 words each. Six items is about the ceiling before it crowds the logo
 ## A3. Footer — organisation blurb
 
 **ID: `GLOBAL.FOOTER.blurb`**
-Context: Beside the logo in the footer's single row (stacks under it on narrow screens). Note this says "Ascent Research
-Collaborative" while the brand lockup above says "The Ascent Collaborative" — two names
-for one organisation, on every page. Tell me which one is the real one.
+Context: Beside the logo in the footer's single row (stacks under it on narrow screens). Since
+v52 it uses the same name as the brand lockup above it, "The Ascent Collaborative".
 Fits: 2–3 lines, ~180 characters. Makes no claim about legal or tax status (v5).
-> The Ascent Research Collaborative is dedicated to making program evaluation more accessible, sustainable and effective.
+> The Ascent Collaborative is dedicated to making program evaluation more accessible, sustainable and effective.
 
 ## A4. Footer — legal line
 
@@ -1174,7 +1185,7 @@ Fits: ~130 characters per sentence, or the timeline runs taller than the text be
 >
 > Step: Step 08
 > Name: Onward support
-> Detail: Continue on a discounted monitoring retainer or take a written implementation guide. Our network and literature briefs stay open either way.
+> Detail: Continue on a discounted monitoring retainer or take a written implementation guide.
 
 ## D4. Phase 1 — detail
 
@@ -1195,15 +1206,15 @@ Fits: One line ideally.
 **ID: `PROGRAMS.PHASE1.body`**
 Context: The last sentence comes from the Program Description: Phase 1 is where the culture
 of inquiry starts, which is why the brief treats it as more than paperwork.
-> This phase builds the conceptual infrastructure that makes rigorous evaluation possible. Without it, data collection has no direction and findings have nothing to be interpreted against. It is also where the program team starts to think in evaluative terms—the habit of inquiry everything after it depends on.
+> This phase builds the conceptual infrastructure that makes rigorous evaluation possible. Without it, data collection has no direction and findings have nothing to be interpreted against.
 
 **ID: `PROGRAMS.PHASE1.list`**
 Context: Six deliverables, bold lead-in then the detail. The logic model entry's last
 clause — built with your staff, so it reflects reality rather than aspiration — is the
 one practitioners react to; keep it.
-> Subheading: What Phase 1 produces
+> Subheading: Phase 1 outputs
 > **Stakeholder map.** Everyone with a stake in the program, distinguishing those whose input shapes the evaluation from those whose outcomes are its subject.
-> **Program description and context brief.** What the program does, for whom, at what scale—set against its evidence base, policy landscape, and peer field.
+> **Program description and context brief.** What the program does, for whom, and at what scale—set against its evidence base, policy landscape, and peer field.
 > **Logic model.** The program's causal architecture from inputs to long-term outcomes, built with the organization's staff so it reflects implementation reality rather than aspirational design.
 > **Theory of change.** The problem theory, intervention theory, change theory, and equity dimensions, with literature cited for causal claims.
 > **Evaluability assessment.** A structured judgment of whether the program is actually ready to be evaluated at all.
@@ -1220,7 +1231,7 @@ Illustration right, text left (mirrored). *(Was `PROGRAMS.COMMONS.*`.)*
 > Data Architecture
 
 **ID: `PROGRAMS.PHASE2.lead`**
-> What data do we need, from whom, and how do we know it is good enough?
+> What data do we need, from whom, and how do we ensure its quality?
 
 **ID: `PROGRAMS.PHASE2.body`**
 Context: The second sentence is a warning the Program Description gives plainly and a
@@ -1230,7 +1241,7 @@ that they are not being asked to throw it away.
 > This phase turns evaluative questions into a practical, defensible system for collecting, managing and assuring the quality of evidence. It is the heaviest phase for the program team and for ours, because it can mean changing established practices and systems. An organization that enters here with infrastructure already in place, we begin with a data audit instead—a structured review of its instruments, data quality and system architecture against the indicator framework.
 
 **ID: `PROGRAMS.PHASE2.list`**
-> Subheading: What Phase 2 produces
+> Subheading: Phase 2 outputs
 > **Data needs assessment.** Every indicator mapped to a source and categorized: already collected, collectible with new instruments, derivable from third-party data, or practically infeasible.
 > **Measurement selection report.** For each indicator, the measure chosen, the rationale, the population, and the timing.
 > **Instrument suite.** Designed and adapted instruments, with novel ones pilot tested and reviewed by community representatives before field deployment.
@@ -1260,7 +1271,7 @@ findings returned through the embedded supporter — and turns it into a reason 
 Context: "Specified before results are examined" and "required for every
 non-experimental evaluation" are the two clauses a methodologically literate funder will
 look for. Neither is padding.
-> Subheading: What Phase 3 produces
+> Subheading: Phase 3 outputs
 > **Design and analysis specification.** Counterfactual strategy, unit of analysis, level of inference, subgroup analyses planned in advance, and threats to validity with mitigations—specified before results are examined.
 > **Quantitative findings memo.** Effect sizes with confidence intervals rather than p-values alone, sensitivity analyses, and subgroup findings, with plain-language interpretation alongside the technical specification.
 > **Qualitative findings memo.** Analytic approach, codebook development, triangulation procedures, and key themes with representative evidence.
@@ -1289,10 +1300,10 @@ retainer or by guide.
 > This phase converts findings into systems that sustain organizational learning and external accountability over time. It treats evaluation not as an event but as an embedded practice, and it is deliberately built with few internal dependencies, so monitoring and reporting work can move quickly. In our program, Phase 4 begins at graduation: continue with us on a discounted retainer, or take a written implementation guide and run it independently.
 
 **ID: `PROGRAMS.PHASE4.list`**
-> Subheading: What Phase 4 produces
+> Subheading: Phase 4 outputs
 > **Learning agenda.** The questions the organization intends to investigate next, sorted by what routine monitoring can answer, what needs a new evaluation, and what requires external research.
 > **Monitoring and evaluation plan.** Which indicators are tracked, how often, from what sources, against what targets—with procedures for updating them as programs evolve.
-> **Indicator dashboard.** Built on the organization's preferred platform—live, automated or periodic, depending on the data architecture from Phase 2—with views and access controls tailored to program staff, leadership, board and funders.
+> **Indicator dashboard.** Built on the organization's preferred platform—live, automated or periodic, depending on the data architecture from Phase 2.
 > **Reporting suite.** Funder reports, board dashboards, operational reports, public impact summaries, and policy briefs translating evidence into implications for design, policy or funding.
 > **Dissemination plan.** How findings reach peers, funders, policymakers and the communities whose members were the subjects of the evaluation—audiences, messages, channels, timing.
 
@@ -1356,8 +1367,8 @@ Description does; if you want it linked, send me the URLs you use for the two do
 ## E2b. Impact logic
 
 New on 13 September, from the Program Description's impact-stream diagram and its
-interventions table. Four cards, a table, then an orange box. Anchored at `#impact-logic`
-— the program sequence on Evaluation Process links here.
+interventions table. Four cards, then an orange box (the table came off in v38). Anchored at
+`#impact-logic`; nothing links here now that the program sequence button is gone (v51).
 
 **ID: `INVOLVED.IMPACT.intro`**
 Context: The heading is the brief's positioning claim, shortened. It only works because
@@ -1400,37 +1411,7 @@ mechanisms (causal chain identification, metric integration, evaluation recursio
 in plain words rather than by name). The last sentence is what makes it matter to a funder.
 > **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Recursion and integration is how this program tries to strengthen it: using qualitative analysis to trace each evaluation and program input through to its effect on downstream outcomes. Its results also change how our work is delivered, keeping the practice accountable to outcomes rather than to deliverables.
 
-## E3. What the structure produces
-
-Six cards. *(Was `INVOLVED.ADVOCATE.*`.)*
-
-**ID: `INVOLVED.BENEFITS.intro`**
-> Eyebrow: Model benefits
-> Heading: 
-
-**ID: `INVOLVED.BENEFITS.cards`**
-Context: Six cards. The first is a causal chain — consistency, context, trust,
-absorption — and the rest are consequences of the structure rather than virtues claimed
-for it. Keep them all roughly this length or the grid goes ragged.
-> Heading: Consistency
-> Body: Consistency enriches context, context builds trust, and trust drives absorption. Models built on fixed terms and discrete deliverables break that chain at the first link.
->
-> Heading: Data and tools
-> Body: An institutional hub can build a repository of data and analytical tools that no independent contractor can afford to access, and can create proprietary methods that individual practitioners have no means to build.
->
-> Heading: People
-> Body: A small full-time team manages evaluation pipelines through a network of contractors and experts, so the most relevant skills get applied to each task at the lowest cost.
->
-> Heading: Service
-> Body: A large segment of organizations is priced out of evaluation regardless of how much it would benefit them. Reaching that segment raises the quality of programs serving thousands of people.
->
-> Heading: Community
-> Body: A nonprofit that draws revenue from a consultancy practice has no incentive to guard its methods. That makes shared knowledge across the sector possible.
->
-> Heading: Position
-> Body: In the taxonomy of nonprofit infrastructure organizations Ascent is an intermediary—serving the sector, other nonprofits and local communities, and using that scope to do better work in each.
-
-## E4. Closing call to action
+## E3. Closing call to action
 
 **ID: `INVOLVED.CTA`**
 Context: A model page has to end by admitting that the model is not the product.
