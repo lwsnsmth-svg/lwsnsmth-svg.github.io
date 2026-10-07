@@ -5,6 +5,7 @@ Static marketing site for a nonprofit. Plain HTML, one stylesheet, two scripts.
 
 ```
 index · about · programs · get-involved · demo · 404   (6 pages)
+editor_demo                                           (unlisted — link to it from nowhere)
 css/styles.css     all styling; design tokens at the top drive everything
 js/main.js         nav, theme, counters, accordion
 js/theme-init.js   sets theme before first paint; also adds html.js
@@ -152,7 +153,9 @@ The copy is realistic placeholder text for a fictional organisation. Not yet rea
 staff and board names, all statistics, and most images (inline SVG placeholders stand in;
 the four phase cards on Programs & Services use real tool screenshots from `assets/`).
 The Demo page embeds that same tool (the Logic Model Mapper) live, in an iframe from
-Netlify; nothing inside the frame is site copy. The site
+Netlify; nothing inside the frame is site copy. The unlisted `editor_demo.html` frames
+the tool's *editor* build from `/editor/` on that same host — a separate bundle, so the
+Demo page stays view-only. Never link to it, list it in a sitemap, or put it in `robots.txt`. The site
 describes a hypothetical service set; it carries no quality assurance or governance detail.
 
 There are no forms, and no way to contact Ascent: the Contact page went in v9 of the

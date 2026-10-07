@@ -22,6 +22,8 @@ see `SITE-COPY.md`.
 ├── get-involved.html   "Our Model" — delivery stack, evidence base, model benefits, roles
 ├── demo.html           Live demo of the Logic Model Mapper, embedded from Netlify — the
 │                       one page that loads something from another host
+├── editor_demo.html    Unlisted: the same demo with editing switched on, reached only by
+│                       typing /editor_demo — see "Things that are deliberate"
 ├── 404.html            Not-found page
 ├── css/styles.css      All styling, organised into 23 numbered sections
 ├── js/main.js          Nav, counters, accordion
@@ -231,6 +233,17 @@ workflow.
 
 A few choices look like they could be simplified but shouldn't be:
 
+- **`editor_demo.html` is linked from nowhere.** It is the Demo page's app with editing
+  switched on, meant to be reached only by typing `/editor_demo`. It carries
+  `noindex, nofollow`; keep it out of the nav, the footer, any sitemap, and `robots.txt`
+  (a `Disallow` line would publish the address). The frame loads `/editor/` on the same
+  Netlify host as the Demo page: a separate build of the app, so the view-only demo at
+  that host's root is untouched and still ships no editing code. If the frame is blank,
+  the app's latest `main` has not deployed yet — see "The editor demo" in the Logic
+  Model Mapper's README. Extensionless `/editor_demo` needs a host that serves
+  `editor_demo.html` for it (GitHub Pages and Netlify do; `python3 -m http.server` does not,
+  so preview it as `/editor_demo.html`).
+
 - **`html.js` gates the scroll reveal.** `.reveal` elements start at `opacity: 0` only
   when `js/theme-init.js` has added the `js` class. If you remove that class, a JS
   error or a blocked script will leave large parts of the page permanently invisible.
@@ -257,7 +270,7 @@ A few choices look like they could be simplified but shouldn't be:
   `assets/favicon.svg?v=…`.** Browsers keep static files for a while without asking the
   server whether they changed, so an edited stylesheet can go unseen — which is how the
   logo swap once showed the new image inside the old, square-cropping CSS. **Whenever you
-  change one of those files, change its `?v=` value on all five pages** (a date works).
+  change one of those files, change its `?v=` value on every page, `editor_demo.html` included** (a date works).
   Deleting the query string brings the stale-file problem back.
 
 ## Browser support

@@ -3,7 +3,21 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 52 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 53 · **Updated:** 6 October 2026 · **Covers:** 7 pages
+
+> **What changed in v53.** A new page, §K: an unlisted editor demo at `editor_demo.html`, the
+> Demo page's app with editing switched on (`EDITOR.*`, `SEO.editor_demo`, `ALT.editor_demo`).
+> Nothing on the site links to it, its tags keep it out of search results, and it is reached
+> only by typing `/editor_demo` after the site's address — which is why it sits at the end,
+> after the pages a visitor meets. It has the Demo page's header, footer and frame; the new
+> wording is a heading, a line saying nothing is kept, and the link under the frame. I wrote
+> all of it — please change it if you want other wording. The Demo page itself is unchanged
+> and still shows the view-only app. **No existing ID changed.**
+>
+> Not touched: your two unapplied edits in this document — the Our Model heading
+> `INVOLVED.STACK.intro` ("Finding affordability in better coordination.") and the Demo
+> banner `DEMO.HERO.lead`, which now reads "…depicts data the data penetration of multiple
+> rounds…" and looks like it was left mid-edit. Say the word and I'll apply them.
 
 > **What changed in v52.** Our Model: the whole "Model benefits" section ("What the structure
 > produces" — `INVOLVED.BENEFITS.*`, the six cards) is gone, so the page runs structure,
@@ -681,7 +695,7 @@ the doc doesn't document. A Stop hook runs it automatically.
 
 ## Contents
 
-- [A. Global](#a-global-every-page) — header, footer, appears on all 6 pages
+- [A. Global](#a-global-every-page) — header, footer, appears on all 7 pages
 - [B. Home](#b-home) — `index.html`
 - [C. About](#c-about) — `about.html`
 - [D. Evaluation Process](#d-evaluation-process) — `programs.html`
@@ -691,12 +705,13 @@ the doc doesn't document. A Stop hook runs it automatically.
 - [H. System text](#h-system-text) — interface labels
 - [I. Search-engine & social text](#i-search-engine--social-text) — titles and descriptions
 - [J. Image descriptions](#j-image-descriptions) — screen-reader alt text
+- [K. Editor demo](#k-editor-demo-unlisted) — `editor_demo.html`, unlisted
 
 ---
 
 # A. Global (every page)
 
-Edit these once; they change on all six pages.
+Edit these once; they change on all seven pages, the unlisted editor demo (§K) included.
 
 ## A1. Brand lockup
 
@@ -1564,6 +1579,12 @@ page does.
 > Title: Page not found | Ascent
 > Description: The requested page could not be found.
 
+**ID: `SEO.editor_demo`**
+Context: New in v53. A title and nothing else, on purpose: the page is kept out of search
+results, so there is no summary line to write, and it has no social-card tags because it is
+not meant to be shared.
+> Title: Program Mapper editor demo
+
 ---
 
 # J. Image descriptions
@@ -1610,6 +1631,53 @@ Context: New in v16. Not an image: the name a screen reader announces for the em
 app on the Demo page, before reading the app itself.
 > Embedded app: Program Mapper demo
 
+**ID: `ALT.editor_demo`**
+Context: New in v53. Not an image: the name a screen reader announces for the embedded
+editor on the unlisted Editor demo page (§K), before reading the app itself.
+> Embedded app: Program Mapper editor demo
+
 ---
 
-*End of document — 6 pages, 10 sections. Edit and send back.*
+# K. Editor demo (unlisted)
+
+`editor_demo.html` — the Demo page's app with editing switched on. **New in v53.** Nothing
+on the site links here, it is kept out of search results, and it is reached only by typing
+`/editor_demo` after the site's address. It has the same header and footer as every other
+page, so §A applies to it. As on the Demo page, the app is hosted separately and shown in a
+frame, so nothing inside the frame is covered here. The editor is a second build of the
+app, served beside the view-only one rather than switched on in it; the Demo page still
+shows the view-only app.
+
+## K1. Page banner
+
+**ID: `EDITOR.HERO.h1`**
+Context: The Demo page's heading with "editor" added, so the two can be told apart in a tab
+or a screenshot.
+> Program Mapper editor
+
+**ID: `EDITOR.HERO.lead`**
+Context: Says what differs from the Demo page and that nothing is kept — the app's own
+"Demo" badge says the same. Anyone who adds something will otherwise expect it to be there
+when they come back.
+Fits: 1–2 lines.
+> The demo with editing switched on. Nothing you change here is kept—reload to start over.
+
+## K2. The editor
+
+The app in the same bordered frame as the Demo page, the full width of the page and 720px
+tall, with the same small print on the left and a link on the right.
+
+**ID: `EDITOR.EMBED.note`**
+Context: The same two sentences as `DEMO.EMBED.note`, and for the same reason: the sample
+program is fictional, and the tool gets cramped on a phone. Its own block so either page can
+be reworded without the other following.
+Fits: 1–2 lines.
+> The program and figures in the demo are fictional. The application works best on a large screen.
+
+**ID: `EDITOR.EMBED.link`**
+Context: Arrow link. Opens the editor on its own in a new tab, at full window size.
+> Open the editor in a new tab
+
+---
+
+*End of document — 7 pages, 11 sections. Edit and send back.*
