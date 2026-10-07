@@ -3,7 +3,12 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 53 · **Updated:** 6 October 2026 · **Covers:** 7 pages
+**Version:** 54 · **Updated:** 7 October 2026 · **Covers:** 7 pages
+
+> **What changed in v54.** The demo app's address is now `ascentmapper.netlify.app`. The Demo
+> page and the unlisted editor demo (§K) frame it and link to it there, and the note under
+> §F names it. **No copy changed and no ID changed** — the address is in the pages' markup,
+> not in anything you edit here.
 
 > **What changed in v53.** A new page, §K: an unlisted editor demo at `editor_demo.html`, the
 > Demo page's app with editing switched on (`EDITOR.*`, `SEO.editor_demo`, `ALT.editor_demo`).
@@ -1439,7 +1444,7 @@ Context: A model page has to end by admitting that the model is not the product.
 
 `demo.html` — a working demo of Program Mapper, the tool shown on the four phase
 cards on Evaluation Process. **New in v16.** The app is not part of this site: it is hosted
-separately (bespoke-truffle-cf7077.netlify.app) and shown in a frame, so nothing inside the
+separately (ascentmapper.netlify.app) and shown in a frame, so nothing inside the
 frame is covered here — its wording changes in the app. Its sample program is a fictional
 job-readiness program.
 
