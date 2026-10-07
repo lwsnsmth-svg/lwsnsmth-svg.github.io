@@ -3,7 +3,14 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 50 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+**Version:** 51 · **Updated:** 4 October 2026 · **Covers:** 6 pages
+
+> **What changed in v51.** Evaluation Process: the "How we measure it" button under the program
+> sequence is gone (`PROGRAMS.SEQUENCE.buttons` removed; nothing on the site links to the
+> impact logic section on Our Model from there any more). Your edits applied: the banner lead
+> now ends "…the ethics of the work and its success.", and the About timeline entry
+> `ABOUT.TIMELINE.4` is headed "Repetition and duration drive results" (was "Year two is where
+> it lands"). **No ID renumbered.**
 
 > **What changed in v50.** The "Why it matters" section on the home page ends with a button,
 > "See the evaluation process", linking to Evaluation Process (`HOME.WHY.button`, new). You did
@@ -1029,7 +1036,7 @@ Northern Ireland).
 
 **ID: `ABOUT.TIMELINE.4`**
 > Year: 2018
-> Headline: Year two is where it lands
+> Headline: Repetition and duration drive results
 > Detail: A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle (Chinman, Acosta et al.).
 
 **ID: `ABOUT.TIMELINE.9`**
@@ -1124,7 +1131,7 @@ the most compressed statement of what makes the program different. Keep it verba
 **ID: `PROGRAMS.SEQUENCE.lead`**
 Context: The phrase "central to both the ethics of the work and whether it achieves
 anything" says participation is a methodological requirement, not a courtesy.
-> Reports and communication support are deliverables, but the program team's active part in pursuing inquiry, scoping analysis and adopting new methods is central to both the ethics of the work and whether it achieves anything.
+> Reports and communication support are deliverables, but the program team's active part in pursuing inquiry, scoping analysis and adopting new methods is central to both the ethics of the work and its success.
 
 **ID: `PROGRAMS.SEQUENCE.body`**
 Context: Two paragraphs. The first says what the implementation support professional does
@@ -1132,11 +1139,6 @@ and what your staff co-create. The second explains the loop, which the timeline 
 right can only show as a straight line.
 > The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a habit of recursive improvement inside the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them. Deeper involvement in the technical work—analysis, research design, reporting—is there for teams that want it and have the time.
 > The sequence runs in one direction until it reaches recursion and integration, and then it loops: findings become program changes, outcomes feed the next round of evaluation, and the cycle repeats as often as the program needs before graduation.
-
-**ID: `PROGRAMS.SEQUENCE.buttons`**
-Context: One outlined button, to the impact logic section on Our Model. "Ask about the
-program" came off in v9 with the Contact page.
-> How we measure it
 
 **ID: `PROGRAMS.SEQUENCE.steps`**
 Context: Eight timeline entries. Each = step label, name, one sentence. The names follow
