@@ -3,7 +3,12 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 56 · **Updated:** 8 October 2026 · **Covers:** 7 pages
+**Version:** 57 · **Updated:** 8 October 2026 · **Covers:** 7 pages
+
+> **What changed in v57.** Your edit from the editor, applied: on Evaluation Process, step 06 of
+> the program sequence (`PROGRAMS.SEQUENCE.steps`, "Recursion and integration") now begins
+> "Traces the underlaying links that turn inputs to outcomes:" and says "the next round of
+> evaluation" (was "the next evaluation cycle"). Applied word for word. **No ID changed.**
 
 > **What changed in v56.** About: the evidence timeline is redrawn to show the model as a
 > synthesis of two fields. Implementation science and evaluation capacity building now run as
@@ -1317,7 +1322,7 @@ Fits: ~130 characters per sentence, or the timeline runs taller than the text be
 >
 > Step: Step 06
 > Name: Recursion and integration
-> Detail: Findings become program changes, outcomes feed the next evaluation cycle, and the loop cycles.
+> Detail: Traces the underlaying links that turn inputs to outcomes: findings become program changes, outcomes feed the next round of evaluation, and the loop cycles.
 >
 > Step: Step 07
 > Name: Graduation
