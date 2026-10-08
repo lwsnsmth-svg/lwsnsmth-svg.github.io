@@ -3,7 +3,16 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 58 · **Updated:** 8 October 2026 · **Covers:** 7 pages
+**Version:** 59 · **Updated:** 8 October 2026 · **Covers:** 7 pages
+
+> **What changed in v59.** At your request, one paragraph moved from About to Home. "When
+> evidence quality determines funding, capital consolidates toward whoever can afford to prove
+> their outcomes…" no longer opens "The evidence base" on About. It is now the lead line under
+> "The organizations that need it most can least afford it" on the home page (§B4), above the
+> three statistics. Its wording is unchanged. It has a new ID, `HOME.STATS.lead`, because IDs
+> name their page; the old one, `ABOUT.STORY.para1`, is retired, not reused. On About, the
+> heading now stands beside a single paragraph (`ABOUT.STORY.para2`), and I updated the
+> Context notes on both blocks. **No ID renumbered.**
 
 > **What changed in v58.** A typo fixed at your request: step 06 of the program sequence on
 > Evaluation Process (`PROGRAMS.SEQUENCE.steps`) now reads "Traces the underlying links…" (was
@@ -962,13 +971,24 @@ Fits: 2–5 words.
 ## B4. Statistics strip
 
 Now a bridge rather than an opener: having argued that evaluation is valuable, the page
-shows who can't get it. Three numbers count up as they scroll into view. The fourth stat
+shows who can't get it. A heading and a one-sentence lead, then three numbers that count up
+as they scroll into view. The fourth stat
 (phases in the pipeline) came out; it was about Ascent, and this strip is about the sector.
 
 **ID: `HOME.STATS.h2`**
 Context: New heading. It turns three numbers into an argument and hands the reader to the
 next section, where Ascent appears.
 > The organizations that need it most can least afford it
+
+**ID: `HOME.STATS.lead`**
+Context: Grey lead line centred under the heading, before the numbers. Moved here from the
+About page in v59 at your request; it was `ABOUT.STORY.para1`, the paragraph that opened
+"The evidence base", and that ID is retired. The founding argument, stated as arithmetic
+rather than anecdote: the numbers below are the evidence for it. The
+four-hundred-thousand-dollar organisation with a program director doing evaluation at night
+is the reader this whole site is addressed to.
+Fits: 2–3 lines at this width; one sentence.
+> When evidence quality determines funding, capital consolidates toward whoever can afford to prove their outcomes—whether or not they are the organizations doing the most consequential work.
 
 **ID: `HOME.STATS.1`**
 > Value: 98 · Suffix: % · Label: Small nonprofits without dedicated evaluation staff
@@ -1045,7 +1065,7 @@ Fits: One line.
 
 ## C2. Why this exists
 
-Heading on the left, the argument beside it; the two-field timeline (§C3) runs below. Until
+Heading on the left, one paragraph of argument beside it; the two-field timeline (§C3) runs below. Until
 v56 this text stuck beside the timeline as it scrolled; the timeline now needs the full width.
 
 **ID: `ABOUT.STORY.eyebrow`**
@@ -1055,14 +1075,10 @@ v56 this text stuck beside the timeline as it scrolled; the timeline now needs t
 Fits: 2 lines.
 > An outcomes-oriented synthesis.
 
-**ID: `ABOUT.STORY.para1`**
-Context: The founding argument, stated as arithmetic rather than anecdote. The
-four-hundred-thousand-dollar organisation with a program director doing evaluation at
-night is the reader this whole site is addressed to.
-> When evidence quality determines funding, capital consolidates toward whoever can afford to prove their outcomes—whether or not they are the organizations doing the most consequential work.
-
 **ID: `ABOUT.STORY.para2`**
-Context: The turn — why the answer is a different structure rather than a discount. The
+Context: The only paragraph beside the heading since v59, when the founding argument that
+used to open it (`ABOUT.STORY.para1`) moved to the home page as `HOME.STATS.lead`. It says
+why the answer is a different structure rather than a discount. The
 diagnosis in the first three sentences comes from the Program Description's mission
 section, lightly edited for a web reader ("methodologies" → "methods", "self-implement" →
 "take on alone").
