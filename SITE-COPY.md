@@ -3,7 +3,23 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 55 · **Updated:** 7 October 2026 · **Covers:** 7 pages
+**Version:** 56 · **Updated:** 8 October 2026 · **Covers:** 7 pages
+
+> **What changed in v56.** About: the evidence timeline is redrawn to show the model as a
+> synthesis of two fields. Implementation science and evaluation capacity building now run as
+> two separate rails, teal and orange, each headed by its name and a one-line description
+> (`ABOUT.TIMELINE.field_is`, `ABOUT.TIMELINE.field_ecb`). They meet only at the bottom, in a
+> new closing entry, "Where the two fields meet" (`ABOUT.TIMELINE.synthesis`). Six new entries
+> on the ECB rail come from Table 2 of the Evidence & Peer Context brief: Patton 1997,
+> Stockdill, Baizerman & Compton 2002, Preskill & Boyle 2008, Labin et al. 2012, Cousins et al.
+> 2014 and Buckley et al. 2015 (`ABOUT.TIMELINE.11`–`16`). Every entry gained a `Field:` line,
+> which says which rail it sits on. The two Getting To Outcomes trials (`.1`, `.4`) are tagged
+> "Cited by both fields" and drawn as one stop across both rails, because the brief counts them
+> in both. The Innovation Network figure (`.3`) is tagged "The sector" and boxed, since it
+> belongs to neither field. The §C3 blocks are re-ordered to match the page. The text above the
+> timeline no longer sticks beside it; it sits above, heading on the left. No existing entry's
+> wording changed. The new wording is mine — the field descriptions, the six entries, the tags
+> and the closing entry — so please change any of it. **No ID renumbered.**
 
 > **What changed in v55.** Your edits from the editor, applied to the site, with the three that
 > had been waiting since v53. Home: the Stakeholder Mapping and Policy and Practice Context card
@@ -1020,7 +1036,8 @@ Fits: One line.
 
 ## C2. Why this exists
 
-Text on the left, dated timeline on the right.
+Heading on the left, the argument beside it; the two-field timeline (§C3) runs below. Until
+v56 this text stuck beside the timeline as it scrolled; the timeline now needs the full width.
 
 **ID: `ABOUT.STORY.eyebrow`**
 > The evidence base
@@ -1044,37 +1061,111 @@ section, lightly edited for a web reader ("methodologies" → "methods", "self-i
 
 ## C3. Evidence timeline
 
-Eight entries down a vertical line. Each = year, headline, one sentence. This used to be
-an organisational history; a pre-launch organisation doesn't have one, so it is now the
-chronology of the research the model rests on, and since v34 of how implementation
-science and the implementation support profession developed. Add or remove entries freely — the line
-redraws itself.
+Two fields, one synthesis. Since v56 the timeline shows the model as a combination of
+implementation science and evaluation capacity building (ECB): each field has a rail of its
+own, teal and orange, and the rails never touch until they join at the bottom in the Ascent
+entry (`ABOUT.TIMELINE.synthesis`). Entries run in date order down both rails, so the
+picture also shows the timing — ECB maturing from the late 1990s, implementation support
+professionalizing in the late 2010s, both arriving in 2020. On a phone the two rails run
+side by side down the left edge.
+
+The six ECB landmarks in Table 2 of the Evidence & Peer Context brief are `ABOUT.TIMELINE.11`
+to `16`; the four studies in its Table 3 were already here. Add or remove entries freely —
+the rails redraw themselves. IDs 6 and 9 came off in v36 and v55 and are not reused.
+
+Each entry's `Field:` is the rail it sits on; change it to move the entry to the other field.
+On a wide screen the lane already says which field an entry belongs to, so the label is kept
+for screen readers only; on a phone it is printed after the year. A `Tag:` prints after the
+year everywhere.
 
 Context: These citations are short-form. If you want them to carry full references,
 say so and I'll build a references page and link each one — the deck flags that as an
 open item and it is the right call for an organisation whose pitch is methodological
 seriousness.
 
+**ID: `ABOUT.TIMELINE.field_is`**
+Context: Heading over the implementation science rail (on a phone, the first key above
+both rails). New in v56; my wording.
+Fits: Name one line; Line two lines in half the page width (about 20 words).
+> Name: Implementation science
+> Line: The study of how proven practices take hold in real programs, and of the people who help them take hold.
+
+**ID: `ABOUT.TIMELINE.field_ecb`**
+Context: Heading over the ECB rail. New in v56; my wording, after the definition in
+Stockdill, Baizerman & Compton (2002).
+Fits: As `ABOUT.TIMELINE.field_is`.
+> Name: Evaluation capacity building
+> Line: The practice of making evaluation, and the use of what it finds, an ordinary part of how an organization works.
+
+**ID: `ABOUT.TIMELINE.11`**
+Context: New in v56, from Table 2 of the brief (process use, Patton 1997). The mechanism the model leans on: taking part in evaluation teaches more than the report does.
+> Year: 1997
+> Field: Evaluation capacity building
+> Headline: Learning from the process
+> Detail: Process use names the learning that comes from taking part in an evaluation, beyond anything in its findings (Patton).
+
+**ID: `ABOUT.TIMELINE.12`**
+Context: New in v56, from Table 2 (Stockdill, Baizerman & Compton 2002) — the point the brief dates ECB from as a field of its own.
+> Year: 2002
+> Field: Evaluation capacity building
+> Headline: Capacity by design
+> Detail: Evaluation capacity building is defined as a field: designed practice rather than a by-product, with the use of evaluation built into what capacity means (Stockdill, Baizerman & Compton).
+
+**ID: `ABOUT.TIMELINE.13`**
+Context: New in v56, from Table 2 (Preskill & Boyle 2008).
+> Year: 2008
+> Field: Evaluation capacity building
+> Headline: Capacity lives in culture
+> Detail: A multidisciplinary model ties evaluation capacity to organizational learning and culture, and sets out the conditions for practice that lasts (Preskill & Boyle).
+
 **ID: `ABOUT.TIMELINE.7`**
 Context: New in v34, with entries 8–10 (9 came off in v55): these bring in how implementation science developed and
 how implementation support became a profession. 2009 is cited in the two PDFs linked from
 entry 10. `ABOUT.TIMELINE.6` (2005) was removed in v36; IDs are not renumbered.
 > Year: 2009
+> Field: Implementation science
 > Headline: A framework for what shapes implementation
 > Detail: The Consolidated Framework for Implementation Research organizes the factors that help or hinder putting evidence into practice (Damschroder et al.).
 
+**ID: `ABOUT.TIMELINE.14`**
+Context: New in v56, from Table 2 (Labin, Duffy, Meyers, Wandersman & Lesesne 2012). "Weaknesses in its designs" follows the brief's "identifies design weakness".
+> Year: 2012
+> Field: Evaluation capacity building
+> Headline: The field takes stock
+> Detail: A research synthesis consolidates the literature, codes its outcomes at the individual and organizational levels, and identifies weaknesses in its designs (Labin et al.).
+
 **ID: `ABOUT.TIMELINE.1`**
+Context: A Getting To Outcomes trial, published in *Implementation Science*. The brief's executive summary counts these trials as implementation science and its Table 3 as ECB evidence, so this sits on the implementation science rail and is drawn as one stop across both.
 > Year: 2013
+> Field: Implementation science
+> Tag: Cited by both fields
 > Headline: Dose matters
 > Detail: A two-year cluster-randomized trial finds dose-dependent gains across four capacity scales, greatest where technical assistance hours were highest (Acosta, Chinman et al.).
 
 **ID: `ABOUT.TIMELINE.2`**
 > Year: 2013
+> Field: Evaluation capacity building
 > Headline: Organizations, not individuals
 > Detail: Instrument validation establishes that leadership, resources and learning climate decide whether individual knowledge ever becomes mainstreamed practice (Taylor-Ritzler et al.).
 
+**ID: `ABOUT.TIMELINE.15`**
+Context: New in v56, from Table 2 (Cousins, Goh, Elliott & Bourgeois 2014).
+> Year: 2014
+> Field: Evaluation capacity building
+> Headline: Doing is not using
+> Detail: The capacity to do evaluation is separated from the capacity to use it: methodological skill on one side, the organizational conditions that let findings have influence on the other (Cousins et al.).
+
+**ID: `ABOUT.TIMELINE.16`**
+Context: New in v56, from Table 2 (Buckley, Archibald, Hargraves & Trochim 2015).
+> Year: 2015
+> Field: Evaluation capacity building
+> Headline: A habit of mind
+> Detail: Evaluative thinking is named as the lasting disposition that evaluation capacity building aims to instill (Buckley et al.).
+
 **ID: `ABOUT.TIMELINE.3`**
+Context: Belongs to neither field: it measures the sector the synthesis is for. Boxed across both rails, with no stop on either, and has no `Field:` line.
 > Year: 2016
+> Tag: The sector
 > Headline: The affordability gap, measured
 > Detail: Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff (Innovation Network).
 
@@ -1083,19 +1174,17 @@ Context: From the Practice Guide's "How we developed this guide": the work began
 internal R&D project between NIRN (USA) and the Centre for Effective Services (Ireland and
 Northern Ireland).
 > Year: 2017
+> Field: Implementation science
 > Headline: Implementation support becomes a field of research
 > Detail: Two intermediary organizations, one in the USA and one in Ireland and Northern Ireland, begin studying the role and competencies of the people who support implementation (NIRN and the Centre for Effective Services).
 
 **ID: `ABOUT.TIMELINE.4`**
+Context: The second Getting To Outcomes trial; drawn across both rails for the same reason as `ABOUT.TIMELINE.1`.
 > Year: 2018
+> Field: Implementation science
+> Tag: Cited by both fields
 > Headline: Repetition and duration drive results
 > Detail: A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle (Chinman, Acosta et al.).
-
-**ID: `ABOUT.TIMELINE.5`**
-Context: The finding the whole model is built on. If you cut one entry, don't cut this.
-> Year: 2020
-> Headline: Relationship, not training
-> Detail: Evaluation practice persists years after an intervention, and the persistence tracks ongoing evaluator contact rather than the initial training (Wade & Kallemeyn).
 
 **ID: `ABOUT.TIMELINE.10`**
 Context: Two of the words are links, opening in a new tab: "Implementation Support Practitioner
@@ -1103,8 +1192,26 @@ Profile" → https://cippro.wpengine.com/wp-content/uploads/2022/10/IS-Practice-
 and "Practice Guide" → https://cippro.wpengine.com/wp-content/uploads/2022/10/ISP-Practice-Guide-v1-10.27.22.pdf
 The PDFs are dated November and December 2020 (Profile v4.0; Guide), re-hosted in October 2022.
 > Year: 2020
+> Field: Implementation science
 > Headline: Competencies, described
 > Detail: The Implementation Support Practitioner Profile and Practice Guide set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change (Metz, Burke, Albers et al.).
+
+**ID: `ABOUT.TIMELINE.5`**
+Context: The finding the whole model is built on. If you cut one entry, don't cut this.
+> Year: 2020
+> Field: Evaluation capacity building
+> Headline: Relationship, not training
+> Detail: Evaluation practice persists years after an intervention, and the persistence tracks ongoing evaluator contact rather than the initial training (Wade & Kallemeyn).
+
+**ID: `ABOUT.TIMELINE.synthesis`**
+Context: Where the two rails join, centred under the timeline (on a phone, a stop across both
+rails). New in v56; my wording. It states the gap the brief's executive summary names — no
+model applies implementation science's evidence within ECB, explicitly and measurably — and
+what the model is designed to do about it, without claiming results.
+Fits: Label one word; Headline one line; Detail two sentences, about 40 words.
+> Label: Ascent
+> Headline: Where the two fields meet
+> Detail: No existing model delivers evaluation capacity building on the evidence of implementation science, explicitly and measurably. Ascent is designed to: capacity built over years, not months, and delivered the way implementation science shows new practice takes hold.
 
 ---
 

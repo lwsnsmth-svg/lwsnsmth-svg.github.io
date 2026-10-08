@@ -16,7 +16,7 @@
 
 <link rel="icon" href="assets/favicon.png?v=2026-10-04" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2026-10-04">
-<link rel="stylesheet" href="css/styles.css?v=2026-10-13">
+<link rel="stylesheet" href="css/styles.css?v=2026-10-15">
 <script src="js/theme-init.js"></script>
 </head>
 <body>
@@ -58,69 +58,133 @@
     </div>
   </section>
 
-  <!-- ---------------- Story + evidence timeline ---------------- -->
+  <!-- ---------------- Story + evidence timeline ----------------
+       Two fields, one synthesis: implementation science and evaluation capacity
+       building run as separate rails and meet only at Ascent. Entries stay in
+       date order; an IS entry followed by an ECB one shares a row (see .strands
+       in css/styles.css), so put same-year IS entries first. -->
   <section class="section section--muted">
-    <div class="container split split--sticky reveal">
-      <div>
-        <span class="eyebrow">The evidence base</span>
-        <h2>An outcomes-oriented synthesis.</h2>
-        <p>
-          When evidence quality determines funding, capital consolidates
-          toward whoever can afford to prove their outcomes—whether or not they are the
-          organizations doing the most consequential work.
-        </p>
-        <p>
-          Program evaluation is inaccessible and underleveraged. As a service, its
-          practitioners are disparate or overpriced. As a practice, its methods are too
-          niche, its implementation too resource-intensive, and its benefits too obscure for
-          program teams to take on alone. The evidence says evaluation works best through
-          long-term collaboration that builds trust, deepens context and shepherds adoption—and in the current market, those carry impossible costs for small and mid-sized
-          organizations. Ascent is structured to make that relationship affordable.
-        </p>
+    <div class="container">
+      <div class="strands-intro reveal">
+        <div>
+          <span class="eyebrow">The evidence base</span>
+          <h2>An outcomes-oriented synthesis.</h2>
+        </div>
+        <div>
+          <p>
+            When evidence quality determines funding, capital consolidates
+            toward whoever can afford to prove their outcomes—whether or not they are the
+            organizations doing the most consequential work.
+          </p>
+          <p>
+            Program evaluation is inaccessible and underleveraged. As a service, its
+            practitioners are disparate or overpriced. As a practice, its methods are too
+            niche, its implementation too resource-intensive, and its benefits too obscure for
+            program teams to take on alone. The evidence says evaluation works best through
+            long-term collaboration that builds trust, deepens context and shepherds adoption—and in the current market, those carry impossible costs for small and mid-sized
+            organizations. Ascent is structured to make that relationship affordable.
+          </p>
+        </div>
       </div>
 
-      <ol class="timeline" id="timeline">
-        <li>
-          <span class="timeline__year">2009</span>
-          <h3>A framework for what shapes implementation</h3>
-          <p>The Consolidated Framework for Implementation Research organizes the factors that help or hinder putting evidence into practice (Damschroder et al.).</p>
-        </li>
-        <li>
-          <span class="timeline__year">2013</span>
-          <h3>Dose matters</h3>
-          <p>A two-year cluster-randomized trial finds dose-dependent gains across four capacity scales, greatest where technical assistance hours were highest (Acosta, Chinman et al.).</p>
-        </li>
-        <li>
-          <span class="timeline__year">2013</span>
-          <h3>Organizations, not individuals</h3>
-          <p>Instrument validation establishes that leadership, resources and learning climate decide whether individual knowledge ever becomes mainstreamed practice (Taylor-Ritzler et al.).</p>
-        </li>
-        <li>
-          <span class="timeline__year">2016</span>
-          <h3>The affordability gap, measured</h3>
-          <p>Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff (Innovation Network).</p>
-        </li>
-        <li>
-          <span class="timeline__year">2017</span>
-          <h3>Implementation support becomes a field of research</h3>
-          <p>Two intermediary organizations, one in the USA and one in Ireland and Northern Ireland, begin studying the role and competencies of the people who support implementation (NIRN and the Centre for Effective Services).</p>
-        </li>
-        <li>
-          <span class="timeline__year">2018</span>
-          <h3>Repetition and duration drive results</h3>
-          <p>A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle (Chinman, Acosta et al.).</p>
-        </li>
-        <li>
-          <span class="timeline__year">2020</span>
-          <h3>Relationship, not training</h3>
-          <p>Evaluation practice persists years after an intervention, and the persistence tracks ongoing evaluator contact rather than the initial training (Wade &amp; Kallemeyn).</p>
-        </li>
-        <li>
-          <span class="timeline__year">2020</span>
-          <h3>Competencies, described</h3>
-          <p>The <a href="https://cippro.wpengine.com/wp-content/uploads/2022/10/IS-Practice-Profile-single-page-printing-v10-October-2022.pdf" target="_blank" rel="noopener">Implementation Support Practitioner Profile</a> and <a href="https://cippro.wpengine.com/wp-content/uploads/2022/10/ISP-Practice-Guide-v1-10.27.22.pdf" target="_blank" rel="noopener">Practice Guide</a> set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change (Metz, Burke, Albers et al.).</p>
-        </li>
-      </ol>
+      <div class="strands reveal" id="timeline">
+        <div class="strands__fields">
+          <div class="strands__field strands__field--is">
+            <p class="strands__name">Implementation science</p>
+            <p>The study of how proven practices take hold in real programs, and of the people who help them take hold.</p>
+          </div>
+          <div class="strands__field strands__field--ecb">
+            <p class="strands__name">Evaluation capacity building</p>
+            <p>The practice of making evaluation, and the use of what it finds, an ordinary part of how an organization works.</p>
+          </div>
+        </div>
+
+        <ol class="strands__list">
+          <li class="strand strand--ecb">
+            <p class="strand__meta"><span class="strand__year">1997</span><span class="strand__field">Evaluation capacity building</span></p>
+            <h3>Learning from the process</h3>
+            <p>Process use names the learning that comes from taking part in an evaluation, beyond anything in its findings (Patton).</p>
+          </li>
+          <li class="strand strand--ecb">
+            <p class="strand__meta"><span class="strand__year">2002</span><span class="strand__field">Evaluation capacity building</span></p>
+            <h3>Capacity by design</h3>
+            <p>Evaluation capacity building is defined as a field: designed practice rather than a by-product, with the use of evaluation built into what capacity means (Stockdill, Baizerman &amp; Compton).</p>
+          </li>
+          <li class="strand strand--ecb">
+            <p class="strand__meta"><span class="strand__year">2008</span><span class="strand__field">Evaluation capacity building</span></p>
+            <h3>Capacity lives in culture</h3>
+            <p>A multidisciplinary model ties evaluation capacity to organizational learning and culture, and sets out the conditions for practice that lasts (Preskill &amp; Boyle).</p>
+          </li>
+          <li class="strand strand--is">
+            <p class="strand__meta"><span class="strand__year">2009</span><span class="strand__field">Implementation science</span></p>
+            <h3>A framework for what shapes implementation</h3>
+            <p>The Consolidated Framework for Implementation Research organizes the factors that help or hinder putting evidence into practice (Damschroder et al.).</p>
+          </li>
+          <li class="strand strand--ecb">
+            <p class="strand__meta"><span class="strand__year">2012</span><span class="strand__field">Evaluation capacity building</span></p>
+            <h3>The field takes stock</h3>
+            <p>A research synthesis consolidates the literature, codes its outcomes at the individual and organizational levels, and identifies weaknesses in its designs (Labin et al.).</p>
+          </li>
+          <li class="strand strand--is strand--both">
+            <p class="strand__meta"><span class="strand__year">2013</span><span class="strand__field">Implementation science</span><span class="strand__tag">Cited by both fields</span></p>
+            <h3>Dose matters</h3>
+            <p>A two-year cluster-randomized trial finds dose-dependent gains across four capacity scales, greatest where technical assistance hours were highest (Acosta, Chinman et al.).</p>
+          </li>
+          <li class="strand strand--ecb">
+            <p class="strand__meta"><span class="strand__year">2013</span><span class="strand__field">Evaluation capacity building</span></p>
+            <h3>Organizations, not individuals</h3>
+            <p>Instrument validation establishes that leadership, resources and learning climate decide whether individual knowledge ever becomes mainstreamed practice (Taylor-Ritzler et al.).</p>
+          </li>
+          <li class="strand strand--ecb">
+            <p class="strand__meta"><span class="strand__year">2014</span><span class="strand__field">Evaluation capacity building</span></p>
+            <h3>Doing is not using</h3>
+            <p>The capacity to do evaluation is separated from the capacity to use it: methodological skill on one side, the organizational conditions that let findings have influence on the other (Cousins et al.).</p>
+          </li>
+          <li class="strand strand--ecb">
+            <p class="strand__meta"><span class="strand__year">2015</span><span class="strand__field">Evaluation capacity building</span></p>
+            <h3>A habit of mind</h3>
+            <p>Evaluative thinking is named as the lasting disposition that evaluation capacity building aims to instill (Buckley et al.).</p>
+          </li>
+          <li class="strand strand--sector">
+            <p class="strand__meta"><span class="strand__year">2016</span><span class="strand__tag">The sector</span></p>
+            <h3>The affordability gap, measured</h3>
+            <p>Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff (Innovation Network).</p>
+          </li>
+          <li class="strand strand--is">
+            <p class="strand__meta"><span class="strand__year">2017</span><span class="strand__field">Implementation science</span></p>
+            <h3>Implementation support becomes a field of research</h3>
+            <p>Two intermediary organizations, one in the USA and one in Ireland and Northern Ireland, begin studying the role and competencies of the people who support implementation (NIRN and the Centre for Effective Services).</p>
+          </li>
+          <li class="strand strand--is strand--both">
+            <p class="strand__meta"><span class="strand__year">2018</span><span class="strand__field">Implementation science</span><span class="strand__tag">Cited by both fields</span></p>
+            <h3>Repetition and duration drive results</h3>
+            <p>A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle (Chinman, Acosta et al.).</p>
+          </li>
+          <li class="strand strand--is">
+            <p class="strand__meta"><span class="strand__year">2020</span><span class="strand__field">Implementation science</span></p>
+            <h3>Competencies, described</h3>
+            <p>The <a href="https://cippro.wpengine.com/wp-content/uploads/2022/10/IS-Practice-Profile-single-page-printing-v10-October-2022.pdf" target="_blank" rel="noopener">Implementation Support Practitioner Profile</a> and <a href="https://cippro.wpengine.com/wp-content/uploads/2022/10/ISP-Practice-Guide-v1-10.27.22.pdf" target="_blank" rel="noopener">Practice Guide</a> set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change (Metz, Burke, Albers et al.).</p>
+          </li>
+          <li class="strand strand--ecb">
+            <p class="strand__meta"><span class="strand__year">2020</span><span class="strand__field">Evaluation capacity building</span></p>
+            <h3>Relationship, not training</h3>
+            <p>Evaluation practice persists years after an intervention, and the persistence tracks ongoing evaluator contact rather than the initial training (Wade &amp; Kallemeyn).</p>
+          </li>
+        </ol>
+
+        <div class="strands__meet">
+          <svg class="strands__join" viewBox="0 0 67 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path class="strands__join--is" d="M1.5 0V10C1.5 40 32 36 32 64V80"/>
+            <path class="strands__join--ecb" d="M65.5 0V10C65.5 40 35 36 35 64V80"/>
+          </svg>
+          <span class="strands__node" aria-hidden="true"></span>
+          <div class="strands__synthesis">
+            <p class="strand__meta"><span class="strand__year">Ascent</span></p>
+            <h3>Where the two fields meet</h3>
+            <p>No existing model delivers evaluation capacity building on the evidence of implementation science, explicitly and measurably. Ascent is designed to: capacity built over years, not months, and delivered the way implementation science shows new practice takes hold.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -144,6 +208,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=2026-10-04"></script>
+<script src="js/main.js?v=2026-10-14"></script>
 </body>
 </html>

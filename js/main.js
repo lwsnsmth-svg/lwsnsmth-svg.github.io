@@ -135,22 +135,6 @@
     });
   });
 
-  /* ---- Sticky text column, vertically centred ------------------------------
-     The About page's text column sticks while the timeline scrolls. Its sticky
-     offset is set so the column sits in the middle of the viewport (never under
-     the header). CSS gives a close fallback if this does not run. */
-  document.querySelectorAll('.split--sticky > :first-child').forEach(function (col) {
-    var header = document.querySelector('.site-header');
-    function place() {
-      var min = (header ? header.offsetHeight : 0) + 16;
-      var top = Math.max(min, Math.round((window.innerHeight - col.offsetHeight) / 2));
-      col.style.top = top + 'px';
-    }
-    place();
-    window.addEventListener('resize', place);
-    if (window.ResizeObserver) new ResizeObserver(place).observe(col);
-  });
-
   /* ---- Tool cards (home): click to expand a short description ----------- */
   document.querySelectorAll('.tool-card__toggle').forEach(function (btn) {
     btn.addEventListener('click', function () {
