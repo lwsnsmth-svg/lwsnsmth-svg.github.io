@@ -3,7 +3,11 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 57 · **Updated:** 8 October 2026 · **Covers:** 7 pages
+**Version:** 58 · **Updated:** 8 October 2026 · **Covers:** 7 pages
+
+> **What changed in v58.** A typo fixed at your request: step 06 of the program sequence on
+> Evaluation Process (`PROGRAMS.SEQUENCE.steps`) now reads "Traces the underlying links…" (was
+> "underlaying"). **No ID changed.**
 
 > **What changed in v57.** Your edit from the editor, applied: on Evaluation Process, step 06 of
 > the program sequence (`PROGRAMS.SEQUENCE.steps`, "Recursion and integration") now begins
@@ -1322,7 +1326,7 @@ Fits: ~130 characters per sentence, or the timeline runs taller than the text be
 >
 > Step: Step 06
 > Name: Recursion and integration
-> Detail: Traces the underlaying links that turn inputs to outcomes: findings become program changes, outcomes feed the next round of evaluation, and the loop cycles.
+> Detail: Traces the underlying links that turn inputs to outcomes: findings become program changes, outcomes feed the next round of evaluation, and the loop cycles.
 >
 > Step: Step 07
 > Name: Graduation
