@@ -3,7 +3,15 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 59 · **Updated:** 8 October 2026 · **Covers:** 7 pages
+**Version:** 60 · **Updated:** 11 October 2026 · **Covers:** 7 pages
+
+> **What changed in v60.** At your request, the tagline under the name in the brand lockup
+> (`GLOBAL.BRAND.tagline`) now reads "For Comprehensive Evaluation" (was "For Research &
+> Evaluation"). It changes on every page, header and footer, and on the unlisted editor demo.
+> It is three characters longer, but it still sits on one line on desktop and tablet at the
+> same type size; on a phone it wraps to two lines, as before. It no longer matches the
+> Program Description's cover, so I dropped that from the block's Context note. The README's
+> find-and-replace table now names the new tagline too. **No ID changed.**
 
 > **What changed in v59.** At your request, one paragraph moved from About to Home. "When
 > evidence quality determines funding, capital consolidates toward whoever can afford to prove
@@ -786,11 +794,13 @@ Fits: Up to ~24 characters before it starts crowding the nav on a tablet.
 
 **ID: `GLOBAL.BRAND.tagline`**
 Context: Tiny uppercase line directly under the name. A category descriptor, not a
-slogan — it tells a first-time visitor what kind of organisation this is. Matches the cover
-of the Program Description. At this length the tagline is back at the lockup's original
-type size and sits on one line under the name on desktop; it wraps to two on a phone.
-Fits: ~24 characters. Longer wraps on desktop too, and the type would need shrinking again.
-> For Research & Evaluation
+slogan — it tells a first-time visitor what kind of organisation this is. Since v60 it
+reads "For Comprehensive Evaluation" and no longer matches the cover of the Program
+Description. At this length it keeps the lockup's original type size and sits on one line
+under the name on desktop and tablet, with very little room to spare; it wraps to two on a phone.
+Fits: ~28 characters, the current length. Longer wraps on desktop too, and the type would need
+shrinking again.
+> For Comprehensive Evaluation
 
 ## A2. Main navigation
 
