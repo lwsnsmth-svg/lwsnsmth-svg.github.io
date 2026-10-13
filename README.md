@@ -73,7 +73,7 @@ Search and replace across all `.html` files:
 | Find | Replace with |
 | --- | --- |
 | `Ascent` | Your organisation's name |
-| `For Research & Evaluation` | Your tagline |
+| `For Comprehensive Evaluation` | Your tagline |
 | `example.org` | Your domain |
 | `New York, NY` | Your city |
 | `(555) 014-2000` | Your phone numbers |
