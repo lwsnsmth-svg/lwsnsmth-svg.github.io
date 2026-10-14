@@ -340,6 +340,8 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   margin-bottom: var(--sp-7);
 }
 .section-head.center { margin-inline: auto; }
+/* An accent word in a section heading ({{…}} in SITE-COPY.md), coloured as in the hero title. */
+.section-head h2 em { font-style: normal; color: var(--amber-400); }
 
 .eyebrow {
   display: inline-block;
