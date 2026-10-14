@@ -3,7 +3,18 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 65 · **Updated:** 14 October 2026 · **Covers:** 8 pages
+**Version:** 66 · **Updated:** 14 October 2026 · **Covers:** 8 pages
+
+> **What changed in v66.** Your edit to the Download banner's line under the heading
+> (`DOWNLOAD.HERO.lead`), applied word for word: "The desktop app that supports our evaluation
+> process: build program logic models, aggregate evidence and map it to each link, monitor the
+> effects of external policy developments, project change across all metrics." It runs to
+> three lines on desktop, up from two, and I updated the Context and Fits notes to say so.
+> **No ID changed.**
+>
+> Not changed: the Download page's search-engine description (`SEO.download`) still says "the
+> desktop app for building and reading program logic models", the banner's first wording.
+> Say if you want it to follow.
 
 > **What changed in v65.** Your edits to the Download page (§L), applied word for word. The
 > banner heading is "Download the app" (`DOWNLOAD.HERO.h1`, was "Download Ascent Mapper").
@@ -1949,10 +1960,14 @@ Fits: 3–4 words, one line.
 > Download the app
 
 **ID: `DOWNLOAD.HERO.lead`**
-Context: What the app is, in the README's terms: logic models, the evidence behind each
-link, the people around the program.
-Fits: 2–3 lines, ~180 characters.
-> The desktop app for building and reading program logic models, with the evidence behind each link and the people around the program.
+Context: What the app is and does, in your v66 wording: it supports "our evaluation process"
+and names four things it does (build logic models, aggregate evidence against each link,
+monitor external policy developments, project change across all metrics), which makes it a
+list in one line rather than a description. The first draft, from the app's README, said
+"building and reading program logic models, with the evidence behind each link and the
+people around the program".
+Fits: 2–3 lines, ~215 characters, the current length: three lines on desktop.
+> The desktop app that supports our evaluation process: build program logic models, aggregate evidence and map it to each link, monitor the effects of external policy developments, project change across all metrics.
 
 ## L2. The installers
 
