@@ -3,7 +3,27 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 60 · **Updated:** 11 October 2026 · **Covers:** 7 pages
+**Version:** 62 · **Updated:** 14 October 2026 · **Covers:** 7 pages
+
+> **What changed in v62.** Evaluation Process. At your request, the heading over the four phase
+> cards, "Opening the black box", gained a subhead: "A platform built for program teams that
+> gets to outcomes by driving clarity in practice." (`PROGRAMS.CARDS.lead`, new). It is centred
+> under the heading in the page's grey lead style, and I updated the Context note on
+> `PROGRAMS.CARDS.h2`, which said there was no lead. Applied word for word. **New ID:
+> `PROGRAMS.CARDS.lead`; none renumbered.**
+
+> **What changed in v61.** Evaluation Process. At your request, the four phase cards under the
+> page banner now sit under a centred heading, "Opening the black box" (`PROGRAMS.CARDS.h2`,
+> new), styled like the section headings on the home page. I also applied the edits you made
+> to the phase output lists, which the doc had but the site did not, word for word. Phase 1:
+> theory of change and evaluability assessment. Phase 2: instrument suite ("community
+> members", was "community representatives"). Phase 3: both findings memos and the
+> contribution and attribution analysis. Phase 4: all five entries. Your Phase 3 edit dropped
+> "Required for every non-experimental evaluation", so I corrected the `Context:` note on
+> `PROGRAMS.PHASE3.list`, which still pointed to it. One thing to decide: the Phase 4 learning
+> agenda now says "out of MEL scope", and "MEL" is spelled out nowhere on the site (the phase
+> is named "Monitoring, Learning & Reporting"). I left it as you wrote it. **New ID:
+> `PROGRAMS.CARDS.h2`; none renumbered.**
 
 > **What changed in v60.** At your request, the tagline under the name in the brand lockup
 > (`GLOBAL.BRAND.tagline`) now reads "For Comprehensive Evaluation" (was "For Research &
@@ -1275,6 +1295,23 @@ scenario dashboard (`assets/phase-1-logic-model.png` … `phase-4-scenarios.png`
 crop to 16:9; Phases 2–4 are anchored to the top of the screenshot so their headers stay
 in view. Alt text is in `ALT.programs`.
 
+**ID: `PROGRAMS.CARDS.h2`**
+Context: New in v61, at your request. A centred heading over the four cards, with no eyebrow
+(the subhead below it is `PROGRAMS.CARDS.lead`). It is the first `h2` on the page; until now
+the cards' own headings came straight after the page title. "Black box" is evaluation's term
+for a program judged only on what goes in and what comes out; the four cards below each open
+one phase of what happens between.
+Fits: 3–5 words, one line at every width.
+> Opening the black box
+
+**ID: `PROGRAMS.CARDS.lead`**
+Context: New in v62, at your request. The subhead under "Opening the black box", centred, in
+the same grey lead style as the home page's section leads. It is a statement about the
+platform, not the process: the heading is about what the phases open up, this line says who
+the platform is for and what it gets them.
+Fits: One sentence, ~90 characters; two lines on desktop, up to three on a phone.
+> A platform built for program teams that gets to outcomes by driving clarity in practice.
+
 **ID: `PROGRAMS.CARDS.1`**
 > Tag: Phase 01
 > Name: Evaluative Foundation
@@ -1391,8 +1428,8 @@ one practitioners react to; keep it.
 > **Stakeholder map.** Everyone with a stake in the program, distinguishing those whose input shapes the evaluation from those whose outcomes are its subject.
 > **Program description and context brief.** What the program does, for whom, and at what scale—set against its evidence base, policy landscape, and peer field.
 > **Logic model.** The program's causal architecture from inputs to long-term outcomes, built with the organization's staff so it reflects implementation reality rather than aspirational design.
-> **Theory of change.** The problem theory, intervention theory, change theory, and equity dimensions, with literature cited for causal claims.
-> **Evaluability assessment.** A structured judgment of whether the program is actually ready to be evaluated at all.
+> **Theory of change.** Evidentiary and assumptive claims mapped along the logic model's pathways. This scopes the continued evaluation as it isolates load-bearing assumptions and evidentiary gaps to be filled.
+> **Evaluability assessment.** A structured judgment of whether the program is ready to be evaluated and at what scope.
 > **Evaluation questions and indicator framework.** A prioritized set of questions, each matched to measurable constructs, marking what is in and out of scope.
 
 ## D5. Phase 2 — detail
@@ -1418,7 +1455,7 @@ of the program sequence ("Audit") still makes the second point.
 > Subheading: Phase 2 outputs
 > **Data needs assessment.** Every indicator mapped to a source and categorized: already collected, collectible with new instruments, derivable from third-party data, or practically infeasible.
 > **Measurement selection report.** For each indicator, the measure chosen, the rationale, the population, and the timing.
-> **Instrument suite.** Designed and adapted instruments, with novel ones pilot tested and reviewed by community representatives before field deployment.
+> **Instrument suite.** Designed and adapted instruments, with novel ones pilot tested and reviewed by community members before field deployment.
 > **Collection protocol.** Administration, consent and assent, data entry, confidentiality, and how missing data and non-response are handled.
 > **Data management system.** Storage, linkage, backup, security and retention—set up alongside the program team, with the training to run it.
 > **Data quality plan.** Standing completeness, validity, consistency and timeliness checks: who runs them, how often, and what each problem triggers.
@@ -1443,14 +1480,14 @@ third, on organizations that arrive with data already collected, came off in v55
 > This phase turns collected data into defensible evidence. The final analysis runs offsite; the findings come back to the program team through the implementation support professional rather than as a report in an inbox.
 
 **ID: `PROGRAMS.PHASE3.list`**
-Context: "Specified before results are examined" and "required for every
-non-experimental evaluation" are the two clauses a methodologically literate funder will
-look for. Neither is padding.
+Context: "Specified before results are examined" is the clause a methodologically literate
+funder will look for. It is not padding. (The second one, "required for every
+non-experimental evaluation", came off the contribution and attribution entry in v61.)
 > Subheading: Phase 3 outputs
 > **Design and analysis specification.** Counterfactual strategy, unit of analysis, level of inference, subgroup analyses planned in advance, and threats to validity with mitigations—specified before results are examined.
-> **Quantitative findings memo.** Effect sizes with confidence intervals rather than p-values alone, sensitivity analyses, and subgroup findings, with plain-language interpretation alongside the technical specification.
-> **Qualitative findings memo.** Analytic approach, codebook development, triangulation procedures, and key themes with representative evidence.
-> **Contribution and attribution analysis.** What else was operating, whether the pattern of findings fits the theory of change, and what alternative explanations remain. Required for every non-experimental evaluation.
+> **Quantitative findings memo.** If quantitative methods are used, a brief on their findings with plain-language interpretation alongside the technical specification.
+> **Qualitative findings memo.** If qualitative methods are used, a brief on their findings alongside methodology and any contextual concerns.
+> **Contribution and attribution analysis.** What else was operating, how much of program outcomes can be linked to program interventions, whether the pattern of findings fits the theory of change, and what alternative explanations remain.
 > **Evidence strength summary.** One non-technical page on what the evidence shows, at what confidence, with what caveats.
 > **Integrated findings report.** The master document: executive summary, full methods, findings by question, implications for improvement, and limitations.
 
@@ -1476,11 +1513,11 @@ retainer or by guide.
 
 **ID: `PROGRAMS.PHASE4.list`**
 > Subheading: Phase 4 outputs
-> **Learning agenda.** The questions the organization intends to investigate next, sorted by what routine monitoring can answer, what needs a new evaluation, and what requires external research.
-> **Monitoring and evaluation plan.** Which indicators are tracked, how often, from what sources, against what targets—with procedures for updating them as programs evolve.
-> **Indicator dashboard.** Built on the organization's preferred platform—live, automated or periodic, depending on the data architecture from Phase 2.
-> **Reporting suite.** Funder reports, board dashboards, operational reports, public impact summaries, and policy briefs translating evidence into implications for design, policy or funding.
-> **Dissemination plan.** How findings reach peers, funders, policymakers and the communities whose members were the subjects of the evaluation—audiences, messages, channels, timing.
+> **Learning agenda.** The question(s) the organization intends to investigate perpetually, sorted by what routine monitoring can answer, what needs a new evaluation, and what lies out of MEL scope.
+> **Monitoring and evaluation plan.** Which indicators are tracked, how often, from what sources, against what targets.
+> **Indicator dashboard.** Use our app to monitor program metrics, or have an external dashboard created with periodic updates.
+> **Reporting suite.** Funder reports, board dashboards, operational reports, impact summaries, and policy briefs translating evidence into implications for design, policy or funding.
+> **Dissemination plan.** How findings reach peers, funders, policymakers and the communities whose members were the subjects of the evaluation.
 
 ---
 # E. Our Model
