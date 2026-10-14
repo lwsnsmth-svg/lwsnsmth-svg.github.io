@@ -4,7 +4,7 @@ Static marketing site for a nonprofit. Plain HTML, one stylesheet, two scripts.
 **No build step and no framework** — the `.html` files are what ship.
 
 ```
-index · about · programs · get-involved · demo · 404   (6 pages)
+index · about · programs · get-involved · demo · download · 404   (7 pages)
 editor_demo                                           (unlisted — link to it from nowhere)
 css/styles.css     all styling; design tokens at the top drive everything
 js/main.js         nav, theme, counters, accordion
@@ -161,6 +161,22 @@ describes a hypothetical service set; it carries no quality assurance or governa
 There are no forms, and no way to contact Ascent: the Contact page went in v9 of the
 doc, donations in v6. Snapshots of the site before each removal are in
 `~/Desktop/Ascent Website archive/`.
+
+## Publishing a new release of the app
+
+`download.html` links straight to installer files in the Releases of
+`github.com/Ascent-Evaluation/ascent-mapper`. Nothing on the site updates itself, so each
+release is a small edit in two places, in the same pass:
+
+- the **three `href`s** in `download.html` — the tag (`v0.0.1`) and the version inside each
+  file name (`Ascent-Mapper-0.0.1-arm64.dmg`, `…-x64.dmg`, `Ascent-Mapper-Setup-0.0.1.exe`);
+- the version in the eyebrow, `DOWNLOAD.CHOOSE.intro` in `SITE-COPY.md` and the page.
+
+The file names carry the version, and GitHub's `/releases/latest/` skips pre-releases, so
+there is no version-free link that works yet. There is deliberately no OS detection: the
+page shows all three installers, because a browser cannot tell an Apple-silicon Mac from
+an Intel one. Once a build is signed, remove the "First launch" band (`DOWNLOAD.OPEN.*`)
+and the "not yet signed" wording in its lead.
 
 ## Things that look wrong but are deliberate
 

@@ -3,7 +3,33 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 62 · **Updated:** 14 October 2026 · **Covers:** 7 pages
+**Version:** 64 · **Updated:** 14 October 2026 · **Covers:** 8 pages
+
+> **What changed in v64.** Your two edits to this document, applied to the site word for word.
+> Evaluation Process: the first word of the heading over the four phase cards,
+> "{{Opening}} the black box" (`PROGRAMS.CARDS.h2`), is now in the orange accent colour. That
+> needed a new style rule, since only the home page's hero title coloured accent words; the rule
+> covers any section heading, so `{{…}}` works in the others too. About: the closing entry of
+> the evidence timeline, "Where the two fields meet" (`ABOUT.TIMELINE.synthesis`), now stops
+> after "…explicitly and measurably." — the sentence about what Ascent is designed to do is
+> gone. I updated the Context notes on both blocks, and the "Fits" line on the second, which
+> still said two sentences. **No ID changed.**
+
+> **What changed in v63.** A new page, §L: **Download** (`download.html`), at your request. It
+> links to the installers for Ascent Mapper in the app's GitHub releases: one button each for
+> Macs with Apple silicon, Macs with an Intel processor, and Windows. They are three links
+> because a web page cannot reliably tell which kind of Mac someone has. Below the buttons is
+> the first-launch walkthrough from the app's README, since the early builds are not yet
+> signed and both systems warn before opening them. "Download" is the sixth item in the nav,
+> after Demo, on every page (`GLOBAL.NAV.items`). **New IDs: `DOWNLOAD.*` and
+> `SEO.download`; none renumbered.** The page is §L, after the unlisted editor demo, so that no
+> existing page letter moved.
+>
+> All the wording is mine, taken from the app's README and the v0.0.1 release notes, so please
+> change any of it. Two things to decide. The page calls the app **Ascent Mapper**, as its
+> installer, README and release do, while the Demo and the editor demo still call it **Program
+> Mapper**; I left those alone. And the version in `DOWNLOAD.CHOOSE.intro` ("Version 0.0.1"),
+> with the three download links in the page's markup, are what change with each release.
 
 > **What changed in v62.** Evaluation Process. At your request, the heading over the four phase
 > cards, "Opening the black box", gained a subhead: "A platform built for program teams that
@@ -785,7 +811,7 @@ the doc doesn't document. A Stop hook runs it automatically.
 
 ## Contents
 
-- [A. Global](#a-global-every-page) — header, footer, appears on all 7 pages
+- [A. Global](#a-global-every-page) — header, footer, appears on all 8 pages
 - [B. Home](#b-home) — `index.html`
 - [C. About](#c-about) — `about.html`
 - [D. Evaluation Process](#d-evaluation-process) — `programs.html`
@@ -796,12 +822,13 @@ the doc doesn't document. A Stop hook runs it automatically.
 - [I. Search-engine & social text](#i-search-engine--social-text) — titles and descriptions
 - [J. Image descriptions](#j-image-descriptions) — screen-reader alt text
 - [K. Editor demo](#k-editor-demo-unlisted) — `editor_demo.html`, unlisted
+- [L. Download](#l-download) — `download.html`
 
 ---
 
 # A. Global (every page)
 
-Edit these once; they change on all seven pages, the unlisted editor demo (§K) included.
+Edit these once; they change on all eight pages, the unlisted editor demo (§K) included.
 
 ## A1. Brand lockup
 
@@ -827,13 +854,16 @@ shrinking again.
 **ID: `GLOBAL.NAV.items`**
 Context: Horizontal on desktop, a drop-down panel on mobile. Order is left to right.
 The page files are still named `programs.html` and `get-involved.html` internally —
-only the visible labels changed, so no links break. "Demo" (v16) goes to `demo.html`.
-Fits: 1–2 words each. Six items is about the ceiling before it crowds the logo.
+only the visible labels changed, so no links break. "Demo" (v16) goes to `demo.html` and
+"Download" (v63) to `download.html`.
+Fits: 1–2 words each. Six items is about the ceiling before it crowds the logo, and
+the nav now has six.
 > Home
 > About
 > Evaluation Process
 > Our Model
 > Demo
+> Download
 
 ## A3. Footer — organisation blurb
 
@@ -1262,11 +1292,12 @@ Context: The finding the whole model is built on. If you cut one entry, don't cu
 Context: Where the two rails join, centred under the timeline (on a phone, a stop across both
 rails). New in v56; my wording. It states the gap the brief's executive summary names — no
 model applies implementation science's evidence within ECB, explicitly and measurably — and
-what the model is designed to do about it, without claiming results.
-Fits: Label one word; Headline one line; Detail two sentences, about 40 words.
+stops there. Until v64 a second sentence said what the model is designed to do about it;
+your edit removed it, so the entry now makes the claim about the field and none about Ascent.
+Fits: Label one word; Headline one line; Detail one sentence, about 20 words.
 > Label: Ascent
 > Headline: Where the two fields meet
-> Detail: No existing model delivers evaluation capacity building on the evidence of implementation science, explicitly and measurably. Ascent is designed to: capacity built over years, not months, and delivered the way implementation science shows new practice takes hold.
+> Detail: No existing model delivers evaluation capacity building on the evidence of implementation science, explicitly and measurably.
 
 ---
 
@@ -1300,9 +1331,10 @@ Context: New in v61, at your request. A centred heading over the four cards, wit
 (the subhead below it is `PROGRAMS.CARDS.lead`). It is the first `h2` on the page; until now
 the cards' own headings came straight after the page title. "Black box" is evaluation's term
 for a program judged only on what goes in and what comes out; the four cards below each open
-one phase of what happens between.
+one phase of what happens between. Since v64 the first word is in the orange accent colour,
+as the words picked out in the home page's hero title are.
 Fits: 3–5 words, one line at every width.
-> Opening the black box
+> {{Opening}} the black box
 
 **ID: `PROGRAMS.CARDS.lead`**
 Context: New in v62, at your request. The subhead under "Opening the black box", centred, in
@@ -1773,6 +1805,12 @@ page does.
 > Title: Demo—try the Program Mapper
 > Description: Try the Program Mapper: map every facet of a program, measure outcomes and test the effects of different changes.
 
+**ID: `SEO.download`**
+Context: New in v63. Names both systems the page covers, since that is what someone searching
+for an installer types. The description is 132 characters.
+> Title: Download—Ascent Mapper for Mac and Windows
+> Description: Download Ascent Mapper, the desktop app for building and reading program logic models, for Mac (Apple silicon or Intel) and Windows.
+
 **ID: `SEO.404`**
 > Title: Page not found | Ascent
 > Description: The requested page could not be found.
@@ -1871,4 +1909,109 @@ Context: Arrow link. Opens the editor on its own in a new tab, at full window si
 
 ---
 
-*End of document — 7 pages, 11 sections. Edit and send back.*
+# L. Download
+
+`download.html` — the installers for Ascent Mapper, the desktop app. **New in v63.** The
+files are not on this site: each button goes straight to a file in a release in the app's
+GitHub repository (Ascent-Evaluation/ascent-mapper), so nothing about the installers is
+covered here, only the page that points at them. It is last in this document so that no
+existing page letter moved; on the site it is the sixth nav item, after Demo. Every word of
+it is mine, from the app's README and release notes.
+
+## L1. Page banner
+
+**ID: `DOWNLOAD.HERO.h1`**
+Context: The app's name as its installer, README and release give it. The Demo page and the
+editor demo still say "Program Mapper"; see the v63 note at the top of this document.
+Fits: 3–4 words, one line.
+> Download Ascent Mapper
+
+**ID: `DOWNLOAD.HERO.lead`**
+Context: What the app is, in the README's terms: logic models, the evidence behind each
+link, the people around the program.
+Fits: 2–3 lines, ~180 characters.
+> The desktop app for building and reading program logic models, with the evidence behind each link and the people around the program.
+
+## L2. The installers
+
+Three cards in a row, one per computer, each with one button. Anchored at `#installers`.
+Nothing picks for the visitor: a web page cannot reliably tell an Apple-silicon Mac from an
+Intel one, so they choose, and the small print under the cards says how to find out.
+
+**ID: `DOWNLOAD.CHOOSE.intro`**
+Context: The eyebrow says which release the buttons fetch and that it is an early build. It
+is the one piece of copy that goes stale: change it, and the three links in the page's
+markup, whenever a new release is published. The lead says where the files come from.
+> Eyebrow: Version 0.0.1 · early build
+> Heading: Choose your computer
+> Lead: Each button downloads the installer from our GitHub releases.
+
+**ID: `DOWNLOAD.CHOOSE.cards`**
+Context: One card per installer, in this order. Each has the kind of computer, one line on
+what it needs, and the button. The requirements are the README's. The buttons name the
+computer rather than saying "Download", so the three can be told apart by a screen reader
+that lists the links alone. The Intel card's line is shorter than the others; the buttons
+still sit level.
+Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a narrow card.
+> Heading: Mac with Apple silicon
+> Body: Any Mac with an M1 chip or later. Needs macOS 12 Monterey or later.
+> Button: Download for Apple silicon
+>
+> Heading: Mac with an Intel processor
+> Body: Needs macOS 12 Monterey or later.
+> Button: Download for Intel Macs
+>
+> Heading: Windows PC
+> Body: Needs 64-bit Windows 10 or later.
+> Button: Download for Windows
+
+**ID: `DOWNLOAD.CHOOSE.note`**
+Context: Small print under the cards, on the left, for visitors who do not know which Mac
+they have. "Chip" and "Processor" are the exact labels About This Mac shows, so they are bold.
+Fits: 1–2 lines.
+> Not sure which Mac you have? Choose **Apple menu → About This Mac**. A line reading **Chip** means Apple silicon; **Processor** means Intel.
+
+**ID: `DOWNLOAD.CHOOSE.link`**
+Context: Arrow link on the right of the small print. Opens the app's Releases page on GitHub
+in a new tab: every version, the release notes, and the older installers.
+> See every release on GitHub
+
+## L3. Opening it the first time
+
+Grey band, anchored at `#first-launch`. The early builds are not yet signed, so both systems
+warn before opening one for the first time. Without this band a visitor meets the warning
+with no explanation and reasonably stops. The steps are the README's, kept as a numbered
+list because they are an order. When the app is signed, the whole band comes out.
+
+**ID: `DOWNLOAD.OPEN.intro`**
+> Eyebrow: First launch
+> Heading: Expect a warning the first time you open it
+> Lead: Early builds are not yet signed, so Mac and Windows both warn you before opening Ascent Mapper. You only have to get past this once.
+
+**ID: `DOWNLOAD.OPEN.mac`**
+Context: Left card. Three numbered steps, then the older-macOS alternative as a plain
+paragraph. Names of buttons and menus are bold, as macOS prints them.
+> Heading: On a Mac
+> Step: Open the **.dmg** and drag **Ascent Mapper** into **Applications**.
+> Step: Open Ascent Mapper from Applications. macOS says it could not verify the app; click **Done**.
+> Step: Open **System Settings → Privacy & Security**, scroll down to the message about Ascent Mapper, and click **Open Anyway**. Confirm with your password, then click **Open**.
+> Note: On macOS 14 or earlier you can instead Control-click the app in Applications, choose **Open**, then **Open** again.
+
+**ID: `DOWNLOAD.OPEN.windows`**
+Context: Right card. Two numbered steps and a plain paragraph. The first step is for browsers
+that flag a file few people download; the second is Windows SmartScreen.
+> Heading: On Windows
+> Step: If your browser says the file isn't commonly downloaded, choose to keep it.
+> Step: Run the installer. If **Windows protected your PC** appears, click **More info**, then **Run anyway**.
+> Note: Ascent Mapper installs for your account only, without needing administrator rights.
+
+**ID: `DOWNLOAD.OPEN.managed`**
+Context: Orange notice under both cards. The one case the steps above cannot fix: a computer
+someone else administers. The site has no way to contact Ascent, so it sends them to their
+own IT team.
+Fits: 1–2 lines.
+> School- or work-managed computers may block unsigned apps entirely. If yours does, ask your IT team.
+
+---
+
+*End of document — 8 pages, 12 sections. Edit and send back.*
