@@ -3,7 +3,28 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 64 · **Updated:** 14 October 2026 · **Covers:** 8 pages
+**Version:** 65 · **Updated:** 14 October 2026 · **Covers:** 8 pages
+
+> **What changed in v65.** Your edits to the Download page (§L), applied word for word. The
+> banner heading is "Download the app" (`DOWNLOAD.HERO.h1`, was "Download Ascent Mapper").
+> Installers: the eyebrow reads "Version 0.0.1 · pre-release build" and the heading "Choose
+> your operating system"; the lead under it is empty, so it is gone from the page
+> (`DOWNLOAD.CHOOSE.intro`); the cards are headed "Apple silicon Macs", "Intel Macs" and
+> "Windows", and the first says only "Requires macOS 12 Monterey or later."
+> (`DOWNLOAD.CHOOSE.cards`). The "Not sure which Mac you have?" note and the "See every
+> release on GitHub" link are deleted (`DOWNLOAD.CHOOSE.note`, `DOWNLOAD.CHOOSE.link`), and
+> with them the whole "Opening it the first time" band: the first-launch heading, the Mac and
+> Windows steps and the IT-team notice (`DOWNLOAD.OPEN.*`, four blocks). I removed those
+> blocks and the empty §L3 heading, and updated the Context notes that described them. The
+> page now ends after the three installer cards. **No ID changed or renumbered; six retired:
+> `DOWNLOAD.CHOOSE.note`, `DOWNLOAD.CHOOSE.link`, `DOWNLOAD.OPEN.intro`, `.mac`, `.windows`,
+> `.managed`.**
+>
+> Worth knowing, not changed: with the walkthrough gone, the page no longer says that the
+> builds are unsigned, so a visitor meets the macOS and Windows warnings unprepared (the
+> app's README on GitHub still explains them), and nothing says how to tell an Apple-silicon
+> Mac from an Intel one. The name "Ascent Mapper" now appears only in the browser-tab title
+> and description (`SEO.download`).
 
 > **What changed in v64.** Your two edits to this document, applied to the site word for word.
 > Evaluation Process: the first word of the heading over the four phase cards,
@@ -1915,16 +1936,17 @@ Context: Arrow link. Opens the editor on its own in a new tab, at full window si
 files are not on this site: each button goes straight to a file in a release in the app's
 GitHub repository (Ascent-Evaluation/ascent-mapper), so nothing about the installers is
 covered here, only the page that points at them. It is last in this document so that no
-existing page letter moved; on the site it is the sixth nav item, after Demo. Every word of
-it is mine, from the app's README and release notes.
+existing page letter moved; on the site it is the sixth nav item, after Demo. It was drafted
+from the app's README and release notes and reworded by you in v65.
 
 ## L1. Page banner
 
 **ID: `DOWNLOAD.HERO.h1`**
-Context: The app's name as its installer, README and release give it. The Demo page and the
-editor demo still say "Program Mapper"; see the v63 note at the top of this document.
+Context: Since v65 the heading does not name the app, so no visible text on the page does:
+the name appears only in the browser-tab title and description (`SEO.download`) and in the
+downloaded file. That sidesteps the "Ascent Mapper" / "Program Mapper" question for now.
 Fits: 3–4 words, one line.
-> Download Ascent Mapper
+> Download the app
 
 **ID: `DOWNLOAD.HERO.lead`**
 Context: What the app is, in the README's terms: logic models, the evidence behind each
@@ -1934,83 +1956,38 @@ Fits: 2–3 lines, ~180 characters.
 
 ## L2. The installers
 
-Three cards in a row, one per computer, each with one button. Anchored at `#installers`.
-Nothing picks for the visitor: a web page cannot reliably tell an Apple-silicon Mac from an
-Intel one, so they choose, and the small print under the cards says how to find out.
+Three cards in a row, one per installer, each with one button; the last section on the page.
+Anchored at `#installers`. Nothing picks for the visitor: a web page cannot reliably tell an
+Apple-silicon Mac from an Intel one, so they choose.
 
 **ID: `DOWNLOAD.CHOOSE.intro`**
-Context: The eyebrow says which release the buttons fetch and that it is an early build. It
-is the one piece of copy that goes stale: change it, and the three links in the page's
-markup, whenever a new release is published. The lead says where the files come from.
-> Eyebrow: Version 0.0.1 · early build
-> Heading: Choose your computer
-> Lead: Each button downloads the installer from our GitHub releases.
+Context: The eyebrow says which release the buttons fetch and that it is a pre-release build.
+It is the one piece of copy that goes stale: change it, and the three links in the page's
+markup, whenever a new release is published. The lead ("Each button downloads the installer
+from our GitHub releases.") came off in v65 and the field is left empty; type one there and
+hand the file back to bring it back.
+> Eyebrow: Version 0.0.1 · pre-release build
+> Heading: Choose your operating system
+> Lead: 
 
 **ID: `DOWNLOAD.CHOOSE.cards`**
 Context: One card per installer, in this order. Each has the kind of computer, one line on
 what it needs, and the button. The requirements are the README's. The buttons name the
 computer rather than saying "Download", so the three can be told apart by a screen reader
-that lists the links alone. The Intel card's line is shorter than the others; the buttons
-still sit level.
+that lists the links alone. The buttons sit level however long the line above them is.
+The Apple silicon line says "Requires" where the other two say "Needs"; kept as you wrote it.
 Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a narrow card.
-> Heading: Mac with Apple silicon
-> Body: Any Mac with an M1 chip or later. Needs macOS 12 Monterey or later.
+> Heading: Apple silicon Macs
+> Body: Requires macOS 12 Monterey or later.
 > Button: Download for Apple silicon
 >
-> Heading: Mac with an Intel processor
+> Heading: Intel Macs
 > Body: Needs macOS 12 Monterey or later.
 > Button: Download for Intel Macs
 >
-> Heading: Windows PC
+> Heading: Windows
 > Body: Needs 64-bit Windows 10 or later.
 > Button: Download for Windows
-
-**ID: `DOWNLOAD.CHOOSE.note`**
-Context: Small print under the cards, on the left, for visitors who do not know which Mac
-they have. "Chip" and "Processor" are the exact labels About This Mac shows, so they are bold.
-Fits: 1–2 lines.
-> Not sure which Mac you have? Choose **Apple menu → About This Mac**. A line reading **Chip** means Apple silicon; **Processor** means Intel.
-
-**ID: `DOWNLOAD.CHOOSE.link`**
-Context: Arrow link on the right of the small print. Opens the app's Releases page on GitHub
-in a new tab: every version, the release notes, and the older installers.
-> See every release on GitHub
-
-## L3. Opening it the first time
-
-Grey band, anchored at `#first-launch`. The early builds are not yet signed, so both systems
-warn before opening one for the first time. Without this band a visitor meets the warning
-with no explanation and reasonably stops. The steps are the README's, kept as a numbered
-list because they are an order. When the app is signed, the whole band comes out.
-
-**ID: `DOWNLOAD.OPEN.intro`**
-> Eyebrow: First launch
-> Heading: Expect a warning the first time you open it
-> Lead: Early builds are not yet signed, so Mac and Windows both warn you before opening Ascent Mapper. You only have to get past this once.
-
-**ID: `DOWNLOAD.OPEN.mac`**
-Context: Left card. Three numbered steps, then the older-macOS alternative as a plain
-paragraph. Names of buttons and menus are bold, as macOS prints them.
-> Heading: On a Mac
-> Step: Open the **.dmg** and drag **Ascent Mapper** into **Applications**.
-> Step: Open Ascent Mapper from Applications. macOS says it could not verify the app; click **Done**.
-> Step: Open **System Settings → Privacy & Security**, scroll down to the message about Ascent Mapper, and click **Open Anyway**. Confirm with your password, then click **Open**.
-> Note: On macOS 14 or earlier you can instead Control-click the app in Applications, choose **Open**, then **Open** again.
-
-**ID: `DOWNLOAD.OPEN.windows`**
-Context: Right card. Two numbered steps and a plain paragraph. The first step is for browsers
-that flag a file few people download; the second is Windows SmartScreen.
-> Heading: On Windows
-> Step: If your browser says the file isn't commonly downloaded, choose to keep it.
-> Step: Run the installer. If **Windows protected your PC** appears, click **More info**, then **Run anyway**.
-> Note: Ascent Mapper installs for your account only, without needing administrator rights.
-
-**ID: `DOWNLOAD.OPEN.managed`**
-Context: Orange notice under both cards. The one case the steps above cannot fix: a computer
-someone else administers. The site has no way to contact Ascent, so it sends them to their
-own IT team.
-Fits: 1–2 lines.
-> School- or work-managed computers may block unsigned apps entirely. If yours does, ask your IT team.
 
 ---
 

@@ -175,8 +175,9 @@ release is a small edit in two places, in the same pass:
 The file names carry the version, and GitHub's `/releases/latest/` skips pre-releases, so
 there is no version-free link that works yet. There is deliberately no OS detection: the
 page shows all three installers, because a browser cannot tell an Apple-silicon Mac from
-an Intel one. Once a build is signed, remove the "First launch" band (`DOWNLOAD.OPEN.*`)
-and the "not yet signed" wording in its lead.
+an Intel one. The page carries no first-launch instructions (the owner removed them in v65);
+the app's README on GitHub explains the macOS and Windows warnings for unsigned builds.
+When a build is signed, change "pre-release build" in the same eyebrow.
 
 ## Things that look wrong but are deliberate
 

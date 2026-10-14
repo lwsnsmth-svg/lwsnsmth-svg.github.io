@@ -789,12 +789,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 }
 .demo-meta p { margin: 0; max-width: 62ch; font-size: var(--step--1); color: var(--text-muted); }
 
-/* Download page: the first-launch steps inside a card. The steps are genuinely
-   ordered (unlike the evaluation methods), so they stay a numbered list. */
-.install-steps { color: var(--text-muted); }
-.install-steps li + li { margin-top: var(--sp-3); }
-.install-steps strong { color: var(--text); }
-
 /* --------------------------------------------------------------------------
    9. Stats
    -------------------------------------------------------------------------- */
