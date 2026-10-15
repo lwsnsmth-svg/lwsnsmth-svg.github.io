@@ -3,7 +3,21 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 67 · **Updated:** 15 October 2026 · **Covers:** 8 pages
+**Version:** 68 · **Updated:** 15 October 2026 · **Covers:** 8 pages
+
+> **What changed in v68.** The Download page's buttons start a download again, and now always
+> of the newest release. v67 sent all three to the app's releases list on GitHub, which was not
+> what you meant. Each button now downloads its installer directly. As the page loads, it asks
+> GitHub for the newest release that has all three installers, pre-releases included, and
+> points each button at that release's file. The version number in the eyebrow follows the same
+> lookup, so it reads 0.0.2 today and will read 0.0.3 when you publish that, with no edit here.
+> I updated the Context notes in §L2 to say so. **No ID changed.**
+>
+> Worth knowing: if GitHub can't be reached (or a visitor has JavaScript off), the buttons fall
+> back to the v0.0.2 files and the eyebrow to "0.0.2", as written in this document. GitHub
+> allows each visitor 60 lookups an hour, far more than anyone will use. A release still
+> uploading its installers is passed over until all three are up. "Pre-release build" in the
+> eyebrow does not change by itself: edit it when a build is signed.
 
 > **What changed in v67.** The Download page, at your request. The eyebrow over the
 > installers reads "Version 0.0.2 · pre-release build" (`DOWNLOAD.CHOOSE.intro`, was 0.0.1),
@@ -1986,14 +2000,16 @@ Fits: 2–3 lines, ~215 characters, the current length: three lines on desktop.
 
 Three cards in a row, one per installer, each with one button; the last section on the page.
 Anchored at `#installers`. Nothing picks for the visitor: a web page cannot reliably tell an
-Apple-silicon Mac from an Intel one, so they choose. Since v67 all three buttons open the
-same page, the app's releases list on GitHub, where the newest release comes first; the
-visitor picks their file from its Assets there. The links follow each new release on their own.
+Apple-silicon Mac from an Intel one, so they choose. Since v68 each button downloads its
+installer from the newest release on GitHub, pre-releases included: the page looks the
+release up as it loads, so the buttons follow each new release with no edit.
 
 **ID: `DOWNLOAD.CHOOSE.intro`**
-Context: The eyebrow says which release is current and that it is a pre-release build.
-It is the one piece of copy that goes stale: change the version whenever a new release is
-published (the buttons no longer need changing). The lead ("Each button downloads the installer
+Context: The eyebrow names the release the buttons download and says it is a pre-release
+build. Since v68 the page fills in the version number from GitHub as it loads, so it
+follows each release on its own. The number written here is the fallback, shown (with
+that release's files behind the buttons) only if GitHub can't be reached; there is no need
+to change it for each release. When a build is signed, change "pre-release build". The lead ("Each button downloads the installer
 from our GitHub releases.") came off in v65 and the field is left empty; type one there and
 hand the file back to bring it back.
 > Eyebrow: Version 0.0.2 · pre-release build
@@ -2005,8 +2021,7 @@ Context: One card per installer, in this order. Each has the kind of computer, o
 what it needs, and the button. The requirements are the README's. The buttons name the
 computer rather than saying "Download", so the three can be told apart by a screen reader
 that lists the links alone. The buttons sit level however long the line above them is.
-Since v67 each button opens the releases list rather than starting a download, though the
-labels still say "Download for…".
+Each button starts the download of its installer from the newest release.
 The Apple silicon line says "Requires" where the other two say "Needs"; kept as you wrote it.
 Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a narrow card.
 > Heading: Apple silicon Macs

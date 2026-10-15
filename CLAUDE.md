@@ -7,7 +7,7 @@ Static marketing site for a nonprofit. Plain HTML, one stylesheet, two scripts.
 index · about · programs · get-involved · demo · download · 404   (7 pages)
 editor_demo                                           (unlisted — link to it from nowhere)
 css/styles.css     all styling; design tokens at the top drive everything
-js/main.js         nav, theme, counters, accordion
+js/main.js         nav, theme, counters, accordion, newest-release download links
 js/theme-init.js   sets theme before first paint; also adds html.js
 SITE-COPY.md       ← source of truth for all user-facing text
 check-copy.py      verifies SITE-COPY.md and the HTML still agree (wording)
@@ -164,15 +164,19 @@ doc, donations in v6. Snapshots of the site before each removal are in
 
 ## Publishing a new release of the app
 
-All three buttons in `download.html` open the Releases list of
-`github.com/Ascent-Evaluation/ascent-mapper` (`…/releases`), which shows the newest release
-first, pre-releases included, so **the links follow each new release on their own** (since
-v67, at the owner's request; they used to name one file of one release). The visitor picks
-their installer from that release's Assets. Don't switch them back to file links, or to
-`/releases/latest`, which skips pre-releases and today only redirects to the list anyway.
+**A new release needs no edit to the site.** Each button in `download.html` downloads its
+installer from the newest release of `github.com/Ascent-Evaluation/ascent-mapper`,
+pre-releases included (since v68; the owner wants a click to start a download, not to land
+on GitHub, as v67 briefly did). On load, `js/main.js` asks the GitHub API for the newest
+release with all three installers, rewrites each button's `href` to the file whose name ends
+in its `data-installer` suffix, and puts the release's version in `[data-release-version]`
+in the eyebrow. GitHub's `/releases/latest/download/` can't replace this while releases are
+pre-releases and the file names carry the version.
 
-Each release still needs one edit: the version in the eyebrow, in `DOWNLOAD.CHOOSE.intro` in
-`SITE-COPY.md` and on the page, in the same pass. There is deliberately no OS detection: the
+The `href`s and eyebrow version in the markup (and `DOWNLOAD.CHOOSE.intro`) are only the
+fallback, for when the API fails or JavaScript is off; refreshing them now and then keeps
+that fallback current, but nothing breaks if they lag. If the installer file names ever
+change shape, update the `data-installer` suffixes. There is deliberately no OS detection: the
 page shows all three installers, because a browser cannot tell an Apple-silicon Mac from
 an Intel one. The page carries no first-launch instructions (the owner removed them in v65);
 the app's README on GitHub explains the macOS and Windows warnings for unsigned builds.

@@ -24,11 +24,11 @@ see `SITE-COPY.md`.
 │                       one page that loads something from another host
 ├── editor_demo.html    Unlisted: the same demo with editing switched on, reached only by
 │                       typing /editor_demo — see "Things that are deliberate"
-├── download.html       Installers for Ascent Mapper: each button opens the app's GitHub
-│                       releases list — see "Publishing a new release" in CLAUDE.md
+├── download.html       Installers for Ascent Mapper: each button downloads from the newest
+│                       GitHub release — see "Publishing a new release" in CLAUDE.md
 ├── 404.html            Not-found page
 ├── css/styles.css      All styling, organised into 23 numbered sections
-├── js/main.js          Nav, counters, accordion
+├── js/main.js          Nav, counters, accordion, download-page release lookup
 ├── js/theme-init.js    Tiny head script that adds the `js` class
 └── assets/
     ├── Logo.png        Your logo — triangle over a halftone dot field, 512px square on
