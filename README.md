@@ -31,10 +31,13 @@ see `SITE-COPY.md`.
 ├── js/main.js          Nav, counters, accordion
 ├── js/theme-init.js    Tiny head script that adds the `js` class
 └── assets/
-    ├── Logo.png        Your logo — line art, used as the header/footer mark
-    ├── Logo_simple.png Previous mark (unused since 1 October 2026)
-    ├── Logo_full.png   Filled variant of the previous mark (unused)
-    ├── favicon.png     Browser-tab icon (apple-touch-icon.png is its home-screen twin)
+    ├── Logo.png        Your logo — triangle over a halftone dot field, 512px square on
+    │                   transparency; the header/footer mark, og:image and structured data
+    ├── Logo_line.png   Previous mark, line art (unused since 15 October 2026)
+    ├── Logo_simple.png Older mark (unused since 1 October 2026)
+    ├── Logo_full.png   Filled variant of the older mark (unused)
+    ├── favicon.png     Browser-tab icon, the logo at 256px (apple-touch-icon.png is its
+    │                   180px home-screen twin, on the site's dark teal since iOS needs it opaque)
     ├── phase-*.png     Tool screenshots on the four Programs & Services phase cards
     └── fonts/          Caladea Regular + Italic (Cambria stand-in) and its OFL licence
 ```

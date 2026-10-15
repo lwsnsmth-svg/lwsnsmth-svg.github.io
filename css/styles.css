@@ -449,13 +449,14 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   margin-right: auto;
 }
 .brand__mark {
-  /* The logo is a line drawing on a transparent 4:3 canvas, and the triangle's
-     base runs almost edge to edge — so the box keeps the canvas's own ratio and
-     shows all of it. A square crop cuts the corners off; a radius or shadow draws
-     a visible box around lines that are meant to float. */
-  height: 2.6rem;
+  /* The logo is a triangle over a halftone dot field, on a transparent square
+     canvas whose dots run to every edge — so the box keeps the canvas's own ratio
+     and shows all of it. The triangle fills only the middle ~85%, so the box is
+     taller than the old 4:3 line mark's 2.6rem so the triangle reads at about its size.
+     A radius or shadow draws a visible box around dots that are meant to float. */
+  height: 3.25rem;
   width: auto;
-  aspect-ratio: 1478 / 1107;
+  aspect-ratio: 1 / 1;
   flex: none;
   object-fit: contain;
 }
