@@ -144,6 +144,44 @@
     });
   });
 
+  /* ---- Download page: buttons fetch the newest release ------------------ */
+  // The markup links one release's files, so the buttons work without this.
+  // GitHub's /releases/latest/download/ skips pre-releases and the file names
+  // carry the version, so ask the API instead: take the newest release that has
+  // every installer (one still uploading is passed over) and point each button
+  // at its file. If the request fails — offline, or past the API's limit of 60
+  // requests an hour per visitor — the links in the markup stay.
+  var installers = document.querySelectorAll('[data-installer]');
+  if (installers.length && window.fetch) {
+    var fileFor = function (release, suffix) {
+      return release.assets.filter(function (asset) {
+        return asset.state === 'uploaded' && asset.name.slice(-suffix.length) === suffix;
+      })[0];
+    };
+    fetch('https://api.github.com/repos/Ascent-Evaluation/ascent-mapper/releases?per_page=10')
+      .then(function (res) {
+        if (!res.ok) throw new Error('GitHub API ' + res.status);
+        return res.json();
+      })
+      .then(function (releases) {
+        var newest = releases
+          .filter(function (release) {
+            return !release.draft && Array.prototype.every.call(installers, function (btn) {
+              return fileFor(release, btn.getAttribute('data-installer'));
+            });
+          })
+          .sort(function (a, b) { return (b.published_at || '').localeCompare(a.published_at || ''); })[0];
+        if (!newest) return;
+        installers.forEach(function (btn) {
+          btn.href = fileFor(newest, btn.getAttribute('data-installer')).browser_download_url;
+        });
+        document.querySelectorAll('[data-release-version]').forEach(function (el) {
+          el.textContent = newest.tag_name.replace(/^v/, '');
+        });
+      })
+      .catch(function () { /* keep the links in the markup */ });
+  }
+
   /* ---- Current year in footer ------------------------------------------ */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
