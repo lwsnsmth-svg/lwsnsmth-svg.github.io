@@ -3,7 +3,20 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 66 · **Updated:** 14 October 2026 · **Covers:** 8 pages
+**Version:** 67 · **Updated:** 15 October 2026 · **Covers:** 8 pages
+
+> **What changed in v67.** The Download page, at your request. The eyebrow over the
+> installers reads "Version 0.0.2 · pre-release build" (`DOWNLOAD.CHOOSE.intro`, was 0.0.1),
+> for the release you published today. The three buttons no longer name one file of one
+> release: each now opens the app's releases list on GitHub, which puts the newest release
+> first, pre-releases included, so they follow every new release without an edit. I updated
+> the Context notes in §L2 to say so. **No ID changed.**
+>
+> Worth knowing, not changed: the buttons now open a GitHub page rather than starting a
+> download, and all three open the same one, where the visitor finds their file under the
+> newest release's Assets. Their labels still say "Download for Apple silicon" and so on
+> (`DOWNLOAD.CHOOSE.cards`). The version in the eyebrow still has to change by hand with
+> each release; dropping the number from it would make the page need no edit at all.
 
 > **What changed in v66.** Your edit to the Download banner's line under the heading
 > (`DOWNLOAD.HERO.lead`), applied word for word: "The desktop app that supports our evaluation
@@ -1973,15 +1986,17 @@ Fits: 2–3 lines, ~215 characters, the current length: three lines on desktop.
 
 Three cards in a row, one per installer, each with one button; the last section on the page.
 Anchored at `#installers`. Nothing picks for the visitor: a web page cannot reliably tell an
-Apple-silicon Mac from an Intel one, so they choose.
+Apple-silicon Mac from an Intel one, so they choose. Since v67 all three buttons open the
+same page, the app's releases list on GitHub, where the newest release comes first; the
+visitor picks their file from its Assets there. The links follow each new release on their own.
 
 **ID: `DOWNLOAD.CHOOSE.intro`**
-Context: The eyebrow says which release the buttons fetch and that it is a pre-release build.
-It is the one piece of copy that goes stale: change it, and the three links in the page's
-markup, whenever a new release is published. The lead ("Each button downloads the installer
+Context: The eyebrow says which release is current and that it is a pre-release build.
+It is the one piece of copy that goes stale: change the version whenever a new release is
+published (the buttons no longer need changing). The lead ("Each button downloads the installer
 from our GitHub releases.") came off in v65 and the field is left empty; type one there and
 hand the file back to bring it back.
-> Eyebrow: Version 0.0.1 · pre-release build
+> Eyebrow: Version 0.0.2 · pre-release build
 > Heading: Choose your operating system
 > Lead: 
 
@@ -1990,6 +2005,8 @@ Context: One card per installer, in this order. Each has the kind of computer, o
 what it needs, and the button. The requirements are the README's. The buttons name the
 computer rather than saying "Download", so the three can be told apart by a screen reader
 that lists the links alone. The buttons sit level however long the line above them is.
+Since v67 each button opens the releases list rather than starting a download, though the
+labels still say "Download for…".
 The Apple silicon line says "Requires" where the other two say "Needs"; kept as you wrote it.
 Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a narrow card.
 > Heading: Apple silicon Macs

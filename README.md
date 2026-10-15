@@ -24,8 +24,8 @@ see `SITE-COPY.md`.
 │                       one page that loads something from another host
 ├── editor_demo.html    Unlisted: the same demo with editing switched on, reached only by
 │                       typing /editor_demo — see "Things that are deliberate"
-├── download.html       Installers for Ascent Mapper, linked straight to files in a GitHub
-│                       release — see "Publishing a new release" in CLAUDE.md
+├── download.html       Installers for Ascent Mapper: each button opens the app's GitHub
+│                       releases list — see "Publishing a new release" in CLAUDE.md
 ├── 404.html            Not-found page
 ├── css/styles.css      All styling, organised into 23 numbered sections
 ├── js/main.js          Nav, counters, accordion
