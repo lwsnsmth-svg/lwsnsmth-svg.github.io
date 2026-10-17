@@ -3,7 +3,17 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 68 · **Updated:** 15 October 2026 · **Covers:** 8 pages
+**Version:** 69 · **Updated:** 17 October 2026 · **Covers:** 8 pages
+
+> **What changed in v69.** The Download page's eyebrow reads "Version 0.0.3 · pre-release
+> build" (`DOWNLOAD.CHOOSE.intro`, was 0.0.2), at your request, for the build you are
+> publishing now. The three buttons' fallback links in the page's markup moved to the v0.0.3
+> installers with it. **No ID changed.**
+>
+> Worth knowing: while the page can reach GitHub, the eyebrow and buttons show whatever the
+> newest published release is. Until v0.0.3 is up with all three installers, visitors still
+> see 0.0.2 and download it; once it is, they see 0.0.3 with no further edit. The 0.0.3
+> written here shows only if GitHub can't be reached, and its links work once the release exists.
 
 > **What changed in v68.** The Download page's buttons start a download again, and now always
 > of the newest release. v67 sent all three to the app's releases list on GitHub, which was not
@@ -2012,7 +2022,7 @@ that release's files behind the buttons) only if GitHub can't be reached; there 
 to change it for each release. When a build is signed, change "pre-release build". The lead ("Each button downloads the installer
 from our GitHub releases.") came off in v65 and the field is left empty; type one there and
 hand the file back to bring it back.
-> Eyebrow: Version 0.0.2 · pre-release build
+> Eyebrow: Version 0.0.3 · pre-release build
 > Heading: Choose your operating system
 > Lead: 
 
