@@ -3,7 +3,11 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 71 · **Updated:** 17 October 2026 · **Covers:** 8 pages
+**Version:** 72 · **Updated:** 18 October 2026 · **Covers:** 8 pages
+
+> **What changed in v72.** Your edit to the home page headline (`HOME.HERO.h1`): the full
+> stop after "context" is now inside the orange accent, so it turns orange with the word. The
+> wording is unchanged. **No ID changed.**
 
 > **What changed in v71.** Your edits across the doc, applied to the site word for word.
 > Home: the hero lead now opens "The Ascent Collaborative's goal is to champion and implement
@@ -1012,7 +1016,7 @@ The dark banner at the top. Text on the left, illustration on the right.
 Context: The biggest text on the site. It does not say what Ascent sells; the lead
 below has to carry all of that.
 Fits: 3 lines at desktop, 4 on mobile. Currently ~57 characters.
-> Analytics based in {{trust,}} application in {{context}}.
+> Analytics based in {{trust,}} application in {{context.}}
 
 **ID: `HOME.HERO.lead`**
 Context: The one paragraph that has to explain what you actually do. Sits directly
