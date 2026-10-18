@@ -3,7 +3,34 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 69 · **Updated:** 17 October 2026 · **Covers:** 8 pages
+**Version:** 71 · **Updated:** 17 October 2026 · **Covers:** 8 pages
+
+> **What changed in v71.** Your edits across the doc, applied to the site word for word.
+> Home: the hero lead now opens "The Ascent Collaborative's goal is to champion and implement
+> an integrated evaluation model…", the badge says "hands-on" rather than "embedded" support,
+> and the "Evaluation that Goes Further" lead, two of the phase and tool descriptions, the
+> "Why it matters" lead and the "in brief" body are tightened. About: the banner heading reads
+> "Built for the benefit of organizations…", the opening paragraph drops its last sentence
+> ("Ascent is structured to make that relationship affordable."), the two field definitions
+> are reworded, and every timeline entry has lost its author citation in brackets. Evaluation
+> Process: the lead, the Phase 2 and 3 card summaries, the "how it works" paragraphs (the
+> "Deeper involvement in the technical work…" sentence is gone), the Intake and Embed steps,
+> and four Phase 1–3 outputs. Get Involved: three role descriptions and the last pipeline
+> step. Demo: the intro starts "Try the app…", the lead under "Six views of one program" was
+> left empty, so it is gone from the page, and three view cards are rewritten. Download: "and
+> project change" in the banner lead. I updated the Context notes that described the old
+> wording (§B1 hero lead, §C timeline citations, §F3). **No ID changed.**
+>
+> Worth a look: the hero lead is now about 230 characters, past the ~180 it was sized for,
+> so the hero runs longer. On the Demo page the Logic model card is now two sentences and
+> about three times the length of its neighbours, so its row is taller than the others.
+
+> **What changed in v70.** Two "Download the app" buttons to the Download page, at your
+> request. On the home page, an outlined one sits beside "Try the demo" at the end of
+> "Evaluation that Goes Further" (`HOME.METHODS.demo`, now with a second button). On the Demo
+> page, an orange one closes the "Using the app" band, under the six view cards
+> (`DEMO.VIEWS.download`, new). The label repeats the Download page's own heading. **No
+> existing ID changed.**
 
 > **What changed in v69.** The Download page's eyebrow reads "Version 0.0.3 · pre-release
 > build" (`DOWNLOAD.CHOOSE.intro`, was 0.0.2), at your request, for the build you are
@@ -989,11 +1016,10 @@ Fits: 3 lines at desktop, 4 on mobile. Currently ~57 characters.
 
 **ID: `HOME.HERO.lead`**
 Context: The one paragraph that has to explain what you actually do. Sits directly
-under the headline and does the work the headline deliberately doesn't. At 78
-characters it is now the shortest element in the hero, and it is carrying the most.
-Fits: 3–4 lines, ~180 characters — there is room for a second sentence naming who this
-is for, if you want one.
-> Ascent is an evaluation practice designed to lower the cost, improve the quality, and broaden the impact of evaluative services for mission-oriented organizations.
+under the headline and does the work the headline deliberately doesn't. Since v71 it opens
+with the organization's name and runs to about 230 characters, past the ~180 it was sized for.
+Fits: 3–4 lines, ~180 characters; the v71 wording runs longer.
+> The Ascent Collaborative's goal is to champion and implement an integrated evaluation model that is designed to lower the cost, improve the quality, and broaden the impact of evaluative services for mission-oriented organizations.
 
 **ID: `HOME.HERO.buttons`**
 Context: One orange button, to "How the program runs" on Evaluation Process. The outlined
@@ -1007,13 +1033,13 @@ concrete fact about Ascent above the fold — everything else in the hero is abo
 The number is static text, not a counter.
 Fits: Number plus ~70 characters.
 > 1.5%
-> of program budget for two years of embedded evaluation support
+> of program budget for two years of hands-on evaluation support
 
 ## B2. Evaluation that goes further
 
 A heading, a lead, a row of three phase cards, since v46 a second row of three tool-view
 cards, and, since v41, a tagline with a "Try the demo"
-button. **Rewritten on 1 October (v8)** to replace six
+button (and, since v70, a "Download the app" button beside it). **Rewritten on 1 October (v8)** to replace six
 method cards (`HOME.METHODS.card1`–`card6`); since v40 the two paragraphs that followed the
 cards (`HOME.METHODS.body`) and the "The research behind it" link (`HOME.METHODS.link`) are
 gone too, so the section ended on the cards until v41.
@@ -1025,7 +1051,7 @@ and how much to trust it (evidence strength). Keep it one sentence.
 Fits: Heading 1–2 lines; lead ~200 characters.
 > Eyebrow: Evaluation that Goes Further
 > Heading: An evaluation process accountable to program outcomes
-> Lead: Static evaluations describe a snapshot of a program. Ascent's recursive process maps the links from program inputs to final outcomes, incorporates program and policy context, and builds a dynamic outcomes model.
+> Lead: Static evaluations describe a snapshot of a program. Ascent's recursive process links program inputs to final outcomes and incorporates practice context to build a dynamic outcomes model.
 
 **ID: `HOME.METHODS.phases`**
 Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
@@ -1040,7 +1066,7 @@ desktop, one column on narrow screens.
 > Name 1: Logic Models & Metric Integration
 > Description 1: Map how a program's inputs and activities lead to its outputs and its short-, medium- and long-term outcomes, and tie each part of the model to the metrics that will track it.
 > Name 2: Data Architecture
-> Description 2: Trace every number in the model back to the data series it comes from, so what is collected, from whom and by what means is clear, and the quality of the evidence can be checked.
+> Description 2: Trace every number in the model back to the data series it comes from so its sources are clear and the quality of the evidence can be checked.
 > Name 3: Analytics & Forward Planning
 > Description 3: Analyze how a program's results move over time and what drives them, test how sensitive they are to changes in inputs and assumptions, and use that to plan ahead.
 
@@ -1056,19 +1082,22 @@ rewrote the first two in v55. Correct them freely.
 Fits: Name ≤ ~35 characters; description 1–2 sentences, ~200 characters. Three across, one
 column on narrow screens.
 > Name 1: Stakeholder Mapping
-> Description 1: Lay out everyone with a stake in the program, from funders and governance to the delivery team, partners and the people served, and see how they are connected.
+> Description 1: Lay out everyone with a stake in the program, from funders and governance to the delivery team, partners and the people served, and see how their connections affect your practice.
 > Name 2: Policy and Practice Context
-> Description 2: Keep track of the rules, regulations, funding formulas and incentives that shape the program: what is in force today, what is proposed, and how changes affect the program's projections.
+> Description 2: Keep track of the rules, regulations, funding formulas and incentives that shape the program: what is in force today, what is proposed, and how changes can affect the program's projections.
 > Name 3: Evidence & Theories of Change
 > Description 3: Build the logic model from inputs to long-term outcomes, attach the evidence and assumptions behind each link, and see at a glance which links are evidenced, mixed, untested or refuted.
 
 **ID: `HOME.METHODS.demo`**
 Context: New in v41. Closes the section: one line pointing at the Demo page, and a button to
 it. The phase cards above show screenshots of the tool; this is where a visitor gets to use
-it. The line is a tagline, not a sentence, so it has no full stop.
-Fits: Tagline ≤ ~70 characters; button 2–4 words.
+it. The line is a tagline, not a sentence, so it has no full stop. Since v70 a second,
+outlined button beside the orange one goes to the Download page; the two wrap onto two lines
+on a phone.
+Fits: Tagline ≤ ~70 characters; each button 2–4 words.
 > Tagline: A single app shows the power of our evaluation model.
 > Button: Try the demo
+> Button 2: Download the app
 
 ## B3. Why it matters
 
@@ -1078,7 +1107,7 @@ were two, one per audience; the funders card (`HOME.WHY.funders`) came off in v7
 **ID: `HOME.WHY.intro`**
 > Eyebrow: Why it matters
 > Heading: Catalyze a continual improvement process
-> Lead: Evaluation should not be a static exercise. For beneficiaries, program services can be a lifeline—and they should always be improving.
+> Lead: Evaluation should not be a static exercise. For beneficiaries, program services can be a lifeline. They should always be improving.
 
 **ID: `HOME.WHY.leaders`**
 Context: Four benefits with bold lead-ins, rewritten in v55 around what the process and the
@@ -1152,7 +1181,7 @@ Fits: 2 lines.
 **ID: `HOME.BRIEF.body`**
 Context: Since v42 a statement of principle rather than the program in facts: the two years,
 the $500,000 ceiling and the 1.5% fee are no longer here (the fee is still in the hero badge).
-> The process is the program. Although analytical reports and communication support may be deliverables within the course of an engagement, participants’ active collaboration in pursuing inquiry, scoping analysis, and employing new methods is central to both the ethics of Ascent’s practice and the achievement of its mission.
+> The process is the program. Participants’ active collaboration in pursuing inquiry, scoping analysis, and employing new methods is central to both the ethics of Ascent’s practice and the achievement of its mission.
 
 **ID: `HOME.BRIEF.list`**
 Context: The four phases, one line each, replacing the four pipeline cards that used to
@@ -1183,7 +1212,7 @@ heading stands alone — the subhead under it (`ABOUT.HERO.lead`, "Ascent is a n
 program evaluation practice in New York City.") came off. Was "Built for the
 organizations evaluation was priced away from".
 Fits: 1–2 lines.
-> Built for organizations priced out of comprehensive evaluation
+> Built for the benefit of organizations priced out of comprehensive evaluation
 
 **ID: `ABOUT.HERO.lead`**
 Context: Subhead under the banner heading. Back in v13 after being off since v12 (it used to be
@@ -1211,7 +1240,7 @@ why the answer is a different structure rather than a discount. The
 diagnosis in the first three sentences comes from the Program Description's mission
 section, lightly edited for a web reader ("methodologies" → "methods", "self-implement" →
 "take on alone").
-> Program evaluation is inaccessible and underleveraged. As a service, its practitioners are disparate or overpriced. As a practice, its methods are too niche, its implementation too resource-intensive, and its benefits too obscure for program teams to take on alone. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption—and in the current market, those carry impossible costs for small and mid-sized organizations. Ascent is structured to make that relationship affordable.
+> Program evaluation is inaccessible and underleveraged. As a service, its practitioners are disparate or overpriced. As a practice, its methods are too niche, its implementation too resource-intensive, and its benefits too obscure for program teams to incorporate alone. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption. In the current market, those carry impossible costs for small and mid-sized organizations. 
 
 ## C3. Evidence timeline
 
@@ -1232,45 +1261,44 @@ On a wide screen the lane already says which field an entry belongs to, so the l
 for screen readers only; on a phone it is printed after the year. A `Tag:` prints after the
 year everywhere.
 
-Context: These citations are short-form. If you want them to carry full references,
-say so and I'll build a references page and link each one — the deck flags that as an
-open item and it is the right call for an organisation whose pitch is methodological
-seriousness.
+Context: Until v71 each entry ended with a short-form author citation in brackets; you took
+them all out. The sources are still named in each entry's Context note below. If you want
+them back as full references, say so and I'll build a references page and link each entry.
 
 **ID: `ABOUT.TIMELINE.field_is`**
 Context: Heading over the implementation science rail (on a phone, the first key above
 both rails). New in v56; my wording.
 Fits: Name one line; Line two lines in half the page width (about 20 words).
 > Name: Implementation science
-> Line: The study of how proven practices take hold in real programs, and of the people who help them take hold.
+> Line: The study of how new practices take hold in real programs, and how to shepherd adoption while ensuring that they are aligned with target needs and capabilities.
 
 **ID: `ABOUT.TIMELINE.field_ecb`**
 Context: Heading over the ECB rail. New in v56; my wording, after the definition in
 Stockdill, Baizerman & Compton (2002).
 Fits: As `ABOUT.TIMELINE.field_is`.
 > Name: Evaluation capacity building
-> Line: The practice of making evaluation, and the use of what it finds, an ordinary part of how an organization works.
+> Line: The practice of making evaluation, and the use of its findings, an ordinary part of a program's operations.
 
 **ID: `ABOUT.TIMELINE.11`**
 Context: New in v56, from Table 2 of the brief (process use, Patton 1997). The mechanism the model leans on: taking part in evaluation teaches more than the report does.
 > Year: 1997
 > Field: Evaluation capacity building
 > Headline: Learning from the process
-> Detail: Process use names the learning that comes from taking part in an evaluation, beyond anything in its findings (Patton).
+> Detail: Process use names the learning that comes from taking part in an evaluation, beyond anything in its findings.
 
 **ID: `ABOUT.TIMELINE.12`**
 Context: New in v56, from Table 2 (Stockdill, Baizerman & Compton 2002) — the point the brief dates ECB from as a field of its own.
 > Year: 2002
 > Field: Evaluation capacity building
 > Headline: Capacity by design
-> Detail: Evaluation capacity building is defined as a field: designed practice rather than a by-product, with the use of evaluation built into what capacity means (Stockdill, Baizerman & Compton).
+> Detail: Evaluation capacity building is defined as a field: designed practice rather than a by-product, with the use of evaluation built into what capacity means.
 
 **ID: `ABOUT.TIMELINE.13`**
 Context: New in v56, from Table 2 (Preskill & Boyle 2008).
 > Year: 2008
 > Field: Evaluation capacity building
 > Headline: Capacity lives in culture
-> Detail: A multidisciplinary model ties evaluation capacity to organizational learning and culture, and sets out the conditions for practice that lasts (Preskill & Boyle).
+> Detail: A multidisciplinary model ties evaluation capacity to organizational learning and culture, and sets out the conditions for practice that lasts.
 
 **ID: `ABOUT.TIMELINE.7`**
 Context: New in v34, with entries 8–10 (9 came off in v55): these bring in how implementation science developed and
@@ -1279,14 +1307,14 @@ entry 10. `ABOUT.TIMELINE.6` (2005) was removed in v36; IDs are not renumbered.
 > Year: 2009
 > Field: Implementation science
 > Headline: A framework for what shapes implementation
-> Detail: The Consolidated Framework for Implementation Research organizes the factors that help or hinder putting evidence into practice (Damschroder et al.).
+> Detail: The Consolidated Framework for Implementation Research organizes the factors that help or hinder putting evidence into practice.
 
 **ID: `ABOUT.TIMELINE.14`**
 Context: New in v56, from Table 2 (Labin, Duffy, Meyers, Wandersman & Lesesne 2012). "Weaknesses in its designs" follows the brief's "identifies design weakness".
 > Year: 2012
 > Field: Evaluation capacity building
 > Headline: The field takes stock
-> Detail: A research synthesis consolidates the literature, codes its outcomes at the individual and organizational levels, and identifies weaknesses in its designs (Labin et al.).
+> Detail: A research synthesis consolidates the literature, codes its outcomes at the individual and organizational levels, and identifies weaknesses in its designs.
 
 **ID: `ABOUT.TIMELINE.1`**
 Context: A Getting To Outcomes trial, published in *Implementation Science*. The brief's executive summary counts these trials as implementation science and its Table 3 as ECB evidence, so this sits on the implementation science rail and is drawn as one stop across both.
@@ -1294,34 +1322,34 @@ Context: A Getting To Outcomes trial, published in *Implementation Science*. The
 > Field: Implementation science
 > Tag: Cited by both fields
 > Headline: Dose matters
-> Detail: A two-year cluster-randomized trial finds dose-dependent gains across four capacity scales, greatest where technical assistance hours were highest (Acosta, Chinman et al.).
+> Detail: A two-year cluster-randomized trial finds dose-dependent gains across four capacity scales, greatest where technical assistance hours were highest.
 
 **ID: `ABOUT.TIMELINE.2`**
 > Year: 2013
 > Field: Evaluation capacity building
 > Headline: Organizations, not individuals
-> Detail: Instrument validation establishes that leadership, resources and learning climate decide whether individual knowledge ever becomes mainstreamed practice (Taylor-Ritzler et al.).
+> Detail: Instrument validation establishes that leadership, resources and learning climate decide whether individual knowledge ever becomes mainstreamed practice.
 
 **ID: `ABOUT.TIMELINE.15`**
 Context: New in v56, from Table 2 (Cousins, Goh, Elliott & Bourgeois 2014).
 > Year: 2014
 > Field: Evaluation capacity building
 > Headline: Doing is not using
-> Detail: The capacity to do evaluation is separated from the capacity to use it: methodological skill on one side, the organizational conditions that let findings have influence on the other (Cousins et al.).
+> Detail: The capacity to do evaluation is separated from the capacity to use it: methodological skill on one side, the organizational conditions that let findings have influence on the other.
 
 **ID: `ABOUT.TIMELINE.16`**
 Context: New in v56, from Table 2 (Buckley, Archibald, Hargraves & Trochim 2015).
 > Year: 2015
 > Field: Evaluation capacity building
 > Headline: A habit of mind
-> Detail: Evaluative thinking is named as the lasting disposition that evaluation capacity building aims to instill (Buckley et al.).
+> Detail: Evaluative thinking is named as the lasting disposition that evaluation capacity building aims to instill.
 
 **ID: `ABOUT.TIMELINE.3`**
 Context: Belongs to neither field: it measures the sector the synthesis is for. Boxed across both rails, with no stop on either, and has no `Field:` line.
 > Year: 2016
 > Tag: The sector
 > Headline: The affordability gap, measured
-> Detail: Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff (Innovation Network).
+> Detail: Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff.
 
 **ID: `ABOUT.TIMELINE.8`**
 Context: From the Practice Guide's "How we developed this guide": the work began in 2017 as an
@@ -1330,7 +1358,7 @@ Northern Ireland).
 > Year: 2017
 > Field: Implementation science
 > Headline: Implementation support becomes a field of research
-> Detail: Two intermediary organizations, one in the USA and one in Ireland and Northern Ireland, begin studying the role and competencies of the people who support implementation (NIRN and the Centre for Effective Services).
+> Detail: Two intermediary organizations, one in the USA and one in Ireland and Northern Ireland, begin studying the role and competencies of the people who support implementation.
 
 **ID: `ABOUT.TIMELINE.4`**
 Context: The second Getting To Outcomes trial; drawn across both rails for the same reason as `ABOUT.TIMELINE.1`.
@@ -1338,7 +1366,7 @@ Context: The second Getting To Outcomes trial; drawn across both rails for the s
 > Field: Implementation science
 > Tag: Cited by both fields
 > Headline: Repetition and duration drive results
-> Detail: A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle (Chinman, Acosta et al.).
+> Detail: A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle.
 
 **ID: `ABOUT.TIMELINE.10`**
 Context: Two of the words are links, opening in a new tab: "Implementation Support Practitioner
@@ -1348,14 +1376,14 @@ The PDFs are dated November and December 2020 (Profile v4.0; Guide), re-hosted i
 > Year: 2020
 > Field: Implementation science
 > Headline: Competencies, described
-> Detail: The Implementation Support Practitioner Profile and Practice Guide set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change (Metz, Burke, Albers et al.).
+> Detail: The Implementation Support Practitioner Profile and Practice Guide set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change.
 
 **ID: `ABOUT.TIMELINE.5`**
 Context: The finding the whole model is built on. If you cut one entry, don't cut this.
 > Year: 2020
 > Field: Evaluation capacity building
 > Headline: Relationship, not training
-> Detail: Evaluation practice persists years after an intervention, and the persistence tracks ongoing evaluator contact rather than the initial training (Wade & Kallemeyn).
+> Detail: Evaluation practice persists years after an intervention, and the persistence tracks ongoing evaluator contact rather than the initial training.
 
 **ID: `ABOUT.TIMELINE.synthesis`**
 Context: Where the two rails join, centred under the timeline (on a phone, a stop across both
@@ -1411,7 +1439,7 @@ the same grey lead style as the home page's section leads. It is a statement abo
 platform, not the process: the heading is about what the phases open up, this line says who
 the platform is for and what it gets them.
 Fits: One sentence, ~90 characters; two lines on desktop, up to three on a phone.
-> A platform built for program teams that gets to outcomes by driving clarity in practice.
+> A platform built for program teams that gets to outcomes by providing clarity in practice.
 
 **ID: `PROGRAMS.CARDS.1`**
 > Tag: Phase 01
@@ -1422,13 +1450,13 @@ Fits: One sentence, ~90 characters; two lines on desktop, up to three on a phone
 **ID: `PROGRAMS.CARDS.2`**
 > Tag: Phase 02
 > Name: Data Architecture
-> Summary: A practical, defensible system for collecting, managing and assuring the quality of evidence.
+> Summary: A practical system for collecting and managing data while preserving the needs of stakeholder communities.
 > Link: Learn more
 
 **ID: `PROGRAMS.CARDS.3`**
 > Tag: Phase 03
 > Name: Analytics & Inference
-> Summary: Collected data turned into defensible evidence, with every finding rated for strength.
+> Summary: Collected data turned into defensible evidence; outcomes here inform change recommendations and help scope further inquiry.
 > Link: Learn more
 
 **ID: `PROGRAMS.CARDS.4`**
@@ -1455,14 +1483,14 @@ the most compressed statement of what makes the program different. Keep it verba
 **ID: `PROGRAMS.SEQUENCE.lead`**
 Context: The phrase "central to both the ethics of the work and whether it achieves
 anything" says participation is a methodological requirement, not a courtesy.
-> Reports and communication support are deliverables, but the program team's active part in pursuing inquiry, scoping analysis and adopting new methods is central to both the ethics of the work and its success.
+> Reports and communication support are deliverables, but the program team's active part in pursuing inquiry, scoping analysis and adopting new methods is central to the process.
 
 **ID: `PROGRAMS.SEQUENCE.body`**
 Context: Two paragraphs. The first says what the implementation support professional does
 and what your staff co-create. The second explains the loop, which the timeline on the
 right can only show as a straight line.
-> The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a habit of recursive improvement inside the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them. Deeper involvement in the technical work—analysis, research design, reporting—is there for teams that want it and have the time.
-> The sequence runs in one direction until it reaches recursion and integration, and then it loops: findings become program changes, outcomes feed the next round of evaluation, and the cycle repeats as often as the program needs before graduation.
+> The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a culture of inquiry within the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them.
+> The sequence runs in one direction until it reaches recursion and integration, and then it loops: findings become program changes, outcomes feed the next round of evaluation, and the cycle repeats until graduation.
 
 **ID: `PROGRAMS.SEQUENCE.steps`**
 Context: Eight timeline entries. Each = step label, name, one sentence. The names follow
@@ -1470,11 +1498,11 @@ the brief's diagram except "Comms.", written out. Add or remove freely — the l
 Fits: ~130 characters per sentence, or the timeline runs taller than the text beside it.
 > Step: Step 01
 > Name: Intake
-> Detail: A scoping conversation and intake assessment establish whether the program is a fit, and what already exists to build on.
+> Detail: A scoping conversation and intake assessment establish whether the program is a fit and what existing systems can be built upon.
 >
 > Step: Step 02
 > Name: Embed
-> Detail: The implementation support professional joins the program team, and learning goals and timelines are agreed together.
+> Detail: The implementation support professional joins the program team; goals and timelines are agreed together.
 >
 > Step: Step 03
 > Name: Audit
@@ -1530,7 +1558,7 @@ one practitioners react to; keep it.
 > **Program description and context brief.** What the program does, for whom, and at what scale—set against its evidence base, policy landscape, and peer field.
 > **Logic model.** The program's causal architecture from inputs to long-term outcomes, built with the organization's staff so it reflects implementation reality rather than aspirational design.
 > **Theory of change.** Evidentiary and assumptive claims mapped along the logic model's pathways. This scopes the continued evaluation as it isolates load-bearing assumptions and evidentiary gaps to be filled.
-> **Evaluability assessment.** A structured judgment of whether the program is ready to be evaluated and at what scope.
+> **Evaluability assessment.** A structured judgment of whether the program is ready to be evaluated and how.
 > **Evaluation questions and indicator framework.** A prioritized set of questions, each matched to measurable constructs, marking what is in and out of scope.
 
 ## D5. Phase 2 — detail
@@ -1550,15 +1578,15 @@ Illustration right, text left (mirrored). *(Was `PROGRAMS.COMMONS.*`.)*
 Context: One sentence since v55. The warning that this is the heaviest phase, and the note
 that an organization with infrastructure in place starts with a data audit, came off; step 03
 of the program sequence ("Audit") still makes the second point.
-> This phase turns evaluative questions into a practical, defensible system for collecting, managing and assuring the quality of evidence.
+> This phase turns evaluative questions into a practical, defensible system for collecting, managing and ensuring the quality of evidence.
 
 **ID: `PROGRAMS.PHASE2.list`**
 > Subheading: Phase 2 outputs
-> **Data needs assessment.** Every indicator mapped to a source and categorized: already collected, collectible with new instruments, derivable from third-party data, or practically infeasible.
+> **Data needs assessment.** Every indicator mapped to a source and categorized according to its collection feasibility.
 > **Measurement selection report.** For each indicator, the measure chosen, the rationale, the population, and the timing.
 > **Instrument suite.** Designed and adapted instruments, with novel ones pilot tested and reviewed by community members before field deployment.
 > **Collection protocol.** Administration, consent and assent, data entry, confidentiality, and how missing data and non-response are handled.
-> **Data management system.** Storage, linkage, backup, security and retention—set up alongside the program team, with the training to run it.
+> **Data management system.** Storage, linkage, backup, security and retention—set up alongside the program team, with the training to maintain it.
 > **Data quality plan.** Standing completeness, validity, consistency and timeliness checks: who runs them, how often, and what each problem triggers.
 
 ## D6. Phase 3 — detail
@@ -1585,7 +1613,7 @@ Context: "Specified before results are examined" is the clause a methodologicall
 funder will look for. It is not padding. (The second one, "required for every
 non-experimental evaluation", came off the contribution and attribution entry in v61.)
 > Subheading: Phase 3 outputs
-> **Design and analysis specification.** Counterfactual strategy, unit of analysis, level of inference, subgroup analyses planned in advance, and threats to validity with mitigations—specified before results are examined.
+> **Design and analysis specification.** Counterfactual strategy, unit of analysis, level of inference, subgroup analyses planned in advance, and threats to validity with mitigations—all pre-specified.
 > **Quantitative findings memo.** If quantitative methods are used, a brief on their findings with plain-language interpretation alongside the technical specification.
 > **Qualitative findings memo.** If qualitative methods are used, a brief on their findings alongside methodology and any contextual concerns.
 > **Contribution and attribution analysis.** What else was operating, how much of program outcomes can be linked to program interventions, whether the pattern of findings fits the theory of change, and what alternative explanations remain.
@@ -1656,19 +1684,19 @@ in, ending with you. Each is a heading and a description; the bold role line cam
 **ID: `INVOLVED.STACK.layer2`**
 > Heading: In-house analytics
 > Commitment: 
-> Description: The work that recurs across nearly every engagement: data analysis, instrument design, program design and measurement.
+> Description: The most common technical work, sourced in-house: data analysis, instrument design, program design and measurement.
 
 **ID: `INVOLVED.STACK.layer3`**
 Context: Orange icon — this is the layer the whole model turns on, and the one the
 sector doesn't currently staff.
 > Heading: Implementation support
 > Commitment: 
-> Description: The primary liaison between analysts and the program team. Implementation support professionals translate findings into actionable changes and shepherd them through the organization, so what the evaluation produces actually lands.
+> Description: The primary liaison between analysts and the program team. Implementation support professionals translate findings into actionable changes and shepherd them through the organization, ensuring that changes redound to the benefit of participants.
 
 **ID: `INVOLVED.STACK.layer4`**
 > Heading: Partner Programs
 > Commitment: 
-> Description: Implementation staff listen to an organization's needs and shepherd feasible change within it. Here, the relationship is as important as the evaluation.
+> Description: Implementation staff listen to an organization's needs and shepherd feasible change within it. Program teams co-create the evaluation design and inform its application. Here, the relationship is as important as the analysis.
 
 **ID: `INVOLVED.STACK.note`**
 Context: Orange box under the cards. The last sentence is a claim about the field, not
@@ -1714,7 +1742,7 @@ Fits: ~130 characters per description; bold line one short sentence.
 >
 > Tag: 04
 > Name: Recursion and integration
-> Description: Traces the processes that translate metrics to outcomes and builds cross-cutting improvement strategies that feed into the next cycle.
+> Description: Traces the processes that translate metrics to outcomes and builds cross-cutting improvement strategies that feed into the next evaluative cycle.
 > Measured: 
 
 **ID: `INVOLVED.IMPACT.note`**
@@ -1752,7 +1780,7 @@ Context: The tool's own name, as the app titles itself.
 Context: What the tool is, then three things a visitor can do in it. "Behind our evaluation
 pipeline" ties it to the phase cards on Evaluation Process, which show its screenshots.
 Fits: 2–3 lines, ~180 characters.
-> A working demo of the app behind our evaluation pipeline. The application **describes** the evaluation process, and the demo depicts the data penetration of multiple rounds of recursive evaluation.
+> Try the app behind our evaluation pipeline. The application **describes** the evaluation process, and the demo depicts the data penetration of multiple rounds of recursive evaluation.
 
 ## F2. The demo
 
@@ -1775,22 +1803,24 @@ way to use it on a small screen.
 
 Grey band. A heading, then six cards, three by two, one per view in the app's left-hand rail
 and in the rail's order. They are not numbered: the views are different angles on one model,
-not steps.
+not steps. Since v70 the band ends on a button to the Download page.
 
 **ID: `DEMO.VIEWS.intro`**
+Context: The lead ("Move between them from the rail down the left side of the demo.") came
+off in v71 and the field is left empty; type one there and hand the file back to bring it back.
 > Eyebrow: Using the app
 > Heading: Six views of one program
-> Lead: Move between them from the rail down the left side of the demo.
+> Lead: 
 
 **ID: `DEMO.VIEWS.cards`**
-Context: One sentence each, describing what the view shows, in the app's own terms. The rail
+Context: One sentence each (the Logic model card two, since v71), describing what the view shows, in the app's own terms. The rail
 labels them Map, Logic, Theory, Policy, Change and Data; the headings use the fuller names
 the app gives them. Keep them roughly this length or the grid goes ragged.
 > Heading: Stakeholder map
-> Body: Who is around the program—funders, staff, partners, the people it serves—and how they are tied to one another.
+> Body: Who is affected by the program and how they are tied to one another.
 >
 > Heading: Logic model
-> Body: Inputs through activities and outputs to short-, medium- and long-term outcomes, with each pathway on its own layer and the layers added up into the whole program.
+> Body: Map the connections that take program inputs through activities and outputs to short-, medium- and long-term outcomes. Place each logical pathway on its own layer and aggregate them to visualize the logical trusses of your program.
 >
 > Heading: Theory of change
 > Body: The assumptions each causal link depends on, and the evidence filed under each one, with every link marked evidenced, mixed, untested or refuted.
@@ -1799,10 +1829,18 @@ the app gives them. Keep them roughly this length or the grid goes ragged.
 > Body: The rules regulating the program today, the changes in development, and which of the program's measures each one affects.
 >
 > Heading: Change
-> Body: Outputs and outcomes projected year by year under changes to inputs and policy, with every scenario read against a baseline.
+> Body: Outputs and outcomes modeled dynamically and projected under changes to inputs and policy, with every scenario read against a baseline.
 >
 > Heading: Data
 > Body: Every number in the model, held once as a series and traced to each place it is used.
+
+**ID: `DEMO.VIEWS.download`**
+Context: New in v70. One orange button under the six cards, left-aligned with the heading,
+to the Download page: having seen the views in the browser, this is where a visitor gets the
+app for their own program. Same label as the Download page's heading and the home page's
+second button (`HOME.METHODS.demo`).
+Fits: 2–4 words.
+> Download the app
 
 ---
 
@@ -2004,7 +2042,7 @@ list in one line rather than a description. The first draft, from the app's READ
 "building and reading program logic models, with the evidence behind each link and the
 people around the program".
 Fits: 2–3 lines, ~215 characters, the current length: three lines on desktop.
-> The desktop app that supports our evaluation process: build program logic models, aggregate evidence and map it to each link, monitor the effects of external policy developments, project change across all metrics.
+> The desktop app that supports our evaluation process: build program logic models, aggregate evidence and map it to each link, monitor the effects of external policy developments and project change across all metrics.
 
 ## L2. The installers
 
