@@ -926,13 +926,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
    entry followed by anything starts a new one; entries on both rails, and the
    sector box, span the row. Rows therefore never run backwards in time — keep the
    markup in date order, same-year IS entries first. */
-/* Heading beside the argument, above the two-lane timeline. */
-.strands-intro { display: grid; gap: var(--sp-2) clamp(2rem, 5vw, 4.5rem); }
-.strands-intro p:last-child { margin-bottom: 0; }
-@media (min-width: 900px) {
-  .strands-intro { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start; }
-}
-
 .strands {
   --is: var(--brand);
   --ecb: var(--accent);

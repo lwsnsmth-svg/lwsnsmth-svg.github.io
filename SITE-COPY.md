@@ -3,7 +3,15 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 75 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+**Version:** 76 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+
+> **What changed in v76.** About, at your request: the opening of "The evidence base" is now
+> stacked and centred, like "How the program runs" on Evaluation Process. The eyebrow and "An
+> outcomes-oriented synthesis." used to sit on the left with the paragraph beside them; now
+> the paragraph sits under the heading. No wording changed. **No ID changed.**
+>
+> Worth a look: the paragraph is five sentences, about 430 characters, so centred it runs to
+> six or seven lines on a laptop. Long centred text is harder to read than text set left.
 
 > **What changed in v75.** Evaluation Process, at your request: the eight-step timeline in "How
 > the program runs" (Intake through Onward support, `PROGRAMS.SEQUENCE.steps`) is gone, and all
@@ -1258,8 +1266,10 @@ Fits: One line.
 
 ## C2. Why this exists
 
-Heading on the left, one paragraph of argument beside it; the two-field timeline (§C3) runs below. Until
-v56 this text stuck beside the timeline as it scrolled; the timeline now needs the full width.
+Eyebrow, heading and one paragraph of argument, stacked and centred (since v76; until then the
+heading sat on the left with the paragraph beside it); the two-field timeline (§C3) runs below.
+The same treatment as "How the program runs" on Evaluation Process. Until v56 this text stuck
+beside the timeline as it scrolled; the timeline now needs the full width.
 
 **ID: `ABOUT.STORY.eyebrow`**
 > The evidence base
@@ -1269,7 +1279,7 @@ Fits: 2 lines.
 > An outcomes-oriented synthesis.
 
 **ID: `ABOUT.STORY.para2`**
-Context: The only paragraph beside the heading since v59, when the founding argument that
+Context: The only paragraph under the heading since v59, when the founding argument that
 used to open it (`ABOUT.STORY.para1`) moved to the home page as `HOME.STATS.lead`. It says
 why the answer is a different structure rather than a discount. The
 diagnosis in the first three sentences comes from the Program Description's mission
