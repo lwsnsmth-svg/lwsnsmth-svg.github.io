@@ -784,6 +784,14 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   box-shadow: var(--shadow);
 }
 .demo-frame iframe { display: block; width: 100%; height: 720px; border: 0; }
+/* Borderless variant (Evaluation Process): no edge, shadow or fill, so an app whose page
+   background is --bg reads as part of the page rather than a card. */
+.demo-frame--bare {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
 .demo-meta {
   display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
   gap: var(--sp-3) var(--sp-5);
@@ -918,13 +926,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
    entry followed by anything starts a new one; entries on both rails, and the
    sector box, span the row. Rows therefore never run backwards in time — keep the
    markup in date order, same-year IS entries first. */
-/* Heading beside the argument, above the two-lane timeline. */
-.strands-intro { display: grid; gap: var(--sp-2) clamp(2rem, 5vw, 4.5rem); }
-.strands-intro p:last-child { margin-bottom: 0; }
-@media (min-width: 900px) {
-  .strands-intro { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start; }
-}
-
 .strands {
   --is: var(--brand);
   --ecb: var(--accent);

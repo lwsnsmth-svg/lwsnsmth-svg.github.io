@@ -3,7 +3,46 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 72 · **Updated:** 18 October 2026 · **Covers:** 8 pages
+**Version:** 76 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+
+> **What changed in v76.** About, at your request: the opening of "The evidence base" is now
+> stacked and centred, like "How the program runs" on Evaluation Process. The eyebrow and "An
+> outcomes-oriented synthesis." used to sit on the left with the paragraph beside them; now
+> the paragraph sits under the heading. No wording changed. **No ID changed.**
+>
+> Worth a look: the paragraph is five sentences, about 430 characters, so centred it runs to
+> six or seven lines on a laptop. Long centred text is harder to read than text set left.
+
+> **What changed in v75.** Evaluation Process, at your request: the eight-step timeline in "How
+> the program runs" (Intake through Onward support, `PROGRAMS.SEQUENCE.steps`) is gone, and all
+> of that section's text (eyebrow, heading, lead and both paragraphs) now sits directly above
+> the Evaluation Pipeline app, in one section with it. So §D3 (the app) and §D4 (the text) are
+> one section, §D3 "How the program runs"; the `#pilot-sequence` anchor the home page links to
+> moved with the text. The text is now centred. Its lead ("Reports and communication support
+> are deliverables…", `PROGRAMS.SEQUENCE.lead`) is gone, also at your request; the rest of the
+> wording is unchanged. The removed timeline and lead are in the snapshot
+> `~/Desktop/Ascent Website archive/2026-10-20 before program timeline removed/`, and in git.
+> **No remaining ID changed.**
+>
+> Worth a look: the last paragraph ends "until graduation", but nothing on the page says what
+> graduation is any more — it was step 07 of the timeline. The app's text doesn't use the word.
+
+> **What changed in v74.** The four phase detail sections on Evaluation Process (Evaluative
+> Foundation; Data Architecture; Analytics & Inference; Monitoring, Learning & Reporting) are
+> gone, at your request: the Evaluation Pipeline app above them now explains each phase. That
+> removed §D5–§D8 (`PROGRAMS.PHASE1.*` to `PROGRAMS.PHASE4.*`) and their four illustrations
+> (the "Phase N detail" lines of `ALT.programs`). The four overview cards lost their "Learn
+> more" buttons (`PROGRAMS.CARDS.1`–`4`, the `Link:` line), which only scrolled down to those
+> sections. The page now ends on "How the program runs". The removed copy is in the snapshot
+> `~/Desktop/Ascent Website archive/2026-10-20 before phase details removed/`, and in git.
+> **No remaining ID changed.**
+
+> **What changed in v73.** The Evaluation Pipeline app (`evaluationguide.netlify.app`) is now
+> embedded on Evaluation Process, at your request, straight after "Opening the black box" and
+> its four cards, full width. At your request it has no border, and it is as tall as the app,
+> so it blends into the page with no scrollbar of its own; the app's background is the
+> site's. It is a new §D3 with one block, `PROGRAMS.PIPELINE.frame`: the name a screen reader
+> gives the frame. The sections after it are renumbered D4–D8. **No ID changed.**
 
 > **What changed in v72.** Your edit to the home page headline (`HOME.HERO.h1`): the full
 > stop after "context" is now inside the orange accent, so it turns orange with the word. The
@@ -1227,8 +1266,10 @@ Fits: One line.
 
 ## C2. Why this exists
 
-Heading on the left, one paragraph of argument beside it; the two-field timeline (§C3) runs below. Until
-v56 this text stuck beside the timeline as it scrolled; the timeline now needs the full width.
+Eyebrow, heading and one paragraph of argument, stacked and centred (since v76; until then the
+heading sat on the left with the paragraph beside it); the two-field timeline (§C3) runs below.
+The same treatment as "How the program runs" on Evaluation Process. Until v56 this text stuck
+beside the timeline as it scrolled; the timeline now needs the full width.
 
 **ID: `ABOUT.STORY.eyebrow`**
 > The evidence base
@@ -1238,7 +1279,7 @@ Fits: 2 lines.
 > An outcomes-oriented synthesis.
 
 **ID: `ABOUT.STORY.para2`**
-Context: The only paragraph beside the heading since v59, when the founding argument that
+Context: The only paragraph under the heading since v59, when the founding argument that
 used to open it (`ABOUT.STORY.para1`) moved to the home page as `HOME.STATS.lead`. It says
 why the answer is a different structure rather than a discount. The
 diagnosis in the first three sentences comes from the Program Description's mission
@@ -1419,7 +1460,8 @@ in nine words — it says you can buy one piece without buying the programme.
 
 ## D2. Overview cards
 
-Four cards, two by two, each linking down to its detail section. These summaries are
+Four cards, two by two. Since v74 they have no "Learn more" buttons: the phase detail
+sections they linked down to are gone (the app in §D3 covers the phases). These summaries are
 **shorter than the home page versions** on purpose. Since v13 each card shows a
 screenshot of a working tool in place of its placeholder illustration: Phase 1 a logic
 model, Phase 2 a data-lineage view, Phase 3 a single-indicator analysis, Phase 4 a
@@ -1449,32 +1491,38 @@ Fits: One sentence, ~90 characters; two lines on desktop, up to three on a phone
 > Tag: Phase 01
 > Name: Evaluative Foundation
 > Summary: The conceptual infrastructure that makes rigorous evaluation possible: stakeholder map, logic model, theory of change.
-> Link: Learn more
 
 **ID: `PROGRAMS.CARDS.2`**
 > Tag: Phase 02
 > Name: Data Architecture
 > Summary: A practical system for collecting and managing data while preserving the needs of stakeholder communities.
-> Link: Learn more
 
 **ID: `PROGRAMS.CARDS.3`**
 > Tag: Phase 03
 > Name: Analytics & Inference
 > Summary: Collected data turned into defensible evidence; outcomes here inform change recommendations and help scope further inquiry.
-> Link: Learn more
 
 **ID: `PROGRAMS.CARDS.4`**
 > Tag: Phase 04
 > Name: Monitoring, Learning & Reporting
 > Summary: Findings converted into systems that sustain learning and accountability over time.
-> Link: Learn more
 
 ## D3. How the program runs
 
-New on 13 September, from the Program Description's sequencing diagram. Text on the left,
-an eight-step timeline on the right. Anchored at `#pilot-sequence` — since v14 both "Our
-program" buttons on the home page land here (they went to `#flagship`, on the removed
-"Two ways in" section).
+New on 13 September, from the Program Description's sequencing diagram. Since v75 one section,
+text above the Evaluation Pipeline app: the eight-step timeline that stood beside the text is
+gone, and the app below now shows the sequence. The text is centred over the app, as "Opening
+the black box" is over the cards; the long paragraphs read more slowly centred than set left.
+Anchored at `#pilot-sequence` — since v14 both "Our program" buttons on the home page land
+here (they went to `#flagship`, on the removed "Two ways in" section).
+
+The app, **new in v73**, is live from `evaluationguide.netlify.app`, the full width of the
+page and as tall as the app itself. The app tells the page its height, so the frame grows and
+shrinks with it (about 2,700px on a laptop, 3,500px on a phone, more while a step's card is
+open) and never scrolls inside itself; with JavaScript off it falls back to 720px. Unlike the
+Demo page (§F2) it has no border, shadow or rounded corners: the app's background is the
+page's own, so it reads as part of the page rather than a framed window. Nothing inside it is
+site copy, and there is no small print or "open in a new tab" link under it.
 
 **ID: `PROGRAMS.SEQUENCE.eyebrow`**
 > Our program
@@ -1484,173 +1532,20 @@ Context: "The process is the program" is the Program Description's own headline 
 the most compressed statement of what makes the program different. Keep it verbatim.
 > The process is the program.
 
-**ID: `PROGRAMS.SEQUENCE.lead`**
-Context: The phrase "central to both the ethics of the work and whether it achieves
-anything" says participation is a methodological requirement, not a courtesy.
-> Reports and communication support are deliverables, but the program team's active part in pursuing inquiry, scoping analysis and adopting new methods is central to the process.
-
 **ID: `PROGRAMS.SEQUENCE.body`**
 Context: Two paragraphs. The first says what the implementation support professional does
-and what your staff co-create. The second explains the loop, which the timeline on the
-right can only show as a straight line.
+and what your staff co-create. The second explains the loop: written for the timeline that
+stood beside it until v75, it now introduces the app straight below, whose own title
+("Evaluation Pipeline") follows it. "Recursion and integration" and "graduation" were the
+names of steps 06 and 07 of that timeline; the app mentions the first ("Recursion &
+Integration", on its last step) but not the second.
 > The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a culture of inquiry within the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them.
 > The sequence runs in one direction until it reaches recursion and integration, and then it loops: findings become program changes, outcomes feed the next round of evaluation, and the cycle repeats until graduation.
 
-**ID: `PROGRAMS.SEQUENCE.steps`**
-Context: Eight timeline entries. Each = step label, name, one sentence. The names follow
-the brief's diagram except "Comms.", written out. Add or remove freely — the line redraws.
-Fits: ~130 characters per sentence, or the timeline runs taller than the text beside it.
-> Step: Step 01
-> Name: Intake
-> Detail: A scoping conversation and intake assessment establish whether the program is a fit and what existing systems can be built upon.
->
-> Step: Step 02
-> Name: Embed
-> Detail: The implementation support professional joins the program team; goals and timelines are agreed together.
->
-> Step: Step 03
-> Name: Audit
-> Detail: A structured review of the frameworks, data and systems already in place, so nothing that works gets rebuilt.
->
-> Step: Step 04
-> Name: Evaluation
-> Detail: Phases 1 to 3 of the pipeline, co-created with the organization's staff.
->
-> Step: Step 05
-> Name: Communication
-> Detail: What the evaluation found, turned into material for the community, the board and funders.
->
-> Step: Step 06
-> Name: Recursion and integration
-> Detail: Traces the underlying links that turn inputs to outcomes: findings become program changes, outcomes feed the next round of evaluation, and the loop cycles.
->
-> Step: Step 07
-> Name: Graduation
-> Detail: After approximately two years, embedded support draws back under a written handoff plan agreed with the program team.
->
-> Step: Step 08
-> Name: Onward support
-> Detail: Continue on a discounted monitoring retainer or take a written implementation guide. Our internal research, analysis and networks remain available.
-
-## D4. Phase 1 — detail
-
-Illustration left, text right. *(Was `PROGRAMS.FIELD.*`.)*
-
-**ID: `PROGRAMS.PHASE1.tag`**
-> Phase 01
-
-**ID: `PROGRAMS.PHASE1.h2`**
-> Evaluative Foundation
-
-**ID: `PROGRAMS.PHASE1.lead`**
-Context: Large grey line. All four phase leads are questions, which is what makes the
-pipeline legible to someone who doesn't know the vocabulary.
-Fits: One line ideally.
-> What is this program trying to do, for whom, and why do we believe it will work?
-
-**ID: `PROGRAMS.PHASE1.body`**
-Context: Two sentences: what the phase builds, then what an evaluation without it would
-lack.
-> This phase builds the conceptual infrastructure that makes rigorous evaluation possible. Without it, data collection has no direction and the evaluation would lack clarity.
-
-**ID: `PROGRAMS.PHASE1.list`**
-Context: Six deliverables, bold lead-in then the detail. The logic model entry's last
-clause — built with your staff, so it reflects reality rather than aspiration — is the
-one practitioners react to; keep it.
-> Subheading: Phase 1 outputs
-> **Stakeholder map.** Everyone with a stake in the program, distinguishing those whose input shapes the evaluation from those whose outcomes are its subject.
-> **Program description and context brief.** What the program does, for whom, and at what scale—set against its evidence base, policy landscape, and peer field.
-> **Logic model.** The program's causal architecture from inputs to long-term outcomes, built with the organization's staff so it reflects implementation reality rather than aspirational design.
-> **Theory of change.** Evidentiary and assumptive claims mapped along the logic model's pathways. This scopes the continued evaluation as it isolates load-bearing assumptions and evidentiary gaps to be filled.
-> **Evaluability assessment.** A structured judgment of whether the program is ready to be evaluated and how.
-> **Evaluation questions and indicator framework.** A prioritized set of questions, each matched to measurable constructs, marking what is in and out of scope.
-
-## D5. Phase 2 — detail
-
-Illustration right, text left (mirrored). *(Was `PROGRAMS.COMMONS.*`.)*
-
-**ID: `PROGRAMS.PHASE2.tag`**
-> Phase 02
-
-**ID: `PROGRAMS.PHASE2.h2`**
-> Data Architecture
-
-**ID: `PROGRAMS.PHASE2.lead`**
-> What data do we need, from whom, and how do we ensure its quality?
-
-**ID: `PROGRAMS.PHASE2.body`**
-Context: One sentence since v55. The warning that this is the heaviest phase, and the note
-that an organization with infrastructure in place starts with a data audit, came off; step 03
-of the program sequence ("Audit") still makes the second point.
-> This phase turns evaluative questions into a practical, defensible system for collecting, managing and ensuring the quality of evidence.
-
-**ID: `PROGRAMS.PHASE2.list`**
-> Subheading: Phase 2 outputs
-> **Data needs assessment.** Every indicator mapped to a source and categorized according to its collection feasibility.
-> **Measurement selection report.** For each indicator, the measure chosen, the rationale, the population, and the timing.
-> **Instrument suite.** Designed and adapted instruments, with novel ones pilot tested and reviewed by community members before field deployment.
-> **Collection protocol.** Administration, consent and assent, data entry, confidentiality, and how missing data and non-response are handled.
-> **Data management system.** Storage, linkage, backup, security and retention—set up alongside the program team, with the training to maintain it.
-> **Data quality plan.** Standing completeness, validity, consistency and timeliness checks: who runs them, how often, and what each problem triggers.
-
-## D6. Phase 3 — detail
-
-*(Was `PROGRAMS.PRACTICE.*`.)*
-
-**ID: `PROGRAMS.PHASE3.tag`**
-> Phase 03
-
-**ID: `PROGRAMS.PHASE3.h2`**
-> Analytics & Inference
-
-**ID: `PROGRAMS.PHASE3.lead`**
-> What do the data tell us, with what confidence, about whether and how the program works?
-
-**ID: `PROGRAMS.PHASE3.body`**
-Context: The second sentence reflects the brief's delivery model — analysis offsite,
-findings returned through the embedded supporter — and turns it into a reason to care. The
-third, on organizations that arrive with data already collected, came off in v55.
-> This phase turns collected data into defensible evidence. The final analysis runs offsite; the findings come back to the program team through the implementation support professional rather than as a report in an inbox.
-
-**ID: `PROGRAMS.PHASE3.list`**
-Context: "Specified before results are examined" is the clause a methodologically literate
-funder will look for. It is not padding. (The second one, "required for every
-non-experimental evaluation", came off the contribution and attribution entry in v61.)
-> Subheading: Phase 3 outputs
-> **Design and analysis specification.** Counterfactual strategy, unit of analysis, level of inference, subgroup analyses planned in advance, and threats to validity with mitigations—all pre-specified.
-> **Quantitative findings memo.** If quantitative methods are used, a brief on their findings with plain-language interpretation alongside the technical specification.
-> **Qualitative findings memo.** If qualitative methods are used, a brief on their findings alongside methodology and any contextual concerns.
-> **Contribution and attribution analysis.** What else was operating, how much of program outcomes can be linked to program interventions, whether the pattern of findings fits the theory of change, and what alternative explanations remain.
-> **Evidence strength summary.** One non-technical page on what the evidence shows, at what confidence, with what caveats.
-> **Integrated findings report.** The master document: executive summary, full methods, findings by question, implications for improvement, and limitations.
-
-## D7. Phase 4 — detail
-
-New section in v3 — the deck's pipeline has four phases where the site had three
-workstreams.
-
-**ID: `PROGRAMS.PHASE4.tag`**
-> Phase 04
-
-**ID: `PROGRAMS.PHASE4.h2`**
-> Monitoring, Learning & Reporting
-
-**ID: `PROGRAMS.PHASE4.lead`**
-> How do we know the program keeps working, and how do we tell people what we know?
-
-**ID: `PROGRAMS.PHASE4.body`**
-Context: The last sentence is a correction from the Program Description: for program
-participants, Phase 4 is not part of the two-year core. It starts at graduation, by
-retainer or by guide.
-> This phase builds systems that sustain organizational learning and external accountability over time. Phase 4 begins at graduation: continue with us on a discounted retainer, or take a written implementation guide and run it independently.
-
-**ID: `PROGRAMS.PHASE4.list`**
-> Subheading: Phase 4 outputs
-> **Learning agenda.** The question(s) the organization intends to investigate perpetually, sorted by what routine monitoring can answer, what needs a new evaluation, and what lies out of MEL scope.
-> **Monitoring and evaluation plan.** Which indicators are tracked, how often, from what sources, against what targets.
-> **Indicator dashboard.** Use our app to monitor program metrics, or have an external dashboard created with periodic updates.
-> **Reporting suite.** Funder reports, board dashboards, operational reports, impact summaries, and policy briefs translating evidence into implications for design, policy or funding.
-> **Dissemination plan.** How findings reach peers, funders, policymakers and the communities whose members were the subjects of the evaluation.
+**ID: `PROGRAMS.PIPELINE.frame`**
+Context: Not visible: the name a screen reader announces for the embedded app before reading
+the app itself, as `ALT.demo` does on the Demo page. It is the app's own page title.
+> Embedded app: Evaluation Pipeline
 
 ---
 # E. Our Model
@@ -1950,15 +1845,11 @@ stock photo of people at a whiteboard.
 Context: Cards 1–4 describe real screenshots since v13, so they say what the image shows
 rather than naming an illustration. The sample data in the screenshots (a mentoring and
 employment program) is not described — it is example data, not a client result. The four
-"detail" lines are still placeholder illustrations.
+"detail" illustrations went with the phase detail sections in v74.
 > Card 1: Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes
 > Card 2: Data lineage view tracing each number in the model back to the data series it comes from
 > Card 3: Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on
 > Card 4: Scenario dashboard showing every indicator in the model under a chosen funding scenario
-> Phase 1 detail: Program staff and an evaluator mapping a logic model together
-> Phase 2 detail: Illustration of a structured data collection system
-> Phase 3 detail: Illustration of an analysis with confidence intervals plotted
-> Phase 4 detail: Illustration of an indicator dashboard tracked over time
 
 **ID: `ALT.home_phases`**
 Context: New in v27. The three phase-card screenshots on the home page, which are the same
