@@ -3,7 +3,14 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 72 · **Updated:** 18 October 2026 · **Covers:** 8 pages
+**Version:** 73 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+
+> **What changed in v73.** The Evaluation Pipeline app (`evaluationguide.netlify.app`) is now
+> embedded on Evaluation Process, at your request, straight after "Opening the black box" and
+> its four cards, full width. At your request it has no border, and it is as tall as the app,
+> so it blends into the page with no scrollbar of its own; the app's background is the
+> site's. It is a new §D3 with one block, `PROGRAMS.PIPELINE.frame`: the name a screen reader
+> gives the frame. The sections after it are renumbered D4–D8. **No ID changed.**
 
 > **What changed in v72.** Your edit to the home page headline (`HOME.HERO.h1`): the full
 > stop after "context" is now inside the orange accent, so it turns orange with the word. The
@@ -1469,7 +1476,23 @@ Fits: One sentence, ~90 characters; two lines on desktop, up to three on a phone
 > Summary: Findings converted into systems that sustain learning and accountability over time.
 > Link: Learn more
 
-## D3. How the program runs
+## D3. The pipeline app
+
+**New in v73.** The Evaluation Pipeline app, live from `evaluationguide.netlify.app`, the
+full width of the page and as tall as the app itself, straight after the overview cards and
+before "How the program runs". The app tells the page its height, so the frame grows and
+shrinks with it (about 2,700px on a laptop, 3,500px on a phone, more while a step's card is
+open) and never scrolls inside itself; with JavaScript off it falls back to 720px. Unlike the Demo page (§F2) it has no border, shadow or rounded corners: the
+app's background is the page's own, so it reads as part of the page rather than a framed
+window. Nothing inside it is site copy, and there is no small print or "open in a new tab" link
+under it.
+
+**ID: `PROGRAMS.PIPELINE.frame`**
+Context: Not visible: the name a screen reader announces for the embedded app before reading
+the app itself, as `ALT.demo` does on the Demo page. It is the app's own page title.
+> Embedded app: Evaluation Pipeline
+
+## D4. How the program runs
 
 New on 13 September, from the Program Description's sequencing diagram. Text on the left,
 an eight-step timeline on the right. Anchored at `#pilot-sequence` — since v14 both "Our
@@ -1532,7 +1555,7 @@ Fits: ~130 characters per sentence, or the timeline runs taller than the text be
 > Name: Onward support
 > Detail: Continue on a discounted monitoring retainer or take a written implementation guide. Our internal research, analysis and networks remain available.
 
-## D4. Phase 1 — detail
+## D5. Phase 1 — detail
 
 Illustration left, text right. *(Was `PROGRAMS.FIELD.*`.)*
 
@@ -1565,7 +1588,7 @@ one practitioners react to; keep it.
 > **Evaluability assessment.** A structured judgment of whether the program is ready to be evaluated and how.
 > **Evaluation questions and indicator framework.** A prioritized set of questions, each matched to measurable constructs, marking what is in and out of scope.
 
-## D5. Phase 2 — detail
+## D6. Phase 2 — detail
 
 Illustration right, text left (mirrored). *(Was `PROGRAMS.COMMONS.*`.)*
 
@@ -1593,7 +1616,7 @@ of the program sequence ("Audit") still makes the second point.
 > **Data management system.** Storage, linkage, backup, security and retention—set up alongside the program team, with the training to maintain it.
 > **Data quality plan.** Standing completeness, validity, consistency and timeliness checks: who runs them, how often, and what each problem triggers.
 
-## D6. Phase 3 — detail
+## D7. Phase 3 — detail
 
 *(Was `PROGRAMS.PRACTICE.*`.)*
 
@@ -1624,7 +1647,7 @@ non-experimental evaluation", came off the contribution and attribution entry in
 > **Evidence strength summary.** One non-technical page on what the evidence shows, at what confidence, with what caveats.
 > **Integrated findings report.** The master document: executive summary, full methods, findings by question, implications for improvement, and limitations.
 
-## D7. Phase 4 — detail
+## D8. Phase 4 — detail
 
 New section in v3 — the deck's pipeline has four phases where the site had three
 workstreams.

@@ -182,6 +182,24 @@
       .catch(function () { /* keep the links in the markup */ });
   }
 
+  /* ---- Embedded apps that report their own height ---------------------- */
+  // The Evaluation Pipeline app (Evaluation Process) posts
+  // { type: 'evaluation-timeline:resize', height } whenever its content changes
+  // size, including when a step's card opens. Match the frame to it so the app
+  // never scrolls inside itself. Without JS the frame keeps the CSS height.
+  var autoFrames = document.querySelectorAll('iframe[data-autoheight]');
+  if (autoFrames.length) {
+    window.addEventListener('message', function (e) {
+      var data = e.data;
+      if (!data || data.type !== 'evaluation-timeline:resize' || !(data.height > 0)) return;
+      autoFrames.forEach(function (frame) {
+        if (frame.contentWindow === e.source && new URL(frame.src).origin === e.origin) {
+          frame.style.height = Math.ceil(data.height) + 'px';
+        }
+      });
+    });
+  }
+
   /* ---- Current year in footer ------------------------------------------ */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
