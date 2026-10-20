@@ -3,7 +3,14 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 76 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+**Version:** 77 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+
+> **What changed in v77.** Evaluation Process, at your request: more space between the end of
+> the "How the program runs" text and the Evaluation Pipeline app: 96px, the same as the space
+> at the top of the section. No wording changed. **No ID changed.** The
+> app itself now shows the program journey (Intake through Onward support, Graduation
+> included), so "until graduation" in the paragraph above it is explained again. I updated the
+> notes in §D3 that said otherwise.
 
 > **What changed in v76.** About, at your request: the opening of "The evidence base" is now
 > stacked and centred, like "How the program runs" on Evaluation Process. The eyebrow and "An
@@ -1518,11 +1525,13 @@ here (they went to `#flagship`, on the removed "Two ways in" section).
 
 The app, **new in v73**, is live from `evaluationguide.netlify.app`, the full width of the
 page and as tall as the app itself. The app tells the page its height, so the frame grows and
-shrinks with it (about 2,700px on a laptop, 3,500px on a phone, more while a step's card is
-open) and never scrolls inside itself; with JavaScript off it falls back to 720px. Unlike the
+shrinks with it (over 3,000px on a laptop, more on a phone and while a step's card is open)
+and never scrolls inside itself; with JavaScript off it falls back to 720px. Unlike the
 Demo page (§F2) it has no border, shadow or rounded corners: the app's background is the
 page's own, so it reads as part of the page rather than a framed window. Nothing inside it is
-site copy, and there is no small print or "open in a new tab" link under it.
+site copy, and there is no small print or "open in a new tab" link under it. Since v77 the
+text above the app leaves 96px before the app's content, the same as the space at the top of
+the section.
 
 **ID: `PROGRAMS.SEQUENCE.eyebrow`**
 > Our program
@@ -1536,9 +1545,9 @@ the most compressed statement of what makes the program different. Keep it verba
 Context: Two paragraphs. The first says what the implementation support professional does
 and what your staff co-create. The second explains the loop: written for the timeline that
 stood beside it until v75, it now introduces the app straight below, whose own title
-("Evaluation Pipeline") follows it. "Recursion and integration" and "graduation" were the
-names of steps 06 and 07 of that timeline; the app mentions the first ("Recursion &
-Integration", on its last step) but not the second.
+follows it. "Recursion and integration" and "graduation" were the names of steps 06 and 07
+of that timeline; since 20 October the app shows that program journey itself, Graduation
+included, in a column beside the pipeline.
 > The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a culture of inquiry within the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them.
 > The sequence runs in one direction until it reaches recursion and integration, and then it loops: findings become program changes, outcomes feed the next round of evaluation, and the cycle repeats until graduation.
 
