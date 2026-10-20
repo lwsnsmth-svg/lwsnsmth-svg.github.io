@@ -3,7 +3,17 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 73 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+**Version:** 74 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+
+> **What changed in v74.** The four phase detail sections on Evaluation Process (Evaluative
+> Foundation; Data Architecture; Analytics & Inference; Monitoring, Learning & Reporting) are
+> gone, at your request: the Evaluation Pipeline app above them now explains each phase. That
+> removed §D5–§D8 (`PROGRAMS.PHASE1.*` to `PROGRAMS.PHASE4.*`) and their four illustrations
+> (the "Phase N detail" lines of `ALT.programs`). The four overview cards lost their "Learn
+> more" buttons (`PROGRAMS.CARDS.1`–`4`, the `Link:` line), which only scrolled down to those
+> sections. The page now ends on "How the program runs". The removed copy is in the snapshot
+> `~/Desktop/Ascent Website archive/2026-10-20 before phase details removed/`, and in git.
+> **No remaining ID changed.**
 
 > **What changed in v73.** The Evaluation Pipeline app (`evaluationguide.netlify.app`) is now
 > embedded on Evaluation Process, at your request, straight after "Opening the black box" and
@@ -1426,7 +1436,8 @@ in nine words — it says you can buy one piece without buying the programme.
 
 ## D2. Overview cards
 
-Four cards, two by two, each linking down to its detail section. These summaries are
+Four cards, two by two. Since v74 they have no "Learn more" buttons: the phase detail
+sections they linked down to are gone (the app in §D3 covers the phases). These summaries are
 **shorter than the home page versions** on purpose. Since v13 each card shows a
 screenshot of a working tool in place of its placeholder illustration: Phase 1 a logic
 model, Phase 2 a data-lineage view, Phase 3 a single-indicator analysis, Phase 4 a
@@ -1456,25 +1467,21 @@ Fits: One sentence, ~90 characters; two lines on desktop, up to three on a phone
 > Tag: Phase 01
 > Name: Evaluative Foundation
 > Summary: The conceptual infrastructure that makes rigorous evaluation possible: stakeholder map, logic model, theory of change.
-> Link: Learn more
 
 **ID: `PROGRAMS.CARDS.2`**
 > Tag: Phase 02
 > Name: Data Architecture
 > Summary: A practical system for collecting and managing data while preserving the needs of stakeholder communities.
-> Link: Learn more
 
 **ID: `PROGRAMS.CARDS.3`**
 > Tag: Phase 03
 > Name: Analytics & Inference
 > Summary: Collected data turned into defensible evidence; outcomes here inform change recommendations and help scope further inquiry.
-> Link: Learn more
 
 **ID: `PROGRAMS.CARDS.4`**
 > Tag: Phase 04
 > Name: Monitoring, Learning & Reporting
 > Summary: Findings converted into systems that sustain learning and accountability over time.
-> Link: Learn more
 
 ## D3. The pipeline app
 
@@ -1554,126 +1561,6 @@ Fits: ~130 characters per sentence, or the timeline runs taller than the text be
 > Step: Step 08
 > Name: Onward support
 > Detail: Continue on a discounted monitoring retainer or take a written implementation guide. Our internal research, analysis and networks remain available.
-
-## D5. Phase 1 — detail
-
-Illustration left, text right. *(Was `PROGRAMS.FIELD.*`.)*
-
-**ID: `PROGRAMS.PHASE1.tag`**
-> Phase 01
-
-**ID: `PROGRAMS.PHASE1.h2`**
-> Evaluative Foundation
-
-**ID: `PROGRAMS.PHASE1.lead`**
-Context: Large grey line. All four phase leads are questions, which is what makes the
-pipeline legible to someone who doesn't know the vocabulary.
-Fits: One line ideally.
-> What is this program trying to do, for whom, and why do we believe it will work?
-
-**ID: `PROGRAMS.PHASE1.body`**
-Context: Two sentences: what the phase builds, then what an evaluation without it would
-lack.
-> This phase builds the conceptual infrastructure that makes rigorous evaluation possible. Without it, data collection has no direction and the evaluation would lack clarity.
-
-**ID: `PROGRAMS.PHASE1.list`**
-Context: Six deliverables, bold lead-in then the detail. The logic model entry's last
-clause — built with your staff, so it reflects reality rather than aspiration — is the
-one practitioners react to; keep it.
-> Subheading: Phase 1 outputs
-> **Stakeholder map.** Everyone with a stake in the program, distinguishing those whose input shapes the evaluation from those whose outcomes are its subject.
-> **Program description and context brief.** What the program does, for whom, and at what scale—set against its evidence base, policy landscape, and peer field.
-> **Logic model.** The program's causal architecture from inputs to long-term outcomes, built with the organization's staff so it reflects implementation reality rather than aspirational design.
-> **Theory of change.** Evidentiary and assumptive claims mapped along the logic model's pathways. This scopes the continued evaluation as it isolates load-bearing assumptions and evidentiary gaps to be filled.
-> **Evaluability assessment.** A structured judgment of whether the program is ready to be evaluated and how.
-> **Evaluation questions and indicator framework.** A prioritized set of questions, each matched to measurable constructs, marking what is in and out of scope.
-
-## D6. Phase 2 — detail
-
-Illustration right, text left (mirrored). *(Was `PROGRAMS.COMMONS.*`.)*
-
-**ID: `PROGRAMS.PHASE2.tag`**
-> Phase 02
-
-**ID: `PROGRAMS.PHASE2.h2`**
-> Data Architecture
-
-**ID: `PROGRAMS.PHASE2.lead`**
-> What data do we need, from whom, and how do we ensure its quality?
-
-**ID: `PROGRAMS.PHASE2.body`**
-Context: One sentence since v55. The warning that this is the heaviest phase, and the note
-that an organization with infrastructure in place starts with a data audit, came off; step 03
-of the program sequence ("Audit") still makes the second point.
-> This phase turns evaluative questions into a practical, defensible system for collecting, managing and ensuring the quality of evidence.
-
-**ID: `PROGRAMS.PHASE2.list`**
-> Subheading: Phase 2 outputs
-> **Data needs assessment.** Every indicator mapped to a source and categorized according to its collection feasibility.
-> **Measurement selection report.** For each indicator, the measure chosen, the rationale, the population, and the timing.
-> **Instrument suite.** Designed and adapted instruments, with novel ones pilot tested and reviewed by community members before field deployment.
-> **Collection protocol.** Administration, consent and assent, data entry, confidentiality, and how missing data and non-response are handled.
-> **Data management system.** Storage, linkage, backup, security and retention—set up alongside the program team, with the training to maintain it.
-> **Data quality plan.** Standing completeness, validity, consistency and timeliness checks: who runs them, how often, and what each problem triggers.
-
-## D7. Phase 3 — detail
-
-*(Was `PROGRAMS.PRACTICE.*`.)*
-
-**ID: `PROGRAMS.PHASE3.tag`**
-> Phase 03
-
-**ID: `PROGRAMS.PHASE3.h2`**
-> Analytics & Inference
-
-**ID: `PROGRAMS.PHASE3.lead`**
-> What do the data tell us, with what confidence, about whether and how the program works?
-
-**ID: `PROGRAMS.PHASE3.body`**
-Context: The second sentence reflects the brief's delivery model — analysis offsite,
-findings returned through the embedded supporter — and turns it into a reason to care. The
-third, on organizations that arrive with data already collected, came off in v55.
-> This phase turns collected data into defensible evidence. The final analysis runs offsite; the findings come back to the program team through the implementation support professional rather than as a report in an inbox.
-
-**ID: `PROGRAMS.PHASE3.list`**
-Context: "Specified before results are examined" is the clause a methodologically literate
-funder will look for. It is not padding. (The second one, "required for every
-non-experimental evaluation", came off the contribution and attribution entry in v61.)
-> Subheading: Phase 3 outputs
-> **Design and analysis specification.** Counterfactual strategy, unit of analysis, level of inference, subgroup analyses planned in advance, and threats to validity with mitigations—all pre-specified.
-> **Quantitative findings memo.** If quantitative methods are used, a brief on their findings with plain-language interpretation alongside the technical specification.
-> **Qualitative findings memo.** If qualitative methods are used, a brief on their findings alongside methodology and any contextual concerns.
-> **Contribution and attribution analysis.** What else was operating, how much of program outcomes can be linked to program interventions, whether the pattern of findings fits the theory of change, and what alternative explanations remain.
-> **Evidence strength summary.** One non-technical page on what the evidence shows, at what confidence, with what caveats.
-> **Integrated findings report.** The master document: executive summary, full methods, findings by question, implications for improvement, and limitations.
-
-## D8. Phase 4 — detail
-
-New section in v3 — the deck's pipeline has four phases where the site had three
-workstreams.
-
-**ID: `PROGRAMS.PHASE4.tag`**
-> Phase 04
-
-**ID: `PROGRAMS.PHASE4.h2`**
-> Monitoring, Learning & Reporting
-
-**ID: `PROGRAMS.PHASE4.lead`**
-> How do we know the program keeps working, and how do we tell people what we know?
-
-**ID: `PROGRAMS.PHASE4.body`**
-Context: The last sentence is a correction from the Program Description: for program
-participants, Phase 4 is not part of the two-year core. It starts at graduation, by
-retainer or by guide.
-> This phase builds systems that sustain organizational learning and external accountability over time. Phase 4 begins at graduation: continue with us on a discounted retainer, or take a written implementation guide and run it independently.
-
-**ID: `PROGRAMS.PHASE4.list`**
-> Subheading: Phase 4 outputs
-> **Learning agenda.** The question(s) the organization intends to investigate perpetually, sorted by what routine monitoring can answer, what needs a new evaluation, and what lies out of MEL scope.
-> **Monitoring and evaluation plan.** Which indicators are tracked, how often, from what sources, against what targets.
-> **Indicator dashboard.** Use our app to monitor program metrics, or have an external dashboard created with periodic updates.
-> **Reporting suite.** Funder reports, board dashboards, operational reports, impact summaries, and policy briefs translating evidence into implications for design, policy or funding.
-> **Dissemination plan.** How findings reach peers, funders, policymakers and the communities whose members were the subjects of the evaluation.
 
 ---
 # E. Our Model
@@ -1973,15 +1860,11 @@ stock photo of people at a whiteboard.
 Context: Cards 1–4 describe real screenshots since v13, so they say what the image shows
 rather than naming an illustration. The sample data in the screenshots (a mentoring and
 employment program) is not described — it is example data, not a client result. The four
-"detail" lines are still placeholder illustrations.
+"detail" illustrations went with the phase detail sections in v74.
 > Card 1: Logic model linking a program's inputs and activities through its outputs to short-, medium- and long-term outcomes
 > Card 2: Data lineage view tracing each number in the model back to the data series it comes from
 > Card 3: Analysis of one program activity: its trend over time, what moves it, its sensitivity to inputs and the assumptions it rests on
 > Card 4: Scenario dashboard showing every indicator in the model under a chosen funding scenario
-> Phase 1 detail: Program staff and an evaluator mapping a logic model together
-> Phase 2 detail: Illustration of a structured data collection system
-> Phase 3 detail: Illustration of an analysis with confidence intervals plotted
-> Phase 4 detail: Illustration of an indicator dashboard tracked over time
 
 **ID: `ALT.home_phases`**
 Context: New in v27. The three phase-card screenshots on the home page, which are the same
