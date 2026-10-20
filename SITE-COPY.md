@@ -3,7 +3,21 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 74 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+**Version:** 75 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+
+> **What changed in v75.** Evaluation Process, at your request: the eight-step timeline in "How
+> the program runs" (Intake through Onward support, `PROGRAMS.SEQUENCE.steps`) is gone, and all
+> of that section's text (eyebrow, heading, lead and both paragraphs) now sits directly above
+> the Evaluation Pipeline app, in one section with it. So §D3 (the app) and §D4 (the text) are
+> one section, §D3 "How the program runs"; the `#pilot-sequence` anchor the home page links to
+> moved with the text. The text is now centred. Its lead ("Reports and communication support
+> are deliverables…", `PROGRAMS.SEQUENCE.lead`) is gone, also at your request; the rest of the
+> wording is unchanged. The removed timeline and lead are in the snapshot
+> `~/Desktop/Ascent Website archive/2026-10-20 before program timeline removed/`, and in git.
+> **No remaining ID changed.**
+>
+> Worth a look: the last paragraph ends "until graduation", but nothing on the page says what
+> graduation is any more — it was step 07 of the timeline. The app's text doesn't use the word.
 
 > **What changed in v74.** The four phase detail sections on Evaluation Process (Evaluative
 > Foundation; Data Architecture; Analytics & Inference; Monitoring, Learning & Reporting) are
@@ -1483,28 +1497,22 @@ Fits: One sentence, ~90 characters; two lines on desktop, up to three on a phone
 > Name: Monitoring, Learning & Reporting
 > Summary: Findings converted into systems that sustain learning and accountability over time.
 
-## D3. The pipeline app
+## D3. How the program runs
 
-**New in v73.** The Evaluation Pipeline app, live from `evaluationguide.netlify.app`, the
-full width of the page and as tall as the app itself, straight after the overview cards and
-before "How the program runs". The app tells the page its height, so the frame grows and
+New on 13 September, from the Program Description's sequencing diagram. Since v75 one section,
+text above the Evaluation Pipeline app: the eight-step timeline that stood beside the text is
+gone, and the app below now shows the sequence. The text is centred over the app, as "Opening
+the black box" is over the cards; the long paragraphs read more slowly centred than set left.
+Anchored at `#pilot-sequence` — since v14 both "Our program" buttons on the home page land
+here (they went to `#flagship`, on the removed "Two ways in" section).
+
+The app, **new in v73**, is live from `evaluationguide.netlify.app`, the full width of the
+page and as tall as the app itself. The app tells the page its height, so the frame grows and
 shrinks with it (about 2,700px on a laptop, 3,500px on a phone, more while a step's card is
-open) and never scrolls inside itself; with JavaScript off it falls back to 720px. Unlike the Demo page (§F2) it has no border, shadow or rounded corners: the
-app's background is the page's own, so it reads as part of the page rather than a framed
-window. Nothing inside it is site copy, and there is no small print or "open in a new tab" link
-under it.
-
-**ID: `PROGRAMS.PIPELINE.frame`**
-Context: Not visible: the name a screen reader announces for the embedded app before reading
-the app itself, as `ALT.demo` does on the Demo page. It is the app's own page title.
-> Embedded app: Evaluation Pipeline
-
-## D4. How the program runs
-
-New on 13 September, from the Program Description's sequencing diagram. Text on the left,
-an eight-step timeline on the right. Anchored at `#pilot-sequence` — since v14 both "Our
-program" buttons on the home page land here (they went to `#flagship`, on the removed
-"Two ways in" section).
+open) and never scrolls inside itself; with JavaScript off it falls back to 720px. Unlike the
+Demo page (§F2) it has no border, shadow or rounded corners: the app's background is the
+page's own, so it reads as part of the page rather than a framed window. Nothing inside it is
+site copy, and there is no small print or "open in a new tab" link under it.
 
 **ID: `PROGRAMS.SEQUENCE.eyebrow`**
 > Our program
@@ -1514,53 +1522,20 @@ Context: "The process is the program" is the Program Description's own headline 
 the most compressed statement of what makes the program different. Keep it verbatim.
 > The process is the program.
 
-**ID: `PROGRAMS.SEQUENCE.lead`**
-Context: The phrase "central to both the ethics of the work and whether it achieves
-anything" says participation is a methodological requirement, not a courtesy.
-> Reports and communication support are deliverables, but the program team's active part in pursuing inquiry, scoping analysis and adopting new methods is central to the process.
-
 **ID: `PROGRAMS.SEQUENCE.body`**
 Context: Two paragraphs. The first says what the implementation support professional does
-and what your staff co-create. The second explains the loop, which the timeline on the
-right can only show as a straight line.
+and what your staff co-create. The second explains the loop: written for the timeline that
+stood beside it until v75, it now introduces the app straight below, whose own title
+("Evaluation Pipeline") follows it. "Recursion and integration" and "graduation" were the
+names of steps 06 and 07 of that timeline; the app mentions the first ("Recursion &
+Integration", on its last step) but not the second.
 > The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a culture of inquiry within the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them.
 > The sequence runs in one direction until it reaches recursion and integration, and then it loops: findings become program changes, outcomes feed the next round of evaluation, and the cycle repeats until graduation.
 
-**ID: `PROGRAMS.SEQUENCE.steps`**
-Context: Eight timeline entries. Each = step label, name, one sentence. The names follow
-the brief's diagram except "Comms.", written out. Add or remove freely — the line redraws.
-Fits: ~130 characters per sentence, or the timeline runs taller than the text beside it.
-> Step: Step 01
-> Name: Intake
-> Detail: A scoping conversation and intake assessment establish whether the program is a fit and what existing systems can be built upon.
->
-> Step: Step 02
-> Name: Embed
-> Detail: The implementation support professional joins the program team; goals and timelines are agreed together.
->
-> Step: Step 03
-> Name: Audit
-> Detail: A structured review of the frameworks, data and systems already in place, so nothing that works gets rebuilt.
->
-> Step: Step 04
-> Name: Evaluation
-> Detail: Phases 1 to 3 of the pipeline, co-created with the organization's staff.
->
-> Step: Step 05
-> Name: Communication
-> Detail: What the evaluation found, turned into material for the community, the board and funders.
->
-> Step: Step 06
-> Name: Recursion and integration
-> Detail: Traces the underlying links that turn inputs to outcomes: findings become program changes, outcomes feed the next round of evaluation, and the loop cycles.
->
-> Step: Step 07
-> Name: Graduation
-> Detail: After approximately two years, embedded support draws back under a written handoff plan agreed with the program team.
->
-> Step: Step 08
-> Name: Onward support
-> Detail: Continue on a discounted monitoring retainer or take a written implementation guide. Our internal research, analysis and networks remain available.
+**ID: `PROGRAMS.PIPELINE.frame`**
+Context: Not visible: the name a screen reader announces for the embedded app before reading
+the app itself, as `ALT.demo` does on the Demo page. It is the app's own page title.
+> Embedded app: Evaluation Pipeline
 
 ---
 # E. Our Model
