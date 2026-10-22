@@ -3,7 +3,20 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 78 · **Updated:** 21 October 2026 · **Covers:** 8 pages
+**Version:** 79 · **Updated:** 21 October 2026 · **Covers:** 8 pages
+
+> **What changed in v79.** Our Model is now unlisted, at your request: nothing on the site
+> links to it, so a visitor reaches it only from a link you give them. Removed: "Our Model"
+> from the main navigation on every page (`GLOBAL.NAV.items`, now five items), the
+> "How the model works" link under the home page's "Ascent, in brief" (`HOME.BRIEF.links`,
+> now just the "Our program" button), and the Our Model shortcut card on the 404 page
+> (`NOTFOUND.cards`, now one card). The page itself is unchanged except that it carries a
+> `noindex, nofollow` tag, so search engines don't list it either, the way the editor demo
+> (§K) is kept out. **No ID changed.**
+>
+> Worth a look: the page's own nav has no "Our Model" item, so a visitor who lands there
+> sees no highlighted tab; they get back through the "Home" breadcrumb or the nav. The
+> page's closing button, "Explore the pipeline", still goes to Evaluation Process.
 
 > **What changed in v78.** Our Model, at your request: "Impact logic" now comes before "The
 > structure". The page runs banner, Impact logic, The structure, closing band. The two
@@ -1010,15 +1023,14 @@ shrinking again.
 
 **ID: `GLOBAL.NAV.items`**
 Context: Horizontal on desktop, a drop-down panel on mobile. Order is left to right.
-The page files are still named `programs.html` and `get-involved.html` internally —
-only the visible labels changed, so no links break. "Demo" (v16) goes to `demo.html` and
+The page file is still named `programs.html` internally — only the visible label changed,
+so no links break. "Demo" (v16) goes to `demo.html` and
 "Download" (v63) to `download.html`.
 Fits: 1–2 words each. Six items is about the ceiling before it crowds the logo, and
-the nav now has six.
+the nav now has five. Our Model is deliberately not in it (v79): that page is unlisted.
 > Home
 > About
 > Evaluation Process
-> Our Model
 > Demo
 > Download
 
@@ -1253,9 +1265,9 @@ sit mid-page. Plain names first; the full detail is on Evaluation Process.
 > **Monitoring, learning and reporting.** Ensuring the program continues to work while communicating impact to stakeholders and incorporating policy and other contextual factors.
 
 **ID: `HOME.BRIEF.links`**
-Context: A solid button then a text link with an arrow.
+Context: A solid button. A text link after it, "How the model works", went to Our Model
+and came off in v79 when that page became unlisted.
 > Our program
-> How the model works
 
 ---
 # C. About
@@ -1572,6 +1584,8 @@ the app itself, as `ALT.demo` does on the Demo page. It is the app's own page ti
 
 `get-involved.html` — the page that explains why the price is possible. Deck Page 2.
 (File name is still `get-involved.html`; the visible label is "Our Model".)
+**Unlisted since v79:** nothing on the site links here and it carries `noindex, nofollow`.
+Reached only from a link you give out.
 
 ## E1. Page banner
 
@@ -1777,10 +1791,10 @@ Context: One button since v9; "Tell us what broke" went to Contact.
 > Back to home
 
 **ID: `NOTFOUND.cards`**
-Context: Two shortcut cards so the page is useful rather than just apologetic. The
-third, to the Fund page, came off in v6; the grid is two columns now.
+Context: One shortcut card so the page is useful rather than just apologetic. The
+third, to the Fund page, came off in v6; the second, to Our Model ("Why evaluation costs
+what it costs, and what we changed."), came off in v79 when that page became unlisted.
 > Heading: Evaluation Process — The four-phase evaluation pipeline.
-> Heading: Our Model — Why evaluation costs what it costs, and what we changed.
 
 ---
 

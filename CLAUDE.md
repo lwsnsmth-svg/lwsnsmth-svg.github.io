@@ -4,8 +4,8 @@ Static marketing site for a nonprofit. Plain HTML, one stylesheet, two scripts.
 **No build step and no framework** — the `.html` files are what ship.
 
 ```
-index · about · programs · get-involved · demo · download · 404   (7 pages)
-editor_demo                                           (unlisted — link to it from nowhere)
+index · about · programs · demo · download · 404                (6 pages)
+get-involved ("Our Model") · editor_demo   (unlisted — link to them from nowhere)
 css/styles.css     all styling; design tokens at the top drive everything
 js/main.js         nav, theme, counters, accordion, newest-release download links
 js/theme-init.js   sets theme before first paint; also adds html.js
@@ -155,7 +155,9 @@ the four phase cards on Programs & Services use real tool screenshots from `asse
 The Demo page embeds that same tool (the Logic Model Mapper) live, in an iframe from
 Netlify; nothing inside the frame is site copy. The unlisted `editor_demo.html` frames
 the tool's *editor* build from `/editor/` on that same host — a separate bundle, so the
-Demo page stays view-only. Never link to it, list it in a sitemap, or put it in `robots.txt`. The site
+Demo page stays view-only. Never link to it, list it in a sitemap, or put it in `robots.txt`.
+`get-involved.html` ("Our Model") is unlisted the same way since v79: no nav item, no
+links from other pages, `noindex, nofollow`. The site
 describes a hypothetical service set; it carries no quality assurance or governance detail.
 
 There are no forms, and no way to contact Ascent: the Contact page went in v9 of the
