@@ -19,7 +19,7 @@ see `SITE-COPY.md`.
 ├── index.html          Homepage — hero, stats, problem, pipeline, standards, CTA
 ├── about.html          Mission and method, evidence timeline
 ├── programs.html       Two ways in + four phase detail sections + engagement structures
-├── get-involved.html   "Our Model" — delivery stack, evidence base, model benefits, roles
+├── get-involved.html   "Our Model" (unlisted) — delivery stack, evidence base, model benefits, roles
 ├── demo.html           Live demo of the Logic Model Mapper, embedded from Netlify — the
 │                       one page that loads something from another host
 ├── editor_demo.html    Unlisted: the same demo with editing switched on, reached only by
@@ -237,6 +237,12 @@ workflow.
 ## Things that are deliberate
 
 A few choices look like they could be simplified but shouldn't be:
+
+- **`get-involved.html` ("Our Model") is linked from nowhere.** It is meant to be reached
+  only from a link the owner hands out, so it is not in the nav, the footer, the home page
+  or the 404 cards, and it carries `noindex, nofollow`. Same rules as `editor_demo.html`
+  below: no sitemap, nothing in `robots.txt`. Don't add a link to it "to fix" the missing
+  nav item.
 
 - **`editor_demo.html` is linked from nowhere.** It is the Demo page's app with editing
   switched on, meant to be reached only by typing `/editor_demo`. It carries
