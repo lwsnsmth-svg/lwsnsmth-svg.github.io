@@ -3,7 +3,18 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 77 · **Updated:** 20 October 2026 · **Covers:** 8 pages
+**Version:** 78 · **Updated:** 21 October 2026 · **Covers:** 8 pages
+
+> **What changed in v78.** Our Model, at your request: "Impact logic" now comes before "The
+> structure". The page runs banner, Impact logic, The structure, closing band. The two
+> sections swapped places whole, so no wording changed; the alternating background tint
+> swapped with them (the first section is plain, the second tinted). Headings renumbered:
+> Impact logic is §E2 (it was the odd "E2b"), The structure §E3, the closing band §E4.
+> **No ID changed.**
+>
+> Worth a look: the structure section's heading ("Finding affordability in better
+> coordination.") used to follow straight on from the banner's promise of an explanation;
+> it now follows the impact cascade instead.
 
 > **What changed in v77.** Evaluation Process, at your request: more space between the end of
 > the "How the program runs" text and the Evaluation Pipeline app: 96px, the same as the space
@@ -1572,48 +1583,7 @@ Context: Six words of problem, four of claim. It promises an explanation rather 
 pitch, which is the right promise for the reader who has just been told the price.
 > Everything special about the Ascent model, and how it can deliver real change in the mission-oriented sector.
 
-## E2. The structure
-
-*(Was `INVOLVED.ROLES.*` — six collaboration roles.)*
-
-**ID: `INVOLVED.STACK.intro`**
-Context: The heading's claim is the reason the model works: better coordination is what
-makes the service affordable.
-> Eyebrow: The structure
-> Heading: Finding affordability in better coordination.
-
-**ID: `INVOLVED.STACK.layer1`**
-Context: Four cards, two by two, in the order the deck's delivery stack runs — outside
-in, ending with you. Each is a heading and a description; the bold role line came off in v44.
-> Heading: Outsourced expertise
-> Commitment: 
-> Description: Specialists with deep methodological or domain knowledge, available when a project needs them and not carried as overhead when it doesn't.
-
-**ID: `INVOLVED.STACK.layer2`**
-> Heading: In-house analytics
-> Commitment: 
-> Description: The most common technical work, sourced in-house: data analysis, instrument design, program design and measurement.
-
-**ID: `INVOLVED.STACK.layer3`**
-Context: Orange icon — this is the layer the whole model turns on, and the one the
-sector doesn't currently staff.
-> Heading: Implementation support
-> Commitment: 
-> Description: The primary liaison between analysts and the program team. Implementation support professionals translate findings into actionable changes and shepherd them through the organization, ensuring that changes redound to the benefit of participants.
-
-**ID: `INVOLVED.STACK.layer4`**
-> Heading: Partner Programs
-> Commitment: 
-> Description: Implementation staff listen to an organization's needs and shepherd feasible change within it. Program teams co-create the evaluation design and inform its application. Here, the relationship is as important as the analysis.
-
-**ID: `INVOLVED.STACK.note`**
-Context: Orange box under the cards. The last sentence is a claim about the field, not
-about Ascent, and it is checkable — which is why it can be made this bluntly. The
-second-to-last names the published guidance the role is built on, as the Program
-Description does; if you want it linked, send me the URLs you use for the two documents.
-> An implementation support professional's expertise is the holistic appraisal of the organization's and community's needs and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources and practice context. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
-
-## E2b. Impact logic
+## E2. Impact logic
 
 New on 13 September, from the Program Description's impact-stream diagram and its
 interventions table. Four cards, then an orange box (the table came off in v38). Anchored at
@@ -1661,7 +1631,48 @@ in plain words rather than by name). The second sentence says why existing model
 connection to outcomes; the last is what makes it matter to a funder.
 > **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Existing models, due to their reliance on time-determined fees and/or discrete deliverables, essentially absolve themselves of accountability for their clients' outcomes by dissolving their connection to the work on the ground. Recursion and integration explicitly does the opposite: qualitative analysis traces each evaluation and program input through to its effect on downstream outcomes. This keeps our practice accountable to outcomes rather than to deliverables.
 
-## E3. Closing call to action
+## E3. The structure
+
+*(Was `INVOLVED.ROLES.*` — six collaboration roles.)*
+
+**ID: `INVOLVED.STACK.intro`**
+Context: The heading's claim is the reason the model works: better coordination is what
+makes the service affordable.
+> Eyebrow: The structure
+> Heading: Finding affordability in better coordination.
+
+**ID: `INVOLVED.STACK.layer1`**
+Context: Four cards, two by two, in the order the deck's delivery stack runs — outside
+in, ending with you. Each is a heading and a description; the bold role line came off in v44.
+> Heading: Outsourced expertise
+> Commitment: 
+> Description: Specialists with deep methodological or domain knowledge, available when a project needs them and not carried as overhead when it doesn't.
+
+**ID: `INVOLVED.STACK.layer2`**
+> Heading: In-house analytics
+> Commitment: 
+> Description: The most common technical work, sourced in-house: data analysis, instrument design, program design and measurement.
+
+**ID: `INVOLVED.STACK.layer3`**
+Context: Orange icon — this is the layer the whole model turns on, and the one the
+sector doesn't currently staff.
+> Heading: Implementation support
+> Commitment: 
+> Description: The primary liaison between analysts and the program team. Implementation support professionals translate findings into actionable changes and shepherd them through the organization, ensuring that changes redound to the benefit of participants.
+
+**ID: `INVOLVED.STACK.layer4`**
+> Heading: Partner Programs
+> Commitment: 
+> Description: Implementation staff listen to an organization's needs and shepherd feasible change within it. Program teams co-create the evaluation design and inform its application. Here, the relationship is as important as the analysis.
+
+**ID: `INVOLVED.STACK.note`**
+Context: Orange box under the cards. The last sentence is a claim about the field, not
+about Ascent, and it is checkable — which is why it can be made this bluntly. The
+second-to-last names the published guidance the role is built on, as the Program
+Description does; if you want it linked, send me the URLs you use for the two documents.
+> An implementation support professional's expertise is the holistic appraisal of the organization's and community's needs and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources and practice context. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
+
+## E4. Closing call to action
 
 **ID: `INVOLVED.CTA`**
 Context: A model page has to end by admitting that the model is not the product.
