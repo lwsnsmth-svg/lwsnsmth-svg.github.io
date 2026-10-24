@@ -182,7 +182,7 @@ change shape, update the `data-installer` suffixes. There is deliberately no OS 
 page shows all three installers, because a browser cannot tell an Apple-silicon Mac from
 an Intel one. The page carries no first-launch instructions (the owner removed them in v65);
 the app's README on GitHub explains the macOS and Windows warnings for unsigned builds.
-When a build is signed, change "pre-release build" in the same eyebrow.
+The eyebrow carries only the version (the "pre-release build" tag came off in v80, with v1.0.0).
 
 ## Things that look wrong but are deliberate
 
