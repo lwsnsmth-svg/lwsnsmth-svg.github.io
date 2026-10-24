@@ -3,7 +3,16 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 79 · **Updated:** 21 October 2026 · **Covers:** 8 pages
+**Version:** 80 · **Updated:** 24 October 2026 · **Covers:** 8 pages
+
+> **What changed in v80.** The Download page's eyebrow no longer says "pre-release build",
+> at your request: v1.0.0 is out. It reads "Version 1.0.0" (`DOWNLOAD.CHOOSE.intro`, was
+> "Version 0.0.3 · pre-release build"). The three buttons' fallback links in the page's markup
+> moved to the v1.0.0 installers with it. **No ID changed.**
+>
+> Worth knowing: while the page can reach GitHub, the version still comes from the newest
+> release, so it follows every future release with no edit here. Nothing in the eyebrow is
+> now left to change when a build is signed.
 
 > **What changed in v79.** Our Model is now unlisted, at your request: nothing on the site
 > links to it, so a visitor reaches it only from a link you give them. Removed: "Our Model"
@@ -1982,14 +1991,13 @@ installer from the newest release on GitHub, pre-releases included: the page loo
 release up as it loads, so the buttons follow each new release with no edit.
 
 **ID: `DOWNLOAD.CHOOSE.intro`**
-Context: The eyebrow names the release the buttons download and says it is a pre-release
-build. Since v68 the page fills in the version number from GitHub as it loads, so it
+Context: The eyebrow names the release the buttons download. Since v68 the page fills in the version number from GitHub as it loads, so it
 follows each release on its own. The number written here is the fallback, shown (with
 that release's files behind the buttons) only if GitHub can't be reached; there is no need
-to change it for each release. When a build is signed, change "pre-release build". The lead ("Each button downloads the installer
+to change it for each release. The lead ("Each button downloads the installer
 from our GitHub releases.") came off in v65 and the field is left empty; type one there and
 hand the file back to bring it back.
-> Eyebrow: Version 0.0.3 · pre-release build
+> Eyebrow: Version 1.0.0
 > Heading: Choose your operating system
 > Lead: 
 
