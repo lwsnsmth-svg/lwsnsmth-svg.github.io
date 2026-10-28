@@ -3,7 +3,16 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 81 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+**Version:** 82 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+
+> **What changed in v82.** Your edits to the Download page's three cards
+> (`DOWNLOAD.CHOOSE.cards`), applied word for word. All three requirement lines now open
+> "Requires": the Intel Mac line reads "Requires macOS 12 Monterey or later." (was "Needs…"),
+> and the Windows line "Requires Windows 10 or later." (was "Needs 64-bit Windows 10 or
+> later."). The Apple silicon line already said "Requires". **No ID changed.**
+>
+> Worth knowing: the Windows line no longer says the installer is 64-bit. If it is 64-bit
+> only, someone on 32-bit Windows 10 now gets no warning before they download it.
 
 > **What changed in v81.** Your edits to the home page, applied word for word. The card on the
 > hero image (`HOME.HERO.badge`) is now one sentence, "Unrestricted implementation support and
@@ -2021,22 +2030,23 @@ hand the file back to bring it back.
 
 **ID: `DOWNLOAD.CHOOSE.cards`**
 Context: One card per installer, in this order. Each has the kind of computer, one line on
-what it needs, and the button. The requirements are the README's. The buttons name the
+what it needs, and the button. The requirements come from the app's README; since v82 the
+Windows line no longer says "64-bit". The buttons name the
 computer rather than saying "Download", so the three can be told apart by a screen reader
 that lists the links alone. The buttons sit level however long the line above them is.
 Each button starts the download of its installer from the newest release.
-The Apple silicon line says "Requires" where the other two say "Needs"; kept as you wrote it.
+Since v82 all three lines open "Requires".
 Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a narrow card.
 > Heading: Apple silicon Macs
 > Body: Requires macOS 12 Monterey or later.
 > Button: Download for Apple silicon
 >
 > Heading: Intel Macs
-> Body: Needs macOS 12 Monterey or later.
+> Body: Requires macOS 12 Monterey or later.
 > Button: Download for Intel Macs
 >
 > Heading: Windows
-> Body: Needs 64-bit Windows 10 or later.
+> Body: Requires Windows 10 or later.
 > Button: Download for Windows
 
 ---
