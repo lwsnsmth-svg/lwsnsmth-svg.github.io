@@ -3,7 +3,33 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 80 · **Updated:** 24 October 2026 · **Covers:** 8 pages
+**Version:** 82 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+
+> **What changed in v82.** Your edits to the Download page's three cards
+> (`DOWNLOAD.CHOOSE.cards`), applied word for word. All three requirement lines now open
+> "Requires": the Intel Mac line reads "Requires macOS 12 Monterey or later." (was "Needs…"),
+> and the Windows line "Requires Windows 10 or later." (was "Needs 64-bit Windows 10 or
+> later."). The Apple silicon line already said "Requires". **No ID changed.**
+>
+> Worth knowing: the Windows line no longer says the installer is 64-bit. If it is 64-bit
+> only, someone on 32-bit Windows 10 now gets no warning before they download it.
+
+> **What changed in v81.** Your edits to the home page, applied word for word. The card on the
+> hero image (`HOME.HERO.badge`) is now one sentence, "Unrestricted implementation support and
+> intuitive software make MEL accessible to **every** program", with "every" in orange; it
+> was a big "1.5%" over "of program budget for two years of hands-on evaluation support". The
+> "Evaluation that Goes Further" heading now reads "An evaluation process accountable to
+> outcomes and a platform to monitor it all" (was "…accountable to program outcomes"), and its
+> lead drops its opening sentence ("Static evaluations describe a snapshot of a program.").
+> The line above the "Try the demo" and "Download the app" buttons ("A single app shows the
+> power of our evaluation model.") is gone, since you emptied it; the buttons now follow the
+> tool-view cards directly. The empty `Tagline:` field stays in this document as you left it.
+> **No ID changed.**
+>
+> Worth a look: the new heading runs to three lines on a laptop and four on a phone, past the
+> one or two it was sized for. The 1.5% fee now appears nowhere on the site; the badge was the
+> last place it showed. And "MEL" is the only acronym in the hero and is spelled out nowhere on the site, so
+> a first-time visitor meets it undefined above the fold.
 
 > **What changed in v80.** The Download page's eyebrow no longer says "pre-release build",
 > at your request: v1.0.0 is out. It reads "Version 1.0.0" (`DOWNLOAD.CHOOSE.intro`, was
@@ -1110,18 +1136,19 @@ Fits: 2–4 words.
 > Our program
 
 **ID: `HOME.HERO.badge`**
-Context: Card overlapping the bottom of the hero image. Big number, then a phrase. The one
-concrete fact about Ascent above the fold — everything else in the hero is about approach.
-The number is static text, not a counter.
-Fits: Number plus ~70 characters.
-> 1.5%
-> of program budget for two years of hands-on evaluation support
+Context: Card overlapping the bottom of the hero image. Since v81 one sentence, with no full
+stop, and an orange accent word; until then a big number ("1.5%") and a phrase about the fee.
+It is the hero's one claim about what Ascent gives a program. "MEL" (monitoring, evaluation
+and learning) is not spelled out anywhere on the site.
+Fits: ~100 characters, about two lines on desktop; it covers more of the image on a phone.
+> Unrestricted implementation support and intuitive software make MEL accessible to {{every}} program
 
 ## B2. Evaluation that goes further
 
 A heading, a lead, a row of three phase cards, since v46 a second row of three tool-view
-cards, and, since v41, a tagline with a "Try the demo"
-button (and, since v70, a "Download the app" button beside it). **Rewritten on 1 October (v8)** to replace six
+cards, and, since v41, a "Try the demo"
+button (and, since v70, a "Download the app" button beside it). The tagline above the
+buttons came off in v81. **Rewritten on 1 October (v8)** to replace six
 method cards (`HOME.METHODS.card1`–`card6`); since v40 the two paragraphs that followed the
 cards (`HOME.METHODS.body`) and the "The research behind it" link (`HOME.METHODS.link`) are
 gone too, so the section ended on the cards until v41.
@@ -1130,10 +1157,10 @@ gone too, so the section ended on the cards until v41.
 Context: The lead is the whole old six-card argument in one sentence: whether it made the
 difference (causal inference, attribution), for whom (impact), why (qualitative analysis),
 and how much to trust it (evidence strength). Keep it one sentence.
-Fits: Heading 1–2 lines; lead ~200 characters.
+Fits: Heading 1–2 lines; lead ~200 characters. The v81 heading runs to three lines on desktop.
 > Eyebrow: Evaluation that Goes Further
-> Heading: An evaluation process accountable to program outcomes
-> Lead: Static evaluations describe a snapshot of a program. Ascent's recursive process links program inputs to final outcomes and incorporates practice context to build a dynamic outcomes model.
+> Heading: An evaluation process accountable to outcomes and a platform to monitor it all
+> Lead: Ascent's recursive process links program inputs to final outcomes and incorporates practice context to build a dynamic outcomes model.
 
 **ID: `HOME.METHODS.phases`**
 Context: New in v29 (it began in v27 as `HOME.HERO.phases`, a thumbnail row inside the hero,
@@ -1171,13 +1198,13 @@ column on narrow screens.
 > Description 3: Build the logic model from inputs to long-term outcomes, attach the evidence and assumptions behind each link, and see at a glance which links are evidenced, mixed, untested or refuted.
 
 **ID: `HOME.METHODS.demo`**
-Context: New in v41. Closes the section: one line pointing at the Demo page, and a button to
-it. The phase cards above show screenshots of the tool; this is where a visitor gets to use
-it. The line is a tagline, not a sentence, so it has no full stop. Since v70 a second,
+Context: New in v41. Closes the section: a button to the Demo page. The phase cards above
+show screenshots of the tool; this is where a visitor gets to use it. Since v70 a second,
 outlined button beside the orange one goes to the Download page; the two wrap onto two lines
-on a phone.
+on a phone. The tagline above them (last "A single app shows the power of our evaluation
+model.") came off in v81: the field is empty, and the site shows no line.
 Fits: Tagline ≤ ~70 characters; each button 2–4 words.
-> Tagline: A single app shows the power of our evaluation model.
+> Tagline: 
 > Button: Try the demo
 > Button 2: Download the app
 
@@ -1262,7 +1289,7 @@ Fits: 2 lines.
 
 **ID: `HOME.BRIEF.body`**
 Context: Since v42 a statement of principle rather than the program in facts: the two years,
-the $500,000 ceiling and the 1.5% fee are no longer here (the fee is still in the hero badge).
+the $500,000 ceiling and the 1.5% fee are no longer here (since v81 the fee is nowhere on the site).
 > The process is the program. Participants’ active collaboration in pursuing inquiry, scoping analysis, and employing new methods is central to both the ethics of Ascent’s practice and the achievement of its mission.
 
 **ID: `HOME.BRIEF.list`**
@@ -2003,22 +2030,23 @@ hand the file back to bring it back.
 
 **ID: `DOWNLOAD.CHOOSE.cards`**
 Context: One card per installer, in this order. Each has the kind of computer, one line on
-what it needs, and the button. The requirements are the README's. The buttons name the
+what it needs, and the button. The requirements come from the app's README; since v82 the
+Windows line no longer says "64-bit". The buttons name the
 computer rather than saying "Download", so the three can be told apart by a screen reader
 that lists the links alone. The buttons sit level however long the line above them is.
 Each button starts the download of its installer from the newest release.
-The Apple silicon line says "Requires" where the other two say "Needs"; kept as you wrote it.
+Since v82 all three lines open "Requires".
 Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a narrow card.
 > Heading: Apple silicon Macs
 > Body: Requires macOS 12 Monterey or later.
 > Button: Download for Apple silicon
 >
 > Heading: Intel Macs
-> Body: Needs macOS 12 Monterey or later.
+> Body: Requires macOS 12 Monterey or later.
 > Button: Download for Intel Macs
 >
 > Heading: Windows
-> Body: Needs 64-bit Windows 10 or later.
+> Body: Requires Windows 10 or later.
 > Button: Download for Windows
 
 ---
