@@ -3,7 +3,21 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 90 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+**Version:** 91 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+
+> **What changed in v91.** At your request, the two embedded apps (the Evaluation Pipeline on
+> Evaluation Process, the Program Mapper on Demo) no longer flash white as they load. Before
+> an app's page arrives, the browser shows an empty frame of its own, and some browsers paint
+> that white on a dark page. Each app now starts loading with the page rather than when a
+> visitor scrolls near it, stays hidden until it has loaded, then fades in with the site's
+> usual fade. If an app hasn't loaded after 5 seconds, it is shown anyway. No wording
+> changed. **No ID changed.**
+>
+> Worth knowing: every visit to those two pages now loads its app, even for a visitor who
+> never scrolls to it. The editor demo (§K) is unchanged. Also in this release: returning
+> visitors' browsers are now told to fetch the site's stylesheet afresh. The home badge
+> (v81–v89) and About timeline (v90) changes didn't do that, so some visitors may not have
+> seen them yet.
 
 > **What changed in v90.** At your request, the evidence timeline on About (the two fields
 > and every entry under them, `ABOUT.TIMELINE.*`) now fades in as the page loads. Until now
@@ -1625,7 +1639,8 @@ here (they went to `#flagship`, on the removed "Two ways in" section).
 The app, **new in v73**, is live from `evaluationguide.netlify.app`, the full width of the
 page and as tall as the app itself. The app tells the page its height, so the frame grows and
 shrinks with it (over 3,000px on a laptop, more on a phone and while a step's card is open)
-and never scrolls inside itself; with JavaScript off it falls back to 720px. Unlike the
+and never scrolls inside itself; with JavaScript off it falls back to 720px. Since v91 it
+loads with the page and fades in once loaded, so the browser's empty frame never shows. Unlike the
 Demo page (§F2) it has no border, shadow or rounded corners: the app's background is the
 page's own, so it reads as part of the page rather than a framed window. Nothing inside it is
 site copy, and there is no small print or "open in a new tab" link under it. Since v77 the
@@ -1794,7 +1809,8 @@ Fits: 2–3 lines, ~180 characters.
 ## F2. The demo
 
 The app in a bordered frame, the full width of the page and 720px tall. Under it, a line of
-small print on the left and a link on the right.
+small print on the left and a link on the right. Since v91 the app loads with the page and
+fades in once loaded.
 
 **ID: `DEMO.EMBED.note`**
 Context: The first sentence is the one that matters. The site claims no past result, and the
