@@ -3,7 +3,13 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 89 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+**Version:** 90 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+
+> **What changed in v90.** At your request, the evidence timeline on About (the two fields
+> and every entry under them, `ABOUT.TIMELINE.*`) now fades in as the page loads. Until now
+> it waited for a scroll: it is so tall that it only appeared once a visitor had scrolled a
+> few hundred pixels into an empty gap. The fade is the same one the rest of the site uses,
+> and everything else still fades in on scroll. No wording changed. **No ID changed.**
 
 > **What changed in v89.** At your request, the hero badge's background is darker than
 > v88's: halfway between that teal and the site's darkest one. That is as dark as it can go
