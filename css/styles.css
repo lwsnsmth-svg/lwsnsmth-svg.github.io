@@ -624,7 +624,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   left: var(--sp-5);
   bottom: var(--sp-5);
   right: var(--sp-5);
-  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  /* Halfway between teal-800 and teal-900. Any darker and the card sinks into the ridge
+     behind it, which is teal-900. */
+  background: color-mix(in srgb, color-mix(in srgb, var(--teal-800) 50%, var(--teal-900)) 92%, transparent);
   backdrop-filter: blur(8px);
   color: var(--text);
   border-radius: var(--radius);
@@ -635,7 +637,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   box-shadow: var(--shadow);
 }
 .hero__badge p { margin: 0; font-size: var(--step-0); line-height: 1.4; }
-/* {{…}} in HOME.HERO.badge. --accent-strong, not the hero title's amber-400: the card is light. */
+/* {{…}} in HOME.HERO.badge, in orange. */
 .hero__badge em { font-style: normal; font-weight: 700; color: var(--accent-strong); }
 
 @media (max-width: 900px) {

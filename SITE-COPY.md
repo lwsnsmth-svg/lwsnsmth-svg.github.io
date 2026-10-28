@@ -3,7 +3,39 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 82 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+**Version:** 89 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+
+> **What changed in v89.** At your request, the hero badge's background is darker than
+> v88's: halfway between that teal and the site's darkest one. That is as dark as it can go
+> and still show against the image: the darkest teal is the colour of the ridge behind the
+> card, which is why the original near-black badge blended in. No wording changed.
+> **No ID changed.**
+
+> **What changed in v88.** At your request, the hero badge's background is now the site's
+> dark teal, the next shade down from v84's, which v86 and v87 were stepping towards. It is
+> still lighter than the site's other cards, so it stands out from the image. No wording
+> changed. **No ID changed.**
+
+> **What changed in v87.** At your request, the hero badge's background is slightly darker
+> again: three quarters of the way from v84's teal to the next shade down (v86 was halfway).
+> No wording changed. **No ID changed.**
+
+> **What changed in v86.** At your request, the hero badge's teal background is a little
+> darker than in v84: halfway to the next shade down. It still stands out from the image.
+> No wording changed. **No ID changed.**
+
+> **What changed in v85.** At your request, the sentence in the hero badge is white again,
+> undoing v83's teal; "every" stays orange. The lighter teal card from v84 stays. No wording
+> changed. **No ID changed.**
+
+> **What changed in v84.** At your request, the hero badge's background is lighter, a
+> mid teal instead of the near-black of the site's cards, so it stands out from the dark
+> ridge in the image behind it. It is as light as it can go while the teal sentence stays
+> easy to read. No wording changed. **No ID changed.**
+
+> **What changed in v83.** At your request, the sentence in the hero badge
+> (`HOME.HERO.badge`) is now in the site's teal, the colour of its links, instead of white.
+> "every" stays orange. No wording changed. **No ID changed.**
 
 > **What changed in v82.** Your edits to the Download page's three cards
 > (`DOWNLOAD.CHOOSE.cards`), applied word for word. All three requirement lines now open
@@ -1138,7 +1170,9 @@ Fits: 2–4 words.
 **ID: `HOME.HERO.badge`**
 Context: Card overlapping the bottom of the hero image. Since v81 one sentence, with no full
 stop, and an orange accent word; until then a big number ("1.5%") and a phrase about the fee.
-It is the hero's one claim about what Ascent gives a program. "MEL" (monitoring, evaluation
+It is the hero's one claim about what Ascent gives a program. Since v89 the card is a dark teal,
+halfway between the site's two darkest and a shade lighter than its other cards; the sentence is white and the accent word orange
+(the sentence was teal in v83 only). "MEL" (monitoring, evaluation
 and learning) is not spelled out anywhere on the site.
 Fits: ~100 characters, about two lines on desktop; it covers more of the image on a phone.
 > Unrestricted implementation support and intuitive software make MEL accessible to {{every}} program
