@@ -262,6 +262,14 @@ A few choices look like they could be simplified but shouldn't be:
   intersection — a zero-height viewport, a hidden container, an embedded frame — the
   timer in `js/main.js` reveals everything. Without it the page renders blank in those
   cases. It never fires in a normal viewport, where the first element resolves at once.
+- **The About timeline is `.fade-in`, not `.reveal`.** It is about 2,400px tall, so the
+  reveal's 8% threshold wasn't met until the visitor had scrolled a few hundred pixels into
+  an empty gap. `.fade-in` plays the same motion once, on page load.
+- **The embedded apps load eagerly and stay hidden until loaded** (`iframe.frame-fade` on
+  Evaluation Process and Demo). Before an iframe's page arrives, the browser shows an empty
+  frame that some browsers paint white on a dark page; `loading="lazy"` made that happen just
+  as the visitor arrived. The `onload` is inline on purpose, so the event can never fire
+  before a listener exists; `js/main.js` shows any frame still waiting after 5 seconds.
 - **`.hero__title em` must not be `nowrap`.** The accent phrase is copy and can be any
   length; pinning it to one line drives the text column to min-content and collapses
   the hero image track to `0px`. The `minmax(0, …)` on `.hero__inner` guards the same

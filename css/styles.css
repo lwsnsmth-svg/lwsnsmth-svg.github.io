@@ -786,6 +786,12 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   box-shadow: var(--shadow);
 }
 .demo-frame iframe { display: block; width: 100%; height: 720px; border: 0; }
+/* Embedded apps stay invisible until their page has loaded, then fade in. Until then the browser
+   shows an empty frame of its own, which some browsers paint white on a dark page. The iframe's
+   inline onload adds .is-loaded (inline, so the event can't fire before anything listens);
+   js/main.js shows any frame still waiting after 5s. Gated on html.js, like .reveal. */
+.js .frame-fade { opacity: 0; transition: opacity 0.6s var(--ease); }
+.js .frame-fade.is-loaded { opacity: 1; }
 /* Borderless variant (Evaluation Process): no edge, shadow or fill, so an app whose page
    background is --bg reads as part of the page rather than a card. */
 .demo-frame--bare {
@@ -1528,6 +1534,16 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
 }
 .js .reveal.is-visible { opacity: 1; transform: none; }
+
+/* Fades in as the page loads rather than on scroll, with the same motion as .reveal. For an
+   element too tall for the reveal's threshold (8% of its height on screen) to be met until
+   the visitor has scrolled into a blank gap: the About timeline. An animation ends visible on
+   its own, so it needs neither the html.js gate nor the failsafe. */
+.fade-in { animation: fade-in 0.6s var(--ease) both; }
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

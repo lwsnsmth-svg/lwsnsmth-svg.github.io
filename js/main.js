@@ -200,6 +200,17 @@
     });
   }
 
+  /* ---- Embedded apps fade in once loaded ------------------------------- */
+  // Each iframe.frame-fade adds .is-loaded from its own onload attribute (see
+  // styles.css). Failsafe, as for the scroll reveal: if load never fires, an
+  // app must not stay hidden, so show every frame after 5 seconds regardless.
+  var fadeFrames = document.querySelectorAll('iframe.frame-fade');
+  if (fadeFrames.length) {
+    setTimeout(function () {
+      fadeFrames.forEach(function (frame) { frame.classList.add('is-loaded'); });
+    }, 5000);
+  }
+
   /* ---- Current year in footer ------------------------------------------ */
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
