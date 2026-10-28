@@ -634,8 +634,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   gap: var(--sp-4);
   box-shadow: var(--shadow);
 }
-.hero__badge strong { font-size: var(--step-2); font-family: var(--font-bold); line-height: 1; color: var(--brand); }
-.hero__badge span { font-size: var(--step--1); color: var(--text-muted); line-height: 1.35; }
+.hero__badge p { margin: 0; font-size: var(--step-0); line-height: 1.4; }
+/* {{…}} in HOME.HERO.badge. --accent-strong, not the hero title's amber-400: the card is light. */
+.hero__badge em { font-style: normal; font-weight: 700; color: var(--accent-strong); }
 
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; gap: var(--sp-6); }
@@ -767,7 +768,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 .js .tool-card__desc { max-height: 0; overflow: hidden; transition: max-height 0.25s var(--ease); }
 .js .tool-card.is-open .tool-card__desc { max-height: 24rem; }
 @media (prefers-reduced-motion: reduce) { .js .tool-card__desc { transition: none; } }
-.phase-demo .lead { margin: 0 auto var(--sp-5); max-width: 36ch; }
 .views-download { margin-top: var(--sp-6); }   /* demo page: button under the six view cards */
 .phase-card { padding: 0; overflow: hidden; text-decoration: none; color: inherit; }
 .phase-card h3 { font-size: var(--step-0); margin: 0; padding: var(--sp-3) var(--sp-4) var(--sp-4); }
