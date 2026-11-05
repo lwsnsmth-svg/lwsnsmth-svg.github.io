@@ -395,7 +395,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 
 .btn--sm { padding: 0.55em 1.1em; font-size: var(--step--1); }
 .btn--lg { padding: 0.95em 2em; font-size: var(--step-1); }
-.btn--block { width: 100%; }
+/* A full-width button centres its label, so side padding only decides when the label wraps.
+   This little keeps the Download page's three labels on one line, and the buttons one height. */
+.btn--block { width: 100%; padding-inline: var(--sp-2); }
 
 .btn-row { display: flex; flex-wrap: wrap; gap: var(--sp-3); }
 .btn-row.center { justify-content: center; }
@@ -581,6 +583,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 .hero__ridges {
   position: absolute;
   bottom: 0; left: 0; right: 0;
+  /* Needed: left and right don't stretch an SVG. Without a width it takes one from its
+     height and viewBox (about 1178px), and the ridges stop short on wider windows. */
+  width: 100%;
   z-index: -1;
   opacity: 0.5;
 }
@@ -614,8 +619,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  aspect-ratio: 4 / 3.2;
-  background: linear-gradient(160deg, var(--teal-500), var(--teal-800));
+  /* The shape of assets/hero.png, so nothing is cropped: the sun sits close to its right
+     edge. The file has its own transparent rounded corners, so this box has no background
+     to show through them. */
+  aspect-ratio: 1903 / 1316;
 }
 .hero__media img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -642,7 +649,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; gap: var(--sp-6); }
-  .hero__media { aspect-ratio: 16 / 11; }
 }
 
 /* --------------------------------------------------------------------------
