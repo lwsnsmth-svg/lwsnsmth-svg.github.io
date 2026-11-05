@@ -3,7 +3,25 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 92 · **Updated:** 29 October 2026 · **Covers:** 8 pages
+**Version:** 93 · **Updated:** 4 November 2026 · **Covers:** 8 pages
+
+> **What changed in v93.** At your request, the Windows button on the Download page
+> (`DOWNLOAD.CHOOSE.cards`) now reads "Download in the Microsoft Store" (was "Download for
+> Windows"). At 31 characters it was too long for the card at some window widths: it wrapped
+> to two lines and stood taller than the two Mac buttons. All three buttons now have less
+> padding at their sides, which keeps them on one line at the same height and doesn't change
+> how they look. **No ID changed.**
+>
+> Also in this release, with no change of wording: the home page has your new hero image. It
+> shows whole, so its frame changed shape to match it and is a little shorter on a desktop
+> than before. Its description (`ALT.home`) still fits the picture, so it stays. The faint
+> mountain range along the bottom of the home hero now reaches the full width of any window;
+> it used to stop at about 1180 pixels. Returning visitors' browsers are told to fetch the
+> stylesheet afresh.
+>
+> Worth a look: on a phone, the card over the hero image (`HOME.HERO.badge`) covers the middle
+> of the picture, including the three small orange points and the chart's baseline. The old
+> drawing was covered in much the same way, but the new one has more going on behind the card.
 
 > **What changed in v92.** At your request, the Download page's Windows button
 > (`DOWNLOAD.CHOOSE.cards`) now opens Ascent Mapper's Microsoft Store listing instead of
@@ -2103,13 +2121,14 @@ hand the file back to bring it back.
 **ID: `DOWNLOAD.CHOOSE.cards`**
 Context: One card per installer, in this order. Each has the kind of computer, one line on
 what it needs, and the button. The requirements come from the app's README; since v82 the
-Windows line no longer says "64-bit". The buttons name the
-computer rather than saying "Download", so the three can be told apart by a screen reader
-that lists the links alone. The buttons sit level however long the line above them is.
-Each Mac button starts the download of its installer from the newest release; since v92
-the Windows button opens the app's Microsoft Store listing, so its label says "Download"
-for a click that lands on a Store page. Since v82 all three lines open "Requires".
-Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a narrow card.
+Windows line no longer says "64-bit". The Mac buttons name the computer and, since v93, the
+Windows button names the Microsoft Store rather than Windows, so the three can still be told
+apart by a screen reader that lists the links alone. The buttons sit level however long the
+line above them is. Each Mac button starts the download of its installer from the newest
+release; since v92 the Windows button opens the app's Microsoft Store listing instead. Since
+v82 all three lines open "Requires".
+Fits: Headings up to ~28 characters, button labels up to ~32, or they wrap in a narrow card and
+stand taller than the other two buttons. The Windows label is 31, so it has little room to grow.
 > Heading: Apple silicon Macs
 > Body: Requires macOS 12 Monterey or later.
 > Button: Download for Apple silicon
@@ -2120,7 +2139,7 @@ Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a 
 >
 > Heading: Windows
 > Body: Requires Windows 10 or later.
-> Button: Download for Windows
+> Button: Download in the Microsoft Store
 
 ---
 
