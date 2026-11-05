@@ -266,6 +266,10 @@ A few choices look like they could be simplified but shouldn't be:
 - **The About timeline is `.fade-in`, not `.reveal`.** It is about 2,400px tall, so the
   reveal's 8% threshold wasn't met until the visitor had scrolled a few hundred pixels into
   an empty gap. `.fade-in` plays the same motion once, on page load.
+- **The timeline's `--gap` is `calc(4rem + 1px)` and its final stop is `26px`, not rem.** With
+  a 3px rail, these keep every centre line on a whole pixel, so the stop stays round and the
+  two join lines meet on its colour seam. At `4rem` and `1.6rem` browsers rounded them apart.
+  The join's `viewBox` in `about.html` must equal the gap plus the rail (68 wide).
 - **The embedded apps load eagerly and stay hidden until loaded** (`iframe.frame-fade` on
   Evaluation Process and Demo). Before an iframe's page arrives, the browser shows an empty
   frame that some browsers paint white on a dark page; `loading="lazy"` made that happen just
