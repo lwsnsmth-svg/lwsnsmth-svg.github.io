@@ -940,9 +940,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 
    Row packing is plain grid auto-placement. Each entry names only its column, so an
    implementation science entry followed by an ECB one shares a row, and an ECB
-   entry followed by anything starts a new one; entries on both rails, and the
-   sector box, span the row. Rows therefore never run backwards in time — keep the
-   markup in date order, same-year IS entries first. */
+   entry followed by anything starts a new one; entries on both rails span the row.
+   Rows therefore never run backwards in time — keep the markup in date order,
+   same-year IS entries first. */
 .strands {
   --is: var(--brand);
   --ecb: var(--accent);
@@ -1032,16 +1032,6 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   background: linear-gradient(var(--bg-muted), var(--bg-muted)) padding-box,
               linear-gradient(90deg, var(--is), var(--ecb)) border-box;
 }
-/* The sector is neither field: no stop, set apart in a dashed box. */
-.strand--sector { --lane: var(--text); }
-.strand--sector::before { content: none; }
-.strand--sector {
-  margin: 0 0 var(--sp-6) var(--indent);
-  padding: var(--sp-4) var(--sp-5);
-  background: var(--surface);
-  border: 1px dashed var(--ink-400);
-  border-radius: var(--radius);
-}
 .strand h3 { margin-bottom: var(--sp-2); font-size: var(--step-0); }
 .strand p:last-child { margin-bottom: 0; color: var(--text-muted); }
 
@@ -1083,7 +1073,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 }
 
 @media (min-width: 761px) {
-  .strands { --gap: 4rem; }
+  /* 65px, not 64: with a 3px rail, an odd gap keeps every rail and the seam of the node
+     below on whole pixels. On 64px the rails sat on half-pixels and, on a 1x monitor,
+     rounded away from the seam. The join's viewBox in about.html is this gap plus the rail. */
+  .strands { --gap: calc(4rem + 1px); }
 
   /* Keys sit over their lanes and become the tops of the rails. */
   .strands__fields {
@@ -1132,17 +1125,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
     left: calc(50% - var(--gap) / 2 - var(--dot) / 2); right: auto;
     width: calc(var(--gap) + var(--dot));
   }
-  .strand--sector {
-    grid-column: 1 / -1;
-    justify-self: center;
-    max-width: 32rem;
-    margin: 0 0 var(--sp-6);
-    padding: var(--sp-4) var(--sp-6);
-    text-align: center;
-  }
 
   /* The lane says which field an entry belongs to; the label is kept for
-     screen readers. Tags (cited by both, the sector) stay visible. */
+     screen readers. A tag, when an entry has one, stays visible. */
   .strand__field {
     position: absolute;
     width: 1px; height: 1px;
@@ -1166,7 +1151,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   .strands__node {
     position: static;
     display: block;
-    width: 1.6rem; height: 1.6rem;
+    /* Whole, even pixels. At 1.6rem (25.6px) browsers rounded the width and height
+       separately, so the circle came out uneven and its seam off centre. */
+    width: 26px; height: 26px;
     margin: 0 auto var(--sp-4);
     background: linear-gradient(90deg, var(--is) 50%, var(--ecb) 50%);
     box-shadow: 0 0 0 5px var(--bg-muted), 0 0 0 6px var(--border);

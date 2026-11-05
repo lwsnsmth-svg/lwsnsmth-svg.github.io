@@ -3,7 +3,52 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 93 · **Updated:** 4 November 2026 · **Covers:** 8 pages
+**Version:** 96 · **Updated:** 5 November 2026 · **Covers:** 8 pages
+
+> **What changed in v96.** Your edits to About are applied. "The field takes stock"
+> (`ABOUT.TIMELINE.14`, 2012) is gone from the timeline and its ID is retired, which leaves five
+> of the brief's six ECB landmarks on the page. The banner heading (`ABOUT.HERO.h1`) now reads
+> "About", and the line under it (`ABOUT.HERO.lead`) carries the whole sentence, now "priced out
+> of evaluation" (was "priced out of comprehensive evaluation"). It wraps to two lines on a
+> desktop, so its `Fits:` line changed. **No other ID changed.**
+>
+> Also in this release, with no change of wording: the final stop on the timeline, where the two
+> fields meet, now sits on whole pixels, after you saw its orange half sitting higher than its
+> teal half. It is a true 26-pixel circle split at its centre (it was 25.6 pixels, which browsers
+> rounded unevenly), and the gap between the rails is one pixel wider so the two lines meet on
+> that split. Returning visitors' browsers are told to fetch the stylesheet afresh.
+
+> **What changed in v95.** At your request, the two entries drawn across both rails on the About
+> timeline (`ABOUT.TIMELINE.1` and `.4`, 2013 and 2018) are now labelled "Cited by both fields"
+> in place of "Implementation science". The label shows at every window width: a field name
+> prints only on a phone, so these two carry it as a `Tag:` and no longer have a `Field:` line.
+> They still sit on the implementation science side of the page and are still drawn as one stop
+> across both rails. **No ID changed.**
+>
+> Also applied, word for word, your edits to three more timeline entries. `ABOUT.TIMELINE.10` now
+> names UNC's Collaborative for Implementation Practice as the publisher, with its two links on the
+> same words as before. `ABOUT.TIMELINE.5` now says "contingent on an ongoing relationship with the
+> evaluator". `ABOUT.TIMELINE.17` now says "complements previous work with".
+>
+> Worth a look: "contingent on" in `ABOUT.TIMELINE.5` claims more than "tracks", which it replaced.
+> It says the persistence depends on the relationship, where "tracks" said only that the two move
+> together. This is the entry the model is built on, so check that the study supports the stronger
+> word. `ABOUT.TIMELINE.10` may also want a comma before "which".
+
+> **What changed in v94.** Your edits to the evidence timeline on About are applied, and the
+> timeline has one new entry at your request. The entry "The affordability gap, measured"
+> (`ABOUT.TIMELINE.3`) is gone and its ID is retired; the same figures still appear in the home
+> stats (`HOME.STATS.1`, `.2`). The "Cited by both fields" tag is off `ABOUT.TIMELINE.1` and `.4`.
+> "Where the two fields meet" (`ABOUT.TIMELINE.synthesis`) carries your new two-sentence detail,
+> so its `Fits:` and `Context:` lines now describe that length and wording. The new entry,
+> "The role comes into focus" (`ABOUT.TIMELINE.17`, 2024), sits on the implementation science
+> rail, with "white paper" linking to the Center for Implementation's PDF. Its wording is mine,
+> so change it freely. **No existing ID changed.**
+>
+> Worth a look: `ABOUT.TIMELINE.1` and `.4` are still drawn as one stop across both rails. The
+> tag you removed was the only thing on the page explaining that shape, so a reader now sees a
+> wider stop with no reason given. Say if you'd rather they became ordinary implementation
+> science stops.
 
 > **What changed in v93.** At your request, the Windows button on the Download page
 > (`DOWNLOAD.CHOOSE.cards`) now reads "Download in the Microsoft Store" (was "Download for
@@ -1405,16 +1450,17 @@ hypothetical service set and doesn't need that depth.
 Context: Dark banner at the top of the page. Every interior page has one. Since v12 the
 heading stands alone — the subhead under it (`ABOUT.HERO.lead`, "Ascent is a nonprofit
 program evaluation practice in New York City.") came off. Was "Built for the
-organizations evaluation was priced away from".
+organizations evaluation was priced away from". Reads "About" since v96, your edit; the
+sentence it used to carry is now in `ABOUT.HERO.lead`.
 Fits: 1–2 lines.
-> Built for the benefit of organizations priced out of comprehensive evaluation
+> About
 
 **ID: `ABOUT.HERO.lead`**
 Context: Subhead under the banner heading. Back in v13 after being off since v12 (it used to be
-"Ascent is a nonprofit program evaluation practice in New York City."). Completes the sentence
-the heading starts: who the work is for, then what it is designed to do.
-Fits: One line.
-> And designed to translate evaluation to outcomes.
+"Ascent is a nonprofit program evaluation practice in New York City."). Since v96 it carries the
+whole sentence on its own: who the work is for, then what it is designed to do.
+Fits: Two lines on a desktop, three on a phone.
+> Built for the benefit of organizations priced out of evaluation and designed to translate evaluation to outcomes.
 
 ## C2. Why this exists
 
@@ -1446,17 +1492,19 @@ implementation science and evaluation capacity building (ECB): each field has a 
 own, teal and orange, and the rails never touch until they join at the bottom in the Ascent
 entry (`ABOUT.TIMELINE.synthesis`). Entries run in date order down both rails, so the
 picture also shows the timing — ECB maturing from the late 1990s, implementation support
-professionalizing in the late 2010s, both arriving in 2020. On a phone the two rails run
-side by side down the left edge.
+professionalizing in the late 2010s, both arriving in 2020, and the implementation support
+role defined further in 2024. On a phone the two rails run side by side down the left edge.
 
-The six ECB landmarks in Table 2 of the Evidence & Peer Context brief are `ABOUT.TIMELINE.11`
-to `16`; the four studies in its Table 3 were already here. Add or remove entries freely —
-the rails redraw themselves. IDs 6 and 9 came off in v36 and v55 and are not reused.
+Five of the six ECB landmarks in Table 2 of the Evidence & Peer Context brief are here, as
+`ABOUT.TIMELINE.11` to `16` without `14`; the four studies in its Table 3 were already here.
+Add or remove entries freely — the rails redraw themselves. IDs 6, 9, 3 and 14 came off in
+v36, v55, v94 and v96 and are not reused.
 
 Each entry's `Field:` is the rail it sits on; change it to move the entry to the other field.
 On a wide screen the lane already says which field an entry belongs to, so the label is kept
 for screen readers only; on a phone it is printed after the year. A `Tag:` prints after the
-year everywhere.
+year everywhere. The two entries drawn across both rails (`ABOUT.TIMELINE.1`, `.4`) have a
+`Tag:` in place of a `Field:`.
 
 Context: Until v71 each entry ended with a short-form author citation in brackets; you took
 them all out. The sources are still named in each entry's Context note below. If you want
@@ -1506,17 +1554,9 @@ entry 10. `ABOUT.TIMELINE.6` (2005) was removed in v36; IDs are not renumbered.
 > Headline: A framework for what shapes implementation
 > Detail: The Consolidated Framework for Implementation Research organizes the factors that help or hinder putting evidence into practice.
 
-**ID: `ABOUT.TIMELINE.14`**
-Context: New in v56, from Table 2 (Labin, Duffy, Meyers, Wandersman & Lesesne 2012). "Weaknesses in its designs" follows the brief's "identifies design weakness".
-> Year: 2012
-> Field: Evaluation capacity building
-> Headline: The field takes stock
-> Detail: A research synthesis consolidates the literature, codes its outcomes at the individual and organizational levels, and identifies weaknesses in its designs.
-
 **ID: `ABOUT.TIMELINE.1`**
-Context: A Getting To Outcomes trial, published in *Implementation Science*. The brief's executive summary counts these trials as implementation science and its Table 3 as ECB evidence, so this sits on the implementation science rail and is drawn as one stop across both.
+Context: A Getting To Outcomes trial, published in *Implementation Science*. The brief's executive summary counts these trials as implementation science and its Table 3 as ECB evidence, so this sits on the implementation science rail and is drawn as one stop across both. Since v95 its label is the tag "Cited by both fields" in place of the field name, so it has no `Field:` line and the label shows at every window width.
 > Year: 2013
-> Field: Implementation science
 > Tag: Cited by both fields
 > Headline: Dose matters
 > Detail: A two-year cluster-randomized trial finds dose-dependent gains across four capacity scales, greatest where technical assistance hours were highest.
@@ -1541,13 +1581,6 @@ Context: New in v56, from Table 2 (Buckley, Archibald, Hargraves & Trochim 2015)
 > Headline: A habit of mind
 > Detail: Evaluative thinking is named as the lasting disposition that evaluation capacity building aims to instill.
 
-**ID: `ABOUT.TIMELINE.3`**
-Context: Belongs to neither field: it measures the sector the synthesis is for. Boxed across both rails, with no stop on either, and has no `Field:` line.
-> Year: 2016
-> Tag: The sector
-> Headline: The affordability gap, measured
-> Detail: Roughly ninety-eight percent of small nonprofits and eighty percent of organizations with budgets above five million dollars have no dedicated evaluation staff.
-
 **ID: `ABOUT.TIMELINE.8`**
 Context: From the Practice Guide's "How we developed this guide": the work began in 2017 as an
 internal R&D project between NIRN (USA) and the Centre for Effective Services (Ireland and
@@ -1558,9 +1591,8 @@ Northern Ireland).
 > Detail: Two intermediary organizations, one in the USA and one in Ireland and Northern Ireland, begin studying the role and competencies of the people who support implementation.
 
 **ID: `ABOUT.TIMELINE.4`**
-Context: The second Getting To Outcomes trial; drawn across both rails for the same reason as `ABOUT.TIMELINE.1`.
+Context: The second Getting To Outcomes trial; drawn across both rails for the same reason as `ABOUT.TIMELINE.1`, and labelled the same way since v95.
 > Year: 2018
-> Field: Implementation science
 > Tag: Cited by both fields
 > Headline: Repetition and duration drive results
 > Detail: A replication trial finds no significant effect in year one and small significant improvement after a second-year quality improvement cycle.
@@ -1573,25 +1605,38 @@ The PDFs are dated November and December 2020 (Profile v4.0; Guide), re-hosted i
 > Year: 2020
 > Field: Implementation science
 > Headline: Competencies, described
-> Detail: The Implementation Support Practitioner Profile and Practice Guide set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change.
+> Detail: UNC's Collaborative for Implementation Practice publishes the Implementation Support Practitioner Profile and Practice Guide which set out fifteen core competencies in three domains: co-creation and engagement, ongoing improvement, and sustaining change.
 
 **ID: `ABOUT.TIMELINE.5`**
 Context: The finding the whole model is built on. If you cut one entry, don't cut this.
 > Year: 2020
 > Field: Evaluation capacity building
 > Headline: Relationship, not training
-> Detail: Evaluation practice persists years after an intervention, and the persistence tracks ongoing evaluator contact rather than the initial training.
+> Detail: Evaluation practice persists years after an intervention, contingent on an ongoing relationship with the evaluator rather than the initial training.
+
+**ID: `ABOUT.TIMELINE.17`**
+Context: New in v94, at your request; my wording, with your edit in v95. Khan, Manalili & Moore (2024), *Core
+competencies and functions of implementation support practitioners*, a white paper from The
+Center for Implementation, published online 23 May 2024. It builds on the 2020 competencies in
+`ABOUT.TIMELINE.10`: those cover the processes of support, and this adds the technical knowledge
+and the functions of the role. Its authors call it a practical guide rather than a final word.
+"White paper" is a link, opening in a new tab → https://static1.squarespace.com/static/62b608b9681f5f0b4f3c3659/t/68346d71336557405c7ff2ea/1748266354208/TCI_White+Paper+Core+Competencies+and+Functions_V2024.06.pdf
+Fits: Headline one line; Detail one sentence, about 30 words.
+> Year: 2024
+> Field: Implementation science
+> Headline: The role comes into focus
+> Detail: A white paper from The Center for Implementation complements previous work with ten core competencies for implementation support practitioners and five functions of their role: connect, understand, inspire, enable and transform.
 
 **ID: `ABOUT.TIMELINE.synthesis`**
 Context: Where the two rails join, centred under the timeline (on a phone, a stop across both
-rails). New in v56; my wording. It states the gap the brief's executive summary names — no
-model applies implementation science's evidence within ECB, explicitly and measurably — and
-stops there. Until v64 a second sentence said what the model is designed to do about it;
-your edit removed it, so the entry now makes the claim about the field and none about Ascent.
-Fits: Label one word; Headline one line; Detail one sentence, about 20 words.
+rails). New in v56; your wording since v94. The first sentence says what comprehensive
+evaluation sets in motion and why that needs care. The second keeps the gap the brief's
+executive summary names, that no model applies implementation science's evidence within ECB,
+so the entry still makes its claim about the field and none about Ascent.
+Fits: Label one word; Headline one line; Detail two sentences, about 55 words.
 > Label: Ascent
 > Headline: Where the two fields meet
-> Detail: No existing model delivers evaluation capacity building on the evidence of implementation science, explicitly and measurably.
+> Detail: Whether they be survey methods, practice changes, data collection techniques, metric integrations, or monitoring platforms, comprehensive evaluation surfaces myriad new processes that should be shepherded with care and intentionality. No existing model offers program improvements with the care and sustainability delivered by evaluation capacity building grounded in the practice of implementation science.
 
 ---
 
