@@ -59,14 +59,17 @@
   </section>
 
   <!-- ---------------- The installers ---------------- -->
-  <!-- The installers live on GitHub, in the Releases of Ascent-Evaluation/ascent-mapper.
-       On load, js/main.js asks GitHub's API for the newest release that has all three
+  <!-- The Mac installers live on GitHub, in the Releases of Ascent-Evaluation/ascent-mapper.
+       On load, js/main.js asks GitHub's API for the newest release that has both Mac
        installers, pre-releases included, and points each button at its file (matched by
        the end of the file name, in data-installer) and the eyebrow at its version.
        The hrefs and version below are only the fallback, for when the API can't be
        reached or JavaScript is off; nothing here has to change with each release.
        (/releases/latest/download/ can't do this: it skips pre-releases, and the file
-       names carry the version.) -->
+       names carry the version.)
+       Windows is distributed through the Microsoft Store (since v92 of the copy doc), so
+       its button links to the Store listing and has no data-installer: the script leaves
+       it alone, and a release needs no .exe to be picked up. -->
   <section class="section" id="installers">
     <div class="container">
       <div class="section-head reveal">
@@ -98,7 +101,7 @@
           <h3>Windows</h3>
           <p>Requires Windows 10 or later.</p>
           <div class="card__footer">
-            <a class="btn btn--primary btn--block" href="https://github.com/Ascent-Evaluation/ascent-mapper/releases/download/v1.0.0/Ascent-Mapper-Setup-1.0.0.exe" data-installer=".exe">Download for Windows</a>
+            <a class="btn btn--primary btn--block" href="https://apps.microsoft.com/detail/9npq9tj2lvnh?cid=DevShareMCLPCS&amp;hl=en-US&amp;gl=US">Download for Windows</a>
           </div>
         </article>
       </div>

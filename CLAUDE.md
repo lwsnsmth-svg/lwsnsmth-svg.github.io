@@ -166,14 +166,19 @@ doc, donations in v6. Snapshots of the site before each removal are in
 
 ## Publishing a new release of the app
 
-**A new release needs no edit to the site.** Each button in `download.html` downloads its
+**A new release needs no edit to the site.** Each Mac button in `download.html` downloads its
 installer from the newest release of `github.com/Ascent-Evaluation/ascent-mapper`,
 pre-releases included (since v68; the owner wants a click to start a download, not to land
 on GitHub, as v67 briefly did). On load, `js/main.js` asks the GitHub API for the newest
-release with all three installers, rewrites each button's `href` to the file whose name ends
+release with both Mac installers, rewrites each button's `href` to the file whose name ends
 in its `data-installer` suffix, and puts the release's version in `[data-release-version]`
 in the eyebrow. GitHub's `/releases/latest/download/` can't replace this while releases are
 pre-releases and the file names carry the version.
+
+**Windows goes through the Microsoft Store** (since v92). Its button links to the Store
+listing (`apps.microsoft.com/detail/9npq9tj2lvnh`) and deliberately has no `data-installer`:
+with one, the script would overwrite the Store link and would pass over any release that has
+no `.exe`, which would leave the Mac buttons on an old release.
 
 The `href`s and eyebrow version in the markup (and `DOWNLOAD.CHOOSE.intro`) are only the
 fallback, for when the API fails or JavaScript is off; refreshing them now and then keeps
@@ -181,7 +186,7 @@ that fallback current, but nothing breaks if they lag. If the installer file nam
 change shape, update the `data-installer` suffixes. There is deliberately no OS detection: the
 page shows all three installers, because a browser cannot tell an Apple-silicon Mac from
 an Intel one. The page carries no first-launch instructions (the owner removed them in v65);
-the app's README on GitHub explains the macOS and Windows warnings for unsigned builds.
+the app's README on GitHub explains the macOS warning for unsigned builds.
 The eyebrow carries only the version (the "pre-release build" tag came off in v80, with v1.0.0).
 
 ## Things that look wrong but are deliberate

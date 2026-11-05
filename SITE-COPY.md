@@ -3,7 +3,21 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 91 · **Updated:** 28 October 2026 · **Covers:** 8 pages
+**Version:** 92 · **Updated:** 29 October 2026 · **Covers:** 8 pages
+
+> **What changed in v92.** At your request, the Download page's Windows button
+> (`DOWNLOAD.CHOOSE.cards`) now opens Ascent Mapper's Microsoft Store listing instead of
+> downloading the `.exe` installer from GitHub, since Windows copies are now distributed
+> through the Store. The two Mac buttons still download from the newest GitHub release, and
+> the page now looks only for the two Mac installers when it picks that release, so a
+> release with no Windows installer is found as usual. No wording changed. **No ID changed.**
+>
+> Worth a look: the button still says "Download for Windows", but a click now lands on a
+> Store page with its own button rather than starting a download. Something like "Get it from
+> the Microsoft Store" would say what happens; that wording is yours to choose. The link
+> you sent pins the Store to US English (`hl=en-US&gl=US` at its end), so a visitor
+> elsewhere sees the US listing; it works without those, if you'd rather the Store use each
+> visitor's own region.
 
 > **What changed in v91.** At your request, the two embedded apps (the Evaluation Pipeline on
 > Evaluation Process, the Program Mapper on Demo) no longer flash white as they load. Before
@@ -2040,9 +2054,10 @@ Context: Arrow link. Opens the editor on its own in a new tab, at full window si
 # L. Download
 
 `download.html` — the installers for Ascent Mapper, the desktop app. **New in v63.** The
-files are not on this site: each button goes straight to a file in a release in the app's
-GitHub repository (Ascent-Evaluation/ascent-mapper), so nothing about the installers is
-covered here, only the page that points at them. It is last in this document so that no
+files are not on this site: each Mac button goes straight to a file in a release in the app's
+GitHub repository (Ascent-Evaluation/ascent-mapper), and since v92 the Windows button opens
+the app's Microsoft Store listing, so nothing about the installers is covered here, only the
+page that points at them. It is last in this document so that no
 existing page letter moved; on the site it is the sixth nav item, after Demo. It was drafted
 from the app's README and release notes and reworded by you in v65.
 
@@ -2069,9 +2084,10 @@ Fits: 2–3 lines, ~215 characters, the current length: three lines on desktop.
 
 Three cards in a row, one per installer, each with one button; the last section on the page.
 Anchored at `#installers`. Nothing picks for the visitor: a web page cannot reliably tell an
-Apple-silicon Mac from an Intel one, so they choose. Since v68 each button downloads its
+Apple-silicon Mac from an Intel one, so they choose. Since v68 each Mac button downloads its
 installer from the newest release on GitHub, pre-releases included: the page looks the
-release up as it loads, so the buttons follow each new release with no edit.
+release up as it loads, so the buttons follow each new release with no edit. Since v92 the
+Windows button opens the Microsoft Store listing instead, which the Store keeps current.
 
 **ID: `DOWNLOAD.CHOOSE.intro`**
 Context: The eyebrow names the release the buttons download. Since v68 the page fills in the version number from GitHub as it loads, so it
@@ -2090,8 +2106,9 @@ what it needs, and the button. The requirements come from the app's README; sinc
 Windows line no longer says "64-bit". The buttons name the
 computer rather than saying "Download", so the three can be told apart by a screen reader
 that lists the links alone. The buttons sit level however long the line above them is.
-Each button starts the download of its installer from the newest release.
-Since v82 all three lines open "Requires".
+Each Mac button starts the download of its installer from the newest release; since v92
+the Windows button opens the app's Microsoft Store listing, so its label says "Download"
+for a click that lands on a Store page. Since v82 all three lines open "Requires".
 Fits: Headings up to ~28 characters, button labels up to ~28, or they wrap in a narrow card.
 > Heading: Apple silicon Macs
 > Body: Requires macOS 12 Monterey or later.
