@@ -3,7 +3,51 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 96 · **Updated:** 5 November 2026 · **Covers:** 8 pages
+**Version:** 100 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+
+> **What changed in v100.** At your request, the arrow after stage 04 in Impact logic on About
+> (`ABOUT.LOGIC.stream`) is gone, on a desktop and on a phone. The line now ends at stage 04's
+> circle. The wording is unchanged. Returning visitors' browsers are told to fetch the stylesheet
+> afresh. **No ID changed.**
+
+> **What changed in v99.** At your request, the four Impact logic stages on About
+> (`ABOUT.LOGIC.stream`) are no longer separate cards. They now sit on one continuous line, drawn
+> like the rails of the evidence timeline below. It runs from stage 01, steps down into each next
+> stage, and ends in an arrowhead after stage 04. On a phone it is one line down the left edge.
+> Stage 03 keeps its orange, now as an orange circle on the line. The wording is unchanged. The
+> section is taller on a desktop, because each stage sits lower than the last. Returning visitors'
+> browsers are told to fetch the stylesheet afresh. **No ID changed.**
+
+> **What changed in v98.** At your request, all of "Impact logic" moved from Our Model to About,
+> where it now stands between the banner and "The evidence base". The wording is unchanged:
+> heading, lead, four cards and orange box. The blocks have new IDs, `ABOUT.LOGIC.intro`, `.stream`
+> and `.note`, because IDs name their page; the old ones, `INVOLVED.IMPACT.*`, are retired, not
+> reused. On About, "Why this exists" is now §C3 and the timeline §C4. Our Model now runs banner,
+> The structure (§E2), closing band (§E3).
+>
+> "More than evaluation consulting. Beyond capacity building." is off Evaluation Process
+> (`PROGRAMS.SEQUENCE.tagline`, retired after one version), so the line now appears once on the
+> site, as the Impact logic heading. "The process is the program." now leads straight into the
+> app, still 96px above the app's content. **No other ID changed.**
+>
+> Worth a look: the Impact logic lead opens "The program reaches deeper into an organization…",
+> and nothing above it on About has said what the program is.
+
+> **What changed in v97.** Your edits to the doc are applied, word for word. The home page lead
+> (`HOME.HERO.lead`) now says "The Ascent Collaborative's mission is…" (was "goal"). The "Why it
+> matters" card (`HOME.WHY.leaders`) is now for "nonprofit leaders, programs teams and
+> practitioners" (was "evaluators"). The two paragraphs under "The process is the program." on
+> Evaluation Process (`PROGRAMS.SEQUENCE.body`) are gone and that ID is retired.
+>
+> Also at your request, "More than evaluation consulting. Beyond capacity building." is on a page
+> visitors can reach. It stood only on the unlisted Our Model page (`INVOLVED.IMPACT.intro`), where
+> it stays. It now also sits directly under "The process is the program."
+> (`PROGRAMS.SEQUENCE.tagline`, new), in the space the two paragraphs left. You asked for the line,
+> not a spot: the placement is mine, so move it freely. **No other ID changed.**
+>
+> Worth a look: on Our Model a lead follows the line to say how the program differs from each;
+> here the app below has to carry that. The app does name the implementation support professional,
+> so the role is still introduced on this page now that the paragraphs are gone.
 
 > **What changed in v96.** Your edits to About are applied. "The field takes stock"
 > (`ABOUT.TIMELINE.14`, 2012) is gone from the timeline and its ID is retired, which leaves five
@@ -1256,7 +1300,7 @@ Context: The one paragraph that has to explain what you actually do. Sits direct
 under the headline and does the work the headline deliberately doesn't. Since v71 it opens
 with the organization's name and runs to about 230 characters, past the ~180 it was sized for.
 Fits: 3–4 lines, ~180 characters; the v71 wording runs longer.
-> The Ascent Collaborative's goal is to champion and implement an integrated evaluation model that is designed to lower the cost, improve the quality, and broaden the impact of evaluative services for mission-oriented organizations.
+> The Ascent Collaborative's mission is to champion and implement an integrated evaluation model that is designed to lower the cost, improve the quality, and broaden the impact of evaluative services for mission-oriented organizations.
 
 **ID: `HOME.HERO.buttons`**
 Context: One orange button, to "How the program runs" on Evaluation Process. The outlined
@@ -1341,7 +1385,7 @@ Fits: Tagline ≤ ~70 characters; each button 2–4 words.
 
 ## B3. Why it matters
 
-One card, for nonprofit leaders, programs teams and evaluators, in a narrowed column. There
+One card, for nonprofit leaders, programs teams and practitioners, in a narrowed column. There
 were two, one per audience; the funders card (`HOME.WHY.funders`) came off in v7.
 
 **ID: `HOME.WHY.intro`**
@@ -1353,7 +1397,7 @@ were two, one per audience; the funders card (`HOME.WHY.funders`) came off in v7
 Context: Four benefits with bold lead-ins, rewritten in v55 around what the process and the
 tool do: track what works, build an evidence base, watch the policy context, and hear from
 participants.
-> Heading: For nonprofit leaders, programs teams and evaluators
+> Heading: For nonprofit leaders, programs teams and practitioners
 > **Map and monitor efficacy.** Evaluation shows which parts of a program are most effective, so limited resources can go where they count the most.
 > **Build and document a knowledge-base.** Map evidence to internal assumptions about a program's theory of change. Approach programs with clarity and integrate them into global fields of research.
 > **Track exogenous effects.** Monitor policy and other contextual developments and project their impacts on program functions.
@@ -1439,7 +1483,7 @@ and came off in v79 when that page became unlisted.
 ---
 # C. About
 
-`about.html` — what Ascent is and why it exists: a banner and the evidence base. The deck has no About page; this one was built from its standards
+`about.html` — what Ascent is and why it exists: a banner, the impact logic and the evidence base. The deck has no About page; this one was built from its standards
 chapter and its governance section, and both are now gone — the quality assurance
 material in v10, the Governance section in v11 — because the site describes a
 hypothetical service set and doesn't need that depth.
@@ -1462,10 +1506,65 @@ whole sentence on its own: who the work is for, then what it is designed to do.
 Fits: Two lines on a desktop, three on a phone.
 > Built for the benefit of organizations priced out of evaluation and designed to translate evaluation to outcomes.
 
-## C2. Why this exists
+## C2. Impact logic
+
+Moved here from Our Model in v98, at your request, whole and in the same wording: heading and
+lead, four stages on one stepped line (separate cards until v99), then an orange box. It began on 13 September, from the Program Description's
+impact-stream diagram and its interventions table (the table came off in v38). Plain background,
+so the page alternates into the grey "The evidence base" below. Anchored at `#impact-logic`;
+nothing links here.
+
+**ID: `ABOUT.LOGIC.intro`**
+Context: Moved from Our Model in v98; it was `INVOLVED.IMPACT.intro`, and that ID is retired.
+The heading is the brief's positioning claim, shortened. It only works because
+the lead immediately says *how* the program differs from each: deeper than consulting,
+more participatory than capacity building. This is the one place on the site the line appears;
+it also stood under "The process is the program." on Evaluation Process in v97.
+> Eyebrow: Impact logic
+> Heading: More than evaluation consulting. Beyond capacity building.
+> Lead: The program reaches deeper into an organization than traditional evaluation consulting, and it is far more participatory, on both sides, than typical capacity-building models. While building capacity, our model is designed to incorporate outcomes sensitivity through the following impact cascade:
+
+**ID: `ABOUT.LOGIC.stream`**
+Context: Moved from Our Model in v98; it was `INVOLVED.IMPACT.stream`, and that ID is retired.
+Four stages in the order of the brief's impact stream. Since v99 they sit on one continuous line
+that steps down from left to right and ends at stage four, to show a single linear cascade; on
+a phone the line runs down the left edge. Each = number in a circle on the line, name, what
+happens. The bold "Measured" lines came off earlier, so those fields stay empty. Stage three's
+circle is orange, marking the step Ascent does not touch.
+Fits: ~130 characters per description. Longer text makes that stage's column longer, not the steps.
+> Tag: 01
+> Name: Evaluation
+> Description: Establishes the systems and standards for recursive improvement, and the baseline measurements that change is rated against.
+> Measured: 
+>
+> Tag: 02
+> Name: Programs
+> Description: Evaluation results inform program changes, and drive improvements in implementation fidelity and measurability.
+> Measured: 
+>
+> Tag: 03
+> Name: Outcomes
+> Description: The program team defines implementation strategies from the recommendations, and reports results, roadblocks and community concerns.
+> Measured: 
+>
+> Tag: 04
+> Name: Recursion and integration
+> Description: Traces the processes that translate metrics to outcomes and builds cross-cutting improvement strategies that feed into the next evaluative cycle.
+> Measured: 
+
+**ID: `ABOUT.LOGIC.note`**
+Context: Moved from Our Model in v98; it was `INVOLVED.IMPACT.note`, and that ID is retired.
+Orange box. Recursion and integration is the concept a first-time reader has
+never met, so this explains why it exists before asking anyone to care about its three
+mechanisms (causal chain identification, metric integration, evaluation recursion — here
+in plain words rather than by name). The second sentence says why existing models lose the
+connection to outcomes; the last is what makes it matter to a funder.
+> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Existing models, due to their reliance on time-determined fees and/or discrete deliverables, essentially absolve themselves of accountability for their clients' outcomes by dissolving their connection to the work on the ground. Recursion and integration explicitly does the opposite: qualitative analysis traces each evaluation and program input through to its effect on downstream outcomes. This keeps our practice accountable to outcomes rather than to deliverables.
+
+## C3. Why this exists
 
 Eyebrow, heading and one paragraph of argument, stacked and centred (since v76; until then the
-heading sat on the left with the paragraph beside it); the two-field timeline (§C3) runs below.
+heading sat on the left with the paragraph beside it); the two-field timeline (§C4) runs below.
 The same treatment as "How the program runs" on Evaluation Process. Until v56 this text stuck
 beside the timeline as it scrolled; the timeline now needs the full width.
 
@@ -1485,7 +1584,7 @@ section, lightly edited for a web reader ("methodologies" → "methods", "self-i
 "take on alone").
 > Program evaluation is inaccessible and underleveraged. As a service, its practitioners are disparate or overpriced. As a practice, its methods are too niche, its implementation too resource-intensive, and its benefits too obscure for program teams to incorporate alone. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption. In the current market, those carry impossible costs for small and mid-sized organizations. 
 
-## C3. Evidence timeline
+## C4. Evidence timeline
 
 Two fields, one synthesis. Since v56 the timeline shows the model as a combination of
 implementation science and evaluation capacity building (ECB): each field has a rail of its
@@ -1709,7 +1808,9 @@ Fits: One sentence, ~90 characters; two lines on desktop, up to three on a phone
 New on 13 September, from the Program Description's sequencing diagram. Since v75 one section,
 text above the Evaluation Pipeline app: the eight-step timeline that stood beside the text is
 gone, and the app below now shows the sequence. The text is centred over the app, as "Opening
-the black box" is over the cards; the long paragraphs read more slowly centred than set left.
+the black box" is over the cards. Since v98 it is only the eyebrow and the heading, which lead
+straight into the app: the two paragraphs under them came off in v97, and the one line that
+replaced them in v98.
 Anchored at `#pilot-sequence` — since v14 both "Our program" buttons on the home page land
 here (they went to `#flagship`, on the removed "Two ways in" section).
 
@@ -1732,16 +1833,6 @@ Context: "The process is the program" is the Program Description's own headline 
 the most compressed statement of what makes the program different. Keep it verbatim.
 > The process is the program.
 
-**ID: `PROGRAMS.SEQUENCE.body`**
-Context: Two paragraphs. The first says what the implementation support professional does
-and what your staff co-create. The second explains the loop: written for the timeline that
-stood beside it until v75, it now introduces the app straight below, whose own title
-follows it. "Recursion and integration" and "graduation" were the names of steps 06 and 07
-of that timeline; since 20 October the app shows that program journey itself, Graduation
-included, in a column beside the pipeline.
-> The implementation support professional coordinates the evaluation, shepherds findings into program changes, and helps build a culture of inquiry within the team. The organization's staff co-create the frameworks, collection methods, pilots and data architecture alongside them.
-> The sequence runs in one direction until it reaches recursion and integration, and then it loops: findings become program changes, outcomes feed the next round of evaluation, and the cycle repeats until graduation.
-
 **ID: `PROGRAMS.PIPELINE.frame`**
 Context: Not visible: the name a screen reader announces for the embedded app before reading
 the app itself, as `ALT.demo` does on the Demo page. It is the app's own page title.
@@ -1753,7 +1844,8 @@ the app itself, as `ALT.demo` does on the Demo page. It is the app's own page ti
 `get-involved.html` — the page that explains why the price is possible. Deck Page 2.
 (File name is still `get-involved.html`; the visible label is "Our Model".)
 **Unlisted since v79:** nothing on the site links here and it carries `noindex, nofollow`.
-Reached only from a link you give out.
+Reached only from a link you give out. Since v98 it runs banner, The structure, closing band:
+Impact logic moved to About (§C2).
 
 ## E1. Page banner
 
@@ -1765,55 +1857,7 @@ Context: Six words of problem, four of claim. It promises an explanation rather 
 pitch, which is the right promise for the reader who has just been told the price.
 > Everything special about the Ascent model, and how it can deliver real change in the mission-oriented sector.
 
-## E2. Impact logic
-
-New on 13 September, from the Program Description's impact-stream diagram and its
-interventions table. Four cards, then an orange box (the table came off in v38). Anchored at
-`#impact-logic`; nothing links here now that the program sequence button is gone (v51).
-
-**ID: `INVOLVED.IMPACT.intro`**
-Context: The heading is the brief's positioning claim, shortened. It only works because
-the lead immediately says *how* the program differs from each: deeper than consulting,
-more participatory than capacity building.
-> Eyebrow: Impact logic
-> Heading: More than evaluation consulting. Beyond capacity building.
-> Lead: The program reaches deeper into an organization than traditional evaluation consulting, and it is far more participatory, on both sides, than typical capacity-building models. While building capacity, our model is designed to incorporate outcomes sensitivity through the following impact cascade:
-
-**ID: `INVOLVED.IMPACT.stream`**
-Context: Four cards in the order of the brief's impact stream. Each = number tag, name,
-what happens, then a bold line saying who leads it and what gets measured there. The bold
-lines are the accountability claim: they say which parts Ascent answers for directly and
-which belong to the client. Card three is orange, marking the step Ascent does not touch.
-Fits: ~130 characters per description; bold line one short sentence.
-> Tag: 01
-> Name: Evaluation
-> Description: Establishes the systems and standards for recursive improvement, and the baseline measurements that change is rated against.
-> Measured: 
->
-> Tag: 02
-> Name: Programs
-> Description: Evaluation results inform program changes, and drive improvements in implementation fidelity and measurability.
-> Measured: 
->
-> Tag: 03
-> Name: Outcomes
-> Description: The program team defines implementation strategies from the recommendations, and reports results, roadblocks and community concerns.
-> Measured: 
->
-> Tag: 04
-> Name: Recursion and integration
-> Description: Traces the processes that translate metrics to outcomes and builds cross-cutting improvement strategies that feed into the next evaluative cycle.
-> Measured: 
-
-**ID: `INVOLVED.IMPACT.note`**
-Context: Orange box. Recursion and integration is the concept a first-time reader has
-never met, so this explains why it exists before asking anyone to care about its three
-mechanisms (causal chain identification, metric integration, evaluation recursion — here
-in plain words rather than by name). The second sentence says why existing models lose the
-connection to outcomes; the last is what makes it matter to a funder.
-> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Existing models, due to their reliance on time-determined fees and/or discrete deliverables, essentially absolve themselves of accountability for their clients' outcomes by dissolving their connection to the work on the ground. Recursion and integration explicitly does the opposite: qualitative analysis traces each evaluation and program input through to its effect on downstream outcomes. This keeps our practice accountable to outcomes rather than to deliverables.
-
-## E3. The structure
+## E2. The structure
 
 *(Was `INVOLVED.ROLES.*` — six collaboration roles.)*
 
@@ -1854,7 +1898,7 @@ second-to-last names the published guidance the role is built on, as the Program
 Description does; if you want it linked, send me the URLs you use for the two documents.
 > An implementation support professional's expertise is the holistic appraisal of the organization's and community's needs and the methods most likely to make new knowledge and practice stick. They translate findings into feasible program changes and shepherd those changes through the organization, with attention to its resources and practice context. The role is grounded in the Collaborative for Implementation Practice's Implementation Support Practitioner Profile and Practice Guide. No existing model applies that evidence, explicitly and measurably, to evaluation capacity building.
 
-## E4. Closing call to action
+## E3. Closing call to action
 
 **ID: `INVOLVED.CTA`**
 Context: A model page has to end by admitting that the model is not the product.

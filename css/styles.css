@@ -1161,6 +1161,76 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   .strands__synthesis { max-width: 36rem; margin-inline: auto; }
 }
 
+/* Impact cascade (About): four stages on one continuous line, drawn like the rails above.
+
+   Narrow screens: the line runs down the left edge and each stage is a row on it.
+   From 901px: a staircase. Each stage sits one --drop below the last; its line crosses
+   the top of its column and turns down into the next stage's node, which paints over the
+   end of it. The last stage draws no line of its own, so the line stops at its node. */
+.cascade {
+  --rail: 3px;
+  --node: 2.75rem;
+  --drop: 4rem;
+  --gap: var(--sp-6);
+  --rail-colour: color-mix(in srgb, var(--brand) 55%, var(--bg));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cascade__step { position: relative; margin: 0; }
+.cascade__step:not(:last-child)::before { content: ""; position: absolute; }
+.cascade__num {
+  position: absolute;
+  z-index: 1;
+  top: 0; left: 0;
+  display: grid;
+  place-items: center;
+  width: var(--node); height: var(--node);
+  border: var(--rail) solid var(--brand);
+  border-radius: var(--radius-pill);
+  background: var(--bg);
+  font-family: var(--font-bold);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--brand);
+}
+.cascade__step--accent .cascade__num { border-color: var(--accent); color: var(--accent); }
+.cascade__step h3 { margin-bottom: var(--sp-2); }
+.cascade__step p { color: var(--text-muted); }
+
+@media (max-width: 900px) {
+  .cascade__step { padding: 0.6rem 0 var(--sp-6) calc(var(--node) + var(--sp-4)); }
+  .cascade__step:last-child { padding-bottom: 0; }
+  .cascade__step::before {
+    top: 0; bottom: 0;
+    left: calc(var(--node) / 2 - var(--rail) / 2);
+    width: var(--rail);
+    background: var(--rail-colour);
+  }
+}
+
+@media (min-width: 901px) {
+  .cascade {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: var(--gap);
+    align-items: start;
+  }
+  .cascade__step { padding-top: calc(var(--node) + var(--sp-4)); }
+  .cascade__step:nth-child(2) { margin-top: var(--drop); }
+  .cascade__step:nth-child(3) { margin-top: calc(var(--drop) * 2); }
+  .cascade__step:nth-child(4) { margin-top: calc(var(--drop) * 3); }
+  .cascade__step::before {
+    top: calc(var(--node) / 2 - var(--rail) / 2);
+    left: calc(var(--node) / 2);
+    right: calc((var(--gap) + var(--node) / 2 + var(--rail) / 2) * -1);
+    height: calc(var(--drop) + var(--rail) / 2);
+    border-top: var(--rail) solid var(--rail-colour);
+    border-right: var(--rail) solid var(--rail-colour);
+    border-top-right-radius: var(--sp-4);
+  }
+}
+
 /* --------------------------------------------------------------------------
    13. Team
    -------------------------------------------------------------------------- */
