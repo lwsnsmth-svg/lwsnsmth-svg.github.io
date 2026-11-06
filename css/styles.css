@@ -806,9 +806,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   background: none;
   box-shadow: none;
 }
-/* Text above it gets a full section's 6rem before the app's content: the app
-   already pads its own top by 1.5rem, so the frame adds the rest. */
-* + .demo-frame--bare { margin-top: calc(var(--sp-9) - var(--sp-5)); }
+/* Text above it gets the 3rem a .section-head leaves before its content, so the app
+   reads as the rest of that section: the app already pads its own top by 1.5rem, so
+   the frame adds the rest. */
+* + .demo-frame--bare { margin-top: calc(var(--sp-7) - var(--sp-5)); }
 .demo-meta {
   display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
   gap: var(--sp-3) var(--sp-5);

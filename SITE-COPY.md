@@ -3,7 +3,21 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 100 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+**Version:** 102 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+
+> **What changed in v102.** Your edit to the Impact logic lead on About (`ABOUT.LOGIC.intro`) is
+> applied: it now reads "The model is designed to incorporate outcomes sensitivity…" (was "While
+> building capacity, our model is designed…"). At your request, the orange circle in the impact
+> cascade (`ABOUT.LOGIC.stream`) moved from stage 03 to stage 04, Recursion and integration. It now
+> works like a footnote marker, pointing to the orange box below, "Why recursion and integration
+> exists". On stage 03 the orange marked the step Ascent does not touch; the cascade no longer
+> signals that, on purpose. **No ID changed.**
+
+> **What changed in v101.** At your request, less space between "The process is the program." and
+> the Evaluation Pipeline app on Evaluation Process: 48px before the app's content, down from 96px,
+> the same as "Opening the black box" leaves before its cards. The app now reads as the rest of that
+> section. The wording is unchanged. Returning visitors' browsers are told to fetch the stylesheet
+> afresh. **No ID changed.**
 
 > **What changed in v100.** At your request, the arrow after stage 04 in Impact logic on About
 > (`ABOUT.LOGIC.stream`) is gone, on a desktop and on a phone. The line now ends at stage 04's
@@ -1522,15 +1536,16 @@ more participatory than capacity building. This is the one place on the site the
 it also stood under "The process is the program." on Evaluation Process in v97.
 > Eyebrow: Impact logic
 > Heading: More than evaluation consulting. Beyond capacity building.
-> Lead: The program reaches deeper into an organization than traditional evaluation consulting, and it is far more participatory, on both sides, than typical capacity-building models. While building capacity, our model is designed to incorporate outcomes sensitivity through the following impact cascade:
+> Lead: The program reaches deeper into an organization than traditional evaluation consulting, and it is far more participatory, on both sides, than typical capacity-building models. The model is designed to incorporate outcomes sensitivity through the following impact cascade:
 
 **ID: `ABOUT.LOGIC.stream`**
 Context: Moved from Our Model in v98; it was `INVOLVED.IMPACT.stream`, and that ID is retired.
 Four stages in the order of the brief's impact stream. Since v99 they sit on one continuous line
 that steps down from left to right and ends at stage four, to show a single linear cascade; on
 a phone the line runs down the left edge. Each = number in a circle on the line, name, what
-happens. The bold "Measured" lines came off earlier, so those fields stay empty. Stage three's
-circle is orange, marking the step Ascent does not touch.
+happens. The bold "Measured" lines came off earlier, so those fields stay empty. Since v102 stage
+four's circle is orange on purpose, as a footnote marker for the orange box below that explains it
+(`ABOUT.LOGIC.note`); until then it was stage three's, marking the step Ascent does not touch.
 Fits: ~130 characters per description. Longer text makes that stage's column longer, not the steps.
 > Tag: 01
 > Name: Evaluation
@@ -1554,7 +1569,7 @@ Fits: ~130 characters per description. Longer text makes that stage's column lon
 
 **ID: `ABOUT.LOGIC.note`**
 Context: Moved from Our Model in v98; it was `INVOLVED.IMPACT.note`, and that ID is retired.
-Orange box. Recursion and integration is the concept a first-time reader has
+Orange box, which the orange circle on stage four points to like a footnote (since v102). Recursion and integration is the concept a first-time reader has
 never met, so this explains why it exists before asking anyone to care about its three
 mechanisms (causal chain identification, metric integration, evaluation recursion — here
 in plain words rather than by name). The second sentence says why existing models lose the
@@ -1821,9 +1836,9 @@ and never scrolls inside itself; with JavaScript off it falls back to 720px. Sin
 loads with the page and fades in once loaded, so the browser's empty frame never shows. Unlike the
 Demo page (§F2) it has no border, shadow or rounded corners: the app's background is the
 page's own, so it reads as part of the page rather than a framed window. Nothing inside it is
-site copy, and there is no small print or "open in a new tab" link under it. Since v77 the
-text above the app leaves 96px before the app's content, the same as the space at the top of
-the section.
+site copy, and there is no small print or "open in a new tab" link under it. Since v101 the
+text above the app leaves 48px before the app's content, the same as "Opening the black box"
+leaves before its cards, so the app reads as the rest of the section.
 
 **ID: `PROGRAMS.SEQUENCE.eyebrow`**
 > Our program
