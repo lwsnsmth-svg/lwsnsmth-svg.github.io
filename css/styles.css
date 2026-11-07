@@ -652,36 +652,23 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
 }
 
 /* --------------------------------------------------------------------------
-   7. Page banner (interior pages)
+   7. First section of interior pages
    -------------------------------------------------------------------------- */
-.page-hero {
+/* Those pages have no title section. Whichever section comes first has the background
+   the title sections had: the darkest navy, with a teal glow top right and an amber one
+   bottom left. */
+.section--glow {
   position: relative;
   background: var(--bg-inverse);
-  color: #fff;
-  padding-block: clamp(3rem, 7vw, 5.5rem);
-  overflow: hidden;
   isolation: isolate;
 }
-.page-hero::before {
+.section--glow::before {
   content: "";
   position: absolute; inset: 0; z-index: -1;
   background:
     radial-gradient(760px 420px at 82% 10%, rgba(42, 132, 113, 0.5), transparent 62%),
     radial-gradient(520px 340px at 4% 100%, rgba(224, 123, 34, 0.22), transparent 60%);
 }
-.page-hero h1 { color: #fff; margin-bottom: var(--sp-4); }
-.page-hero h1:last-child { margin-bottom: 0; }   /* banner with no lead (editor_demo) */
-.page-hero p { color: rgba(255,255,255,0.82); max-width: 60ch; font-size: var(--step-1); }
-
-.breadcrumb {
-  display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2);
-  list-style: none; padding: 0; margin: 0 0 var(--sp-4);
-  font-size: var(--step--1);
-  color: rgba(255,255,255,0.65);
-}
-.breadcrumb li + li { margin-top: 0; }
-.breadcrumb li + li::before { content: "/"; margin-right: var(--sp-2); opacity: 0.5; }
-.breadcrumb a { color: rgba(255,255,255,0.85); }
 
 /* --------------------------------------------------------------------------
    8. Cards

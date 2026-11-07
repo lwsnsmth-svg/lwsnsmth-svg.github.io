@@ -3,7 +3,26 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 106 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+**Version:** 107 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+
+> **What changed in v107.** At your request, the title sections are gone from every page but
+> Home: the breadcrumb trail ("Home / About"), the large page title and the subhead, on About,
+> Evaluation Process, Our Model, Demo, Download and the editor demo. The 404 page never had one.
+> The section that now comes first on each page has the title section's background: the darkest
+> navy with the teal and orange glows. On Evaluation Process and Our Model that replaces grey.
+>
+> The five subheads are gone and their IDs retired: `ABOUT.HERO.lead`, `PROGRAMS.HERO.lead`,
+> `INVOLVED.HERO.lead`, `DEMO.HERO.lead` and `DOWNLOAD.HERO.lead`. The page titles stay, but not
+> visibly: each page still needs one main heading for screen readers and search engines. Those
+> blocks keep their IDs, under sections renamed "Page heading", so nothing renumbers. The doc's
+> `INVOLVED.HERO.h1` said "The Model"; the page has always said "Our Model", so the doc now does
+> too. The removed copy is in the snapshot
+> `~/Desktop/Ascent Website archive/2026-11-06 before title sections removed/`, and in git.
+> Returning visitors' browsers are told to fetch the stylesheet afresh. **No other ID changed.**
+>
+> Worth a look: Demo now opens on the app itself, with nothing above it saying what it is, and
+> Download opens on its version number and "Choose your operating system", with no visible text
+> saying what the app is or does. Those were the subheads' jobs.
 
 > **What changed in v106.** Your edits to the orange box in Impact logic on About
 > (`ABOUT.LOGIC.note`) are applied, word for word. Its first sentence now says "capacity-building
@@ -1524,35 +1543,26 @@ and came off in v79 when that page became unlisted.
 ---
 # C. About
 
-`about.html` — what Ascent is and why it exists: a banner, the impact logic and the evidence base. The deck has no About page; this one was built from its standards
+`about.html` — what Ascent is and why it exists: the impact logic and the evidence base. The deck has no About page; this one was built from its standards
 chapter and its governance section, and both are now gone — the quality assurance
 material in v10, the Governance section in v11 — because the site describes a
 hypothetical service set and doesn't need that depth.
 
-## C1. Page banner
+## C1. Page heading
 
 **ID: `ABOUT.HERO.h1`**
-Context: Dark banner at the top of the page. Every interior page has one. Since v12 the
-heading stands alone — the subhead under it (`ABOUT.HERO.lead`, "Ascent is a nonprofit
-program evaluation practice in New York City.") came off. Was "Built for the
-organizations evaluation was priced away from". Reads "About" since v96, your edit; the
-sentence it used to carry is now in `ABOUT.HERO.lead`.
-Fits: 1–2 lines.
+Context: Not visible since v107, when the title section came off: the page's main heading
+for screen readers and search engines. Every page with a title section kept its title this
+way. Reads "About" since v96, your edit.
 > About
-
-**ID: `ABOUT.HERO.lead`**
-Context: Subhead under the banner heading. Back in v13 after being off since v12 (it used to be
-"Ascent is a nonprofit program evaluation practice in New York City."). Since v96 it carries the
-whole sentence on its own: who the work is for, then what it is designed to do.
-Fits: Two lines on a desktop, three on a phone.
-> Built for the benefit of organizations priced out of evaluation and designed to translate evaluation to outcomes.
 
 ## C2. Impact logic
 
 Moved here from Our Model in v98, at your request, whole and in the same wording: heading and
 lead, four stages on one stepped line (separate cards until v99), then an orange box. It began on 13 September, from the Program Description's
-impact-stream diagram and its interventions table (the table came off in v38). Plain background,
-so the page alternates into the grey "The evidence base" below; since v103 the heading and lead
+impact-stream diagram and its interventions table (the table came off in v38). Since v107 it
+opens the page, on the background the title section had, and the grey "The evidence base"
+follows; since v103 the heading and lead
 run to the same width as that section's text. Anchored at `#impact-logic`; nothing links here.
 
 **ID: `ABOUT.LOGIC.intro`**
@@ -1788,19 +1798,15 @@ Fits: Label one word; Headline one line; Detail two sentences, about 55 words.
 `programs.html` — the detail page. Someone deciding whether to hire you reads this.
 (File name is still `programs.html`; the visible label is "Evaluation Process".)
 
-## D1. Page banner
+## D1. Page heading
 
 **ID: `PROGRAMS.HERO.h1`**
+Context: Not visible since v107, as `ABOUT.HERO.h1`.
 > Evaluation Process
-
-**ID: `PROGRAMS.HERO.lead`**
-Context: "A link in a chain and a standalone engagement" is the commercial proposition
-in nine words — it says you can buy one piece without buying the programme.
-> A four-phase evaluation pipeline. Our process is recursive, building upon past findings and expanding a model's explanatory leverage.
 
 ## D2. Overview cards
 
-Four cards, two by two. Since v74 they have no "Learn more" buttons: the phase detail
+Since v107 this section opens the page, on the background the title section had (it was grey). Four cards, two by two. Since v74 they have no "Learn more" buttons: the phase detail
 sections they linked down to are gone (the app in §D3 covers the phases). These summaries are
 **shorter than the home page versions** on purpose. Since v13 each card shows a
 screenshot of a working tool in place of its placeholder illustration: Phase 1 a logic
@@ -1888,20 +1894,18 @@ the app itself, as `ALT.demo` does on the Demo page. It is the app's own page ti
 `get-involved.html` — the page that explains why the price is possible. Deck Page 2.
 (File name is still `get-involved.html`; the visible label is "Our Model".)
 **Unlisted since v79:** nothing on the site links here and it carries `noindex, nofollow`.
-Reached only from a link you give out. Since v98 it runs banner, The structure, closing band:
-Impact logic moved to About (§C2).
+Reached only from a link you give out. Since v107 it runs The structure, closing band:
+Impact logic moved to About in v98 (§C2).
 
-## E1. Page banner
+## E1. Page heading
 
 **ID: `INVOLVED.HERO.h1`**
-> The Model
-
-**ID: `INVOLVED.HERO.lead`**
-Context: Six words of problem, four of claim. It promises an explanation rather than a
-pitch, which is the right promise for the reader who has just been told the price.
-> Everything special about the Ascent model, and how it can deliver real change in the mission-oriented sector.
+Context: Not visible since v107, as `ABOUT.HERO.h1`.
+> Our Model
 
 ## E2. The structure
+
+Since v107 this section opens the page, on the background the title section had (it was grey).
 
 *(Was `INVOLVED.ROLES.*` — six collaboration roles.)*
 
@@ -1959,21 +1963,15 @@ separately (ascentmapper.netlify.app) and shown in a frame, so nothing inside th
 frame is covered here — its wording changes in the app. Its sample program is a fictional
 job-readiness program.
 
-## F1. Page banner
+## F1. Page heading
 
 **ID: `DEMO.HERO.h1`**
-Context: The tool's own name, as the app titles itself.
+Context: Not visible since v107, as `ABOUT.HERO.h1`. The tool's own name, as the app titles itself.
 > Program Mapper
-
-**ID: `DEMO.HERO.lead`**
-Context: What the tool is, then three things a visitor can do in it. "Behind our evaluation
-pipeline" ties it to the phase cards on Evaluation Process, which show its screenshots.
-Fits: 2–3 lines, ~180 characters.
-> Try the app behind our evaluation pipeline. The application **describes** the evaluation process, and the demo depicts the data penetration of multiple rounds of recursive evaluation.
 
 ## F2. The demo
 
-The app in a bordered frame, the full width of the page and 720px tall. Under it, a line of
+Since v107 this section opens the page, on the background the title section had. The app in a bordered frame, the full width of the page and 720px tall. Under it, a line of
 small print on the left and a link on the right. Since v91 the app loads with the page and
 fades in once loaded.
 
@@ -2177,16 +2175,15 @@ frame, so nothing inside the frame is covered here. The editor is a second build
 app, served beside the view-only one rather than switched on in it; the Demo page still
 shows the view-only app.
 
-## K1. Page banner
+## K1. Page heading
 
 **ID: `EDITOR.HERO.h1`**
-Context: The Demo page's heading with "editor" added, so the two can be told apart in a tab
-or a screenshot.
+Context: Not visible since v107, as `ABOUT.HERO.h1`. The Demo page's heading with "editor" added, so the two can be told apart.
 > Program Mapper editor
 
 ## K2. The editor
 
-The app in the same bordered frame as the Demo page, the full width of the page and 720px
+Since v107 this section opens the page, on the background the title section had. The app in the same bordered frame as the Demo page, the full width of the page and 720px
 tall, with the same small print on the left and a link on the right.
 
 **ID: `EDITOR.EMBED.note`**
@@ -2212,28 +2209,18 @@ page that points at them. It is last in this document so that no
 existing page letter moved; on the site it is the sixth nav item, after Demo. It was drafted
 from the app's README and release notes and reworded by you in v65.
 
-## L1. Page banner
+## L1. Page heading
 
 **ID: `DOWNLOAD.HERO.h1`**
-Context: Since v65 the heading does not name the app, so no visible text on the page does:
-the name appears only in the browser-tab title and description (`SEO.download`) and in the
-downloaded file. That sidesteps the "Ascent Mapper" / "Program Mapper" question for now.
-Fits: 3–4 words, one line.
+Context: Not visible since v107, as `ABOUT.HERO.h1`. Since v65 it does not name the app, and no visible text on
+the page does: the name appears only in the browser-tab title and description (`SEO.download`)
+and in the downloaded file. That sidesteps the "Ascent Mapper" / "Program Mapper" question for now.
 > Download the app
-
-**ID: `DOWNLOAD.HERO.lead`**
-Context: What the app is and does, in your v66 wording: it supports "our evaluation process"
-and names four things it does (build logic models, aggregate evidence against each link,
-monitor external policy developments, project change across all metrics), which makes it a
-list in one line rather than a description. The first draft, from the app's README, said
-"building and reading program logic models, with the evidence behind each link and the
-people around the program".
-Fits: 2–3 lines, ~215 characters, the current length: three lines on desktop.
-> The desktop app that supports our evaluation process: build program logic models, aggregate evidence and map it to each link, monitor the effects of external policy developments and project change across all metrics.
 
 ## L2. The installers
 
-Three cards in a row, one per installer, each with one button; the last section on the page.
+Three cards in a row, one per installer, each with one button; the only section on the page
+since v107, on the background the title section had.
 Anchored at `#installers`. Nothing picks for the visitor: a web page cannot reliably tell an
 Apple-silicon Mac from an Intel one, so they choose. Since v68 each Mac button downloads its
 installer from the newest release on GitHub, pre-releases included: the page looks the
