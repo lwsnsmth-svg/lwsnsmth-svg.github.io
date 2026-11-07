@@ -3,7 +3,11 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 102 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+**Version:** 103 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+
+> **What changed in v103.** At your request, the Impact logic heading and lead on About now run to
+> the same width as "The evidence base" below them: 559 pixels in a 1280-pixel window, up from 523.
+> The wording is unchanged. **No ID changed.**
 
 > **What changed in v102.** Your edit to the Impact logic lead on About (`ABOUT.LOGIC.intro`) is
 > applied: it now reads "The model is designed to incorporate outcomes sensitivity…" (was "While
@@ -1525,8 +1529,8 @@ Fits: Two lines on a desktop, three on a phone.
 Moved here from Our Model in v98, at your request, whole and in the same wording: heading and
 lead, four stages on one stepped line (separate cards until v99), then an orange box. It began on 13 September, from the Program Description's
 impact-stream diagram and its interventions table (the table came off in v38). Plain background,
-so the page alternates into the grey "The evidence base" below. Anchored at `#impact-logic`;
-nothing links here.
+so the page alternates into the grey "The evidence base" below; since v103 the heading and lead
+run to the same width as that section's text. Anchored at `#impact-logic`; nothing links here.
 
 **ID: `ABOUT.LOGIC.intro`**
 Context: Moved from Our Model in v98; it was `INVOLVED.IMPACT.intro`, and that ID is retired.
