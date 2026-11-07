@@ -3,7 +3,34 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 102 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+**Version:** 106 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+
+> **What changed in v106.** Your edits to the orange box in Impact logic on About
+> (`ABOUT.LOGIC.note`) are applied, word for word. Its first sentence now says "capacity-building
+> services" (was "evaluation-based services"). Its second now reads "Existing models, due to their
+> reliance on time-determined fees and discrete deliverables, abdicate their accountability to
+> outcomes by detaching from practice context." **No ID changed.**
+>
+> Worth a look: two of these claim something different. "Capacity-building services" changes which
+> services the studies are said to cover, and "and" (was "and/or") says existing models rely on both
+> fees and deliverables. Check that the sources support them.
+
+> **What changed in v105.** At your request, two more matches on About. The evidence base paragraph
+> (`ABOUT.STORY.para2`) is now the same grey as the Impact logic lead. The entry headings on the
+> evidence timeline (`ABOUT.TIMELINE.*`) are now the size of the headings in the impact cascade, up
+> from the size of their body text. The timeline's body text was already the cascade's size, so it
+> did not change, and neither did the small year labels, which the cascade has no match for. The
+> wording is unchanged. Returning visitors' browsers are told to fetch the stylesheet afresh.
+> **No ID changed.**
+
+> **What changed in v104.** Your edit to the evidence base paragraph on About (`ABOUT.STORY.para2`)
+> is applied: the two sentences "As a service…" and "As a practice…" are gone. At your request, that
+> paragraph is now the same size as the Impact logic lead (`ABOUT.LOGIC.intro`), with the same line
+> spacing. It keeps its brighter text colour, so the two still differ in colour. **No ID changed.**
+
+> **What changed in v103.** At your request, the Impact logic heading and lead on About now run to
+> the same width as "The evidence base" below them: 559 pixels in a 1280-pixel window, up from 523.
+> The wording is unchanged. **No ID changed.**
 
 > **What changed in v102.** Your edit to the Impact logic lead on About (`ABOUT.LOGIC.intro`) is
 > applied: it now reads "The model is designed to incorporate outcomes sensitivity…" (was "While
@@ -1525,8 +1552,8 @@ Fits: Two lines on a desktop, three on a phone.
 Moved here from Our Model in v98, at your request, whole and in the same wording: heading and
 lead, four stages on one stepped line (separate cards until v99), then an orange box. It began on 13 September, from the Program Description's
 impact-stream diagram and its interventions table (the table came off in v38). Plain background,
-so the page alternates into the grey "The evidence base" below. Anchored at `#impact-logic`;
-nothing links here.
+so the page alternates into the grey "The evidence base" below; since v103 the heading and lead
+run to the same width as that section's text. Anchored at `#impact-logic`; nothing links here.
 
 **ID: `ABOUT.LOGIC.intro`**
 Context: Moved from Our Model in v98; it was `INVOLVED.IMPACT.intro`, and that ID is retired.
@@ -1574,7 +1601,7 @@ never met, so this explains why it exists before asking anyone to care about its
 mechanisms (causal chain identification, metric integration, evaluation recursion — here
 in plain words rather than by name). The second sentence says why existing models lose the
 connection to outcomes; the last is what makes it matter to a funder.
-> **Why recursion and integration exists.** Studies of existing models find a weak connection between evaluation-based services and final program outcomes. Existing models, due to their reliance on time-determined fees and/or discrete deliverables, essentially absolve themselves of accountability for their clients' outcomes by dissolving their connection to the work on the ground. Recursion and integration explicitly does the opposite: qualitative analysis traces each evaluation and program input through to its effect on downstream outcomes. This keeps our practice accountable to outcomes rather than to deliverables.
+> **Why recursion and integration exists.** Studies of existing models find a weak connection between capacity-building services and final program outcomes. Existing models, due to their reliance on time-determined fees and discrete deliverables, abdicate their accountability to outcomes by detaching from practice context. Recursion and integration explicitly does the opposite: qualitative analysis traces each evaluation and program input through to its effect on downstream outcomes. This keeps our practice accountable to outcomes rather than to deliverables.
 
 ## C3. Why this exists
 
@@ -1593,11 +1620,11 @@ Fits: 2 lines.
 **ID: `ABOUT.STORY.para2`**
 Context: The only paragraph under the heading since v59, when the founding argument that
 used to open it (`ABOUT.STORY.para1`) moved to the home page as `HOME.STATS.lead`. It says
-why the answer is a different structure rather than a discount. The
-diagnosis in the first three sentences comes from the Program Description's mission
-section, lightly edited for a web reader ("methodologies" → "methods", "self-implement" →
-"take on alone").
-> Program evaluation is inaccessible and underleveraged. As a service, its practitioners are disparate or overpriced. As a practice, its methods are too niche, its implementation too resource-intensive, and its benefits too obscure for program teams to incorporate alone. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption. In the current market, those carry impossible costs for small and mid-sized organizations. 
+why the answer is a different structure rather than a discount. It matches the Impact logic lead
+(`ABOUT.LOGIC.intro`): the same size since v104 and the same grey since v105. Your v104 edit cut
+the two sentences of diagnosis that came from the Program Description's mission section ("As a
+service…", "As a practice…").
+> Program evaluation is inaccessible and underleveraged. The evidence says evaluation works best through long-term collaboration that builds trust, deepens context and shepherds adoption. In the current market, those carry impossible costs for small and mid-sized organizations. 
 
 ## C4. Evidence timeline
 
@@ -1608,6 +1635,8 @@ entry (`ABOUT.TIMELINE.synthesis`). Entries run in date order down both rails, s
 picture also shows the timing — ECB maturing from the late 1990s, implementation support
 professionalizing in the late 2010s, both arriving in 2020, and the implementation support
 role defined further in 2024. On a phone the two rails run side by side down the left edge.
+Since v105 each entry's heading and body text are the same sizes as those in the impact cascade
+(§C2).
 
 Five of the six ECB landmarks in Table 2 of the Evidence & Peer Context brief are here, as
 `ABOUT.TIMELINE.11` to `16` without `14`; the four studies in its Table 3 were already here.

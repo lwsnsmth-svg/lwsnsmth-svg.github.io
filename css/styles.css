@@ -1033,7 +1033,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: var(--sp-7) 0; }
   background: linear-gradient(var(--bg-muted), var(--bg-muted)) padding-box,
               linear-gradient(90deg, var(--is), var(--ecb)) border-box;
 }
-.strand h3 { margin-bottom: var(--sp-2); font-size: var(--step-0); }
+.strand h3 { margin-bottom: var(--sp-2); }
 .strand p:last-child { margin-bottom: 0; color: var(--text-muted); }
 
 .strand__meta {
