@@ -22,6 +22,9 @@ parsed out of it live — so **the doc is the only thing to keep aligned.** See
 
 Preview with `python3 -m http.server 8000`. There is nothing to compile.
 
+**Every page carries the Google tag (`GTM-5KVBKM44`)** as the first thing inside
+`<head>`, unlisted pages included. A new page copies it verbatim from any existing one.
+
 ---
 
 ## SITE-COPY.md is the source of truth for copy
