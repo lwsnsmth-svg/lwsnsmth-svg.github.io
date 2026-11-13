@@ -3,7 +3,28 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 108 · **Updated:** 12 November 2026 · **Covers:** 8 pages
+**Version:** 109 · **Updated:** 12 November 2026 · **Covers:** 8 pages
+
+> **What changed in v109.** Your edit to the third tool card on Home ("Evidence & Theories of
+> Change", `HOME.METHODS.tools`, Description 3) is applied, word for word. It now opens "Trace
+> program inputs to long-term outcomes" (was "Build the logic model from inputs to long-term
+> outcomes") and ends on a new sentence about searching research databases from the model's
+> structure, so it now tells the same story as the Demo page's Theory of change card from v108.
+>
+> Your edit to the heading of the Why it matters card on Home (`HOME.WHY.leaders`) is applied
+> too: it is now "For nonprofit leaders, programs teams, organizers and advocates" (was "…programs
+> teams and practitioners"). The section's description in this doc names the same audience.
+>
+> At your request, the text on all six cards in Evaluation that Goes Further is larger: the
+> three phase cards and the three tool cards, names and dropdown text alike. Both grew by the
+> same eighth (12.5%), so the names stay just as far ahead of the text beneath them; on a
+> desktop screen the names are now about 20px (were 17px) and the dropdown text about 16px
+> (was 14px). Returning visitors' browsers are told to fetch the stylesheet afresh.
+> **No ID changed.**
+>
+> Worth a look: Description 3 is now about 300 characters, against the ~200 the block's
+> length guide asks for. It fits in the open card at every width, but it is half again as long
+> as the other five.
 
 > **What changed in v108.** Your edit to the Theory of change card on Demo (`DEMO.VIEWS.cards`)
 > is applied, word for word. It now says the evidence is found by an automatic research tool that
@@ -1434,7 +1455,8 @@ description of that view, and clicking again closes it. Without JavaScript the d
 are simply shown. The screenshots are `assets/tool-*.png`; their alt text is in
 `ALT.home_tools`. The sample data in them (a job-readiness program) is example data, not a
 client result. The descriptions began as mine, written from what the screenshots show; you
-rewrote the first two in v55. Correct them freely.
+rewrote the first two in v55 and the third in v109. Correct them freely. Since v109 the names
+and descriptions on all six cards (these and `HOME.METHODS.phases`) are an eighth larger.
 Fits: Name ≤ ~35 characters; description 1–2 sentences, ~200 characters. Three across, one
 column on narrow screens.
 > Name 1: Stakeholder Mapping
@@ -1442,7 +1464,7 @@ column on narrow screens.
 > Name 2: Policy and Practice Context
 > Description 2: Keep track of the rules, regulations, funding formulas and incentives that shape the program: what is in force today, what is proposed, and how changes can affect the program's projections.
 > Name 3: Evidence & Theories of Change
-> Description 3: Build the logic model from inputs to long-term outcomes, attach the evidence and assumptions behind each link, and see at a glance which links are evidenced, mixed, untested or refuted.
+> Description 3: Trace program inputs to long-term outcomes, attach the evidence and assumptions behind each link, and see at a glance which links are evidenced, mixed, untested or refuted. Expedite your research progress by using your model structure to automatically search research databases for relevant studies.
 
 **ID: `HOME.METHODS.demo`**
 Context: New in v41. Closes the section: a button to the Demo page. The phase cards above
@@ -1457,7 +1479,7 @@ Fits: Tagline ≤ ~70 characters; each button 2–4 words.
 
 ## B3. Why it matters
 
-One card, for nonprofit leaders, programs teams and practitioners, in a narrowed column. There
+One card, for nonprofit leaders, programs teams, organizers and advocates, in a narrowed column. There
 were two, one per audience; the funders card (`HOME.WHY.funders`) came off in v7.
 
 **ID: `HOME.WHY.intro`**
@@ -1469,7 +1491,7 @@ were two, one per audience; the funders card (`HOME.WHY.funders`) came off in v7
 Context: Four benefits with bold lead-ins, rewritten in v55 around what the process and the
 tool do: track what works, build an evidence base, watch the policy context, and hear from
 participants.
-> Heading: For nonprofit leaders, programs teams and practitioners
+> Heading: For nonprofit leaders, programs teams, organizers and advocates
 > **Map and monitor efficacy.** Evaluation shows which parts of a program are most effective, so limited resources can go where they count the most.
 > **Build and document a knowledge-base.** Map evidence to internal assumptions about a program's theory of change. Approach programs with clarity and integrate them into global fields of research.
 > **Track exogenous effects.** Monitor policy and other contextual developments and project their impacts on program functions.
