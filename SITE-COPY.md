@@ -3,7 +3,19 @@
 Every piece of text on the site, in the order a visitor meets it, with the context
 you need to judge whether the wording is right.
 
-**Version:** 107 · **Updated:** 6 November 2026 · **Covers:** 8 pages
+**Version:** 108 · **Updated:** 12 November 2026 · **Covers:** 8 pages
+
+> **What changed in v108.** Your edit to the Theory of change card on Demo (`DEMO.VIEWS.cards`)
+> is applied, word for word. It now says the evidence is found by an automatic research tool that
+> searches research databases from the model's structure, ties each study to the links it relates
+> to and rates its evidence strength (was: evidence "filed under" each assumption, with every link
+> marked evidenced, mixed, untested or refuted). It is now two sentences, like the Logic model
+> card beside it. **No ID changed.**
+>
+> Worth a look: the home page's third tool card (`HOME.METHODS.tools`, Description 3) still
+> describes links as "evidenced, mixed, untested or refuted", the four ratings the Demo card no
+> longer names. The two don't contradict each other, but if the app now rates evidence strength
+> some other way, that line should follow.
 
 > **What changed in v107.** At your request, the title sections are gone from every page but
 > Home: the breadcrumb trail ("Home / About"), the large page title and the subhead, on About,
@@ -2001,7 +2013,7 @@ off in v71 and the field is left empty; type one there and hand the file back to
 > Lead: 
 
 **ID: `DEMO.VIEWS.cards`**
-Context: One sentence each (the Logic model card two, since v71), describing what the view shows, in the app's own terms. The rail
+Context: One sentence each (the Logic model card two, since v71; Theory of change two, since v108), describing what the view shows, in the app's own terms. The rail
 labels them Map, Logic, Theory, Policy, Change and Data; the headings use the fuller names
 the app gives them. Keep them roughly this length or the grid goes ragged.
 > Heading: Stakeholder map
@@ -2011,7 +2023,7 @@ the app gives them. Keep them roughly this length or the grid goes ragged.
 > Body: Map the connections that take program inputs through activities and outputs to short-, medium- and long-term outcomes. Place each logical pathway on its own layer and aggregate them to visualize the logical trusses of your program.
 >
 > Heading: Theory of change
-> Body: The assumptions each causal link depends on, and the evidence filed under each one, with every link marked evidenced, mixed, untested or refuted.
+> Body: The assumptions each causal link depends on, and the evidence for each one. An automatic research tool uses your model structure to search research databases for relevant studies, shows you what links they relate to, and rates their evidence strength.
 >
 > Heading: Policy
 > Body: The rules regulating the program today, the changes in development, and which of the program's measures each one affects.
